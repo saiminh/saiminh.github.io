@@ -1,4 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^web13.39116.vs.webtropia\.com$ 
-RewriteRule ^(.*) http://www.floetenmusik.com/$1 
-Options +Indexes
