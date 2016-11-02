@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body {% if page.extra_classes %}class="{{ page.extra_classes }}"{% endif %}>
+
+    {% include header.html %}
+
+    <div id="content" class="page-content">
+      
+        {{ content }}
+      
+    </div>
+	{% include work-list.html %}
+    {% include footer.html %}
+  </body>
+
+</html>

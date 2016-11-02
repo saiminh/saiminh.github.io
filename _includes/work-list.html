@@ -1,0 +1,17 @@
+<div class="wrapper">
+	<div class="row work_list">
+		<h3 id="work_examples" class="work_list_title">{% if page.layout == "index" %}Things I have worked on{% else %}More projects I have worked on:{% endif %}</h3>
+		{% for work in site.work %}
+			{% unless work.title == "Work" %}
+				<a href="{{ work.permalink }}">
+				<div class="work_list_tile work_list_tile_{{ work.title | remove: " " | remove: "." }}">
+					<div class="work_list_tile_thumb" style="background-image: url({{ work.header_bg_image }})">	       					
+			      	</div>
+			      	<h4 class="work_list_tile_title">{{ work.title }}</h4>	
+			    </div>
+			    </a>
+			{% endunless %}
+
+	    {% endfor %}
+	</div>
+</div>

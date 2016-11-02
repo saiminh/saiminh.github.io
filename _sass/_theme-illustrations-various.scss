@@ -1,0 +1,151 @@
+$theme_illustrations-various_color: #1F1F21;
+$theme_illustrations-various_color_bg: #FFF;
+$theme_illustrations-various_color_highlight: #A62B4A;
+
+.theme-illustrations-various {
+
+	background-color: $theme_illustrations-various_color_bg;
+
+	& .page-content {
+		font-size: 15px;
+	}
+
+	&,
+	& a.site-title,
+	& a:visited.site-title,
+	& a.page-link,
+	& a:visited.page-link {
+		color: $theme_illustrations-various_color;
+	}
+
+	& .post-title {
+		font-size: 1.5em;
+		font-family: $base-font-family;
+		font-weight: 300;
+	}
+
+	& .post-subtitle {
+		font-size: 1.5em;
+		color: $theme_illustrations-various_color;
+	}
+
+	& .post-subtitle, & a, & a:visited {
+		color: $theme_illustrations-various_color_highlight;
+	}
+
+	& .post-content .drop_cap:after {
+		background-color: $theme_illustrations-various_color;
+	}
+
+	& hr {
+		border-width:0;
+		border-top: 2px solid $theme_illustrations-various_color_highlight;
+	}
+
+	& .index-header {
+		font-size:1.3em;
+		background-image: url(../img/hero-bg/illustrations-various_simon.jpg);
+		background-attachment: fixed;
+		min-height: 75vh;
+		padding-top: 25vh;
+		background-position: 50% 50%;
+	}
+
+	& .index_arrow_to_work {
+		width: 60px;
+		height: 60px;
+		margin-bottom: -30px;
+	}
+
+	& .work_list_tile_title {
+		background-color: $theme_illustrations-various_color_highlight;
+	}
+
+	& .illustration_image,
+	& .illustration_title,
+	& .illustration_client,
+	& .illustration_description {
+		display: block;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	& .illustration_image--shadow {
+		border: 1px solid #EEE;
+		box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.33);
+	}
+
+	& .illustration_title {
+		font-size: 1em;
+		margin-bottom: 5px;
+	}
+	
+	& .illustration_client {
+		margin-bottom: 5px;	
+		font-family: $heading-font-family;
+		font-style: italic;	
+	}
+
+	& .illustration_description {
+		margin-bottom: 30px;	
+		padding: 0 20px;
+		text-align: center;	
+	}
+
+}
+
+@include media-query($on-laptop) {
+	
+	.theme-illustrations-various {
+
+		& {
+			font-size: 22px;
+		}
+
+		& .index-header {
+			font-size: 1em;
+			background-size: 100%;
+			background-position: 0 50px;
+		}
+	}
+}
+
+@include media-query($on-palm) {
+	
+	.theme-illustrations-various {
+
+		& {
+			font-size: 20px;
+		}
+
+		& .index-header {
+			font-size: 1em;
+			background-size: 180vw;
+			background-position: -80vw 0;
+			background-attachment: initial;
+		}
+
+		& .post-content .wrapper {
+			padding-top: 66vh!important;
+		}
+	}
+}
+
+@include media-query($on-smallphone) {
+	
+	.theme-illustrations-various {
+
+		& {
+			font-size: 16px;
+		}
+
+		& .index-header {
+			font-size: 1em;
+		}
+
+	}
+}
+
+.work_list_tile_Illustrations .work_list_tile_thumb{
+	background-image: url(../img/work_illustrations-various/CangrejoLaLeche.jpg)!important;
+}

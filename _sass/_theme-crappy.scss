@@ -1,0 +1,108 @@
+$theme_crappy_color: #584659;
+$theme_crappy_color_bg: #B5D7C9;
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+}
+@-webkit-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+}
+@-ms-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+}
+@-moz-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+}
+
+.theme-crappy {
+
+	background: $theme_crappy_color_bg url(../img/work_crappy/bg-image-1280x480.png) repeat-x 0 0;
+	background-size: 640px;
+	background-attachment: fixed;
+	animation: animatedBackground 20s linear infinite;
+    -ms-animation: animatedBackground 20s linear infinite;
+    -moz-animation: animatedBackground 20s linear infinite;
+    -webkit-animation: animatedBackground 20s linear infinite;
+
+	& .post-header.has_hero_img {	    
+	    background-size: cover;
+	}
+
+	& .index-header {
+		padding-top: 20vh;
+		min-height: 0;
+		background-attachment: fixed;
+		background-position: 50% 50%;
+	}
+
+	&,	
+	& a.page-link,
+	& a:visited.page-link {
+		color: $theme_crappy_color;
+	}
+
+	& a.site-title,
+	& a:visited.site-title {
+		color: $theme_crappy_color;
+	}
+
+	& .post-subtitle {
+		margin-top:0px;
+		font-size: 30px;
+		color: $theme_crappy_color_bg;
+		font-family: $heading-font-family;
+		font-style: italic;
+	}
+
+	& p a, & p a:visited {
+		color: $theme_crappy_color;
+		text-decoration: underline;
+	}
+
+	& .post-content .drop_cap:after {
+		background-color: $theme_crappy_color;
+	}
+
+	& hr {
+		border-width:0;
+		border-top: 4px solid $theme_crappy_color;
+	}
+
+	& .the_crap_container {
+		max-width: 320px;
+		background-color: #8D798E;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 15px;
+		border-width: 50px 8px;
+		border-color: $theme_crappy_color;
+		border-style: solid;
+		position: relative;
+		top:-15vh;
+	}
+
+	& .crappyturd_iframe {
+		width: 100%;
+		max-width: 320px;
+		min-height: 480px;
+		border: none;
+	}
+
+	& .work_list_tile_title {
+		background-color: $theme_crappy_color;
+	}
+}
+
+@include media-query($on-palm){
+	.theme-crappy {
+
+		.the_crap_container {
+			top: 0;
+		}
+
+	}
+}

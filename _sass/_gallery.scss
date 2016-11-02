@@ -1,0 +1,97 @@
+.gallery-xscroll {
+	white-space: nowrap;
+	height: auto;
+	
+	&.slick-initialized {
+		cursor: grab;
+		cursor: -webkit-grab; 
+		cursor: -moz-grab;
+	}
+
+	&.slick-initialized:active {
+		cursor: grabbing;
+		cursor: -webkit-grabbing;
+		cursor: -moz-grabbing;
+	}
+}
+
+.gallery-xscroll_img {
+	display: inline-block;
+	width: 100%;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+    width: 40px;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    text-indent: -1000px;
+    cursor: w-resize;
+    cursor: -webkit-w-resize;
+    cursor: -moz-w-resize;
+
+
+    &:focus {
+    	outline: none;
+    }
+
+    &:after {
+    	content: '';
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: #FFF url(../img/UI/chevron_left.svg) 0 0 no-repeat;
+		background-size: 40px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+	    margin-top: -40px;
+	    border-radius: 50%;
+    }
+}
+
+.slick-arrow.slick-next {
+	left: auto;
+	right: 0;
+	cursor: e-resize;
+    cursor: -webkit-e-resize;
+    cursor: -moz-e-resize;
+
+    &:after {
+    	content: '';
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: #FFF url(../img/UI/chevron_right.svg) 0 0 no-repeat;
+		background-size: 40px;
+		position: absolute;
+		right: auto;
+		left: 0;
+    }
+}
+
+/* Touch devices show something */
+.touchevents {
+
+	.gallery-xscroll:after {
+		content: '';
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: url(../img/UI/swipe.svg) 0 0 no-repeat;
+		position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    margin-left: -15px;
+	    margin-top: -15px;
+	}
+
+	.slick-arrow:after {
+		display: none!important;
+	}
+}

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article class="post">
+
+{% unless page.header_bg_image or page.has_fullpage_bg %}
+<div class="wrapper">
+{% endunless %}	
+
+
+  <header 	class="post-header{% if page.header_bg_image %} has_hero_img{% endif %}" 	
+			style="
+				{% if page.header_bg_image %} 
+					background-image: url( {{ page.header_bg_image }} );
+				{% endif %}
+				{% if page.title_align %} 
+					text-align: {{ page.title_align }};
+				{% endif %}">
+  	<div    class="wrapper" 
+  			style="
+		  		{% if page.title_offset_y %}
+		    		padding-top: {{ page.title_offset_y }};
+		    	{% endif %}
+		    "
+	>
+	    <h1 class="post-title sr">	    	
+	    	{% if page.headline %}	
+	    		{{ page.headline }}
+	    	{% else %}
+	    		{{ page.title }}
+	    	{% endif %}
+	    </h1>
+	    {% if page.subtitle %} 
+	    	<h2 class="post-subtitle sr">{{ page.subtitle }}</h2>
+	   	{% endif %}
+	</div>
+	<a class="anchorlink" href="#this_post_content">{% include arrow_straight_down_white.svg %}</a>
+  </header>
+
+	<div id="this_post_content" class="post-content">
+		{{ content }}
+	</div>
+{% unless page.header_bg_image %}
+</div>
+{% endunless %}	
+
+</article>

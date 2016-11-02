@@ -1,0 +1,53 @@
+$theme_roehampton_color: #0A6194;
+$theme_roehampton_color_bg: #FFF;
+
+.theme-roehampton {
+
+	background-color: #FFF;
+
+	& {	
+		color: $theme_roehampton_color;		
+	}
+
+	& .post-header {
+		background-color: #00a7e0;
+		background-size: 100% auto;
+		background-position: left bottom;
+	}
+
+	& .post-title {
+		color: #FFF;
+	}
+
+	& a:visited.site-title,
+	& a.site-title,
+	& a.page-link,
+	& a:visited.page-link,
+	& .post-subtitle {
+		color: #FFF;
+	}
+
+	& a, & a:visited {
+		color: $theme_roehampton_color;
+	}
+
+	& .post-content .drop_cap:after {
+		background-color: $theme_roehampton_color;
+	}
+
+	& .post-header.has_hero_img {
+		height: 100vh;
+		background-position: right bottom;
+		background-size: cover;
+		background-color: $theme_roehampton_color;
+	}
+
+	& .roehampton_square_animation {
+		position: relative;
+		left: -15px;
+	}
+
+	& .work_list_tile_title {
+		background-color: #00a7e0;
+	}
+}

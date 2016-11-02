@@ -1,0 +1,55 @@
+.theme-liverpool {
+	background-color: #1D2B54;
+
+	&,
+	& a.site-title,
+	& a:visited.site-title,
+	& a.page-link,
+	& a:visited.page-link {
+		color: #FFF;
+	}
+
+	& .post-subtitle {
+	    font-weight: 400;
+	    font-style: italic;
+	    font-family: $heading-font-family;
+	}
+
+	& .post-subtitle, & a, & a:visited {
+		color: #CE6200;
+	}
+
+	& .post-content .drop_cap {
+		color: #CE6200;
+	}
+
+	& .post-content .drop_cap:after {
+		background-color: #CE6200;
+	}
+
+	& .quick_info_box {
+		border-color: #FFF;
+	}
+
+	& .work_list_tile_title {
+		background-color: #CE6200;
+	}
+
+	.slick-arrow:after {
+		background-color: #1D2B54;
+		background-image: url(../img/UI/chevron_left--white.svg);
+	}
+	.slick-arrow.slick-next:after {
+		background-image: url(../img/UI/chevron_right--white.svg);
+	}
+}
+
+.work_list_tile_UniversityofLiverpool .work_list_tile_thumb {
+	background-color: #2E3E6B;
+}
+
+@include media-query($on-palm) {
+	.bgsizecover .theme-liverpool .post-header.has_hero_img {
+		background-size: 200vw;
+	}
+}

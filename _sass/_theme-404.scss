@@ -1,0 +1,96 @@
+$theme_404_color: #550000;
+$theme_404_color_bg: #AA3939;
+$theme_404_color_highlight: #D46A6A;
+
+.theme-404 {
+	background-color: $theme_404_color_bg;	
+
+	&,
+	& a.site-title,
+	& a:visited.site-title,
+	& a.page-link,
+	& a:visited.page-link,
+	& .footer-col-wrapper {
+		color: $theme_404_color;
+	}
+
+	& .post-subtitle {
+		margin-top:30px;
+		color: $theme_404_color;
+	}
+
+	& .post-subtitle, & a, & a:visited {
+		color: $theme_404_color_highlight;
+	}
+
+	& .post-content .drop_cap:after {
+		background-color: $theme_404_color;
+	}
+
+	& hr {
+		border-width:0;
+		border-top: 2px solid $theme_404_color_highlight;
+	}
+
+	& .index-header {
+		//background-image: url(../img/hero-bg/404_simon.jpg);
+		background-attachment: fixed;
+		min-height: 75vh;
+		padding-top: 15vh;
+		background-position: 50% 50%;
+	}
+
+	& .index-title{
+		font-size: 2em;
+	}
+
+	& .index_arrow_to_work {
+		width: 60px;
+		height: 60px;
+		margin-bottom: -30px;
+	}
+
+	& .work_list_tile_title {
+		background-color: $theme_404_color_highlight;
+	}
+}
+
+@include media-query($on-laptop) {
+	
+}
+
+@include media-query($on-palm) {
+	
+	.theme-404 {
+
+		& {
+			font-size: 20px;
+		}
+
+		& .index-header {
+			font-size: 1em;
+			background-size: 180vw;
+			background-position: -80vw 0;
+			background-attachment: initial;
+		}
+
+		& .post-content .wrapper {
+			padding-top: 66vh!important;
+		}
+	}
+}
+
+@include media-query($on-smallphone) {
+	
+	.theme-404 {
+
+		& {
+			font-size: 16px;
+		}
+
+		& .index-header {
+			font-size: 1em;
+		}
+
+	}
+}

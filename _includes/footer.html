@@ -1,0 +1,111 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.3/js/jquery.fluidbox.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    //Senna init
+
+    var app = new senna.App();
+    app.setBasePath('/');
+    app.addSurfaces('content');
+    app.addRoutes([
+      new senna.Route('/work/roehampton.html', senna.HtmlScreen),
+      new senna.Route('/work/liverpool.html', senna.HtmlScreen),
+      new senna.Route('/work/booking.html', senna.HtmlScreen),
+      new senna.Route('/work/illustrations-various.html', senna.HtmlScreen),
+      new senna.Route('/work/crappy_turd.html', senna.HtmlScreen)
+    ]);
+
+
+    // fluidbox shit
+     $('a.fluidbox-link').fluidbox();
+
+    //initiate galleries
+    $('.gallery-xscroll').slick({
+    });
+
+    //set has_hero_img height in pxs to avoid mobile resizing
+    var windowheight = $(window).height();
+    $('.has_hero_img').css('min-height', windowheight);
+  });
+
+  //smooth scrolling
+  $(function() {
+    $('a.anchorlink').bind('click',function(event){
+      var $anchor = $(this);
+
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 20
+      }, 1000,'easeInOutExpo');
+      /*
+      if you don't want to use the easing effects:
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+      }, 1000);
+      */
+      event.preventDefault();
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.5/scrollreveal.min.js"></script>
+<script type="text/javascript">
+  window.sr = ScrollReveal();
+  sr.reveal('.sr');
+  sr.reveal('.post-title.sr', { delay: 300, origin: 'bottom', distance: '30px', scale: 1 });
+  sr.reveal('.post-subtitle.sr', { delay: 300, origin: 'top', distance: '30px', scale: 1 }); 
+//  sr.reveal('p');
+//  sr.reveal('li');
+  sr.reveal('.grid_img');
+  sr.reveal('.gallery-xscroll');
+  sr.reveal('.work_list_tile.sr', { duration: 1000 }, 50);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38762068-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
