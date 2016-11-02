@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: flötenmusik
-email: simon@floetenmusik.com
+title: Flöter
+email: simon@floter.design
 description: > # this means to ignore newlines until "baseurl:"
   This is the portfolio website of Simon Flöter. I'm a Designer and Illustrator living in Amsterdam. I am currently working as a UX Designer and Team Lead for Booking.com 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.floetenmusik.com" # the base hostname & protocol for your site
+url: "http://floter.design" # the base hostname & protocol for your site
 twitter_username: schweinedog
 collections:
   work:
@@ -21,13 +21,3 @@ sass:
   style: compressed
 # Build settings
 markdown: kramdown
-
-ftp_host: 'www.floetenmusik.com'
-ftp_dir: '/httpdocs'
-ftp_passive: false
-
-# optional
-ftp_port: 21                  # default 21
-ftp_username: 'web13'     # default read from stdin
-ftp_password: 'aj8e1n72' # default read from stdin
-ftp_secure: false              # default false
