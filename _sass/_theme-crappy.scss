@@ -28,6 +28,10 @@ $theme_crappy_color_bg: #B5D7C9;
     -moz-animation: animatedBackground 20s linear infinite;
     -webkit-animation: animatedBackground 20s linear infinite;
 
+    & #floter_signature_svg {
+    	fill: $theme_crappy_color;
+    }
+
 	& .post-header.has_hero_img {	    
 	    background-size: cover;
 	}

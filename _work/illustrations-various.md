@@ -6,7 +6,7 @@ subtitle:
 permalink: /work/illustrations-various.html
 mainnav: hide
 extra_classes: portfolio theme-illustrations-various
-title_offset_y: 100px
+title_offset_y: 200px
 ---
 
 <div class="row row-overlap">				

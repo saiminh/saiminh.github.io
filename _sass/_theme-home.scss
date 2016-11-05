@@ -1,6 +1,6 @@
 $theme_home_color: #590033;
 $theme_home_color_bg: #FEDEC0;
-$theme_home_color_highlight: #A62B4A;
+$theme_home_color_highlight: #f90c5f;
 
 .theme-home {
 
@@ -12,6 +12,10 @@ $theme_home_color_highlight: #A62B4A;
 	& a.page-link,
 	& a:visited.page-link {
 		color: $theme_home_color;
+	}
+
+	& #floter_signature_svg {
+		fill: $theme_home_color;
 	}
 
 	& .post-subtitle {

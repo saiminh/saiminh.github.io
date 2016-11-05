@@ -7,6 +7,10 @@ $theme_booking_color_highlight: #1695FE;
 	background-color: $theme_booking_color_bg;
 	color: $theme_booking_color;
 
+	& #floter_signature_svg {
+		fill: $theme_booking_color_bg;
+	}
+
 	& .post-header {
 		background-color: $theme_booking_color;
 		background-size: cover;

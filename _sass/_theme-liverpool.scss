@@ -9,6 +9,10 @@
 		color: #FFF;
 	}
 
+	& #floter_signature_svg {
+		fill: #FFF;
+	}
+
 	& .post-subtitle {
 	    font-weight: 400;
 	    font-style: italic;
@@ -20,11 +24,11 @@
 	}
 
 	& .post-content .drop_cap {
-		color: #CE6200;
+		color: #FFF;
 	}
 
 	& .post-content .drop_cap:after {
-		background-color: #CE6200;
+		background-color: #FFF;
 	}
 
 	& .quick_info_box {

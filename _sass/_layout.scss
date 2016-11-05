@@ -34,6 +34,21 @@
     }
 }
 
+#floter_signature_svg {
+    width: 200px;
+    height: 118px;
+    fill: #000;
+
+    @include media-query($on-palm) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.dark_bg #floter_signature_svg {
+    fill: #fff;
+ }
+
 .dark_bg .site-title {
 
     &,
@@ -53,6 +68,7 @@
     .page-link {
         color: inherit;
         line-height: $base-line-height;
+        font-weight: 600;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -294,7 +310,7 @@
     font-weight: 400;
     font-size: 41px;
     color: $brand-color;
-    padding: 0;
+    padding: 0 20px;
 
     @include media-query($on-laptop) {
         font-size: 32px;

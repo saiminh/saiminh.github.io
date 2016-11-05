@@ -18,16 +18,16 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 		color: $theme_illustrations-various_color;
 	}
 
-	& .post-title {
-		font-size: 1.5em;
-		font-family: $base-font-family;
-		font-weight: 300;
-	}
+	// & .post-title {
+	// 	font-size: 1.5em;
+	// 	font-family: $base-font-family;
+	// 	font-weight: 300;
+	// }
 
-	& .post-subtitle {
-		font-size: 1.5em;
-		color: $theme_illustrations-various_color;
-	}
+	// & .post-subtitle {
+	// 	font-size: 1.5em;
+	// 	color: $theme_illustrations-various_color;
+	// }
 
 	& .post-subtitle, & a, & a:visited {
 		color: $theme_illustrations-various_color_highlight;
