@@ -100,6 +100,10 @@ $theme_crappy_color_bg: #B5D7C9;
 	& .work_list_tile_title {
 		background-color: $theme_crappy_color;
 	}
+
+	& .work_list_tile_CrappyTurd{
+		display: none;
+	}
 }
 
 @include media-query($on-palm){

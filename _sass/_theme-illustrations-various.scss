@@ -1,10 +1,15 @@
-$theme_illustrations-various_color: #1F1F21;
+$theme_illustrations-various_color: #000;
 $theme_illustrations-various_color_bg: #FFF;
 $theme_illustrations-various_color_highlight: #A62B4A;
 
 .theme-illustrations-various {
 
 	background-color: $theme_illustrations-various_color_bg;
+	border-color: $theme_illustrations-various_color_highlight;
+
+	& #floter_signature_svg {
+		fill: $theme_illustrations-various_color_highlight;
+	}
 
 	& .page-content {
 		font-size: 17px;
@@ -22,17 +27,6 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 	& a:visited.page-link {
 		color: $theme_illustrations-various_color;
 	}
-
-	// & .post-title {
-	// 	font-size: 1.5em;
-	// 	font-family: $base-font-family;
-	// 	font-weight: 300;
-	// }
-
-	// & .post-subtitle {
-	// 	font-size: 1.5em;
-	// 	color: $theme_illustrations-various_color;
-	// }
 
 	& .post-subtitle, & a, & a:visited {
 		color: $theme_illustrations-various_color_highlight;
@@ -86,18 +80,27 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 
 	& .illustration_title {
 		font-size: 1em;
-		margin-bottom: 5px;
+		margin-bottom: 0;
 	}
 	
 	& .illustration_client {
 		margin-bottom: 5px;	
-		font-style: italic;	
+		color: $theme_illustrations-various_color_highlight;	
+		font-style: italic;
 	}
 
 	& .illustration_description {
 		margin-bottom: 30px;	
 		padding: 0 20px;
 		text-align: center;	
+	}
+
+	& .fluidbox__overlay {
+		background-color: $theme_illustrations-various_color_highlight;
+	}
+
+	& .work_list_tile_Illustrations {
+		display: none;
 	}
 
 }

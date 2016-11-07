@@ -1,22 +1,26 @@
-$theme_roehampton_color: #0A6194;
-$theme_roehampton_color_bg: #FFF;
+$theme_roehampton_color: #FFF;
+$theme_roehampton_color_bg: #0068c8;
+$theme_roehampton_color_highlight: #00a7e0;
 
 .theme-roehampton {
 
-	background-color: #FFF;
+	background-color: $theme_roehampton_color_bg;
+	border-color: $theme_roehampton_color;
+	color: $theme_roehampton_color;
 
 	& #floter_signature_svg {
-		fill: $theme_roehampton_color_bg;
+		fill: $theme_roehampton_color;
 	}
 
 	& .page-header {
-		background-color: #00a7e0;
+		background-color: $theme_roehampton_color_highlight;
 		background-size: 100% auto;
 		background-position: left bottom;
 	}
 
-	& .page-title {
-		color: #FFF;
+	& .page-title,
+	& .page-subtitle {
+		color: $theme_roehampton_color;
 	}
 
 	& a:visited.site-title,
@@ -24,18 +28,29 @@ $theme_roehampton_color_bg: #FFF;
 	& a.page-link,
 	& a:visited.page-link,
 	& .page-subtitle {
-		color: #FFF;
+		color: $theme_roehampton_color;
 	}
 
 	& a, & a:visited {
-		color: $theme_roehampton_color;
+		color: $theme_roehampton_color_highlight;
+	}
+
+	& .page-content .drop_cap:after {
+		background-color: $theme_roehampton_color;
 	}
 
 	& .page-header.has_hero_img {
 		height: 100vh;
 		background-position: right bottom;
-		background-size: cover;
-		background-color: $theme_roehampton_color;
+		background-size: 100%;
+	}
+
+	& .slick-arrow:after {
+		background-color: $theme_roehampton_color_bg;
+		background-image: url(../img/UI/chevron_left--white.svg);
+	}
+	& .slick-arrow.slick-next:after {
+		background-image: url(../img/UI/chevron_right--white.svg);
 	}
 
 	& .roehampton_square_animation {
@@ -44,6 +59,19 @@ $theme_roehampton_color_bg: #FFF;
 	}
 
 	& .work_list_tile_title {
-		background-color: #00a7e0;
+		background-color: $theme_roehampton_color_highlight;
 	}
+
+	& .work_list_tile_UniversityofRoehamptonLondon {
+		display: none;
+	}
+
+	& .footer-col-wrapper, {
+		color: $theme_roehampton_color;
+	}
+
+	& .icon>svg path {
+		fill: $theme_roehampton_color_highlight;
+	}
+
 }

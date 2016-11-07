@@ -28,7 +28,7 @@ body {
 
 @include media-query($on-smallphone) {
     body { 
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -48,6 +48,29 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-size: 30px;
+
+    @include media-query($on-laptop) {
+        font-size: 22px;
+    }
+}
+
+h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+        font-size: 18px;
+    }
+}
 
 
 /**

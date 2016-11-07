@@ -5,11 +5,7 @@ $theme_home_color_highlight: #f90c5f;
 .theme-home {
 
 	background-color: $theme_home_color_bg;
-	border: 10px solid $theme_home_color;
-
-	@include media-query($on-palm){
-		border: 5px solid $theme_home_color;
-	}
+	border-color: $theme_home_color;
 
 	&,
 	& a.site-title,

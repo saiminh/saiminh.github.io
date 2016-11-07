@@ -1,6 +1,39 @@
 .blogpost {
 
+	border-color: $brand-color;
+
+
 	& .page-content {
 		margin-top: 200px;
+
+		@include media-query ($on-palm) {
+			margin-top: 150px;
+		}
+
+		& .wrapper {
+			max-width: 32em;
+		}
+	}
+}
+
+.post-meta {
+	margin-bottom: 5px;
+	color: $brand-color;
+	font-size: 28px;
+	font-style: italic;
+	text-align: center;
+
+	@include media-query ($on-palm) {
+		font-size: 20px;
+	}
+}
+
+.post-title {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 100px;
+
+	@include media-query ($on-palm) {
+		font-size: 32px;
 	}
 }

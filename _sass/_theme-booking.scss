@@ -77,4 +77,14 @@ $theme_booking_color_highlight: #1695FE;
 	    font-style: italic;
 	    font-size: 1.3em;
 	}
+
+	& .work_list_tile_UXDesignatBookingcom{
+		display: none;
+	}
+}
+
+.work_list_tile_UXDesignatBookingcom .work_list_tile_thumb{
+	background-size: auto 100%;
+	background-color: $theme_booking_color_bg;
+	background-position: right top;
 }

@@ -62,6 +62,14 @@
 	.slick-arrow.slick-next:after {
 		background-image: url(../img/UI/chevron_right--white.svg);
 	}
+
+	& .fluidbox__overlay {
+		background-color: #1D2B54;
+	}
+
+	& .work_list_tile_UniversityofLiverpool {
+		display: none;
+	}
 }
 
 .work_list_tile_UniversityofLiverpool .work_list_tile_thumb {

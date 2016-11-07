@@ -7,7 +7,7 @@ permalink: /work/roehampton.html
 mainnav: hide
 header_bg_image: /img/hero-bg/roehamtpon.png
 extra_classes: portfolio theme-roehampton
-title_offset_y: 45vh
+title_offset_y: 40vh
 title_align: center
 ---
 
@@ -16,7 +16,7 @@ title_align: center
 	<div class="row">		
 		
 		<div class="col-4 col-text">
-			<h3><img alt="alternative text" class="roehampton_square_animation" src="{{ "/img/work_roehampton/housestyle/02-uor-brand-square-animation.gif" | prepend: site.baseurl }}" />Housestyle</h3>
+			<h3>Housestyle</h3>
 			<p><span class="drop_cap">T</span>he team developed a distinct visual style under my lead. 
 			We aimed to support the brand message "Inspiring Possibilities" by introducing blue squares as key visual elements that appear in various animations and images throughout the material.</p>			
 		</div>
