@@ -1,5 +1,6 @@
 .theme-liverpool {
 	background-color: #1D2B54;
+	border-color: #FFF;
 
 	&,
 	& a.site-title,
@@ -13,21 +14,36 @@
 		fill: #FFF;
 	}
 
-	& .post-subtitle {
-	    font-weight: 400;
-	    font-style: italic;
-	    font-family: $heading-font-family;
+	& .page-title {
+		font-size: 64px;
+		line-height: 1;
+
+		@include media-query($on-palm) {
+			font-size: 32px;
+			line-height: 1.3;
+		}
 	}
 
-	& .post-subtitle, & a, & a:visited {
+	& .page-subtitle {
+	    font-size: 64px;
+	    letter-spacing: -1px;
+
+	    @include media-query($on-palm) {
+			font-size: 32px;
+			line-height: 1.3;
+			letter-spacing: 0;
+		}
+	}
+
+	& .page-subtitle, & a, & a:visited {
 		color: #CE6200;
 	}
 
-	& .post-content .drop_cap {
+	& .page-content .drop_cap {
 		color: #FFF;
 	}
 
-	& .post-content .drop_cap:after {
+	& .page-content .drop_cap:after {
 		background-color: #FFF;
 	}
 
@@ -53,7 +69,7 @@
 }
 
 @include media-query($on-palm) {
-	.bgsizecover .theme-liverpool .post-header.has_hero_img {
+	.bgsizecover .theme-liverpool .page-header.has_hero_img {
 		background-size: 200vw;
 	}
 }

@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body {% if page.extra_classes %}class="{{ page.extra_classes }}"{% endif %}>
+  <body class="{% if page.extra_classes %}{{ page.extra_classes }}{% elsif page.date %}blogpost{% else %}default	{% endif %}">
 
     {% include header.html %}
 

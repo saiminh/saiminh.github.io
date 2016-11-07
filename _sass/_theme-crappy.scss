@@ -27,12 +27,13 @@ $theme_crappy_color_bg: #B5D7C9;
     -ms-animation: animatedBackground 20s linear infinite;
     -moz-animation: animatedBackground 20s linear infinite;
     -webkit-animation: animatedBackground 20s linear infinite;
+    border-color: $theme_crappy_color;
 
     & #floter_signature_svg {
     	fill: $theme_crappy_color;
     }
 
-	& .post-header.has_hero_img {	    
+	& .page-header.has_hero_img {	    
 	    background-size: cover;
 	}
 
@@ -54,7 +55,7 @@ $theme_crappy_color_bg: #B5D7C9;
 		color: $theme_crappy_color;
 	}
 
-	& .post-subtitle {
+	& .page-subtitle {
 		margin-top:0px;
 		font-size: 30px;
 		color: $theme_crappy_color_bg;
@@ -67,7 +68,7 @@ $theme_crappy_color_bg: #B5D7C9;
 		text-decoration: underline;
 	}
 
-	& .post-content .drop_cap:after {
+	& .page-content .drop_cap:after {
 		background-color: $theme_crappy_color;
 	}
 

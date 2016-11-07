@@ -4,7 +4,7 @@ type: portfolio
 title: University of Liverpool
 subtitle: Online degree programs
 permalink: /work/liverpool.html
-mainnav: hide
+mainnav: show
 header_bg_image: /img/hero-bg/liverpool.jpg
 extra_classes: portfolio theme-liverpool
 title_offset_y: 60vh

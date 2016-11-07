@@ -5,21 +5,17 @@ $theme_roehampton_color_bg: #FFF;
 
 	background-color: #FFF;
 
-	& {	
-		color: $theme_roehampton_color;		
-	}
-
 	& #floter_signature_svg {
 		fill: $theme_roehampton_color_bg;
 	}
 
-	& .post-header {
+	& .page-header {
 		background-color: #00a7e0;
 		background-size: 100% auto;
 		background-position: left bottom;
 	}
 
-	& .post-title {
+	& .page-title {
 		color: #FFF;
 	}
 
@@ -27,7 +23,7 @@ $theme_roehampton_color_bg: #FFF;
 	& a.site-title,
 	& a.page-link,
 	& a:visited.page-link,
-	& .post-subtitle {
+	& .page-subtitle {
 		color: #FFF;
 	}
 
@@ -35,11 +31,7 @@ $theme_roehampton_color_bg: #FFF;
 		color: $theme_roehampton_color;
 	}
 
-	& .post-content .drop_cap:after {
-		background-color: $theme_roehampton_color;
-	}
-
-	& .post-header.has_hero_img {
+	& .page-header.has_hero_img {
 		height: 100vh;
 		background-position: right bottom;
 		background-size: cover;

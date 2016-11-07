@@ -1,59 +1,36 @@
-$theme_booking_color: #003580;
-$theme_booking_color_bg: #fff;
+$theme_booking_color: #fff;
+$theme_booking_color_bg: #003385;
 $theme_booking_color_highlight: #1695FE;
 
 .theme-booking {
 
 	background-color: $theme_booking_color_bg;
 	color: $theme_booking_color;
+	border-color: $theme_booking_color;
 
 	& #floter_signature_svg {
-		fill: $theme_booking_color_bg;
+		fill: $theme_booking_color;
 	}
 
-	& .post-header {
-		background-color: $theme_booking_color;
-		background-size: cover;
-		background-position: left bottom;
+	& .page-header {
+		background-color: $theme_booking_color_bg;
+		background-size: 50%;
+		background-position: right top;
 		height: 100vh;
 	}
 
 	& a.page-link,
 	& a:visited.page-link {
-		color: $theme_booking_color_bg;
+		color: $theme_booking_color;
 	}
 
-	& .post-title {
-		color: $theme_booking_color_bg;
-	}
-
-	& a.site-title,
-	& a:visited.site-title {
-		color: $theme_booking_color_bg;
-	}
-
-	& .quick_info_box {
-		border-color: $theme_booking_color;
-	}
-
-	& .post-subtitle {
+	& .page-subtitle {
 		margin-top:0px;
-		color: $theme_booking_color_bg;
-		font-family: $heading-font-family;
-		font-style: italic;
+		color: $theme_booking_color_highlight;
 	}
 
 	& a, & a:visited {
 		color: $theme_booking_color_highlight;
-	}
-
-	& .post-content .drop_cap:after {
-		background-color: $theme_booking_color;
-	}
-
-	& hr {
-		border-width:0;
-		border-top: 4px solid $theme_booking_color;
 	}
 
 	& .col-hero-overlap {
@@ -68,7 +45,7 @@ $theme_booking_color_highlight: #1695FE;
 	}
 
 	& .work_list_tile_title {
-		background-color: $theme_booking_color;
+		background-color: $theme_booking_color_highlight;
 	}
 
 	& .slick-arrow {
@@ -80,27 +57,24 @@ $theme_booking_color_highlight: #1695FE;
 		left: 100%;
 		right: auto;
 	}
-}
 
-@include media-query($on-laptop) {
-	.theme-booking {
-		&  .post-header.has_hero_img {
-				background-size: auto 100vh;
-		}
+	& .slick-arrow.slick-next:after,
+	& .slick-arrow:after {
+		background-color: $theme_booking_color_bg;
+		background-image: url(../img/UI/chevron_left--white.svg);
 	}
 
-}
+	& .slick-arrow.slick-next:after {
+		background-image: url(../img/UI/chevron_right--white.svg);
+	}
 
-@include media-query($on-palm) {
-	.theme-booking {
+	& .page-content .drop_cap:after {
+		background-color: $theme_booking_color;
+	}
 
-		& .col-hero-overlap {
-			top: 0;
-			margin-bottom: 0;
-		}
-
-		&  .post-header.has_hero_img {
-			background-size: auto 100vh;
-		}
+	& .pullquote {
+	    color: $theme_booking_color_highlight;
+	    font-style: italic;
+	    font-size: 1.3em;
 	}
 }

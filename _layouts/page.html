@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="page">
 
 {% unless page.header_bg_image or page.has_fullpage_bg %}
 <div class="wrapper">
 {% endunless %}	
 
 
-  <header 	class="post-header{% if page.header_bg_image %} has_hero_img{% endif %}" 	
+  <header 	class="page-header{% if page.header_bg_image %} has_hero_img{% endif %}" 	
 			style="
 				{% if page.header_bg_image %} 
 					background-image: url( {{ page.header_bg_image }} );
@@ -23,7 +23,7 @@ layout: default
 		    	{% endif %}
 		    "
 	>
-	    <h1 class="post-title sr">	    	
+	    <h1 class="page-title sr">	    	
 	    	{% if page.headline %}	
 	    		{{ page.headline }}
 	    	{% else %}
@@ -31,13 +31,13 @@ layout: default
 	    	{% endif %}
 	    </h1>
 	    {% if page.subtitle %} 
-	    	<h2 class="post-subtitle sr">{{ page.subtitle }}</h2>
+	    	<h2 class="page-subtitle sr">{{ page.subtitle }}</h2>
 	   	{% endif %}
 	</div>
-	<a class="anchorlink" href="#this_post_content">{% include arrow_straight_down_white.svg %}</a>
+	<a class="anchorlink" href="#this_page_content">{% include arrow_straight_down_white.svg %}</a>
   </header>
 
-	<div id="this_post_content" class="post-content">
+	<div id="this_page_content" class="page-content">
 		{{ content }}
 	</div>
 {% unless page.header_bg_image %}

@@ -7,7 +7,12 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 	background-color: $theme_illustrations-various_color_bg;
 
 	& .page-content {
-		font-size: 15px;
+		font-size: 17px;
+		margin-top: 60px;
+
+		@include media-query($on-palm) {
+			margin-top: 0;
+		}
 	}
 
 	&,
@@ -57,6 +62,10 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 		margin-bottom: -30px;
 	}
 
+	& .arrow_down {
+		display: none;
+	}
+
 	& .work_list_tile_title {
 		background-color: $theme_illustrations-various_color_highlight;
 	}
@@ -82,7 +91,6 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 	
 	& .illustration_client {
 		margin-bottom: 5px;	
-		font-family: $heading-font-family;
 		font-style: italic;	
 	}
 

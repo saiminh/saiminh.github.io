@@ -23,7 +23,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    -webkit-font-smoothing: antialiased;
+    //-webkit-font-smoothing: antialiased;
 }
 
 @include media-query($on-smallphone) {
@@ -97,10 +97,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $heading-font-weight;
 }
 
+.heading_centered {
+    text-align: center;
+}
+
 em {
-    font-family: $heading-font-family;
     font-style: italic;
-    font-weight: 400;
 }
 
 

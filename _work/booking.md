@@ -7,7 +7,7 @@ permalink: /work/booking.html
 mainnav: hide
 header_bg_image: /img/hero-bg/booking.png
 extra_classes: portfolio theme-booking
-title_offset_y: 35vh
+title_offset_y: 45vh
 title_align: center
 ---
 
@@ -16,32 +16,26 @@ title_align: center
 	<div class="row row-overlap">		
 	
 		<div class="col-8">
+			<p class="pullquote">Booking.com is one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
 			<h3>My role at Booking.com</h3>
-			<div class="quick_info_box">
-
-				<h4 class="quick_info_box_header">At a glance:</h4>
-				<ul class="quick_info_box_list">
-					<li>Projects cover all platforms (desktop, mobile, native apps)</li>
-					<li>Facilitate Ideation, sketching/wireframing and create mockups</li> 
-					<li>Write HTML, CSS, JS and some Perl code</li>
-					<li>Maintain and deploy code using git</li>
-					<li>Analyze experiment data and propose next iteration steps</li>
-					<li>Coach and develop team members</li>
-				</ul>
-				<p>Booking.com is one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
-			</div>			
+			<ul class="quick_info_box_list">
+				<li>Projects cover all platforms (desktop, mobile, native apps)</li>
+				<li>Facilitate Ideation, sketching/wireframing and create mockups</li> 
+				<li>Write HTML, CSS, JS and some Perl code</li>
+				<li>Maintain and deploy code using git</li>
+				<li>Analyze experiment data and propose next iteration steps</li>
+				<li>Coach and develop team members</li>
+			</ul>
+					
 		</div>		
-    	<div class="col-4 col-hero-overlap">
+    	<div class="col-4">
 	        <img src="{{ site.baseurl }}/img/work_booking/booking_iphone6.png" alt="image" class="work_booking_img_iphone" />
 	    </div>			
 	</div>
+
 	<div class="row">
-		<div class="col-12">
-			<h3>Some projects I worked on</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-6 offset-3">
+		<div class="col-8 offset-2">
+			<h3 class="heading_centered">Some projects I worked on</h3>
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_booking/screens' %}

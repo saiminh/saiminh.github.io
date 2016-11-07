@@ -5,6 +5,11 @@ $theme_home_color_highlight: #f90c5f;
 .theme-home {
 
 	background-color: $theme_home_color_bg;
+	border: 10px solid $theme_home_color;
+
+	@include media-query($on-palm){
+		border: 5px solid $theme_home_color;
+	}
 
 	&,
 	& a.site-title,
@@ -39,7 +44,7 @@ $theme_home_color_highlight: #f90c5f;
 	& .index-header {
 		font-size:1.3em;
 		background-image: url(../img/hero-bg/home_simon.png);
-		background-position: 90% 20px;
+		background-position: 95% 20px;
 		background-size: auto 95vh;		
 		min-height: 75vh;
 		padding-top: 25vh;
@@ -90,8 +95,8 @@ $theme_home_color_highlight: #f90c5f;
 
 		& .index-header {
 			font-size: 1em;
-			background-size: auto 50vh;
-			background-position: 50% 50px;
+			background-size: auto 55vh;
+			background-position: 45% 50px;
 			background-attachment: initial;
 		}
 

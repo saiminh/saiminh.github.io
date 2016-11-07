@@ -14,16 +14,16 @@ $theme_404_color_highlight: #D46A6A;
 		color: $theme_404_color;
 	}
 
-	& .post-subtitle {
+	& .page-subtitle {
 		margin-top:30px;
 		color: $theme_404_color;
 	}
 
-	& .post-subtitle, & a, & a:visited {
+	& .page-subtitle, & a, & a:visited {
 		color: $theme_404_color_highlight;
 	}
 
-	& .post-content .drop_cap:after {
+	& .page-content .drop_cap:after {
 		background-color: $theme_404_color;
 	}
 
@@ -74,7 +74,7 @@ $theme_404_color_highlight: #D46A6A;
 			background-attachment: initial;
 		}
 
-		& .post-content .wrapper {
+		& .page-content .wrapper {
 			padding-top: 66vh!important;
 		}
 	}
