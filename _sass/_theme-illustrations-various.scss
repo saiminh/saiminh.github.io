@@ -1,14 +1,14 @@
-$theme_illustrations-various_color: #000;
-$theme_illustrations-various_color_bg: #FFF;
-$theme_illustrations-various_color_highlight: #A62B4A;
+$text-color_illustrations: #000;
+$bg-color_illustrations: #fff;
+$highlight-color_illustrations: $brand-color;
 
 .theme-illustrations-various {
 
-	background-color: $theme_illustrations-various_color_bg;
-	border-color: $theme_illustrations-various_color_highlight;
+	background-color: $bg-color_illustrations;
+	border-color: $highlight-color_illustrations;
 
 	& #floter_signature_svg {
-		fill: $theme_illustrations-various_color_highlight;
+		fill: $highlight-color_illustrations;
 	}
 
 	& .page-content {
@@ -20,25 +20,25 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 		}
 	}
 
-	&,
+	& .page-title,
 	& a.site-title,
 	& a:visited.site-title,
 	& a.page-link,
 	& a:visited.page-link {
-		color: $theme_illustrations-various_color;
+		color: $highlight-color_illustrations;
 	}
 
 	& .post-subtitle, & a, & a:visited {
-		color: $theme_illustrations-various_color_highlight;
+		color: $highlight-color_illustrations;
 	}
 
 	& .post-content .drop_cap:after {
-		background-color: $theme_illustrations-various_color;
+		background-color: $text-color_illustrations;
 	}
 
 	& hr {
 		border-width:0;
-		border-top: 2px solid $theme_illustrations-various_color_highlight;
+		border-top: 2px solid $highlight-color_illustrations;
 	}
 
 	& .index-header {
@@ -61,7 +61,7 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 	}
 
 	& .work_list_tile_title {
-		background-color: $theme_illustrations-various_color_highlight;
+		background-color: $highlight-color_illustrations;
 	}
 
 	& .illustration_image,
@@ -85,7 +85,7 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 	
 	& .illustration_client {
 		margin-bottom: 5px;	
-		color: $theme_illustrations-various_color_highlight;	
+		color: $highlight-color_illustrations;	
 		font-style: italic;
 	}
 
@@ -96,7 +96,7 @@ $theme_illustrations-various_color_highlight: #A62B4A;
 	}
 
 	& .fluidbox__overlay {
-		background-color: $theme_illustrations-various_color_highlight;
+		background-color: $highlight-color_illustrations;
 	}
 
 	& .work_list_tile_Illustrations {
