@@ -52,7 +52,7 @@ title_align: center
 			<p><span class="drop_cap">M</span>any companies claim that they have a <em>metrics-driven approach...</em> But holy shit, unlike most of these places, Booking.com takes this statement really serious. The development teams measure the business impact of every component of their products carefully.</p>
 		</div>		
 		<div class="col-6">
-			<p><span class="drop_cap">T</span>he teams I worked on at Booking enabled me to work on a range of the company's huge product portfolio. In the gallery above, the work displayed is not reflective of the actual sites at this point, due to the dynamic, fast-learning approach at Booking.</div>
+			<p><span class="drop_cap">T</span>he teams I worked on at Booking enabled me to work on a range of the company's huge product portfolio. In the gallery above, the work displayed is not reflective of the actual sites at this point, due to the dynamic, fast-learning approach at Booking.</p>
+		</div>
 	</div>
-
 </div>

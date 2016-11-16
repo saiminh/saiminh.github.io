@@ -147,6 +147,20 @@ a {
     }
 }
 
+.button {
+    font-weight: 900;
+    font-family: 'Merriweather';
+    border: 4px solid #f90c5f;
+    padding: 15px 20px;
+    font-size: .9em;
+
+    &:hover,
+    &:active {
+        background-color: #f90c5f;
+        color: #FEDEC0;
+        text-decoration: none;
+    }
+}
 
 
 /**
