@@ -19,7 +19,7 @@ body {
     top: $spacing-unit / 1.5;
 
     @include media-query($on-laptop) {
-        top: $spacing-unit / 3;    
+        top: $spacing-unit / 1.5;    
     }
 
     @include media-query($on-palm) {
@@ -211,7 +211,7 @@ body {
     margin: auto;
 }
 
-@include media-query($on-laptop){
+@include media-query($on-laptop) {
     .work_list_tile {
         width: -webkit-calc(50% - (#{$spacing-unit} / 3));
         width:         calc(50% - (#{$spacing-unit} / 3));
@@ -227,7 +227,7 @@ body {
     }
 }
 
-@include media-query($on-palm){
+@include media-query($on-palm) {
     .work_list_tile {
         width: -webkit-calc(100% - (#{$spacing-unit} / 3));
         width:         calc(100% - (#{$spacing-unit} / 3));
