@@ -1,14 +1,14 @@
-$text-color_illustrations: #000;
-$bg-color_illustrations: #fff;
-$highlight-color_illustrations: $brand-color;
+$text-color_illustrations: #FFF;
+$bg-color_illustrations: #dec6bf;
+$highlight-color_illustrations: #b70000;
 
 .theme-illustrations-various {
 
 	background-color: $bg-color_illustrations;
-	border-color: $highlight-color_illustrations;
+	border-color: $text-color_illustrations;
 
 	& #floter_signature_svg {
-		fill: $highlight-color_illustrations;
+		fill: $text-color_illustrations;
 	}
 
 	& .page-content {
@@ -25,7 +25,7 @@ $highlight-color_illustrations: $brand-color;
 	& a:visited.site-title,
 	& a.page-link,
 	& a:visited.page-link {
-		color: $highlight-color_illustrations;
+		//color: $highlight-color_illustrations;
 	}
 
 	& .post-subtitle, & a, & a:visited {

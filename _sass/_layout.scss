@@ -99,7 +99,8 @@ body {
  */
 .site-footer {
     padding: $spacing-unit 0;
-    background-color: rgba(0,0,0,0.1);
+  //  background-color: rgba(0,0,0,0.1);
+    border-top: 10px solid #FFF;
 }
 
 .footer-heading {
@@ -185,6 +186,7 @@ body {
     width:         calc(25% - (#{$spacing-unit} / 2));
     margin-left: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
+    border: 5px solid #FFF;
 }
 
 .work_list_tile_thumb {
