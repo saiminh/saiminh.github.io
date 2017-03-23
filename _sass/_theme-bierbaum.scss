@@ -1,0 +1,254 @@
+$theme_bierbaum_color: #000;
+$theme_bierbaum_color_bg: #d64141;
+$theme_bierbaum_color_border: #FFF;
+
+.theme-bierbaum {
+    border-color: $theme_bierbaum_color_border;
+    background-color: $theme_bierbaum_color_bg;
+
+    &:after,
+    &:before {
+    	background-color: $theme_bierbaum_color_border;
+    }
+
+    & #floter_signature_svg {
+    	fill: $theme_bierbaum_color;
+    }
+
+	& .page-header.has_hero_img {	    
+	    background-size: 42vh;
+	    background-position: center 14vh;
+	    background-image: none!important;
+	}
+
+	& .index-header {
+	}
+
+	&,	
+	& a.page-link,
+	& a:visited.page-link {
+		color: $theme_bierbaum_color;
+	}
+
+	& a.site-title,
+	& a:visited.site-title {
+		color: $theme_bierbaum_color;
+	}
+
+	& .page-title {
+	    font-size: 64px;
+
+	    @media screen and (max-height: 860px) {
+		    display: none;
+		}
+
+	    @include media-query($on-palm) {
+			font-size: 32px;
+			line-height: 1.3;
+			letter-spacing: 0;
+		}
+
+		@include media-query($on-smallphone) {
+			font-size: 24px;
+		}
+	}
+
+	& .page-subtitle {
+		
+		@media screen and (max-height: 860px) {
+		    display: none;
+		}
+	}
+
+	& p a, & p a:visited {
+		color: $theme_bierbaum_color;
+		text-decoration: underline;
+	}
+
+	& .page-content .drop_cap:after {
+		background-color: $theme_bierbaum_color;
+	}
+
+	& hr {
+		border-width:0;
+		border-top: 4px solid $theme_bierbaum_color;
+	}
+
+	& .the_crap_container {
+		max-width: 320px;
+		background-color: #8D798E;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 15px;
+		border-width: 50px 8px;
+		border-color: $theme_bierbaum_color;
+		border-style: solid;
+		position: relative;
+		top:-15vh;
+	}
+
+	& .crappyturd_iframe {
+		width: 100%;
+		max-width: 320px;
+		min-height: 480px;
+		border: none;
+	}
+
+	& .work_list_tile_BierbaumLogo{
+		display: none;
+	}
+
+	& .row {
+		padding: 5vh 0;
+	}
+}
+
+@include media-query($on-palm){
+	.theme-bierbaum {
+
+		.the_crap_container {
+			top: 0;
+		}
+
+		.page-header.has_hero_img .wrapper {
+			padding-top: calc(10vh + 420px)!important;
+		}
+	}
+}
+
+@media screen and (max-height: 624px) {
+	.arrow_down {
+	//display: none;	
+	}
+}
+
+.work_list_tile_BierbaumLogo .work_list_tile_thumb {
+    background-size: auto 90%;
+    background-color: $theme_bierbaum_color_bg;
+}
+
+// Tree stuff 
+
+.bierbaum-logo {
+	position: absolute;
+    top: 10vh;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    
+    @media screen and (max-width: 640px) {
+	    position: absolute;
+	    top: 10vh;
+	    left: 0;
+	    width: 100%;
+	    margin: 0;
+   }
+
+}
+
+.about_tree {
+
+	width: 280px;
+	margin-left: -140px;
+	height: 412px;
+	position: relative;
+	top: 0;
+	left: 50%;	
+	z-index: 2;
+
+	@media screen and (min-width: 640px) {
+		width: 387px;
+		height: auto;
+		margin-left: -193px;
+	}
+}
+
+.st0{fill:none;stroke:#FFFFFF;stroke-width:5.1561;stroke-miterlimit:10;}
+.st1{fill:none;stroke:#000000;stroke-width:4.6822;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st2{fill:#231F20;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:4.6822;stroke-miterlimit:10;}
+.st4{fill:none;stroke:#FFFFFF;stroke-width:5.1561;stroke-linecap:square;stroke-miterlimit:10;}
+.st5{fill:#FFFFFF;}
+.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+.st7{fill:none;stroke:#000000;stroke-width:4.6822;stroke-miterlimit:10;}
+.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+.st9{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#000000;stroke-width:4.6822;stroke-miterlimit:10;}
+
+
+#Tree_Eye_BG--anim_bg {
+	background-color: #000;
+	position: absolute;
+	top: 4.76%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 0 0 0 -20px;
+	padding: 0;
+	border-radius: 100%;	
+	z-index: 3;
+
+	@media screen and (min-width: 640px) {
+		width: 53px;
+		height: 53px;
+		margin: -1px 0 0 -26px;
+	}
+}
+
+#Tree_Eye_BG--anim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	padding: 0;
+	border-radius: 100%;	
+	animation: blink 4s infinite;
+}
+
+#Tree_Eye_inner--anim {
+	position: absolute;
+	top: 13px;
+	left: 13px;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border: 3px solid #000;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+    box-sizing: border-box;
+    transform: translate(0,0);
+
+    &:after {
+    	content: '';
+    	display: block;
+    	width: 10px;
+    	height: 10px;
+    	background-color: #000;
+    	position: absolute;
+    	left:5px;
+    	top:5px;
+    	border-radius: 100%;
+    }
+
+}
+
+
+@keyframes blink{
+	0% {
+		transform: scaleY(1);
+	}
+	48% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(0);
+	}
+	60% {
+		transform: scaleY(1);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}

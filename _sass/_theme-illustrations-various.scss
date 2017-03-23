@@ -11,6 +11,15 @@ $highlight-color_illustrations: #b70000;
 		fill: $text-color_illustrations;
 	}
 
+	& .has_hero_img {
+		background-position: center 6vh;
+		background-size: auto 50vh;
+
+		@include media-query($on-palm) {
+			background-position: center 10vh;
+		}
+	}
+
 	& .page-content {
 		font-size: 17px;
 		margin-top: 60px;
@@ -20,7 +29,10 @@ $highlight-color_illustrations: #b70000;
 		}
 	}
 
-	& .page-title,
+	& .page-title {
+		font-size: 7vh;
+	}
+
 	& a.site-title,
 	& a:visited.site-title,
 	& a.page-link,
@@ -28,7 +40,9 @@ $highlight-color_illustrations: #b70000;
 		//color: $highlight-color_illustrations;
 	}
 
-	& .post-subtitle, & a, & a:visited {
+	& .page-subtitle, 
+	& a, 
+	& a:visited {
 		color: $highlight-color_illustrations;
 	}
 
@@ -56,12 +70,12 @@ $highlight-color_illustrations: #b70000;
 		margin-bottom: -30px;
 	}
 
-	& .arrow_down {
-		display: none;
-	}
-
-	& .work_list_tile_title {
-		background-color: $highlight-color_illustrations;
+	& .illustration_text {
+	    background: #FFF;
+	    padding: 20px 20px 0 20px;
+	    margin: -1em 0 1em 0;
+	    box-sizing: border-box;
+	    overflow: auto;
 	}
 
 	& .illustration_image,
@@ -70,7 +84,7 @@ $highlight-color_illustrations: #b70000;
 	& .illustration_description {
 		display: block;
 		margin-bottom: 15px;
-		text-align: center;
+		//text-align: center;
 	}
 
 	& .illustration_image--shadow {
@@ -89,14 +103,8 @@ $highlight-color_illustrations: #b70000;
 		font-style: italic;
 	}
 
-	& .illustration_description {
-		margin-bottom: 30px;	
-		padding: 0 20px;
-		text-align: center;	
-	}
-
 	& .fluidbox__overlay {
-		background-color: $highlight-color_illustrations;
+		background-color: $bg-color_illustrations;
 	}
 
 	& .work_list_tile_Illustrations {
@@ -158,5 +166,7 @@ $highlight-color_illustrations: #b70000;
 }
 
 .work_list_tile_Illustrations .work_list_tile_thumb{
-	background-image: url(../img/work_illustrations-various/CangrejoLaLeche.jpg)!important;
+	//background-image: url(../img/work_illustrations-various/CangrejoLaLeche.jpg)!important;
+	background-size: 90%;
+	background-color: #965454;
 }

@@ -4,6 +4,28 @@ body {
     @include media-query($on-palm) {
         border: 5px solid $text-color;
     }
+
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        left:0;
+        right: 0;
+        height: 10px;
+        background-color: #FFF;
+        position: fixed;
+        bottom:0;
+        z-index: 10;
+
+        @include media-query($on-palm) {
+            height: 5px;
+        }
+    }
+
+    &:before {
+        bottom: auto;
+        top: 0;
+    }
 }
 
 /**
@@ -16,7 +38,8 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: $spacing-unit / 1.5;
+    top: $spacing-unit;
+    z-index: 100;
 
     @include media-query($on-laptop) {
         top: $spacing-unit / 1.5;    
@@ -80,6 +103,10 @@ body {
     .page-link {
         color: inherit;
         line-height: 1;
+        
+        @include media-query($on-palm) {
+            font-size: .9em;
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -99,7 +126,8 @@ body {
  */
 .site-footer {
     padding: $spacing-unit 0;
-  //  background-color: rgba(0,0,0,0.1);
+    background-color: #333;
+    color: #eee;
     border-top: 10px solid #FFF;
 }
 
@@ -186,11 +214,10 @@ body {
     width:         calc(25% - (#{$spacing-unit} / 2));
     margin-left: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
-    border: 5px solid #FFF;
 }
 
 .work_list_tile_thumb {
-    height: 205px;
+    height: 245px;
     width: 100%;
     display: block;
     background-position: 50% 50%;
@@ -200,11 +227,11 @@ body {
 }
 
 .work_list_tile_title{
-    text-align: center;
-    font-family: $base-font-family;
-    font-size: 16px;
-    padding: 10px;
-    background-color: #000;
+  //  text-align: center;
+  //  font-family: $base-font-family;
+    font-size: 18px;
+    padding: 13px 20px;
+ //   background-color: #000;
     color: #FFF;
     position: absolute;
     bottom: 0;
@@ -231,9 +258,17 @@ body {
 
 @include media-query($on-palm) {
     .work_list_tile {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 3));
-        width:         calc(100% - (#{$spacing-unit} / 3));
-        margin-bottom: $spacing-unit / 3;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .work_list_title {
+        margin: 0 0 1em 0;
+    }
+    .row.work_list {
+        margin:  0;
+    }
+    .footer-heading {
+        margin-top: $spacing-unit /2;
     }
 }
 
@@ -340,7 +375,7 @@ body {
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     margin-left: -30px;
 }
@@ -407,6 +442,11 @@ body {
     margin-bottom: $spacing-unit / 2;
  }
 
+.col-text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
  .col-12, .col-8, .col-6, .col-4 {
     float: left;
     padding-left: $spacing-unit / 2;
@@ -440,20 +480,26 @@ body {
     padding-left: -webkit-calc(25%  + (#{$spacing-unit} / 3));
     padding-left: calc(25%  + (#{$spacing-unit} / 3));   
 }
+.offset-4 {
+    padding-left: -webkit-calc(33.3%  + (#{$spacing-unit} / 3));
+    padding-left: calc(33.3%  + (#{$spacing-unit} / 3));   
+}
 
-@include media-query($on-laptop){
+@include media-query($on-laptop) {
      .col-8, .col-6, .col-4 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
      }
-     .offset-2, .offset-3 {
+     .offset-2, .offset-3, .offset-4 {
         width: 100%;
+        padding-left: $spacing-unit / 2;
      }
 }
 
-@include media-query($on-palm){
+@include media-query($on-palm) {
     .row {
         margin-bottom: 0;
+        margin-left: 0;
     }
 
     .raster img{
@@ -466,11 +512,12 @@ body {
         margin-bottom: $spacing-unit / 2;
         box-sizing: border-box;
     }
-    .offset-3, .offset-2 {
-        padding-left: $spacing-unit / 2;
+    .offset-3, .offset-2, .offset-4 {
+        padding-left: $spacing-unit / 3;
+        width: 100%;
     }
     .col-12, .col-8, .col-6, .col-4 {
-      //  padding-right: $spacing-unit / 2;
+        padding-left: 0;
     }
 }
 
@@ -495,4 +542,3 @@ body {
         display: initial;
     }
 }
-

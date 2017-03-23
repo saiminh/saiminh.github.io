@@ -1,12 +1,13 @@
 ---
-layout: index
+layout: page
 type: portfolio
 title: Crappy Turd
 permalink: /work/crappy_turd.html
 mainnav: hide
-header_bg_image: /img/hero-bg/crappyturd.png
+header_bg_image: /img/work_crappy/bg-image-460x460.png
+subtitle: A shitty HTML game 
 extra_classes: portfolio theme-crappy
-title_offset_y: 35vh
+title_offset_y: 60vh
 title_align: center
 ---
 

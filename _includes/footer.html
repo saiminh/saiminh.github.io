@@ -64,6 +64,21 @@
     //set has_hero_img height in pxs to avoid mobile resizing
     var windowheight = $(window).height();
     $('.has_hero_img').css('min-height', windowheight);
+
+    //Home page interaction stuff
+    $('.home .page-title').on('click mouseover', function(){
+      $('body').addClass('home-title-part-interaction-hover');
+    });
+
+    $('.home .page-title').on('mouseout', function(){
+      $('body').removeClass('home-title-part-interaction-hover');
+    });
+
+    $('.home-title-part-interaction').on('click', function(){
+      $('body').addClass('home-title-part-interaction-active');
+
+    });
+
   });
 
   //smooth scrolling
@@ -72,14 +87,9 @@
       var $anchor = $(this);
 
       $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 20
+        scrollTop: $($anchor.attr('href')).offset().top - 120
       }, 1000,'easeInOutExpo');
-      /*
-      if you don't want to use the easing effects:
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top
-      }, 1000);
-      */
+     
       event.preventDefault();
     });
   });
@@ -87,10 +97,15 @@
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.5/scrollreveal.min.js"></script>
 <script type="text/javascript">
   window.sr = ScrollReveal();
+  sr.reveal('.has_hero_img', {delay: 0, distance: 0, duration: 750, opacity: 0, scale: 1 });
   sr.reveal('.site-header', { delay: 300, origin: 'top', distance: '30px', scale: 1 });
   sr.reveal('.page-title.sr', { delay: 300, origin: 'bottom', distance: '30px', scale: 1 });
   sr.reveal('.page-subtitle.sr', { delay: 300, origin: 'top', distance: '30px', scale: 1 }); 
+  sr.reveal('.sr-right', { delay: 300, origin: 'right', distance: '130px', scale: 1 });
+  sr.reveal('.sr-left', { delay: 300, origin: 'left', distance: '130px', scale: 1 });
+
 </script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -100,4 +115,50 @@
   ga('create', 'UA-38762068-1', 'auto');
   ga('send', 'pageview');
 
+  //Bierbaum Tree
+
+  // If you use this code, please link to this pen (cdpn.io/rkcjt).
+  if($('body').hasClass('theme-bierbaum')){
+    var DrawEye = function(eyecontainer, pupil){
+
+        // Initialise core variables
+        var eyeposx = $(eyecontainer).offset().left;
+        var eyeposy = $(eyecontainer).offset().top;
+        var r = $(pupil).outerWidth()/2;
+        var center = {
+          x: $(eyecontainer).outerWidth()/2 - r, 
+          y: $(eyecontainer).outerHeight()/2 - r
+        };
+        var distanceThreshold = $(eyecontainer).width()/2 - r;
+        var mouseX = center.x, mouseY = center.y;
+        
+        // Listen for mouse movement
+        $(window).mousemove(function(e){ 
+          var d = {
+            x: e.pageX - r - eyeposx - center.x,
+            y: e.pageY - r - eyeposy - center.y
+          };
+          var distance = Math.sqrt(d.x*d.x + d.y*d.y);
+          if (distance < distanceThreshold) {
+            mouseX = e.pageX - eyeposx - r;
+            mouseY = e.pageY - eyeposy - r;
+          } else {
+            mouseX = d.x / distance * distanceThreshold + center.x;
+            mouseY = d.y / distance * distanceThreshold + center.y;
+          }
+        });
+        
+        // Update pupil location
+        var pupil = $(pupil);
+        var xp = center.x, yp = center.y;
+        var loop = setInterval(function(){
+          // change 1 to alter damping/momentum - higher is slower
+          xp += (mouseX - xp) / 50;
+          yp += (mouseY - yp) / 50;
+          pupil.css({left:xp, top:yp});    
+        }, 1);
+    };
+
+    var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
+  };
 </script>

@@ -1,11 +1,33 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="page">
 
+  <header 	class="page-header{% if page.header_bg_image %} has_hero_img{% endif %}">
+	    <h1 class="page-title">	    	
+	    	<span class="home-title-part-graphic">Graphic Design.</span> <span class="home-title-part-interaction"><span class="interaction">Interaction</span> Design.</span> <span class="home-title-part-illustration">Illustration.</span>	    	
+	    </h1>
+	    <div class="home-title-part-message">
+	    Voilà, I've demonstrated my skills. Read on!
+	    </div>
+		
+		<svg class="home-title-part-illustration-pencil" width="100%" height="100%" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
+			<g>
+				<path d="M346.067,182.28l-169.587,169.586c0,0 3.302,-39.173 -39.173,-39.173c0,-42.475 -39.173,-39.173 -39.173,-39.173l169.586,-169.587" style="fill:none;stroke:#fff;stroke-width:18px;"/>
+				<path d="M137.307,312.693l182.852,-182.852" style="fill:none;stroke:#fff;stroke-width:18px;"/>
+				<path d="M176.48,351.866l-137.307,58.961l58.961,-137.307" style="fill:none;stroke:#fff;stroke-width:18px;"/>
+				<path d="M100.989,388.184c0,0 -5.521,-32.744 -37.672,-37.671l-24.144,60.314l61.816,-22.643Z" style="fill:none;stroke:#fff;stroke-width:18px;"/>
+				<path d="M346.067,182.28c0,0 -11.249,-65.54 -78.347,-78.347l28.028,-28.027c0,0 58.955,10.319 78.346,78.346l-28.027,28.028Z" style="fill:none;stroke:#fff;stroke-width:18px;"/>
+				<path d="M372.946,155.4c0,0 -11.248,-65.539 -78.346,-78.346l42.929,-42.929c46.765,-44.937 121.732,31.436 78.346,78.346l-42.929,42.929Z" style="fill:none;stroke:#fff;stroke-width:18px;"/>
+			</g>
+		</svg>	    
 
-	<div class="post-content">
+	<a class="anchorlink" href="#this_page_content">{% include arrow_straight_down_white.svg %}</a>
+  </header>
+
+	<div id="this_page_content" class="page-content">
 		{{ content }}
 	</div>
+
 
 </article>
