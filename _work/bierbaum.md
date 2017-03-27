@@ -246,7 +246,7 @@ title_align: center
 		</div>
 		<div class="col-6">
 			<img src="{{ site.baseurl }}/img/work_bierbaum/stylized_logo.png" class="sr sr-right">
-			<em class="illustration_caption sr sr-right">Too boring, also some said they see ass-cracks...</em>
+			<em style="text-align: center; display: block;" class="sr sr-right">Too boring, also some said they see ass-cracks...</em>
 		</div>			
 	</div>
 
