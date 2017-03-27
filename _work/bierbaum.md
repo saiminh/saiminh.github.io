@@ -246,7 +246,7 @@ title_align: center
 		</div>
 		<div class="col-6">
 			<img src="{{ site.baseurl }}/img/work_bierbaum/stylized_logo.png" class="sr sr-right">
-			<em style="text-align: center; display: block;" class="sr sr-right">Too boring, also some said they see ass-cracks...</em>
+			<em class="illustration_caption sr sr-right">Too boring, also some said they see ass-cracks...</em>
 		</div>			
 	</div>
 
@@ -258,7 +258,7 @@ title_align: center
 			<p>But we figured that in the end the reason people come to the store is because they are tempted. Tempted to try new beers, stay too long, spend too much money and drink too much. And the tree has been a symbol for temptation for decades...</p>
 			<p>So in the end we chose to get all the biblical elements of the Adam and Eve story into the logo (except Adam which is symbolized by you, the customer), so it would tempt people inside.</p>
 		</div>
-		<div class="col-6" style="text-align: center;">
+		<div class="col-6">
 			<img src="{{ site.baseurl }}/img/work_bierbaum/whiteonly_logo.png" class="sr sr-right">
 			<em class="illustration_caption sr sr-right">One-color negative version</em>
 		</div>
@@ -271,7 +271,7 @@ title_align: center
 			<p><span class="drop_cap">O</span>ne style reference we were using a lot was Art Deco, which is very prevalent in Amsterdam. I couldn't find a perfect font for the logo in that style, so I created a custom All-Caps typeface: SF Bierbaum, using FontForge.</p>
 			<p>It's not perfect yet, especially kerning needs a lot of work. But for the logo and short headlines it is a functional font.</p>
 		</div>
-		<div class="col-6" style="text-align: center;">
+		<div class="col-6">
 			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" class="sr sr-right">
 			<em style="margin-top: 1em" class="illustration_caption sr sr-right">SF Bierbaum: Art Deco All Caps Display font.</em>
 		</div>

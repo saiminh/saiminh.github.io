@@ -1,0 +1,139 @@
+$theme_hatetracker_color_black: #110000;
+$theme_hatetracker_color_red: red;
+$theme_hatetracker_color_header: #110000;
+$theme_hatetracker_color_bg:#FFFEFE;
+$theme_hatetracker_color_border: #110000;
+
+.theme-hatetracker {
+    border-color: $theme_hatetracker_color_border;
+    background-color: $theme_hatetracker_color_bg;
+    color: $theme_hatetracker_color_black;
+
+    &:after,
+    &:before {
+    	background-color: $theme_hatetracker_color_border;
+    }
+
+    & #floter_signature_svg {
+    	fill: $theme_hatetracker_color_header;
+    }
+
+	& .page-header.has_hero_img {	    
+	    background-size: cover;
+	    background-position: center bottom;
+	    margin-bottom: 2em;
+	    visibility: hidden;
+
+	    @media screen and (max-width: 480px) {
+	    	background-position: 30% top;
+	    }
+	}
+
+	& .project_logo_herocenter {
+		position: absolute;
+	    top: 25vh;
+	    left: 0;
+	    right: 0;
+	    height: 28vh;
+	    text-align: center;
+
+	    & img {
+	    	height: 100%;
+	    	width: auto;	    	
+
+    	  @media screen and (max-width: 480px) {
+    	  	width: 75%;
+    	  	height: auto;
+    	  }
+	    }
+	}
+	
+	& a.page-link,
+	& a:visited.page-link {
+		color: $theme_hatetracker_color_header;
+	}
+
+	& a.site-title,
+	& a:visited.site-title {
+		color: $theme_hatetracker_color_black;
+	}
+
+	& .page-title {
+		display: none;
+	    font-size: 64px;
+	    margin-bottom: .33em;
+
+	    @include media-query($on-palm) {
+			font-size: 32px;
+			line-height: 1.3;
+			letter-spacing: 0;
+		}
+
+		@include media-query($on-smallphone) {
+			font-size: 24px;
+		}
+	}
+
+	& .page-subtitle {
+		font-size: 1.5em;
+		color: $theme_hatetracker_color_header;
+	}
+
+	& .hatetracker_logo_content {
+		max-width: 320px;
+	}
+
+	& .row {
+		padding: 5vh 0;
+	}
+
+	& p a, & p a:visited {
+		color: $theme_hatetracker_color_red;
+		text-decoration: underline;
+	}
+
+	& .page-content .drop_cap:after {
+		background-color: $theme_hatetracker_color_black;
+	}
+
+	& hr {
+		border-width:0;
+		border-top: 4px solid $theme_hatetracker_color_black;
+	}
+
+
+	& .work_list_tile_HateTracker {
+		display: none;
+	}
+
+	& .arrow_down polygon{
+		fill: #110000;
+	}
+
+	& .illustration {
+		text-align: center;
+	}
+
+	& .hatetracker_evil_eye {
+		max-width: 320px;
+		height: auto;
+		margin: -1em auto;
+	}
+
+	& .mobile_screenshot {
+		border: 2px solid #000;
+		box-shadow: 4px 4px 0 #000;
+		box-sizing: border-box;
+	}
+}
+
+
+.work_list_tile_HateTracker {
+	& .work_list_tile_thumb {
+		background-color: #FFF;
+	    background-image: url(/img/work_hatetracker/HateTracker_logo_EyeOnly_square.svg)!important;
+	}
+    & .work_list_tile_title {
+	    color: $theme_hatetracker_color_black;
+	}
+}

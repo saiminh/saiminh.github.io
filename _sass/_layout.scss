@@ -15,7 +15,7 @@ body {
         background-color: #FFF;
         position: fixed;
         bottom:0;
-        z-index: 10;
+        z-index: 1000;
 
         @include media-query($on-palm) {
             height: 5px;
@@ -450,6 +450,7 @@ body {
  .col-12, .col-8, .col-6, .col-4 {
     float: left;
     padding-left: $spacing-unit / 2;
+    overflow: hidden;
  }
 
 .col-12 {
