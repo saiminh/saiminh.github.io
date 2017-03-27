@@ -20,6 +20,11 @@ $highlight-color_illustrations: #b70000;
 		}
 	}
 
+	& .col-4 {
+		overflow: visible;
+		// Otherwise the whole fluid maximisation won't work
+	}
+
 	& .page-content {
 		font-size: 17px;
 
