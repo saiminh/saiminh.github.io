@@ -1,0 +1,138 @@
+$theme_jpl_color_blue: #0E3862;
+$theme_jpl_color_beige: #F9A870;
+$theme_jpl_color_header: rgba(255,255,255,0.5);
+$theme_jpl_color_bg:#e1e1e4;
+$theme_jpl_color_border: #FFF;
+
+.theme-jpl {
+    border-color: $theme_jpl_color_border;
+    background-color: $theme_jpl_color_bg;
+    color: $theme_jpl_color_blue;
+
+    &:after,
+    &:before {
+    	background-color: $theme_jpl_color_border;
+    }
+
+    & #floter_signature_svg {
+    	fill: $theme_jpl_color_header;
+    }
+
+	& .page-header.has_hero_img {	    
+	    background-size: cover;
+	    background-position: center top;
+	 //   background-attachment: fixed;
+	    margin-bottom: 2em;
+	    visibility: hidden;
+
+	    @media screen and (max-width: 480px) {
+	    	background-position: 30% top;
+	    }
+	}
+
+	& .project_logo_herocenter {
+		position: absolute;
+	    top: 36vh;
+	    left: 0;
+	    right: 0;
+	    height: 18vh;
+	    text-align: center;
+
+	    & img {
+	    	height: 100%;
+	    	width: auto;	    	
+
+    	  @media screen and (max-width: 480px) {
+    	  	width: 75%;
+    	  	height: auto;
+    	  }
+	    }
+	}
+	
+	& a.page-link,
+	& a:visited.page-link {
+		color: $theme_jpl_color_header;
+	}
+
+	& a.site-title,
+	& a:visited.site-title {
+		color: $theme_jpl_color_blue;
+	}
+
+	& .page-title {
+		display: none;
+	    font-size: 64px;
+	    margin-bottom: .33em;
+
+	    @include media-query($on-palm) {
+			font-size: 32px;
+			line-height: 1.3;
+			letter-spacing: 0;
+		}
+
+		@include media-query($on-smallphone) {
+			font-size: 24px;
+		}
+	}
+
+	& .page-subtitle {
+		font-size: 1.5em;
+		color: $theme_jpl_color_header;
+	}
+
+	& .jpl_logo_content {
+		max-width: 320px;
+	}
+
+	& .row {
+		padding: 5vh 0;
+	}
+
+	& p a, & p a:visited {
+		color: $theme_jpl_color_beige;
+		text-decoration: underline;
+	}
+
+	& .page-content .drop_cap:after {
+		background-color: $theme_jpl_color_blue;
+	}
+
+	& hr {
+		border-width:0;
+		border-top: 4px solid $theme_jpl_color_blue;
+	}
+
+
+	& .work_list_tile_JustPeaceLabs{
+		display: none;
+	}
+
+	& .arrow_down polygon{
+		fill: #FFF;
+	}
+
+	& .illustration {
+		text-align: center;
+	}
+
+	& #jpl_symbol {
+		height: 250px;
+		width: 250px;
+
+		#center {
+			animation: fadeout 2s infinite alternate;
+			transform-origin: 50% 50%;
+		}
+
+		@keyframes fadeout {
+			to {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+
+.work_list_tile_JustPeaceLabs .work_list_tile_thumb {
+    background-position: 0 0;
+}

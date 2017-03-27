@@ -22,7 +22,6 @@ $highlight-color_illustrations: #b70000;
 
 	& .page-content {
 		font-size: 17px;
-		margin-top: 60px;
 
 		@include media-query($on-palm) {
 			margin-top: 0;
