@@ -16,7 +16,7 @@ title_align: center
 </div>
 <div class="index-header wrapper">
 	
-	<div class="row row-overlap">
+	<div class="row">
 
 		<div class="col-6">
 			<h1>JPL's mission</h1>
@@ -32,7 +32,7 @@ title_align: center
 	</div>
 
 
-	<div class="row row-overlap">
+	<div class="row">
 
 		<div class="col-6">
 			<h1>Symbolism</h1>
@@ -54,7 +54,7 @@ title_align: center
 			
 	</div>
 
-	<div class="row row-overlap">
+	<div class="row">
 
 		<div class="col-6">
 		<h1>Website</h1>

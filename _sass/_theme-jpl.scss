@@ -118,6 +118,8 @@ $theme_jpl_color_border: #FFF;
 	& #jpl_symbol {
 		height: 250px;
 		width: 250px;
+		display: block;
+		margin: 0 auto;
 
 		#center {
 			animation: fadeout 2s infinite alternate;
