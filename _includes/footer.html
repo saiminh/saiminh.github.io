@@ -87,7 +87,7 @@
       var $anchor = $(this);
 
       $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 120
+        scrollTop: $($anchor.attr('href')).offset().top - 100
       }, 1000,'easeInOutExpo');
      
       event.preventDefault();
@@ -100,9 +100,18 @@
   sr.reveal('.has_hero_img', {delay: 0, distance: 0, duration: 750, opacity: 0, scale: 1 });
   sr.reveal('.site-header', { delay: 300, origin: 'top', distance: '30px', scale: 1 });
   sr.reveal('.page-title.sr', { delay: 300, origin: 'bottom', distance: '30px', scale: 1 });
-  sr.reveal('.page-subtitle.sr', { delay: 300, origin: 'top', distance: '30px', scale: 1 }); 
-  sr.reveal('.sr-right', { delay: 300, origin: 'right', distance: '130px', scale: 1 });
-  sr.reveal('.sr-left', { delay: 300, origin: 'left', distance: '130px', scale: 1 });
+  sr.reveal('.page-subtitle.sr', { delay: 300, origin: 'top', distance: '30px', scale: 1 });
+  sr.reveal('.sr-top', { delay: 300, origin: 'bottom', distance: '-130px', scale: 1 }); 
+  sr.reveal('.sr-bottom', { delay: 300, origin: 'bottom', distance: '130px', scale: 1 }); 
+  sr.reveal('.sr-right', { delay: 300, origin: 'right', distance: '230px', scale: 1 });
+  sr.reveal('.sr-left', { delay: 300, origin: 'right', distance: '-130px', scale: 1 });
+  sr.reveal('.sr-fade', { delay: 300, distance:0, scale: 1, opacity: 0 });
+  sr.reveal('.sr-600', {delay:600 });
+  sr.reveal('.sr-900', {delay:900 });
+  sr.reveal('.sr-1200', {delay:1200 });
+  sr.reveal('.sr-1500', {delay:1500 });
+  sr.reveal('.sr-1800', {delay:1800 });
+  sr.reveal('.sr-2100', {delay:2100 });
 
 </script>
 
@@ -161,4 +170,17 @@
 
     var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
   };
+
+  if ($('body').hasClass('home')){
+    $('.page-header').on('click', function(){
+      if ( $('.bst_active').is(':last-child') ) {
+        $('.bst_active').removeClass('bst_active');
+        $('.page-header > div:first-child').addClass('bst_active');
+      } 
+      else {
+        $('.bst_active').removeClass('bst_active').next().addClass('bst_active');
+      }
+    })
+  };
+
 </script>

@@ -19,8 +19,22 @@ $theme_home_color_highlight: #000;
 		fill: $theme_home_color;
 	}
 
+	& .page-header.has_hero_img .wrapper {
+		padding: 0 20px;
+	}
+
+	& .page-content {
+		margin-bottom: 0;
+	}
+
 	& .page-content .drop_cap:after {
 		background-color: $theme_home_color;
+	}
+
+	& .or {
+		@media screen and (max-width: 768px) {
+			visibility: hidden;
+		}
 	}
 
 	& hr {
@@ -30,6 +44,11 @@ $theme_home_color_highlight: #000;
 
 	& .button {
 		 color: $theme_home_color_highlight;
+
+		 &:hover {
+		 	color: #FFF;
+		 }
+		
 		@media screen and (max-width: 460px) {
 			width: 100%;
 			display: block;
@@ -225,11 +244,7 @@ $theme_home_color_highlight: #000;
 	    }
 	}
 
-	& .arrow_down {
-		opacity: 0;
-		transform: translate(0, 100px);
-		transition: all .5s ease-in;
-	}
+	
 
 	&.home-title-part-interaction-hover {
 
@@ -389,5 +404,230 @@ $theme_home_color_highlight: #000;
 			font-size: 1em;
 		}
 
+	}
+}
+
+#blood, #sweat, #tears, #introduce {
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+
+	&.bst_active {
+		opacity: 1;
+	}
+}
+
+#blood {
+	background-color: #1d236b;
+}
+
+.home_illu_blood {
+
+	position: absolute;
+	left: 33.3%;
+	transform: translate(-22.2%, 0);
+	bottom: 0;
+
+	@media screen and (orientation: portrait) {
+		left: 0;
+		transform: translate(0,0);
+	}
+
+	& img {
+		position: absolute;	
+		top:0;
+		transition: all .3s ease-out;
+	}
+
+	& img:first-child {
+		position: relative;
+	}
+
+	
+}
+
+#sweat {
+	background-color: #fb9c00;
+}
+
+.home_illu_sweat {
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	& img {
+		position: absolute;
+		bottom: 0;		
+		width: 100%;
+	}
+
+	& img:first-child {
+		position: relative;
+		width: 100%;
+	}
+
+	@media screen and (orientation: portrait) {
+		& img {
+			width: 200%;
+			margin-left: -50%;
+			max-width: 200%;
+		}
+
+		& img:first-child {
+			width: 200%;
+		}
+	}
+}
+
+#tears {
+	background-color: #111078;
+}
+
+.home_illu_tears {
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	& img {
+		position: absolute;
+		top: 0;		
+		height: 100vh;
+	}
+
+	& img:first-child {
+		position: relative;
+		width: auto;
+	}
+
+	@media screen and (orientation: portrait) {
+
+		& img {
+			height: 100%;
+		}
+
+		& img:first-child {
+			width: 100%;
+		}
+	}
+}
+
+#introduce {
+	
+	.aboutme {
+		margin-top: 25vh;
+
+		@media screen and (max-width: 768px) {
+			margin-top: 15vh;
+		}
+	}
+}
+
+.bst_active {
+	
+	& .blood_woman {
+		animation: from-bottom 1s forwards cubic-bezier(.68,.18,.27,.95);
+	}
+
+	& .blood_mosquito {
+		animation: from-right 1s forwards cubic-bezier(.68,.18,.27,.95);
+	}
+
+	& .blood_type {
+		animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
+	}
+
+	& .sweat_bench {
+		animation: from-right .6s cubic-bezier(.68,.18,.27,.95) backwards;	
+	}
+
+	& .sweat_guy {
+		animation: from-left .6s cubic-bezier(.68,.18,.27,.95) backwards;	
+	}
+
+	& .sweat_sweat {
+		animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 1s backwards;	
+	}
+
+	& .tears_baby {
+		animation: from-right .5s cubic-bezier(.68,.18,.27,.95) backwards;	
+	}
+	
+	& .tears_tears {
+		animation: fadein .6s cubic-bezier(.68,.18,.27,.95) .4s backwards;	
+	}
+	
+	& .tears_dolphin {
+		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
+	}
+
+	& .tears_dolphin_splash {
+		animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
+	}
+
+	& .tears_speech {
+		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.7s backwards;
+	}
+
+	& .aboutme {
+		animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
+	}
+
+}
+
+@keyframes from-bottom {
+	0% {
+		opacity: 0;
+		transform: translate(0, 200px)
+	}
+	100% {
+		opacity: 1;
+		transform: (0,0);
+	}
+}
+
+@keyframes from-right {
+	0% {
+		opacity: 0;
+		transform: translate(100%, 0)
+	}
+	100% {
+		opacity: 1;
+		transform: (0,0);
+	}
+}
+
+@keyframes from-left {
+	0% {
+		opacity: 0;
+		transform: translate(-100%, 0)
+	}
+	100% {
+		opacity: 1;
+		transform: (0,0);
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes dolphin {
+	0% {
+		opacity: 0;
+		transform: translate(50px, 200px) rotate(20deg) scale(.5, .5);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0,0) rotate(0deg) scale(1, 1);
 	}
 }
