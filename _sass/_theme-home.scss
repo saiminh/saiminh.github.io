@@ -530,50 +530,62 @@ $theme_home_color_highlight: #000;
 .bst_active {
 	
 	& .blood_woman {
-		animation: from-bottom 1s forwards cubic-bezier(.68,.18,.27,.95);
+		-webkit-animation: from-bottom 1s cubic-bezier(.68,.18,.27,.95);
+		animation: from-bottom 1s cubic-bezier(.68,.18,.27,.95);
 	}
 
 	& .blood_mosquito {
-		animation: from-right 1s forwards cubic-bezier(.68,.18,.27,.95);
+		-webkit-animation: from-right 1s cubic-bezier(.68,.18,.27,.95);
+		animation: from-right 1s cubic-bezier(.68,.18,.27,.95);
 	}
 
 	& .blood_type {
+		-webkit-animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
 		animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
 	}
 
 	& .sweat_bench {
+		-webkit-animation: from-right .6s cubic-bezier(.68,.18,.27,.95) backwards;	
 		animation: from-right .6s cubic-bezier(.68,.18,.27,.95) backwards;	
 	}
 
 	& .sweat_guy {
+		-webkit-animation: from-left .6s cubic-bezier(.68,.18,.27,.95) backwards;	
 		animation: from-left .6s cubic-bezier(.68,.18,.27,.95) backwards;	
 	}
 
 	& .sweat_sweat {
+		-webkit-animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 1s backwards;	
 		animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 1s backwards;	
 	}
 
 	& .tears_baby {
+		-webkit-animation: from-right .5s cubic-bezier(.68,.18,.27,.95) backwards;	
 		animation: from-right .5s cubic-bezier(.68,.18,.27,.95) backwards;	
 	}
 	
 	& .tears_tears {
+		-webkit-animation: fadein .6s cubic-bezier(.68,.18,.27,.95) .4s backwards;	
 		animation: fadein .6s cubic-bezier(.68,.18,.27,.95) .4s backwards;	
 	}
 	
 	& .tears_dolphin {
+		-webkit-animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
 		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
 	}
 
 	& .tears_dolphin_splash {
+		-webkit-animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
 		animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
 	}
 
 	& .tears_speech {
+		-webkit-animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.7s backwards;
 		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.7s backwards;
 	}
 
 	& .aboutme {
+		-webkit-animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
 		animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
 	}
 
@@ -582,7 +594,18 @@ $theme_home_color_highlight: #000;
 @keyframes from-bottom {
 	0% {
 		opacity: 0;
-		transform: translate(0, 200px)
+		transform: translate(0, 200px);
+	}
+	100% {
+		opacity: 1;
+		transform: (0,0);
+	}
+}
+
+@-webkit-keyframes from-bottom {
+	0% {
+		opacity: 0;
+		transform: translate(0, 200px);
 	}
 	100% {
 		opacity: 1;
@@ -593,7 +616,18 @@ $theme_home_color_highlight: #000;
 @keyframes from-right {
 	0% {
 		opacity: 0;
-		transform: translate(100%, 0)
+		transform: translate(100%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: (0,0);
+	}
+}
+
+@-webkit-keyframes from-right {
+	0% {
+		opacity: 0;
+		transform: translate(100%, 0);
 	}
 	100% {
 		opacity: 1;
@@ -604,7 +638,18 @@ $theme_home_color_highlight: #000;
 @keyframes from-left {
 	0% {
 		opacity: 0;
-		transform: translate(-100%, 0)
+		transform: translate(-100%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: (0,0);
+	}
+}
+
+@-webkit-keyframes from-left {
+	0% {
+		opacity: 0;
+		transform: translate(-100%, 0);
 	}
 	100% {
 		opacity: 1;
@@ -621,7 +666,27 @@ $theme_home_color_highlight: #000;
 	}
 }
 
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes dolphin {
+	0% {
+		opacity: 0;
+		transform: translate(50px, 200px) rotate(20deg) scale(.5, .5);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0,0) rotate(0deg) scale(1, 1);
+	}
+}
+
+@-webkit-keyframes dolphin {
 	0% {
 		opacity: 0;
 		transform: translate(50px, 200px) rotate(20deg) scale(.5, .5);
