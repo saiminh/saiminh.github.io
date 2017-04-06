@@ -8,6 +8,7 @@ $theme_home_color_highlight: #000;
 	border-color: #FFF;
 
 	&,
+	& a,
 	& a.site-title,
 	& a:visited.site-title,
 	& a.page-link,
@@ -202,33 +203,6 @@ $theme_home_color_highlight: #000;
 		}
 	}
 
-	& .home-title-part-illustration-pencil {
-	// home pencil (hidden)
-		width: 200px;
-	    height: 200px;
-	    margin: 0 auto;
-	    display: block;
-	    position: absolute;
-	    top: 13vh;
-	    left: 50%;
-	    transform: translateX(-50%);
-
-	    @media screen and (max-width: 640px) {
-	    	width: 110px;
-	    	height: 110px;
-	    }
-
-       @media screen and (orientation: portrait) {
-	    	top: 20vh;
-       }
-
-	    & path {
-	    	stroke-dasharray: 805;
-	    	stroke-dashoffset: 805;
-
-	    } 
-	}
-
 	& .home-title-part-message {
 		text-align: center;
 		width: 80%;
@@ -281,12 +255,7 @@ $theme_home_color_highlight: #000;
 			}
 		}
 
-		.home-title-part-illustration-pencil {
-		//home pencil (drawn)
-			& path {
-				animation: dash 2s linear forwards;
-			}
-		}
+		
 
 		& .home-title-part-message {
 			opacity: 1;
@@ -340,12 +309,6 @@ $theme_home_color_highlight: #000;
 #this_page_content {
 	min-height: 70vh;
 	box-sizing: border-box;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 @include media-query($on-laptop) {
@@ -412,11 +375,11 @@ $theme_home_color_highlight: #000;
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	opacity: 0;
+	display: none;
 	cursor: pointer;
 
 	&.bst_active {
-		opacity: 1;
+		display: block;
 	}
 }
 
@@ -439,6 +402,7 @@ $theme_home_color_highlight: #000;
 	& img {
 		position: absolute;	
 		top:0;
+		left: 0;
 		transition: all .3s ease-out;
 	}
 
@@ -462,6 +426,7 @@ $theme_home_color_highlight: #000;
 	& img {
 		position: absolute;
 		bottom: 0;		
+		left: 0;
 		width: 100%;
 	}
 
@@ -496,6 +461,7 @@ $theme_home_color_highlight: #000;
 	& img {
 		position: absolute;
 		top: 0;		
+		left: 0;
 		height: 100vh;
 	}
 
@@ -517,15 +483,49 @@ $theme_home_color_highlight: #000;
 }
 
 #introduce {
-	
-	.aboutme {
-		margin-top: 25vh;
+	overflow: scroll;
 
-		@media screen and (max-width: 768px) {
-			margin-top: 15vh;
+	@media screen and (max-width: 768px) {
+		box-sizing: border-box;
+	    border-top: 70px solid $theme_home_color_bg;
+	}
+
+	
+	& .row {
+		overflow: hidden;
+	}
+
+	.aboutme {
+		h1 {
+			text-align: center;
 		}
 	}
+
+	& .home-title-part-illustration-pencil {
+	// home pencil (hidden)
+		width: 200px;
+	    height: 200px;
+	    margin: 170px auto 0 auto;
+	    display: block;
+
+	    @media screen and (max-width: 640px) {
+	    	width: 110px;
+	    	height: 110px;
+	    }
+
+       @media screen and (orientation: portrait) {
+	    	margin-top: 0px;
+       }
+
+	    & path {
+	    	stroke-dasharray: 805;
+	    	stroke-dashoffset: 805;
+
+	    } 
+	}
 }
+
+
 
 .bst_active {
 	
@@ -564,11 +564,6 @@ $theme_home_color_highlight: #000;
 		animation: from-right .5s cubic-bezier(.68,.18,.27,.95) backwards;	
 	}
 	
-	& .tears_tears {
-		-webkit-animation: fadein .6s cubic-bezier(.68,.18,.27,.95) .4s backwards;	
-		animation: fadein .6s cubic-bezier(.68,.18,.27,.95) .4s backwards;	
-	}
-	
 	& .tears_dolphin {
 		-webkit-animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
 		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
@@ -587,6 +582,18 @@ $theme_home_color_highlight: #000;
 	& .aboutme {
 		-webkit-animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
 		animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
+	}
+
+	& .home-title-part-illustration-pencil {
+	//home pencil (drawn)
+		& path {
+			animation: dash 2s linear forwards;
+		}
+	}
+	@keyframes dash {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
 	}
 
 }
@@ -616,7 +623,7 @@ $theme_home_color_highlight: #000;
 @keyframes from-right {
 	0% {
 		opacity: 0;
-		transform: translate(100%, 0);
+		transform: translate(200px, 0);
 	}
 	100% {
 		opacity: 1;
@@ -627,7 +634,7 @@ $theme_home_color_highlight: #000;
 @-webkit-keyframes from-right {
 	0% {
 		opacity: 0;
-		transform: translate(100%, 0);
+		transform: translate(200px, 0);
 	}
 	100% {
 		opacity: 1;
@@ -638,7 +645,7 @@ $theme_home_color_highlight: #000;
 @keyframes from-left {
 	0% {
 		opacity: 0;
-		transform: translate(-100%, 0);
+		transform: translate(-200px, 0);
 	}
 	100% {
 		opacity: 1;
@@ -649,7 +656,7 @@ $theme_home_color_highlight: #000;
 @-webkit-keyframes from-left {
 	0% {
 		opacity: 0;
-		transform: translate(-100%, 0);
+		transform: translate(-200px, 0);
 	}
 	100% {
 		opacity: 1;

@@ -240,7 +240,7 @@ title_align: center
 	<div class="row">
 		<div class="col-6">
 			<h1>The Bierbaum Story</h1>
-			<p><span class="drop_cap">T</span> he guy that runs this Amsterdam beer specialties store asked me to design a logo. The name is German for "Beer tree").</p>
+			<p><span class="drop_cap">T</span> he guy that runs this Amsterdam beer specialties store asked me to design a logo. (The name is German for "Beer tree").</p>
 			<p>Together, the store manager and me developed a lot of very stylized options but he always felt like it was too corporate and didn't have enough character and story.</p>
 
 		</div>

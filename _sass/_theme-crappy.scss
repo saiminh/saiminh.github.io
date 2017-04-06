@@ -60,22 +60,17 @@ $theme_crappy_color_border: #FFF;
 		border-top: 4px solid $theme_crappy_color;
 	}
 
-	& .the_crap_container {
-		max-width: 320px;
-		background-color: #8D798E;
-		padding: 0;
-		margin: 0 auto;
-		border-radius: 15px;
-		border-width: 50px 8px;
+	& p .button {
+		text-decoration: none;
+		color: $theme_crappy_color;
 		border-color: $theme_crappy_color;
-		border-style: solid;
-	}
+		display: inline-block;
 
-	& .crappyturd_iframe {
-		width: 100%;
-		max-width: 320px;
-		min-height: 480px;
-		border: none;
+		&:hover,
+		&:active {
+			color: #FFF;
+			background-color: $theme_crappy_color;
+		}
 	}
 
 	& .work_list_tile_CrappyTurd{
@@ -85,6 +80,48 @@ $theme_crappy_color_border: #FFF;
 	& .arrow_down polygon{
 		fill: $theme_crappy_color;
 	}
+}
+
+.toiletroll {
+	width: 256px;
+	height: 256px;
+	background: url('/img/work_crappy/toiletroll-spritesheet.png') left top;
+	background-size: 2560px 256px;
+	animation: play-toiletroll 1s steps(10) infinite;
+	display: inline-block;
+
+	@keyframes play-toiletroll {
+	   100% { background-position: -2560px; }
+	}
+}
+
+.turd {
+	width: 128px;
+	height: 128px;
+	background: url('/img/work_crappy/turd-spritesheet.png') left top;
+	background-size: 3840px 256px;
+	animation: play-turd_flapping 2s steps(26) infinite;
+	display: inline-block;
+
+	&.turd_flaming {
+		background-position: left bottom;
+		animation: play-turd_flaming 1s steps(11) infinite;
+		margin: -10px auto 20px auto;;
+	}
+
+	@keyframes play-turd_flapping {
+	   100% { background-position: -3328px top; }
+	}
+
+	@keyframes play-turd_flaming {
+	   100% { background-position: -1408px bottom; }
+	}
+}
+
+.screenrec_iphone {
+	display: block;
+	margin: 0 auto;
+	max-width: 305px;
 }
 
 @include media-query($on-palm){
