@@ -36,23 +36,11 @@
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/isInViewport.min.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.3/js/jquery.fluidbox.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    //Senna init
-
-    var app = new senna.App();
-    app.setBasePath('/');
-    app.addSurfaces('content');
-    app.addRoutes([
-      new senna.Route('/work/roehampton.html', senna.HtmlScreen),
-      new senna.Route('/work/liverpool.html', senna.HtmlScreen),
-      new senna.Route('/work/booking.html', senna.HtmlScreen),
-      new senna.Route('/work/illustrations-various.html', senna.HtmlScreen),
-      new senna.Route('/work/crappy_turd.html', senna.HtmlScreen)
-    ]);
-
 
     // fluidbox shit
      $('a.fluidbox-link').fluidbox();
@@ -79,6 +67,8 @@
 
     });
 
+    $('.sr:in-viewport').addClass('sr-revealed');
+
   });
 
   //smooth scrolling
@@ -93,25 +83,10 @@
       event.preventDefault();
     });
   });
-</script>
-<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.5/scrollreveal.min.js"></script>
-<script type="text/javascript">
-  window.sr = ScrollReveal();
-  sr.reveal('.has_hero_img', {delay: 0, distance: 0, duration: 750, opacity: 0, scale: 1 });
-  sr.reveal('.site-header', { delay: 300, origin: 'top', distance: '30px', scale: 1 });
-  sr.reveal('.page-title.sr', { delay: 300, origin: 'bottom', distance: '30px', scale: 1 });
-  sr.reveal('.page-subtitle.sr', { delay: 300, origin: 'top', distance: '30px', scale: 1 });
-  sr.reveal('.sr-top', { delay: 300, origin: 'bottom', distance: '-130px', scale: 1 }); 
-  sr.reveal('.sr-bottom', { delay: 300, origin: 'bottom', distance: '130px', scale: 1 }); 
-  sr.reveal('.sr-right', { delay: 300, origin: 'right', distance: '230px', scale: 1 });
-  sr.reveal('.sr-left', { delay: 300, origin: 'right', distance: '-130px', scale: 1 });
-  sr.reveal('.sr-fade', { delay: 300, distance:0, scale: 1, opacity: 0 });
-  sr.reveal('.sr-600', {delay:600 });
-  sr.reveal('.sr-900', {delay:900 });
-  sr.reveal('.sr-1200', {delay:1200 });
-  sr.reveal('.sr-1500', {delay:1500 });
-  sr.reveal('.sr-1800', {delay:1800 });
-  sr.reveal('.sr-2100', {delay:2100 });
+
+ $(window).scroll(function() {
+  $('.sr:in-viewport').addClass('sr-revealed');
+});
 
 </script>
 
@@ -176,6 +151,9 @@
       if ( $('.bst_active').is(':last-child') ) {
         $('.bst_active').removeClass('bst_active');
         $('.page-header > div:first-child').addClass('bst_active');
+        $('html, body').stop().animate({
+        scrollTop: $('#introduce').offset().top - 50
+      }, 1000,'easeInOutExpo');
       } 
       else {
         $('.bst_active').removeClass('bst_active').next().addClass('bst_active');

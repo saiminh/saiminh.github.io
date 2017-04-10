@@ -21,9 +21,7 @@ $theme_jpl_color_border: #FFF;
 	& .page-header.has_hero_img {	    
 	    background-size: cover;
 	    background-position: center top;
-	 //   background-attachment: fixed;
 	    margin-bottom: 2em;
-	    visibility: hidden;
 
 	    @media screen and (max-width: 480px) {
 	    	background-position: 30% top;

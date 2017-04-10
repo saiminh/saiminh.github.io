@@ -11,7 +11,7 @@ title_offset_y: 60vh
 title_align: center
 ---
 
-<div class="project_logo_herocenter">
+<div class="project_logo_herocenter sr sr-bottom">
 	<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_white.svg">
 </div>
 <div class="index-header wrapper">
