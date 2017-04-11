@@ -68,6 +68,10 @@ $theme_bierbaum_color_border: #FFF;
 	& .button {
 		color: #000;
 		display: inline-block;
+
+		&:hover {
+			color: #FFF;
+		}
 	}
 
 	& .page-content .drop_cap:after {

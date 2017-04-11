@@ -9,7 +9,7 @@
 title: Flöter
 email: simon@floter.design
 description: > # this means to ignore newlines until "baseurl:"
-  This is the portfolio website of Simon Flöter. I'm a Designer and Illustrator living in Amsterdam. I am available for freelance work, contact me if you have any! 
+  Simon Floter is a Designer and Illustrator living in Amsterdam. He designs websites, logos, housestyles and draws pictures in exchange for money. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://floter.design" # the base hostname & protocol for your site
 twitter_username: schweinedog

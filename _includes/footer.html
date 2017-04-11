@@ -4,13 +4,12 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Simon Flöter</h2>
+    <h2 class="footer-heading">Contact</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Contact me</li>
-          <li><a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a></li>
+          <li><a href="mailto:{{ site.email }}" target="_blank"><span class="icon icon--email">{% include icon-email.svg %}</span>{{ site.email }}</a></li>
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -22,11 +21,18 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+          <li>
+          <a href="https://www.instagram.com/skyfloter/"><span class="icon icon--instagram">{% include icon-instagram.svg %}</span><span class="username">instagram</span></a>
+          </li>
+          <li>
+          <a href="https://www.facebook.com/skyfloter"><span class="icon icon--facebook">{% include icon-facebook.svg %}</span><span class="username">facebook</span></a>
+          </li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+        <p><span class="drop_cap">S</span>imon Floter is a Designer and Illustrator living in Amsterdam. He designs websites, logos, housestyles and draws pictures in exchange for money.</p>
+        <p class="kleingedrucktes">KVK&nbsp;(Chamber&nbsp;of&nbsp;Commerce):&nbsp;67233902 | BTW&nbsp;(VAT Number):&nbsp;445177561B01</p> 
       </div>
     </div>
 

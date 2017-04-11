@@ -131,20 +131,26 @@ body {
     border-top: 10px solid #FFF;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
 .contact-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    & a{
+        color: $brand-color!important;
+
+        &:hover {
+            color: #FFF!important;
+            text-decoration: none;
+        }
+    }
+}
+
+.kleingedrucktes {
+    font-size: .75em;
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -166,8 +172,8 @@ body {
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+    width:         calc(65% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
