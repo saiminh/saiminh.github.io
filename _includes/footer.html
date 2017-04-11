@@ -66,7 +66,7 @@
       $('body').addClass('home-title-part-interaction-active');
 
     });
-
+    // add class to sr elements that are in viewport when loaded already
     $('.sr:in-viewport').addClass('sr-revealed');
 
   });
@@ -84,6 +84,7 @@
     });
   });
 
+// add class to sr elements that come into viewport when scrolled
  $(window).scroll(function() {
   $('.sr:in-viewport').addClass('sr-revealed');
 });
@@ -96,7 +97,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-38762068-1', 'auto');
+  ga('create', 'UA-97207931-1', 'auto');
   ga('send', 'pageview');
 
   //Bierbaum Tree

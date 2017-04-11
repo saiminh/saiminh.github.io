@@ -269,7 +269,8 @@ title_align: center
 		<div class="col-6">
 			<h2>Typeface: SF Bierbaum</h2>
 			<p><span class="drop_cap">O</span>ne style reference we were using a lot was Art Deco, which is very prevalent in Amsterdam. I couldn't find a perfect font for the logo in that style, so I created a custom All-Caps typeface: SF Bierbaum, using FontForge.</p>
-			<p>It's not perfect yet, especially kerning needs a lot of work. But for the logo and short headlines it is a functional font.</p>
+			<p>It's not perfect yet, especially kerning needs a lot of work. But for the logo and short headlines it is a functional font. You can download it and use it for your art deco designing pleasure.</p>
+			<a class="button" href="{{ site.baseurl }}/img/work_bierbaum/SF_Bierbaum.otf" download>Download .otf</a>
 		</div>
 		<div class="col-6">
 			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" class="sr sr-right">

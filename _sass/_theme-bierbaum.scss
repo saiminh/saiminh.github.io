@@ -65,6 +65,11 @@ $theme_bierbaum_color_border: #FFF;
 		text-decoration: underline;
 	}
 
+	& .button {
+		color: #000;
+		display: inline-block;
+	}
+
 	& .page-content .drop_cap:after {
 		background-color: $theme_bierbaum_color;
 	}

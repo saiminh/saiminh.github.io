@@ -36,6 +36,14 @@ $theme_home_color_highlight: $brand-color;
 		background-color: $theme_home_color;
 	}
 
+	& #this_page_content {
+		border-top: 10px solid #FFF;
+
+		@include media-query($on-palm){
+			border-top: 5px;
+		}
+	}
+
 	& .or {
 		@media screen and (max-width: 768px) {
 			visibility: hidden;
