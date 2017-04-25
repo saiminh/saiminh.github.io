@@ -7,23 +7,23 @@ permalink: /work/illustrations-various.html
 mainnav: hide
 header_bg_image: /img/hero-bg/cangrejo_bg.png
 extra_classes: portfolio theme-illustrations-various
-title_offset_y: 60vh
+title_offset_y: 65vh
 title_align: center
 ---
 
 <div class="wrapper">
 
 	<div class="row row-overlap">				
-		
+		<div id="instafeed"></div>
 		<div class="col-4">
 
-			<a href="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}">
+			<a href="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}">
 			</a>
 			<div class="illustration_text">
-				<h3 class="illustration_title">Foxygen Concert review</h3>
-				<p class="illustration_client">Twitter post to the band</p>
-				<p class="illustration_description">I was very impressed with Foxygens performance, so I made a little gif and send it to them on twitter.</p>
+				<h3 class="illustration_title">A Conservative Nightmare</h3>
+				<p class="illustration_client">Instagram post</p>
+				<p class="illustration_description">The world is run by a vegetarian, academic, mixed-race, lesbian, muslim, pro-choice, stoner couple.</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}" class="fluidbox-link">
@@ -32,7 +32,7 @@ title_align: center
 			<div class="illustration_text">
 				<h3 class="illustration_title">A poster for a good cause</h3>
 				<p class="illustration_client">Laureate Charity Fund</p>
-				<p class="illustration_description">A charity where one guy was running more than any man should ever have to run...</p>
+				<p class="illustration_description">Poster for a charity event.</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}" class="fluidbox-link">
@@ -41,7 +41,7 @@ title_align: center
 			<div class="illustration_text">
 				<h3 class="illustration_title">Sawman</h3>
 				<p class="illustration_client">Dutch Folklore</p>
-				<p class="illustration_description">Wednesdays Meneer Saagman (Mister Sawman) comes to saw the wek in half...</p>
+				<p class="illustration_description">Wednesdays Meneer Saagman (Mister Sawman) comes to saw the week in half...</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}" class="fluidbox-link">
@@ -52,10 +52,28 @@ title_align: center
 				<p class="illustration_client">Schlüsselheld</p>
 				<p class="illustration_description">Mascot for a german locksmith service</p>
 			</div>
+
+			<a href="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Foxygen Concert review</h3>
+				<p class="illustration_client">Twitter post to the band</p>
+				<p class="illustration_description">I was very impressed with Foxygens performance, so I made a little gif and send it to them on twitter.</p>
+			</div>
+
 		</div>
 
 
 		<div class="col-4">
+
+			<a href="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Easter Illustration</h3>
+				<p class="illustration_description">The idea was for viewers to invent the dialogue for this image and submit it before easter to win a prize.</p>
+			</div>	
 
 			<a href="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}">
@@ -72,11 +90,11 @@ title_align: center
 			<div class="illustration_text">
 				<h3 class="illustration_title">Noodle Soup Package</h3>
 				<p class="illustration_client">Laureate Online Education</p>
-				<p class="illustration_description">Cover Illustration for an internal cookbook</p>
+				<p class="illustration_description">Recipe Illustration for a cookbook</p>
 			</div>	
 
-			<a href="{{ "/img/work_illustrations-various/illus-ca-01.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/illus-ca-01.png" | prepend: site.baseurl }}">
+			<a href="{{ "/img/work_illustrations-various/illus-ca.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/illus-ca.jpg" | prepend: site.baseurl }}">
 			</a>
 			<div class="illustration_text">
 				<h3 class="illustration_title">Storage Master Challenge</h3>
@@ -103,7 +121,16 @@ title_align: center
 			<div class="illustration_text">
 				<h3 class="illustration_title">The Dog Date Diaries</h3>
 				<p class="illustration_client">Clash Magazine</p>
-				<p class="illustration_description">Illustration for an article about the dating habits of dogs.</p>
+				<p class="illustration_description">Editorial illustration for an article about the dating habits of dogs.</p>
+			</div>
+
+			<a href="{{ "/img/work_illustrations-various/Pants-down.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Pants-down.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Self Portrait, caught pants down</h3>
+				<p class="illustration_client">Self-promotional social media post</p>
+				<p class="illustration_description">Most self portraits look staged, I wanted to do a more surprising take on the topic.</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/infographics-uol-02.jpg" | prepend: site.baseurl }}" class="fluidbox-link">

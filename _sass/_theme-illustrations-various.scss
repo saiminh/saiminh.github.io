@@ -12,7 +12,7 @@ $highlight-color_illustrations: #b70000;
 	}
 
 	& .has_hero_img {
-		background-position: center 6vh;
+		background-position: center 11vh;
 		background-size: auto 50vh;
 
 		@include media-query($on-palm) {
@@ -82,13 +82,26 @@ $highlight-color_illustrations: #b70000;
 	    overflow: auto;
 	}
 
+	& .fluidbox-link + .illustration_text {
+	    display: none;
+	}
+
+	& .fluidbox-link.fluidbox--opened + .illustration_text {
+	    display: block;
+	    z-index: 999999;
+	    position: fixed;
+	    bottom: -1rem;
+	    right: 0;
+	    max-width: 25rem;
+	}
+
 	& .illustration_image,
 	& .illustration_title,
 	& .illustration_client,
 	& .illustration_description {
 		display: block;
 		margin-bottom: 15px;
-		//text-align: center;
+		color: #000;
 	}
 
 	& .illustration_image--shadow {

@@ -34,7 +34,7 @@ title_align: center
 	</div>
 
 	<div class="row">
-		<div class="col-8 offset-2">
+		<div class="col-8 col-overlap offset-2">
 			<h3 class="heading_centered">Some projects I worked on</h3>
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}

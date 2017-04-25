@@ -449,9 +449,6 @@ body {
     margin-top: $spacing-unit / 2;
     overflow: auto;
  }
- .row-overlap {
-    overflow: visible;
-}
 
  .raster img{
     margin-bottom: $spacing-unit / 2;
@@ -500,6 +497,11 @@ body {
 .offset-4 {
     padding-left: -webkit-calc(33.3%  + (#{$spacing-unit} / 3));
     padding-left: calc(33.3%  + (#{$spacing-unit} / 3));   
+}
+
+.row-overlap,
+.col-overlap {
+    overflow: visible;
 }
 
 @include media-query($on-laptop) {
