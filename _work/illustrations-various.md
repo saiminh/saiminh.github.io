@@ -2,7 +2,7 @@
 layout: page
 type: portfolio
 title: Illustrations
-subtitle: Click to enlarge
+subtitle: Homemade artisan craft filth
 permalink: /work/illustrations-various.html
 mainnav: hide
 header_bg_image: /img/hero-bg/cangrejo_bg.png
@@ -14,26 +14,45 @@ title_align: center
 <div class="wrapper">
 
 	<div class="row row-overlap">				
-		<div id="instafeed"></div>
+
 		<div class="col-4">
 
-			<a href="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}">
+			<a href="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}">
 			</a>
 			<div class="illustration_text">
-				<h3 class="illustration_title">A Conservative Nightmare</h3>
-				<p class="illustration_client">Instagram post</p>
-				<p class="illustration_description">The world is run by a vegetarian, academic, mixed-race, lesbian, muslim, pro-choice, stoner couple.</p>
+				<h3 class="illustration_title">ZyXEL Advertising Campaigns</h3>
+				<p class="illustration_client">ZyXEL Communications BV</p>
+				<p class="illustration_description">One reason why remote network support is good for businesses: the support people have bad breath in the morning...</p>
+			</div>	
+
+			<a href="{{ "/img/work_illustrations-various/Blood_instagram.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Blood_instagram.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Blood</h3>
+				<p class="illustration_client">Blood Sweat and Tears</p>
+				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
 			</div>
 
-			<a href="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}">
+			<a href="{{ "/img/work_illustrations-various/Sweat_instagram.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Sweat_instagram.png" | prepend: site.baseurl }}">
 			</a>
 			<div class="illustration_text">
-				<h3 class="illustration_title">A poster for a good cause</h3>
-				<p class="illustration_client">Laureate Charity Fund</p>
-				<p class="illustration_description">Poster for a charity event.</p>
+				<h3 class="illustration_title">Sweat</h3>
+				<p class="illustration_client">Blood Sweat and Tears</p>
+				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
 			</div>
+
+			<a href="{{ "/img/work_illustrations-various/Tears_instagram.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Tears_instagram.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Tears</h3>
+				<p class="illustration_client">Blood Sweat and Tears</p>
+				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
+			</div>
+
 
 			<a href="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}">
@@ -42,15 +61,6 @@ title_align: center
 				<h3 class="illustration_title">Sawman</h3>
 				<p class="illustration_client">Dutch Folklore</p>
 				<p class="illustration_description">Wednesdays Meneer Saagman (Mister Sawman) comes to saw the week in half...</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Der Schlüsselheld</h3>
-				<p class="illustration_client">Schlüsselheld</p>
-				<p class="illustration_description">Mascot for a german locksmith service</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}" class="fluidbox-link">
@@ -75,14 +85,23 @@ title_align: center
 				<p class="illustration_description">The idea was for viewers to invent the dialogue for this image and submit it before easter to win a prize.</p>
 			</div>	
 
-			<a href="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}">
+			<a href="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}">
 			</a>
 			<div class="illustration_text">
-				<h3 class="illustration_title">ZyXEL Advertising Campaigns</h3>
-				<p class="illustration_client">ZyXEL Communications BV</p>
-				<p class="illustration_description">One reason why remote network support is good for businesses: the support people have bad breath in the morning...</p>
-			</div>	
+				<h3 class="illustration_title">A Conservative Nightmare</h3>
+				<p class="illustration_client">Instagram post</p>
+				<p class="illustration_description">The world is run by a vegetarian, academic, mixed-race, lesbian, muslim, pro-choice, stoner couple.</p>
+			</div>			
+
+			<a href="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">A poster for a good cause</h3>
+				<p class="illustration_client">Laureate Charity Fund</p>
+				<p class="illustration_description">Poster for a charity event.</p>
+			</div>
 
 			<a href="{{ "/img/work_illustrations-various/propellerboy.png" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/propellerboy.png" | prepend: site.baseurl }}">
@@ -131,6 +150,15 @@ title_align: center
 				<h3 class="illustration_title">Self Portrait, caught pants down</h3>
 				<p class="illustration_client">Self-promotional social media post</p>
 				<p class="illustration_description">Most self portraits look staged, I wanted to do a more surprising take on the topic.</p>
+			</div>
+
+			<a href="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Der Schlüsselheld</h3>
+				<p class="illustration_client">Schlüsselheld</p>
+				<p class="illustration_description">Mascot for a german locksmith service</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/infographics-uol-02.jpg" | prepend: site.baseurl }}" class="fluidbox-link">

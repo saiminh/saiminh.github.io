@@ -1,5 +1,5 @@
 $theme_home_color: #FFF;
-$theme_home_color_bg: #333;
+$theme_home_color_bg: #253458;
 $theme_home_color_highlight: $brand-color;
 
 .theme-home {
@@ -34,14 +34,6 @@ $theme_home_color_highlight: $brand-color;
 
 	& .page-content .drop_cap:after {
 		background-color: $theme_home_color;
-	}
-
-	& #this_page_content {
-		border-top: 10px solid #FFF;
-
-		@include media-query($on-palm){
-			border-top: 5px;
-		}
 	}
 
 	& .or {
@@ -213,7 +205,7 @@ $theme_home_color_highlight: $brand-color;
 	}
 }
 
-#blood, #sweat, #tears {
+#blood {
 	overflow: hidden;
 	position: absolute;
 	height: 100%;
@@ -231,19 +223,19 @@ $theme_home_color_highlight: $brand-color;
 }
 
 #blood {
-	background-color: #1d236b;
+	background-color: #253458;
 }
 
 .home_illu_blood {
 
 	position: absolute;
 	left: 33.3%;
-	transform: translate(-22.2%, 0);
-	bottom: 0;
+	transform: translate(-22.2%, -50%);
+	top: 50vh;
 
 	@media screen and (orientation: portrait) {
 		left: 0;
-		transform: translate(0,0);
+		transform: translate(0, -50%);
 	}
 
 	& img {
@@ -251,6 +243,8 @@ $theme_home_color_highlight: $brand-color;
 		top:0;
 		left: 0;
 		transition: all .3s ease-out;
+
+		max-height: 100vh;
 	}
 
 	& img:first-child {
@@ -260,82 +254,13 @@ $theme_home_color_highlight: $brand-color;
 	
 }
 
-#sweat {
-	background-color: #fb9c00;
-}
-
-.home_illu_sweat {
-
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-
-	& img {
-		position: absolute;
-		bottom: 0;		
-		left: 0;
-		width: 100%;
-	}
-
-	& img:first-child {
-		position: relative;
-		width: 100%;
-	}
-
-	@media screen and (orientation: portrait) {
-		& img {
-			width: 200%;
-			margin-left: -50%;
-			max-width: 200%;
-		}
-
-		& img:first-child {
-			width: 200%;
-		}
-	}
-}
-
-#tears {
-	background-color: #111078;
-}
-
-.home_illu_tears {
-
-	position: absolute;
-	right: 0;
-	bottom: 0;
-
-	& img {
-		position: absolute;
-		top: 0;		
-		left: 0;
-		height: 100vh;
-	}
-
-	& img:first-child {
-		position: relative;
-		width: auto;
-	}
-
-	@media screen and (orientation: portrait) {
-
-		& img {
-			height: 100%;
-		}
-
-		& img:first-child {
-			width: 100%;
-		}
-	}
-}
-
 #introduce {
 	overflow: scroll;
-	margin: 60px auto;
+	margin: 20px auto 60px auto;
 
 	@media screen and (max-width: 768px) {
 		box-sizing: border-box;
-	    border-top: 70px solid $theme_home_color_bg;
+	   // border-top: 70px solid $theme_home_color_bg;
 	}
 
 	
@@ -390,49 +315,9 @@ $theme_home_color_highlight: $brand-color;
 		animation: from-bottom 1s cubic-bezier(.68,.18,.27,.95);
 	}
 
-	& .blood_mosquito {
-		-webkit-animation: from-right 1s cubic-bezier(.68,.18,.27,.95);
-		animation: from-right 1s cubic-bezier(.68,.18,.27,.95);
-	}
-
 	& .blood_type {
 		-webkit-animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
 		animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
-	}
-
-	& .sweat_bench {
-		-webkit-animation: from-right .6s cubic-bezier(.68,.18,.27,.95) backwards;	
-		animation: from-right .6s cubic-bezier(.68,.18,.27,.95) backwards;	
-	}
-
-	& .sweat_guy {
-		-webkit-animation: from-left .6s cubic-bezier(.68,.18,.27,.95) backwards;	
-		animation: from-left .6s cubic-bezier(.68,.18,.27,.95) backwards;	
-	}
-
-	& .sweat_sweat {
-		-webkit-animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 1s backwards;	
-		animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 1s backwards;	
-	}
-
-	& .tears_baby {
-		-webkit-animation: from-right .5s cubic-bezier(.68,.18,.27,.95) backwards;	
-		animation: from-right .5s cubic-bezier(.68,.18,.27,.95) backwards;	
-	}
-	
-	& .tears_dolphin {
-		-webkit-animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
-		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
-	}
-
-	& .tears_dolphin_splash {
-		-webkit-animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
-		animation: fadein 1s cubic-bezier(.68,.18,.27,.95) 0.6s backwards;			
-	}
-
-	& .tears_speech {
-		-webkit-animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.7s backwards;
-		animation: dolphin .4s cubic-bezier(.68,.18,.27,.95) 0.7s backwards;
 	}
 
 	& .aboutme {
@@ -441,24 +326,3 @@ $theme_home_color_highlight: $brand-color;
 	}
 }
 
-@keyframes dolphin {
-	0% {
-		opacity: 0;
-		transform: translate(50px, 200px) rotate(20deg) scale(.5, .5);
-	}
-	100% {
-		opacity: 1;
-		transform: translate(0,0) rotate(0deg) scale(1, 1);
-	}
-}
-
-@-webkit-keyframes dolphin {
-	0% {
-		opacity: 0;
-		transform: translate(50px, 200px) rotate(20deg) scale(.5, .5);
-	}
-	100% {
-		opacity: 1;
-		transform: translate(0,0) rotate(0deg) scale(1, 1);
-	}
-}
