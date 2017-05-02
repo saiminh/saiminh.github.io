@@ -18,6 +18,9 @@ collections:
   work:
     output: true
     permalink: /work/:path/
+  emails:
+    output: true
+    permalink: /emails/:path/
 sass:
   style: compressed
 # Build settings

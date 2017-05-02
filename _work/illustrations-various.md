@@ -3,7 +3,7 @@ layout: page
 type: portfolio
 title: Illustrations
 subtitle: Homemade artisan craft filth
-permalink: /work/illustrations-various.html
+permalink: /work/illustration.html
 mainnav: hide
 header_bg_image: /img/hero-bg/cangrejo_bg.png
 extra_classes: portfolio theme-illustrations-various
