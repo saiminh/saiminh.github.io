@@ -17,6 +17,31 @@ title_align: center
 
 		<div class="col-4">
 
+			<a href="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Supervillains</h3>
+				<p class="illustration_client">The Joker</p>
+				<p class="illustration_description">Series of carricatures</p>
+			</div>	
+			<a href="{{ "/img/work_illustrations-various/Penguin_May.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Penguin_May.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Supervillains</h3>
+				<p class="illustration_client">The Penguin</p>
+				<p class="illustration_description">Series of carricatures</p>
+			</div>	
+			<a href="{{ "/img/work_illustrations-various/Erdogan_Wario.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Erdogan_Wario.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Supervillains</h3>
+				<p class="illustration_client">Wario</p>
+				<p class="illustration_description">Series of carricatures</p>
+			</div>	
+
 			<a href="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}">
 			</a>
@@ -51,18 +76,7 @@ title_align: center
 				<h3 class="illustration_title">Tears</h3>
 				<p class="illustration_client">Blood Sweat and Tears</p>
 				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
-			</div>
-
-
-			<a href="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Sawman</h3>
-				<p class="illustration_client">Dutch Folklore</p>
-				<p class="illustration_description">Wednesdays Meneer Saagman (Mister Sawman) comes to saw the week in half...</p>
-			</div>
-
+			</div>			
 			<a href="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}">
 			</a>
@@ -71,19 +85,10 @@ title_align: center
 				<p class="illustration_client">Twitter post to the band</p>
 				<p class="illustration_description">I was very impressed with Foxygens performance, so I made a little gif and send it to them on twitter.</p>
 			</div>
-
 		</div>
 
 
 		<div class="col-4">
-
-			<a href="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Easter Illustration</h3>
-				<p class="illustration_description">The idea was for viewers to invent the dialogue for this image and submit it before easter to win a prize.</p>
-			</div>	
 
 			<a href="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}">
@@ -92,7 +97,15 @@ title_align: center
 				<h3 class="illustration_title">A Conservative Nightmare</h3>
 				<p class="illustration_client">Instagram post</p>
 				<p class="illustration_description">The world is run by a vegetarian, academic, mixed-race, lesbian, muslim, pro-choice, stoner couple.</p>
-			</div>			
+			</div>		
+
+			<a href="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Easter Illustration</h3>
+				<p class="illustration_description">The idea was for viewers to invent the dialogue for this image and submit it before easter to win a prize.</p>
+			</div>		
 
 			<a href="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}">
@@ -102,6 +115,14 @@ title_align: center
 				<p class="illustration_client">Laureate Charity Fund</p>
 				<p class="illustration_description">Poster for a charity event.</p>
 			</div>
+
+			<a href="{{ "/img/work_illustrations-various/JesusPunch.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/JesusPunch.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Happy Ending for the Passion of Christ</h3>
+				<p class="illustration_description">In catholic southern Germany the passion of Christ is depicted in 12 wayside panels on many popular hiking routes. As a child I got so angry about what happened to Jesus that at home I drew a 13th one with a happy ending. I didn't keep any so I tried to recreate my drawings from back then.</p>
+			</div>	
 
 			<a href="{{ "/img/work_illustrations-various/propellerboy.png" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/propellerboy.png" | prepend: site.baseurl }}">
@@ -128,7 +149,7 @@ title_align: center
 				<h3 class="illustration_title">Young Union Flyer</h3>
 				<p class="illustration_client">DGB Munich</p>
 				<p class="illustration_description">"You are not alone" initiative of the young workers union germany.</p>
-			</div>	
+			</div>				
 		</div>
 		
 		
@@ -141,6 +162,15 @@ title_align: center
 				<h3 class="illustration_title">The Dog Date Diaries</h3>
 				<p class="illustration_client">Clash Magazine</p>
 				<p class="illustration_description">Editorial illustration for an article about the dating habits of dogs.</p>
+			</div>
+
+			<a href="{{ "/img/work_illustrations-various/Mirrormirror.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Mirrormirror.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Mirror Mirror Promotion</h3>
+				<p class="illustration_client">Instagram ad</p>
+				<p class="illustration_description">Mirror Mirror is a phone app that gives you crowdsourced style advice.</p>
 			</div>
 
 			<a href="{{ "/img/work_illustrations-various/Pants-down.png" | prepend: site.baseurl }}" class="fluidbox-link">
@@ -168,6 +198,15 @@ title_align: center
 				<h3 class="illustration_title">Student Demographics</h3>
 				<p class="illustration_client">University of Liverpool</p>
 				<p class="illustration_description">Infographics for social media and other marketing efforts.</p>
+			</div>
+
+			<a href="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Sawman</h3>
+				<p class="illustration_client">Dutch Folklore</p>
+				<p class="illustration_description">Wednesdays Meneer Saagman (Mister Sawman) comes to saw the week in half...</p>
 			</div>
 		</div>
 	</div>
