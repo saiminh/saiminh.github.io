@@ -17,6 +17,14 @@ title_align: center
 
 		<div class="col-4">
 
+			<a href="{{ "/img/work_illustrations-various/life.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/life.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Life</h3>
+				<p class="illustration_client">Free work</p>
+				<p class="illustration_description">Life as a freelancer is hard...</p>
+			</div>	
 			<a href="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}">
 			</a>
@@ -90,6 +98,22 @@ title_align: center
 
 		<div class="col-4">
 
+			<a href="{{ "/img/work_illustrations-various/Freelancing_Goodday.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Freelancing_Goodday.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Freelancing</h3>
+				<p class="illustration_client">Free work</p>
+				<p class="illustration_description">Life as a freelancer on a good day...</p>
+			</div>	
+			<a href="{{ "/img/work_illustrations-various/Freelancing_Badday.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
+				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Freelancing_Badday.jpg" | prepend: site.baseurl }}">
+			</a>
+			<div class="illustration_text">
+				<h3 class="illustration_title">Freelancing</h3>
+				<p class="illustration_client">Free work</p>
+				<p class="illustration_description">Life as a freelancer on a bad day...</p>
+			</div>	
 			<a href="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
 				<img class="illustration_image" src="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}">
 			</a>

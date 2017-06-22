@@ -1,5 +1,5 @@
 $theme_bierbaum_color: #000;
-$theme_bierbaum_color_bg: #d64141;
+$theme_bierbaum_color_bg: #ff5858;
 $theme_bierbaum_color_border: #FFF;
 
 .theme-bierbaum {
@@ -189,15 +189,15 @@ $theme_bierbaum_color_border: #FFF;
 	}
 }
 
-.st0{fill:none;stroke:#FFFFFF;stroke-width:5.1561;stroke-miterlimit:10;}
+.st0{fill:none;stroke:$theme_bierbaum_color_bg;stroke-width:5.1561;stroke-miterlimit:10;}
 .st1{fill:none;stroke:#000000;stroke-width:4.6822;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .st2{fill:#231F20;}
-.st3{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:4.6822;stroke-miterlimit:10;}
-.st4{fill:none;stroke:#FFFFFF;stroke-width:5.1561;stroke-linecap:square;stroke-miterlimit:10;}
-.st5{fill:#FFFFFF;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:$theme_bierbaum_color_bg;stroke-width:4.6822;stroke-miterlimit:10;}
+.st4{fill:none;stroke:$theme_bierbaum_color_bg;stroke-width:5.1561;stroke-linecap:square;stroke-miterlimit:10;}
+.st5{fill:$theme_bierbaum_color_bg;}
 .st6{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
 .st7{fill:none;stroke:#000000;stroke-width:4.6822;stroke-miterlimit:10;}
-.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+.st8{fill-rule:evenodd;clip-rule:evenodd;fill:$theme_bierbaum_color_bg;}
 .st9{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#000000;stroke-width:4.6822;stroke-miterlimit:10;}
 
 
@@ -226,7 +226,7 @@ $theme_bierbaum_color_border: #FFF;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #FFF;
+	background: $theme_bierbaum_color_bg;
 	padding: 0;
 	border-radius: 100%;	
 	animation: blink 4s infinite;
