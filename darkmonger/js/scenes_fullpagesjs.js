@@ -222,9 +222,22 @@
 	  		
 	$(document).ready(function() {
 		
-		var sceneAnchors = ['scene_1', 'scene_2', 'scene_3', 'scene_4', 'scene_5', 'scene_6', 'scene_7', 'scene_8', 'scene_9', 'scene_10', 'scene_11', 'scene_12', 'scene_theend'];
-
-
+		var sceneAnchors = ['scene_1', 'scene_2', 'scene_3', 'scene_4', 'scene_5', 'scene_6', 'scene_7', 'scene_8', 'scene_9', 'scene_10', 'scene_11', 'scene_11b', 'scene_12', 'scene_theend'];
+		
+		var indexOfStart			=	sceneAnchors.indexOf('scene_1') + 1;
+		var indexOfEnterDarkmonger	=	sceneAnchors.indexOf('scene_2') + 1;
+		var indexOfLovesDarkness	=	sceneAnchors.indexOf('scene_3') + 1;
+		var indexOfAteThem			=	sceneAnchors.indexOf('scene_4') + 1;
+		var indexOfGrewBigger		=	sceneAnchors.indexOf('scene_5') + 1;
+		var indexOfHumansTerrified	=	sceneAnchors.indexOf('scene_6') + 1;
+		var indexOfHumansCandleOut	=	sceneAnchors.indexOf('scene_7') + 1;
+		var indexOfPlanetDark		=	sceneAnchors.indexOf('scene_8') + 1;
+		var indexOfPlanetEaten		=	sceneAnchors.indexOf('scene_9') + 1;
+		var indexOfDriftingThinking	=	sceneAnchors.indexOf('scene_10') + 1;
+		var indexOfDriftingWhy		=	sceneAnchors.indexOf('scene_11') + 1;
+		var indexOfDriftingDawned	=	sceneAnchors.indexOf('scene_11b') + 1;
+		var indexOfPenisPoint 		=	sceneAnchors.indexOf('scene_12') + 1;
+		var indexOfTheEnd 			=	sceneAnchors.indexOf('scene_theend') + 1;
 
 	    $('.wrapper').fullpage({
 	    	anchors: sceneAnchors,
@@ -235,19 +248,19 @@
 	    	afterLoad: function(anchorLink, index){
 	            var loadedSection = $(this);
 
-	            if(index == 1){
+	            if(index == indexOfStart){
 	                scene_1_tl.play(0).timeScale(1);	            	
                 }	
 
-	            if(index == 2){	               	               		
+	            if(index == indexOfEnterDarkmonger){	               	               		
 	                scene_2_tl.play(0).timeScale(1);
 	            }           		
                 	
-	            if(index == 3){	
+	            if(index == indexOfLovesDarkness){	
 	            	scene_3_tl_in.play(0).timeScale(1);
 	            }
         			
-	            if(index == 4){	
+	            if(index == indexOfAteThem){	
 	            	scene_4_tl_in.play(0).eventCallback("onComplete", function(){
 		            	scene_4_tl_bite1.play(0).eventCallback("onComplete", function(){
 		            		scene_4_tl_bite2.play(0).eventCallback("onComplete", function(){
@@ -257,31 +270,31 @@
 		            })
 	            }
 
-	            if(index == 5){
+	            if(index == indexOfGrewBigger){
 	            	scene_5_tl_in.play(0).timeScale(1);
 	            }
 
-	            if(index == 6){
+	            if(index == indexOfHumansTerrified){
 	            	scene_6_tl_in.play(0);
 	            	scene_6_tl_light.repeat(-1).play(0);
 	            }
-	            if(index == 7){
+	            if(index == indexOfHumansCandleOut){
 	            	
 	            	scene_7_tl_in.play(0);
 	            	scene_6_tl_in.reverse();
 	        		
 	            }
 
-	            if(index == 8){
+	            if(index == indexOfPlanetDark){
 	            	scene_8_tl_in.play(0);
 	            	scene_8_tl_lightsout.play(0);
 	            }
 
-	            if(index == 9){
+	            if(index == indexOfPlanetEaten){
 	            	scene_9_tl_in.play(0);	            	
 	            }
 
-	            if(index == 10){
+	            if(index == indexOfDriftingThinking){
 	            	//scene_10to11_planetmove.pause(0);
 	            	scene_10_tl_in.play(0);
 	            	scene_10_tl_devilpenis_hide.play();
@@ -293,13 +306,13 @@
 	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();
 	            }
 
-	            if(index == 11){	            	
+	            if(index == indexOfDriftingWhy){	            	
 	            	scene_11_tl_in.play();
 	            	scene_10_tl_bg.repeat(-1).play();
 	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();	            	
 	            }
 
-	            if(index == 12){
+	            if(index == indexOfPenisPoint){
 	            	scene_11_tl_planetleave.play();
 	            	scene_11_tl_in.play();
 	            	scene_12_tl_in.play();
@@ -315,16 +328,16 @@
 //-------------------------
 	        onLeave: function(index, newIndex, direction){
 	        	
-	        	if(index == 1) {
+	        	if(index == indexOfStart) {
 	        		scene_1_tl.reverse().timeScale(6);
 	        	}
 
-	        	if(index == 2) {
+	        	if(index == indexOfEnterDarkmonger) {
 	        		scene_2_tl.reverse().timeScale(1.5);
 	                scene_2_tl_loop.pause(0);
 	        	}
 
-	        	if(index == 3) {
+	        	if(index == indexOfLovesDarkness) {
 	        		if (direction == 'down') {
 	        			scene_3_tl_loop.pause(3);	        			
 	        		}
@@ -333,7 +346,7 @@
 		        	}
 	        	}
 
-	        	if(index == 4) {	        		
+	        	if(index == indexOfAteThem) {	        		
 	        		scene_4_tl_in.reverse();	
 	        		scene_4_tl_bite1.pause(0);  
 	        		scene_4_tl_bite2.pause(0);
@@ -341,21 +354,21 @@
 	        		scene_3_tl_in.reverse().timeScale(3); // because the guy looking up is still there in the background	
 	        	}
 
-	        	if(index == 5) {
+	        	if(index == indexOfGrewBigger) {
 	        		scene_5_tl_in.reverse().timeScale(3);
 	        	}
 
-	        	if(index == 6 && direction == 'up') {
+	        	if(index == indexOfHumansTerrified && direction == 'up') {
 	        		scene_6_tl_in.reverse(0);
 	        	}
 
-	        	if(index == 7) {
+	        	if(index == indexOfHumansCandleOut) {
 	        		scene_7_tl_in.pause(0);
 	        		scene_6_tl_in.pause(0);
 	        	}
 
-	        	if(index == 8) {
-	        		if (direction == "down" && newIndex == 9){
+	        	if(index == indexOfPlanetDark) {
+	        		if (direction == "down" && newIndex == indexOfPlanetEaten){
 	        			// do nothing because we want no blackout screen
 	        			// but we remove scene8_lightsout in index 9 out	        		
 	        		}
@@ -365,24 +378,24 @@
 		        	
 	        	}
 
-	        	if(index == 9) {
+	        	if(index == indexOfPlanetEaten) {
 	        		scene_9_tl_in.reverse();
 	        		scene_8_tl_in.pause(0);	        		
 	        	}
 
-	        	if(index == 10) {
-	        		if (newIndex == 11) {
+	        	if(index == indexOfDriftingThinking) {
+	        		if (newIndex == indexOfDriftingWhy) {
 		            }
 		            else {
 		            	scene_10_tl_in.reverse();		        			
 		            }
 	        	}
 
-	        	if(index == 11) {
+	        	if(index == indexOfDriftingWhy) {
 	        		if (newIndex == 12) {	     
 
 	        		}
-	        		else if (newIndex == 10) { //GOING BACK
+	        		else if (newIndex == indexOfDriftingThinking) { //GOING BACK
 	        			//scene_10_tl_in.reverse();
 	        			scene_11_tl_planetleave.pause(0);       			
 	        		}
@@ -391,12 +404,16 @@
 	        		}
 	        	}
 
-	        	if(index == 12) {
+	        	if(index == indexOfDriftingDawned) {
+	        		
+	        	}
+
+	        	if(index == indexOfPenisPoint) {
 	        		scene_12_tl_in.reverse();
 	        		scene_12_tl_blinkarrows.pause(0);
 	        	}
 
-	        	if(index == sceneAnchors.indexOf('scene_theend') + 1) {
+	        	if(index == indexOfTheEnd) {
 	        		if (newIndex !== 12) {
 		        		scene_10_tl_in.pause(0);
 	        			scene_11_tl_planetleave.pause(0);       			    		        		
@@ -416,5 +433,11 @@ $(".nav-next").on("click", function(e){
 $(".nav-prev").on("click", function(e){
 	e.preventDefault();
 	$.fn.fullpage.moveSectionUp();
+});
+
+$(window).on('load', function(){
+	$('#preloader').fadeOut('slow',function(){
+		$(this).remove();
+	});
 });
 	
