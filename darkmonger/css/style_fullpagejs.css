@@ -308,7 +308,7 @@ div.animation_stage_scene_seven{
 	position: fixed;
 	top: calc(100vw + 10px);
 	right:.5rem;
-	z-index: 1000;
+	z-index: 998;
 	height: 40px;
 	width:40px;
 }
