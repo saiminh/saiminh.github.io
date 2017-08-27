@@ -311,6 +311,7 @@ div.animation_stage_scene_seven{
 	z-index: 998;
 	height: 40px;
 	width:40px;
+	opacity: .2;
 }
 .nav-prev {
 	top: calc(100vw - 50px);
