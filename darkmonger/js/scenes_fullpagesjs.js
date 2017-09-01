@@ -312,7 +312,7 @@
 	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();	            	
 	            }
 
-	            if(index == indexOfPenisPoint){
+	            if(index == indexOfPenisPoint || index == indexOfTheEnd){
 	            	scene_11_tl_planetleave.play();
 	            	scene_11_tl_in.play();
 	            	scene_12_tl_in.play();
@@ -323,9 +323,9 @@
 	            }
 
 	            if(index == indexOfTheEnd) {
-	            	scene_11_tl_in.play();
+	            	/*scene_11_tl_in.play();
 	            	scene_10_tl_bg.repeat(-1).play();
-	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();
+	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();*/
 	            }
 	        },
 
@@ -415,12 +415,16 @@
 	        	}
 
 	        	if(index == indexOfPenisPoint) {
-	        		scene_12_tl_in.reverse();
-	        		scene_12_tl_blinkarrows.pause(0);
+	        		if (newIndex !== indexOfTheEnd) {
+		        		scene_12_tl_in.reverse();
+		        		scene_12_tl_blinkarrows.pause(0);
+		        	}
 	        	}
 
 	        	if(index == indexOfTheEnd) {
 	        		if (newIndex !== indexOfPenisPoint) {
+	        			scene_12_tl_in.reverse();
+		        		scene_12_tl_blinkarrows.pause(0);
 		        		scene_10_tl_in.pause(0);
 		        		scene_11_tl_in.pause(0);
 	        			scene_11_tl_planetleave.pause(0);       			    		        		
