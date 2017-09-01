@@ -313,6 +313,14 @@ div.animation_stage_scene_seven{
 	width:40px;
 	opacity: .2;
 }
+
+.nav-next:active,
+.nav-prev:active{
+	opacity: .9;
+}
+
+
+
 .nav-prev {
 	top: calc(100vw - 50px);
 }
@@ -322,7 +330,7 @@ div.animation_stage_scene_seven{
 	.nav-prev {
 		width: 30px;
 		height: 30px;
-		right: calc(50vw - 15px);
+		right: 2rem;
 		top: auto;
 	}
 
@@ -333,6 +341,11 @@ div.animation_stage_scene_seven{
 
 	.nav-prev {
 		bottom: calc(2rem + 50px);
+	}
+
+	.nav-next:hover,
+	.nav-prev:hover{
+		opacity: .9;
 	}
 }
 
