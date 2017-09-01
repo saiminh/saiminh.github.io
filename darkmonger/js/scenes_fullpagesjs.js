@@ -321,6 +321,12 @@
 	            	//scene_10_tl_in.reverse();
 	            	scene_12_tl_blinkarrows.yoyo(true).repeat(-1).play();
 	            }
+
+	            if(index == indexOfTheEnd) {
+	            	scene_11_tl_in.play();
+	            	scene_10_tl_bg.repeat(-1).play();
+	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();
+	            }
 	        },
 
 // ------------------------
@@ -414,9 +420,13 @@
 	        	}
 
 	        	if(index == indexOfTheEnd) {
-	        		if (newIndex !== 12) {
+	        		if (newIndex !== indexOfPenisPoint) {
 		        		scene_10_tl_in.pause(0);
+		        		scene_11_tl_in.pause(0);
 	        			scene_11_tl_planetleave.pause(0);       			    		        		
+		        	}
+		        	else {
+		        		//alert ('back');
 		        	}
 	        	}
 	        }
@@ -438,23 +448,25 @@ $(window).on('resize', function(){
 	if (newinWidth <= newinHeight){ // Portrait Mode
 		$('div[class^="animation_stage_scene_"]').width(newinWidth).height(newinWidth);
 		$('.scene_text').width("100%").height(newinHeight - newinWidth).css("marginTop", newinWidth);
+
 	}
 	else { // Landscape 
-		$('div[class^="animation_stage_scene_"]').width(newinWidth / 2).height(newinHeight);
-		$('.scene_text').width(newinWidth / 2).height(newinHeight).css("marginTop", "inherit");
+		$('div[class^="animation_stage_scene_"]').width('50vw').height('50vw');
+		$('.scene_text').width('50vw').height('100vh').css("marginTop", "0");
 	}
+	$.fn.fullpage.reBuild();
 });
 
 $(window).on('load', function(){
-	var initialHeight = $(window).innerHeight();
-	var initialWidth = 	$(window).innerWidth();
-	if (initialWidth <= initialHeight){
-		$('div[class^="animation_stage_scene_"]').width(initialWidth).height(initialWidth);
-		$('.scene_text').height(initialHeight - initialWidth).css("marginTop", initialWidth);
+	var inHeight = $(window).innerHeight();
+	var inWidth = 	$(window).innerWidth();
+	if (inWidth <= inHeight){
+		$('div[class^="animation_stage_scene_"]').width(inWidth).height(inWidth);
+		$('.scene_text').height(inHeight - inWidth).css("marginTop", inWidth);
 	}
 	else {
-		$('div[class^="animation_stage_scene_"]').width(initialWidth / 2).height(initialHeight);
-		$('.scene_text').width(initialWidth / 2).height(initialHeight).css("marginTop", "0");
+		//$('div[class^="animation_stage_scene_"]').width(inWidth / 2).height(inHeight);
+		//$('.scene_text').width(inWidth / 2).height(inHeight).css("marginTop", "0");
 	};
 	
 	$('#preloader').fadeOut('slow',function(){
