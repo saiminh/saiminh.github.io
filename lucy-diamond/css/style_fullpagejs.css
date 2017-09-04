@@ -197,21 +197,60 @@ div[class^="animation_stage_scene_"] img {
 	}
 }
 
+.animation_stage_scene_intro .prop {
+	position: absolute;
+}
+
+/* 
+-----------------
+Intro Scene Lucy 
+-----------------
+*/
+.scene_intro .scene_text {
+	background: transparent;
+}
+
+.scene_header_lucy {
+	background: #FFF;
+	color: #000;
+	padding: 2rem;
+	font-size: 1.0rem;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+}
+
+.scene_header_lucy:after {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: 66px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #FFF;
+	border-right-color: #FFF;
+}
+
+@media (orientation: landscape) {
+
+	.scene_header_lucy:after {
+		top: 33px;
+		left: -20px;
+		border-bottom-color: transparent;
+		border-top-color: #FFF;
+	}
+}
+
+/* 
+-----------------
+Scene Start Space 
+-----------------
+*/
+
 .scene_one_space .space {
 	position: absolute;
 	top: 0;
 }
-
-/*div.animation_stage_scene_two {
-	top: 5%;
-	left: -2%;
-}
-
-div.animation_stage_scene_three,
-div.animation_stage_scene_four {
-	top: 5%;
-	left: -2%;
-}*/
 
 .scene_two_ScaryMonsterName_eyes {
 	background-image: url(../images/scene_2_eyes_sprite.png);
@@ -303,8 +342,7 @@ div.animation_stage_scene_seven{
 	}
 }
 
-.nav-next,
-.nav-prev {
+.nav {
 	position: fixed;
 	top: calc(100vw + 10px);
 	right:.5rem;
@@ -312,6 +350,10 @@ div.animation_stage_scene_seven{
 	height: 40px;
 	width:40px;
 	opacity: .2;
+}
+
+.nav .svg_path {
+	fill: #FFFFFF;
 }
 
 .nav-next:active,
@@ -331,10 +373,6 @@ div.animation_stage_scene_seven{
 		height: 30px;
 		right: 2rem;
 		top: auto;
-	}
-
-	.nav .svg_path {
-		fill: #FFFFFF;
 	}
 
 	.nav-next {
