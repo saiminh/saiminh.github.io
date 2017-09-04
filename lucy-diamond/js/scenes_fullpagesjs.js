@@ -1,14 +1,17 @@
 	// ––––––––––––––––––– Scene 00 Intro ––––––––––––––––––––––––––––––––––
 	var scene_intro_tl_in = new TimelineMax( {paused: true} )
-			.from(".scene_intro_title", 1, {
-				scale: .1,
+			.from(".scene_intro_bg", 1, {
 				opacity: 0
 			})
+			.from(".scene_intro_title", 1.5, {
+				scale: 0,
+				opacity: 0
+			}, 0)
 			.from(".scene_intro_lucy", .6, {
 				top: "200px",
 				left: "-20px",
 				opacity: 0
-			})
+			}, 1)
 			.from(".scene_header_lucy", 1, {
 				bottom: "50px",
 				opacity: 0,
