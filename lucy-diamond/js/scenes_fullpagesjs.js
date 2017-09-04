@@ -358,7 +358,7 @@
 	        onLeave: function(index, newIndex, direction){
 	        	
 	        	if(index == indexOfIntro) {
-	        		scene_intro_tl_in.reverse().timeScale(6);
+	        		scene_intro_tl_in.reverse().timeScale(3);
 	        	}
 
 	        	if(index == indexOfStart) {

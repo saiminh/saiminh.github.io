@@ -219,6 +219,13 @@ Intro Scene Lucy
     width: calc(100% - 2rem);
 }
 
+@media (max-width: 320px) {
+	.scene_header_lucy {
+		padding: 1rem;
+		font-size: 0.9rem;
+	}
+}
+
 .scene_header_lucy:after {
 	content: '';
 	position: absolute;
