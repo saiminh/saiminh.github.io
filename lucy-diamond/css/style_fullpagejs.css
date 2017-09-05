@@ -349,6 +349,8 @@ div.animation_stage_scene_seven{
 	}
 }
 
+/* -------- Navigation (Up/Down Arrows) -------- */
+
 .nav {
 	position: fixed;
 	top: calc(100vw + 10px);
@@ -396,6 +398,55 @@ div.animation_stage_scene_seven{
 		opacity: .9;
 	}
 }
+
+/* -------- Fullscreen Button -------- */
+
+.btn_fullscreen {
+	position: fixed;
+	top: .5rem;
+	left:.5rem;
+	z-index: 998;
+	height: 35px;
+	width: 35px;
+	color: #FFF;
+	background: transparent;
+	border: none;
+	opacity: 0.5;
+}
+
+.btn_fullscreen svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.btn_fullscreen .btn_fullscreen_icon_exitfs {
+	display: none;
+}
+
+.btn_fullscreen.exit_fullscreen .btn_fullscreen_icon_exitfs {
+	display: inline-block;
+}
+
+.btn_fullscreen.exit_fullscreen .btn_fullscreen_icon_enterfs {
+	display: none;
+}
+
+.btn_fullscreen path {
+	fill: #FFFFFF;
+}
+
+.btn_fullscreen:active {
+	background: red;
+}
+
+.btn_fullscreen:focus {
+	outline: none;
+}
+
+/* -------- Social media links etc for The End -------- */
 
 .last_scene_links,
 .last_scene_links:visited {

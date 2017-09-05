@@ -239,11 +239,27 @@
 			});
 
 // ––––––––––––––––––– Scene 13 The End ––––––––––––––––––––––––––––––––––
-
-	  		
+	
+// ------------------------
+//	Inititate Fullpage.js
+//-------------------------	  		
 	$(document).ready(function() {
 		
-		var sceneAnchors = ['scene_intro', 'scene_1', 'scene_2', 'scene_3', 'scene_4', 'scene_5', 'scene_6', 'scene_7', 'scene_8', 'scene_9', 'scene_10', 'scene_11', 'scene_11b', 'scene_12', 'scene_theend'];
+		var sceneAnchors = [	'scene_intro', 
+								'scene_1', 
+								'scene_2', 
+								'scene_3', 
+								'scene_4', 
+								'scene_5', 
+								'scene_6', 
+								'scene_7', 
+								'scene_8', 
+								'scene_9', 
+								'scene_10', 
+								'scene_11', 
+								'scene_11b', 
+								'scene_12', 
+								'scene_theend'];
 		
 		var indexOfIntro			=	sceneAnchors.indexOf('scene_intro') + 1;
 		var indexOfStart			=	sceneAnchors.indexOf('scene_1') + 1;
@@ -265,7 +281,7 @@
 	    	anchors: sceneAnchors,
 	  
 // ------------------------
-//	Enter Scene
+//	Execute on Enter Scene
 //-------------------------
 	    	afterLoad: function(anchorLink, index){
 	            var loadedSection = $(this);
@@ -321,7 +337,6 @@
 	            }
 
 	            if(index == indexOfDriftingThinking){
-	            	//scene_10to11_planetmove.pause(0);
 	            	scene_10_tl_in.play(0);
 	            	scene_10_tl_devilpenis_hide.play();
 	            	scene_10_tl_bg.repeat(-1).play();
@@ -344,19 +359,16 @@
 	            	scene_12_tl_in.play();
 	            	scene_10_tl_bg.repeat(-1).play();
 	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();
-	            	//scene_10_tl_in.reverse();
 	            	scene_12_tl_blinkarrows.yoyo(true).repeat(-1).play();
 	            }
 
 	            if(index == indexOfTheEnd) {
-	            	/*scene_11_tl_in.play();
-	            	scene_10_tl_bg.repeat(-1).play();
-	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();*/
+	            	
 	            }
 	        },
 
 // ------------------------
-//	Leave Scene
+//	On Leave Scene
 //-------------------------
 	        onLeave: function(index, newIndex, direction){
 	        	
@@ -465,6 +477,9 @@
 	        	}
 	        },
 
+// -----------------------------------------
+// scripts fired after DOM is ready
+// -----------------------------------------
 	        afterRender: function(){
 				var inHeight = $(window).innerHeight();
 				var inWidth = 	$(window).innerWidth();
@@ -484,6 +499,9 @@
 	    });
 	});
 
+// -----------------------------------------
+// Initiate up/down arrows
+// ----------------------------------------- 
 $(".nav-next").on("click", function(e){
 	e.preventDefault();
 	$.fn.fullpage.moveSectionDown();
@@ -493,6 +511,10 @@ $(".nav-prev").on("click", function(e){
 	$.fn.fullpage.moveSectionUp();
 });
 
+// -----------------------------------------
+// weirdly the fullpage.js afterResize event doesn't seem to work in the desired way
+// so I had to implement resizing manually
+// -----------------------------------------
 $(window).on('resize', function(){
 	var newinHeight = $(window).innerHeight();
 	var newinWidth = 	$(window).innerWidth();
@@ -508,7 +530,26 @@ $(window).on('resize', function(){
 	$.fn.fullpage.reBuild();
 });
 
-	
+// -----------------------------------------
+// Turns out on iOS neither Chrome nor Safari support fullscreen API... 
+// So let's hide the button on iOS 
+// -----------------------------------------
+//var isIphone = /(iPhone)/i.test(navigator.userAgent);
+//var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
+if(isIOS){
+    $('.btn_fullscreen').hide();
+}
 
-	
+// Fullscreen Button powerd by screenfull.js 	
+// -----------------------------------------
+const target = $('body')[0]; // Get DOM element from jQuery collection
+
+$('.btn_fullscreen').on('click', () => {
+	if (screenfull.enabled) {
+		screenfull.toggle(target);
+		$('.btn_fullscreen').toggleClass('exit_fullscreen');
+	}
+	$.fn.fullpage.reBuild();
+});

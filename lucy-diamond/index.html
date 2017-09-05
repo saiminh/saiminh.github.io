@@ -8,11 +8,14 @@
 	<meta name="og:description" content="Somewhere on a dark planet with no star, where the only light on the surface is produced by humans...">
 	<meta property="og:image" content="http://floter.design/darkmonger/images/darkmonger-og-img.png">
 	<meta property="og:url" content="http://floter.design/lucy-diamond">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" type="text/css" href="css/style_fullpagejs.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.min.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/libraries/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="js/libraries/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/libraries/screenfull.min.js"></script>
 </head>
 <body>	
 	<!-- Navigation Arrows -->
@@ -32,6 +35,10 @@
 				c2.3,0,4.3,0.8,5.8,2.4l41.8,41.8C99.2,48.6,100,50.5,100,52.8z"/>
 		</svg>
 	</a>
+	<button class="btn_fullscreen">
+		<svg class="btn_fullscreen_icon_enterfs" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M4.5 11H3v4h4v-1.5H4.5V11zM3 7h1.5V4.5H7V3H3v4zm10.5 6.5H11V15h4v-4h-1.5v2.5zM11 3v1.5h2.5V7H15V3h-4z"/></svg>
+		<svg class="btn_fullscreen_icon_exitfs" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M3 12.5h2.5V15H7v-4H3v1.5zm2.5-7H3V7h4V3H5.5v2.5zM11 15h1.5v-2.5H15V11h-4v4zm1.5-9.5V3H11v4h4V5.5h-2.5z"/></svg>
+	</button>
 
 	<!-- Preloader -->
 	<div id="preloader"></div>
