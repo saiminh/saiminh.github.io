@@ -27,7 +27,8 @@ body {
 
 
 .wrapper {
-	/*position: relative;	*/
+	position: relative;
+	z-index: 1;
 }
 
 .section {
@@ -185,7 +186,7 @@ div[class^="animation_stage_scene_"] img {
 	top:0;
 	bottom: 0;
 	width: 100vw;
-	z-index: -1;
+	z-index: 0;
 	overflow: hidden;
 }
 
