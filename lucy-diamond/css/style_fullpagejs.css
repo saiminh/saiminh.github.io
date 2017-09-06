@@ -201,11 +201,13 @@ div[class^="animation_stage_scene_"] img {
 	position: absolute;
 }
 
+
 /* 
------------------
-Intro Scene Lucy 
------------------
+----------------- 
+Intro Scene Lucy  
+----------------- 
 */
+
 .scene_intro .scene_text {
 	background: transparent;
 }
@@ -217,6 +219,13 @@ Intro Scene Lucy
 	font-size: 1.0rem;
     margin: 1rem;
     width: calc(100% - 2rem);
+    bottom: 50%;
+}
+
+@media (orientation: landscape) {
+	.scene_header_lucy {
+		margin-left: -20%;
+	}
 }
 
 @media (max-width: 320px) {
@@ -250,15 +259,19 @@ Intro Scene Lucy
 
 /* 
 -----------------
-Scene Start Space 
+Scene 'On a planet...' 
 -----------------
 */
-
 .scene_one_space .space {
 	position: absolute;
 	top: 0;
 }
 
+/* 
+-----------------
+Scene 'lived the Darkmonger' 
+-----------------
+*/
 .scene_two_ScaryMonsterName_eyes {
 	background-image: url(../images/scene_2_eyes_sprite.png);
 	background-size: 400%;
@@ -301,11 +314,6 @@ Scene Start Space
 	left: 0;
 }
 
-/*div.animation_stage_scene_six,
-div.animation_stage_scene_seven{
-	top: 5%;
-}*/
-
 .scene_six_couple,
 .scene_six_light,
 .scene_seven_couple {
@@ -322,6 +330,11 @@ div.animation_stage_scene_seven{
 	position: absolute;
 }
 
+/* 
+---------------- 
+Scene: Drifting 
+---------------- 
+*/
 .animation_stage_scene_ten img {
 	position: absolute;
 }
@@ -339,14 +352,112 @@ div.animation_stage_scene_seven{
 	opacity: 0;
 }
 
-.scene_theEnd .scene_header {
-	font-size: 1.8rem;
-	transform: none;
+/* 
+---------------- 
+Scene: The End 
+---------------- 
+*/
+
+div.animation_stage_scene_theEnd {
+	overflow: visible;
 }
-@media screen and (min-width: 321px){
-	.scene_theEnd .scene_header {
-		font-size: 2.2rem;
+
+.animation_stage_scene_theEnd .scene_theEnd_lucy {
+	position: absolute;
+	bottom: -50%;
+}
+
+.scene_theEnd .scene_text {
+	background: transparent;
+}
+
+.scene_theEnd .scene_header_lucy {
+	margin-left: 1rem;
+}
+
+.scene_theEnd .scene_header_lucy:after {
+	border-right-color: transparent;
+	border-left-color: #FFF;
+	left: 50%;
+}
+
+@media (orientation: landscape) {
+
+	.scene_theEnd .scene_text {
+		left: 20vw;
 	}
+
+	.scene_theEnd .scene_header_lucy:after {
+		top: 33px;
+		left: -20px;
+		border-right-color: #FFF;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: #FFF;
+	}
+
+	.animation_stage_scene_theEnd .scene_theEnd_lucy {
+		bottom: 0;
+	}
+
+}
+
+/* 
+---------------- 
+Scene: Outro 
+---------------- 
+*/
+
+.scene_outro .scene_text {
+	height: 100vh!important;
+	width: 100vw!important;
+	margin-top: 0!important;
+	background: transparent;
+	left: 0;
+	color: #981f1f;
+}
+
+.scene_outro .scene_header_outro {
+	text-align: center;
+	max-width: 100%;
+}
+
+.scene_outro .site-title {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.scene_outro .site-title #floter_signature_svg {
+	width: 100%;
+}
+
+.scene_outro .site-title #floter_signature_svg g {
+	fill: #FFF;
+}
+
+.link_gg {
+	display: block;
+	margin: 1rem auto;
+	max-width: 200px;
+	text-decoration: none;
+	color: #981f1f;
+	font-size: 1rem;
+}
+
+.gary_glotz_logo {
+	width: 100%;
+}
+
+.link_restart {
+	display: block;
+	margin: 1rem auto;
+	max-width: 200px;
+	text-decoration: none;
+	color: #981f1f;
+	font-size: 1rem;
+	padding: 10px 15px;
+	border: 1px solid #981f1f;
 }
 
 /* -------- Navigation (Up/Down Arrows) -------- */
@@ -398,6 +509,7 @@ div.animation_stage_scene_seven{
 		opacity: .9;
 	}
 }
+
 
 /* -------- Fullscreen Button -------- */
 

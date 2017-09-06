@@ -7,13 +7,13 @@
 				scale: 0,
 				opacity: 0
 			}, 0)
-			.from(".scene_intro_lucy", .6, {
-				top: "200px",
-				left: "-20px",
+			.from(".animation_stage_scene_intro .scene_intro_lucy", .6, {
+				y: "200px",
+				x: "-20px",
 				opacity: 0
 			}, 1)
-			.from(".scene_header_lucy", 1, {
-				bottom: "50px",
+			.from(".scene_intro .scene_header_lucy", 1, {
+				y: "-50px",
 				opacity: 0,
 				ease: Elastic.easeOut
 			});
@@ -21,7 +21,7 @@
 
 	// ––––––––––––––––––– Scene 01 Just Space ––––––––––––––––––––––––––––––––––
 	var scene_1_tl = new TimelineMax( { paused: true } )
-			.from(".scene_one_space .space", 3, {opacity: 0, top: "50px"});
+			.from(".scene_one_space .space", 3, {opacity: 0, y: "50px"});
 
 	// ––––––––––––––––––– Scene 02 Eyes Blinking ––––––––––––––––––––––––––––––––––
 	var scene_2_tl_loop = new TimelineMax( { paused: true })
@@ -104,10 +104,10 @@
 				opacity: 0
 			})
 			.from(".scene_five_planet", 4, {
-				top: "-20px"
+				y: "-20px"
 			}, 0)
 			.from(".scene_five_devil", 4, {
-				top: "20px"
+				y: "20px"
 			}, 0);
 
 // –––––––––––––––––––Scene 06 fearful couple ––––––––––––––––––––––––––––––––––
@@ -124,7 +124,8 @@
 	var scene_6_tl_light = new TimelineMax( { paused: true })
 			.from(".scene_six_light", .4, {
 				opacity: 1,
-				scale: 0.95
+				scale: 0.95,
+				force3D:true
 			})
 			.to(".scene_six_light", .4, {
 				opacity: 1,
@@ -173,32 +174,32 @@
 			});
 	var scene_10_tl_bg = new TimelineMax( { paused: true })			
 			.to(".scene_ten_bg", 14, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_bg_2 = new TimelineMax( { paused: true })			
 			.to(".scene_ten_bg_2", 12, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_moon = new TimelineMax( { paused: true })			
 			.to(".scene_ten_moon", 12, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_venus = new TimelineMax( { paused: true })			
 			.to(".scene_ten_venus", 9, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_jupiter = new TimelineMax( { paused: true })			
 			.to(".scene_ten_jupiter", 7, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_devil = new TimelineMax( { paused: true })			
 			.to(".scene_ten_devil, .scene_twelve_devil, .scene_twelve_devil_arrows", 1, {
-				top: "2%"
+				y: "2%"
 			}, 0);
 
 	var scene_10_tl_devilpenis_hide = new TimelineMax({ paused:true })
@@ -213,8 +214,8 @@
 				opacity: 1
 			});
 	var scene_11_tl_planetleave = new TimelineMax({ paused: true })
-			.to(".scene_ten_jupiter, .scene_ten_venus, .scene_ten_moon, .scene_ten_bg_2", 2, {
-				marginLeft: "200vw"
+			.to(".scene_ten_jupiter, .scene_ten_venus, .scene_ten_moon, .scene_ten_bg_2", 1, {
+				opacity: 0
 			}, 0);
 
 // ––––––––––––––––––– Scene 12 SmallPenisReveal ––––––––––––––––––––––––––––––––––
@@ -239,6 +240,29 @@
 			});
 
 // ––––––––––––––––––– Scene 13 The End ––––––––––––––––––––––––––––––––––
+	var scene_theEnd_tl_in = new TimelineMax({ paused:true })			
+			.set(".animation_stage_scene_theEnd .scene_theEnd_lucy", {
+				top: "0",
+				left: "0",
+				opacity: 1
+			})
+			.from(".animation_stage_scene_theEnd .scene_theEnd_lucy", 1.2, {
+				top: "200px",
+				left: "100px",
+				opacity: 0
+			})
+			.from(".scene_theEnd .scene_header_lucy", 1, {
+				bottom: "100%",
+				opacity: 0,
+				ease: Elastic.easeOut
+			}, 1);
+
+	var scene_theEnd_tl_out = new TimelineMax({ paused:true })
+			.to(".animation_stage_scene_theEnd, .animation_stage_scene_ten", 1.5, {
+				top: "-100%"
+			});
+
+// ––––––––––––––––––– Scene 14 Outro ––––––––––––––––––––––––––––––––––
 	
 // ------------------------
 //	Inititate Fullpage.js
@@ -259,7 +283,8 @@
 								'scene_11', 
 								'scene_11b', 
 								'scene_12', 
-								'scene_theend'];
+								'scene_theend',
+								'scene_outro'];
 		
 		var indexOfIntro			=	sceneAnchors.indexOf('scene_intro') + 1;
 		var indexOfStart			=	sceneAnchors.indexOf('scene_1') + 1;
@@ -276,6 +301,7 @@
 		var indexOfDriftingDawned	=	sceneAnchors.indexOf('scene_11b') + 1;
 		var indexOfPenisPoint 		=	sceneAnchors.indexOf('scene_12') + 1;
 		var indexOfTheEnd 			=	sceneAnchors.indexOf('scene_theend') + 1;
+		var indexOfOutro			=	sceneAnchors.indexOf('scene_outro') + 1;
 
 	    $('.wrapper').fullpage({
 	    	anchors: sceneAnchors,
@@ -363,7 +389,7 @@
 	            }
 
 	            if(index == indexOfTheEnd) {
-	            	
+	            	scene_theEnd_tl_in.play().timeScale(1);
 	            }
 	        },
 
@@ -443,9 +469,8 @@
 	        		if (newIndex == indexOfDriftingDawned) {	     
 
 	        		}
-	        		else if (newIndex == indexOfDriftingThinking) { //GOING BACK
-	        			//scene_10_tl_in.reverse();
-	        			scene_11_tl_planetleave.pause(0);       			
+	        		else if (newIndex == indexOfDriftingThinking) {	        			
+	        			//scene_11_tl_planetleave.pause(0);       			
 	        		}
 	        		else {
 	        			scene_10_tl_in.reverse();	
@@ -457,22 +482,51 @@
 	        	}
 
 	        	if(index == indexOfPenisPoint) {
-	        		if (newIndex !== indexOfTheEnd) {
+	        		if (newIndex == indexOfTheEnd) {
+	        			//nothing
+	        		}
+	        		else if (newIndex == indexOfDriftingDawned || newIndex == indexOfDriftingWhy || newIndex == indexOfDriftingThinking) {
+	        			scene_12_tl_in.reverse();
+		        		scene_12_tl_blinkarrows.pause(0);
+		        		scene_11_tl_planetleave.reverse();
+	        		}
+	        		else {
 		        		scene_12_tl_in.reverse();
 		        		scene_12_tl_blinkarrows.pause(0);
+		        		scene_10_tl_in.reverse();
 		        	}
 	        	}
 
 	        	if(index == indexOfTheEnd) {
-	        		if (newIndex !== indexOfPenisPoint) {
+        			if (newIndex == indexOfOutro) {
+		        		scene_theEnd_tl_out.play(0).timeScale(1);
+		        	}
+		        	else if (newIndex == indexOfPenisPoint) {
+		        		scene_theEnd_tl_in.reverse().timeScale(3);
+		        	}
+		        	else {
 	        			scene_12_tl_in.reverse();
 		        		scene_12_tl_blinkarrows.pause(0);
 		        		scene_10_tl_in.reverse();
 		        		scene_11_tl_in.pause(0);
-	        			scene_11_tl_planetleave.pause(0);       			    		        		
+	        			scene_11_tl_planetleave.pause(0);       
+	        			scene_theEnd_tl_in.reverse();			    		        		
+	        		}
+	        	}
+
+	        	if(index == indexOfOutro) {
+	        		if( newIndex == (indexOfOutro - 1) ){
+		        		scene_theEnd_tl_out.reverse().timeScale(3);
 		        	}
 		        	else {
-		        		//alert ('back');
+		        		scene_theEnd_tl_out.pause(0);	
+		        		scene_theEnd_tl_in.reverse().timeScale(3);
+		        		scene_12_tl_in.reverse();
+		        		scene_12_tl_blinkarrows.pause(0);
+		        		scene_10_tl_in.reverse();
+		        		scene_11_tl_in.pause(0);
+	        			scene_11_tl_planetleave.pause(0);       
+	        			scene_theEnd_tl_in.reverse();
 		        	}
 	        	}
 	        },
@@ -542,7 +596,7 @@ if(isIOS){
     $('.btn_fullscreen').hide();
 }
 
-// Fullscreen Button powerd by screenfull.js 	
+// Fullscreen Button powered by screenfull.js 	
 // -----------------------------------------
 const target = $('body')[0]; // Get DOM element from jQuery collection
 
