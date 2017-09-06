@@ -371,8 +371,9 @@ div.animation_stage_scene_theEnd {
 	background: transparent;
 }
 
-.scene_theEnd .scene_header_lucy {
+.scene_theEnd .scene_text .scene_header_lucy {
 	margin-left: 1rem;
+	text-align: left;
 }
 
 .scene_theEnd .scene_header_lucy:after {
@@ -385,6 +386,10 @@ div.animation_stage_scene_theEnd {
 
 	.scene_theEnd .scene_text {
 		left: 20vw;
+	}
+
+	.scene_theEnd .scene_header_lucy {
+		max-width: 25rem;
 	}
 
 	.scene_theEnd .scene_header_lucy:after {
