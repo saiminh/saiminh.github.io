@@ -13,7 +13,7 @@
 				opacity: 0
 			}, 1)
 			.from(".scene_intro .scene_header_lucy", 1, {
-				y: "-50px",
+				bottom: "50px",
 				opacity: 0,
 				ease: Elastic.easeOut
 			});
@@ -545,10 +545,12 @@
 					//$('div[class^="animation_stage_scene_"]').width(inWidth / 2).height(inHeight);
 					//$('.scene_text').width(inWidth / 2).height(inHeight).css("marginTop", "0");
 				};
-				
-				$('#preloader').fadeOut('slow',function(){
-					$(this).remove();
-				});
+				if ( $('#preloader') ) {					
+					$('#preloader').fadeOut('slow',function(){
+						$(this).remove();
+						console.log('Removed preloader afterRender');
+					});
+				}
 			}
 	    });
 	});

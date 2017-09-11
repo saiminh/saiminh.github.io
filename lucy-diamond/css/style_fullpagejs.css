@@ -96,13 +96,13 @@ body {
 
 @media (min-width: 321px) {
 	.scene_header {
-		font-size: 1.4rem;
+		font-size: 1.1rem;
 	}
 }
 
 @media (min-width: 481px) {
 	.scene_header {
-		font-size: 2rem;
+		font-size: 1.4rem;
 		padding: 0 3rem;
 	}
 
@@ -216,11 +216,10 @@ Intro Scene Lucy
 .scene_header_lucy {
 	background: #FFF;
 	color: #000;
-	padding: 2rem;
-	font-size: 1.0rem;
+	padding: 1.5rem;
+	font-size: 0.9rem;
     margin: 1rem;
     width: calc(100% - 2rem);
-    bottom: 50%;
 }
 
 @media (orientation: landscape) {
@@ -232,7 +231,6 @@ Intro Scene Lucy
 @media (max-width: 320px) {
 	.scene_header_lucy {
 		padding: 1rem;
-		font-size: 0.9rem;
 	}
 }
 
