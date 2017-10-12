@@ -52,12 +52,10 @@ $theme_home_color_highlight: $brand-color;
 	}
 
 	& .button {
-		 color: $theme_home_color_highlight;
-		 border-color: $theme_home_color_highlight;
+		 color: $theme_home_color_bg;
 		 display: inline-block;
 
 		 &:hover {
-		 	color: #FFF;
 		 }
 		
 		@media screen and (max-width: 460px) {
@@ -68,11 +66,7 @@ $theme_home_color_highlight: $brand-color;
 		}
 	}
 
-	& .index-header {
-	//	font-size:1.3em;
-	//	background-image: url(../img/hero-bg/home_simon.png);
-	//	background-position: 95% 20px;
-	//	background-size: auto 95vh;		
+	& .index-header {	
 		min-height: 0;
 		padding-top: 0;
 	}

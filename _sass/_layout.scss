@@ -205,6 +205,9 @@ body {
     margin-bottom: $spacing-unit;
     margin-left: -$spacing-unit / 2;
 
+    &.row {
+        overflow: visible;
+    }
 }
 
 .work_list_title {
@@ -220,6 +223,22 @@ body {
     width:         calc(25% - (#{$spacing-unit} / 2));
     margin-left: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
+    transition: -webkit-transform 0.2s;
+    transition:     -ms-transform 0.2s;
+    transition:         transform 0.2s;
+
+    -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+       -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+         -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */ 
+
+
+    &:hover {
+        -webkit-transform: rotate(-2deg) scale(1.1);
+            -ms-transform: rotate(-2deg) scale(1.1);
+                transform: rotate(-2deg) scale(1.1);
+    }
 }
 
 .work_list_tile_thumb {
