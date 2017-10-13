@@ -10,9 +10,6 @@ extra_classes: portfolio theme-illustrations-various
 title_offset_y: 65vh
 title_align: center
 ---
-<div id="instagram_images">
-
-</div>
 
 <div class="wrapper">
 

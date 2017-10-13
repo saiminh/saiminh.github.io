@@ -45,21 +45,6 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/isInViewport.min.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.3/js/jquery.fluidbox.min.js"></script>
-{% if page.title == "Illustrations" %}
-  <script type="text/javascript" src="{{ site.baseurl }}/js/instafeed.min.js"></script>
-  <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: '5005374274',        
-        clientId: '6d0e4e8001f444e9a291dc3d65ef0318',
-        accessToken: '5005374274.6d0e4e8.50a07fc289b342f29b74f0ad93423ea8',
-        target: 'instagram_images',
-        resolution: 'standard_resolution',
-        template: '<a href="{{link}}"><span class="instagram_image_caption">{{caption}}</span><img src="{{image}}" /></a>'
-    });
-    feed.run();
-  </script>
-{% endif %}
 <script type="text/javascript">
   $(document).ready(function(){
 
