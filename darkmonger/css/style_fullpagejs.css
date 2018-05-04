@@ -299,7 +299,6 @@ div.animation_stage_scene_seven{
 
 .scene_theEnd .scene_header {
 	font-size: 1.8rem;
-	transform: none;
 }
 @media screen and (min-width: 321px){
 	.scene_theEnd .scene_header {
@@ -323,11 +322,10 @@ div.animation_stage_scene_seven{
 	opacity: .9;
 }
 
-
-
 .nav-prev {
 	top: calc(100vw - 50px);
 }
+
 @media (orientation: landscape) {
 
 	.nav {
@@ -363,8 +361,6 @@ div.animation_stage_scene_seven{
 }
 
 .share_links {
-	position: absolute;
-	bottom: 1rem;
 	text-align: center;
 	width: 100%;
 }
@@ -385,8 +381,8 @@ div.animation_stage_scene_seven{
 	font-size: 1rem;
 }
 .madeby {
-	font-size: 1rem;
-	margin-bottom: .5rem;
+	font-size: 1.2rem;
+	margin-top: .5rem;
 }
 
 .madeby a,

@@ -227,6 +227,19 @@
 
 // ––––––––––––––––––– Scene 13 The End ––––––––––––––––––––––––––––––––––
 
+	var s00_end_in = new TimelineMax( {paused: true} )
+		.to(".nav-next", .5, {
+				autoAlpha: 0,
+				y: 50
+			});
+
+	var s00_end_out = new TimelineMax( {paused: true} )
+		.to(".nav-next", .5, {
+			autoAlpha: .2,
+			y: "0",
+			clearProps:"all"
+		});
+
 	  		
 	$(document).ready(function() {
 		
@@ -334,9 +347,7 @@
 	            }
 
 	            if(index == indexOfTheEnd) {
-	            	/*scene_11_tl_in.play();
-	            	scene_10_tl_bg.repeat(-1).play();
-	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();*/
+	            	s00_end_in.play(0);	            	
 	            }
 	        },
 
@@ -438,10 +449,11 @@
 		        		scene_12_tl_blinkarrows.pause(0);
 		        		scene_10_tl_in.reverse(0);
 		        		scene_11_tl_in.pause(0);
-	        			scene_11_tl_planetleave.pause(0);       			    		        		
+	        			scene_11_tl_planetleave.pause(0);       
+	        			s00_end_out.play(0);			    		        			        						    		        		
 		        	}
 		        	else {
-		        		
+		        		s00_end_out.play(0);
 		        	}
 	        	}
 	        }
