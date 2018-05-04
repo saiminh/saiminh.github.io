@@ -44,7 +44,7 @@ body {
 	position: relative;
 	text-align: center;
 	color: #fff;
-	background: #981f1f;
+	background: #000;
 }
 
 @media (orientation: landscape) {
@@ -90,7 +90,7 @@ body {
 	padding-top: .25em;
 	padding-right: 8px;
 	padding-left: 0;
-	color: #000;
+	color: #981f1f;
 }
 
 @media (min-width: 321px) {
@@ -127,7 +127,7 @@ body {
 
 strong {
 	font-weight: 700;
-	color: #000;
+	color: #981f1f;
 	letter-spacing: -.01em;
 }
 
@@ -283,9 +283,13 @@ div.animation_stage_scene_seven{
 .scene_ten_moon,
 .scene_ten_venus,
 .scene_ten_jupiter,
-.scene_ten_bg,
+.scene_ten_bg_again,
 .scene_ten_bg_2 {
 	left: -100%;
+	margin-left: 0;
+}
+.scene_ten_bg {
+	left: 0;
 	margin-left: 0;
 }
 
@@ -387,5 +391,5 @@ div.animation_stage_scene_seven{
 
 .madeby a,
 .madeby a:visited {
-	color: #000;
+	color: #981f1f;
 }

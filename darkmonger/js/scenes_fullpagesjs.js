@@ -1,6 +1,9 @@
-	// ––––––––––––––––––– Scene 01 Jusr Space ––––––––––––––––––––––––––––––––––
+	// ––––––––––––––––––– Scene 01 Just Space ––––––––––––––––––––––––––––––––––
 	var scene_1_tl = new TimelineMax( { paused: true } )
-			.from(".scene_one_space .space", 3, {opacity: 0, top: "50px"});
+			.from(".scene_one_space .space", 3, {
+				opacity: 0, 
+				y: "50px"
+			});
 
 	// ––––––––––––––––––– Scene 02 Eyes Blinking ––––––––––––––––––––––––––––––––––
 	var scene_2_tl_loop = new TimelineMax( { paused: true })
@@ -17,7 +20,7 @@
 	var scene_2_tl = new TimelineMax( { paused: true } )
 			
 			.from(".scene_two_ScaryMonsterName_eyes", 1.5, {
-				opacity: 0, 
+				autoAlpha: 0, 
 				ease: "easeOut"
 			})
 			.to(".scene_two_ScaryMonsterName_eyes", .3, {
@@ -31,7 +34,7 @@
 	// ––––––––––––––––––– Scene 03 Guy in the dark ––––––––––––––––––––––––––––––––––
 	var scene_3_tl_loop = new TimelineMax( { paused: true } )
 			.set(".scene_three_GuyLostInTheDark", {
-					backgroundPositionX: "0"
+				backgroundPositionX: "0"
 			})
 			.to(".scene_three_GuyLostInTheDark", 1.5, {				
 				backgroundPositionX: "100%", 
@@ -41,17 +44,17 @@
 
 	var scene_3_tl_in = new TimelineMax( { paused: true })
 			.to(".scene_three_GuyLostInTheDark", .5, {
-				opacity: 1,
+				autoAlpha: 1,
 				onComplete: function(){scene_3_tl_loop.repeat(-1).play()}
 			});
 
 // ––––––––––––––––––– Scene 04 eating ––––––––––––––––––––––––––––––––––
 	var scene_4_tl_in = new TimelineMax( { paused: true })
 			.set(".scene_four_GuyBeingEaten", {
-						backgroundPositionX: "0"
-					})
+				backgroundPositionX: "0"
+			})
 			.from(".animation_stage_scene_four", .5, {
-				opacity: 0
+				autoAlpha: 0
 			});
 
 	var scene_4_tl_bite1 = new TimelineMax( { paused: true } )						
@@ -80,140 +83,145 @@
 // ––––––––––––––––––– Scene 05 growing menace ––––––––––––––––––––––––––––––––––
 	var scene_5_tl_in = new TimelineMax( { paused: true })
 			.from(".animation_stage_scene_five", .5, {
-				opacity: 0
+				autoAlpha: 0
 			})
 			.from(".scene_five_planet", 4, {
-				top: "-20px"
+				y: "-20px"
 			}, 0)
 			.from(".scene_five_devil", 4, {
-				top: "20px"
+				y: "20px"
 			}, 0);
 
 // –––––––––––––––––––Scene 06 fearful couple ––––––––––––––––––––––––––––––––––
 	var scene_6_tl_in = new TimelineMax( { paused: true })
 			.set(".scene_six_couple", {
-				opacity: 1 //This is in case user goes back from 7
+				autoAlpha: 1 //This is in case user goes back from 7
 			})
 			.set(".scene_six_light", {
-				opacity: .7 //This is in case user goes back from 7
+				autoAlpha: .7 //This is in case user goes back from 7
 			})
 			.from(".animation_stage_scene_six", .5, {
-				opacity: 0
+				autoAlpha: 0
 			});
 	var scene_6_tl_light = new TimelineMax( { paused: true })
 			.from(".scene_six_light", .4, {
-				opacity: 1,
+				autoAlpha: 1,
 				scale: 0.95
 			})
 			.to(".scene_six_light", .4, {
-				opacity: 1,
+				autoAlpha: 1,
 				scale: 0.95
 			});
 
 // –––––––––––––––––––Scene 07 fearful couple ––––––––––––––––––––––––––––––––––
 	var scene_7_tl_in = new TimelineMax( { paused: true })
 			.from(".animation_stage_scene_seven", .5, {
-				opacity: 0
+				autoAlpha: 0
 			})
 			.to(".scene_seven_couple", 3, {
-				opacity: 0
+				autoAlpha: 0
 			}, .5);
 
 // –––––––––––––––––––Scene 08 lights go out ––––––––––––––––––––––––––––––––––
 	var scene_8_tl_in = new TimelineMax( { paused: true })
 			.from(".animation_stage_scene_eight", .5, {
-				opacity: 0
+				autoAlpha: 0
 			});
 	var scene_8_tl_lightsout = new TimelineMax( { paused: true })
 			.to(".planetlights_4", 1.5, {
 				delay: 1.5,
-				opacity: 0
+				autoAlpha: 0
 			})
 			.to(".planetlights_3", 1.5, {
-				opacity: 0
+				autoAlpha: 0
 			})
 			.to(".planetlights_2", 1.5, {
-				opacity: 0
+				autoAlpha: 0
 			})
 			.to(".planetlights_1", 1.5, {
-				opacity: 0
+				autoAlpha: 0
 			});
 
 // ––––––––––––––––––– Scene 09 Planeteater ––––––––––––––––––––––––––––––––––
 	var scene_9_tl_in = new TimelineMax( { paused: true })
 			.from(".animation_stage_scene_nine", .5, {
-				opacity: 0
+				autoAlpha: 0
 			});
 
 // ––––––––––––––––––– Scene 10 Planetfloater ––––––––––––––––––––––––––––––––––
 	var scene_10_tl_in = new TimelineMax( { paused: true })
 			.from(".animation_stage_scene_ten", .5, {
-				opacity: 0
+				autoAlpha: 0
 			});
 	var scene_10_tl_bg = new TimelineMax( { paused: true })			
-			.to(".scene_ten_bg", 14, {
-				left: "100%",
+			.to(".scene_ten_bg", 7, {
+				x: "100%",
+				ease: "linear"
+			})
+	var scene_10_tl_bg_again = new TimelineMax( { paused: true })			
+			.to(".scene_ten_bg_again", 7, {
+				x: "100%",
 				ease: "linear"
 			})
 	var scene_10_tl_bg_2 = new TimelineMax( { paused: true })			
 			.to(".scene_ten_bg_2", 12, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_moon = new TimelineMax( { paused: true })			
 			.to(".scene_ten_moon", 12, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_venus = new TimelineMax( { paused: true })			
 			.to(".scene_ten_venus", 9, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_jupiter = new TimelineMax( { paused: true })			
 			.to(".scene_ten_jupiter", 7, {
-				left: "100%",
+				x: "200%",
 				ease: "linear"
 			})
 	var scene_10_tl_devil = new TimelineMax( { paused: true })			
 			.to(".scene_ten_devil, .scene_twelve_devil, .scene_twelve_devil_arrows", 1, {
-				top: "2%"
+				y: "2%"
 			}, 0);
 
 	var scene_10_tl_devilpenis_hide = new TimelineMax({ paused:true })
 			.set(".scene_twelve_devil, .scene_twelve_devil_arrows", {
-				opacity:0
+				autoAlpha:0
 			});
 
 // ––––––––––––––––––– Scene 11 Planetfloater ––––––––––––––––––––––––––––––––––
 	
 	var scene_11_tl_in = new TimelineMax( { paused: true })
 			.to(".animation_stage_scene_ten", .5, {
-				opacity: 1
+				autoAlpha: 1
 			});
 	var scene_11_tl_planetleave = new TimelineMax({ paused: true })
 			.to(".scene_ten_jupiter, .scene_ten_venus, .scene_ten_moon, .scene_ten_bg_2", 2, {
-				marginLeft: "200vw"
+				autoAlpha: 0
 			}, 0);
 
 // ––––––––––––––––––– Scene 12 SmallPenisReveal ––––––––––––––––––––––––––––––––––
 			
 	var scene_12_tl_in = new TimelineMax( { paused: true })
 			.to(".scene_ten_devil", .3, {
-				opacity: 0,
+				autoAlpha: 0,
 				marginTop: "-10vh"
 			}, 0)
 			.to(".scene_twelve_devil, .scene_twelve_devil_arrows", .3, {
-				opacity: 1,
+				autoAlpha: 1,
 				marginTop: "-10vh"
 			}, 0);
 	var scene_12_tl_blinkarrows = new TimelineMax({ paused: true })
 			.from(".scene_twelve_devil_arrows", .25, {
-				opacity: 0,
+				autoAlpha: 0,
 				//scale: 1.1
 			})
 			.to(".scene_twelve_devil_arrows", .25, {
-				opacity: 1,
+				autoAlpha: 1,
 				//scale: 1.1
 			});
 
@@ -299,6 +307,7 @@
 	            	scene_10_tl_in.play(0);
 	            	scene_10_tl_devilpenis_hide.play();
 	            	scene_10_tl_bg.repeat(-1).play();
+	            	scene_10_tl_bg_again.repeat(-1).play();
 	            	scene_10_tl_bg_2.repeat(-1).play();
 	            	scene_10_tl_moon.repeat(-1).play();
 	            	scene_10_tl_venus.repeat(-1).play();
@@ -309,6 +318,7 @@
 	            if(index == indexOfDriftingWhy){	            	
 	            	scene_11_tl_in.play();
 	            	scene_10_tl_bg.repeat(-1).play();
+	            	scene_10_tl_bg_again.repeat(-1).play();
 	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();	            	
 	            }
 
@@ -317,6 +327,7 @@
 	            	scene_11_tl_in.play();
 	            	scene_12_tl_in.play();
 	            	scene_10_tl_bg.repeat(-1).play();
+	            	scene_10_tl_bg_again.repeat(-1).play();
 	            	scene_10_tl_devil.repeat(-1).yoyo(true).play();
 	            	//scene_10_tl_in.reverse();
 	            	scene_12_tl_blinkarrows.yoyo(true).repeat(-1).play();
@@ -425,12 +436,12 @@
 	        		if (newIndex !== indexOfPenisPoint) {
 	        			scene_12_tl_in.reverse();
 		        		scene_12_tl_blinkarrows.pause(0);
-		        		scene_10_tl_in.pause(0);
+		        		scene_10_tl_in.reverse(0);
 		        		scene_11_tl_in.pause(0);
 	        			scene_11_tl_planetleave.pause(0);       			    		        		
 		        	}
 		        	else {
-		        		//alert ('back');
+		        		
 		        	}
 	        	}
 	        }
