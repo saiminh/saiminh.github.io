@@ -12,7 +12,7 @@ body {
         left:0;
         right: 0;
         height: 10px;
-        background-color: #FFF;
+        background-color: $text-color;
         position: fixed;
         bottom:0;
         z-index: 1000;
@@ -126,9 +126,8 @@ body {
  */
 .site-footer {
     padding: $spacing-unit 0;
-    background-color: #263458;
-    color: #eee;
-    border-top: 10px solid #FFF;
+    color: $text-color;
+    border-top: 10px solid $text-color;
 }
 
 .contact-list,

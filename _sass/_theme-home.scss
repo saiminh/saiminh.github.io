@@ -1,11 +1,8 @@
-$theme_home_color: #FFF;
-$theme_home_color_bg: #253458;
+$theme_home_color: $text-color;
+$theme_home_color_bg: $background-color;
 $theme_home_color_highlight: $brand-color;
 
 .theme-home {
-
-	background-color: $theme_home_color_bg;
-	border-color: #FFF;
 
 	&,
 	& a,

@@ -7,8 +7,9 @@ mainnav: hide
 header_bg_image: /img/hero-bg/bierbaum.png
 subtitle: Tempting craft beer store 
 extra_classes: portfolio theme-bierbaum
-title_offset_y: 72vh
+title_offset_y: 0vh
 title_align: center
+hidetitles: yes
 ---
 
 <div class="bierbaum-logo">
@@ -238,15 +239,16 @@ title_align: center
 <div class="index-header wrapper">
 	
 	<div class="row">
-		<div class="col-6">
-			<h1>The Bierbaum Story</h1>
-			<p><span class="drop_cap">T</span> he guy that runs this Amsterdam beer specialties store asked me to design a logo. (The name is German for "Beer tree").</p>
-			<p>Together, the store manager and me developed a lot of very stylized options but he always felt like it was too corporate and didn't have enough character and story.</p>
-
+		<div class="col-12">
+			<h1>Creating a tempting Brand for Beershops</h1>
 		</div>
 		<div class="col-6">
-			<img src="{{ site.baseurl }}/img/work_bierbaum/stylized_logo.png" class="sr sr-right">
-			<em class="illustration_caption sr sr-right">Too boring, also some said they see ass-cracks...</em>
+			<p><span class="drop_cap">T</span>he guy that runs this Amsterdam beer specialties store asked me to design a logo. (The name is German for "Beer tree").</p>
+		</div>
+		<div class="col-6">
+			{% comment %}<h1>The Bierbaum Story</h1>{% endcomment %}
+			
+			<p>Together, the store manager and me developed a lot of very stylized options but he always felt like it was too corporate and didn't have enough character and story.</p>
 		</div>			
 	</div>
 
@@ -259,8 +261,8 @@ title_align: center
 			<p>So in the end we chose to get all the biblical elements of the Adam and Eve story into the logo (except Adam which is symbolized by you, the customer), so it would tempt people inside.</p>
 		</div>
 		<div class="col-6">
-			<img src="{{ site.baseurl }}/img/work_bierbaum/whiteonly_logo.png" class="sr sr-right">
-			<em class="illustration_caption sr sr-right">One-color negative version</em>
+			<img src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg" class="sr sr-right">
+			<em class="illustration_caption sr sr-right">First Beerbaum location in Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
 	</div>
 

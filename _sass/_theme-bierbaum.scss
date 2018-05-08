@@ -1,15 +1,8 @@
-$theme_bierbaum_color: #000;
-$theme_bierbaum_color_bg: #ff5858;
-$theme_bierbaum_color_border: #FFF;
+$theme_bierbaum_color: $text-color;
+$theme_bierbaum_color_bg: $background-color;
+$theme_bierbaum_color_border: $brand-color;
 
 .theme-bierbaum {
-    border-color: $theme_bierbaum_color_border;
-    background-color: $theme_bierbaum_color_bg;
-
-    &:after,
-    &:before {
-    	background-color: $theme_bierbaum_color_border;
-    }
 
     & #floter_signature_svg {
     	fill: $theme_bierbaum_color;
@@ -21,7 +14,12 @@ $theme_bierbaum_color_border: #FFF;
 	    background-image: none!important;
 	}
 
-	& .index-header {
+	& .page-header {
+		margin-bottom: -30vh;
+	}
+
+	& .arrow_down {
+		display: none;
 	}
 
 	&,	
@@ -138,12 +136,6 @@ $theme_bierbaum_color_border: #FFF;
 	}
 }
 
-@media screen and (max-height: 624px) {
-	.arrow_down {
-	//display: none;	
-	}
-}
-
 .work_list_tile_BierbaumLogo .work_list_tile_thumb {
     background-size: auto 90%;
     background-color: $theme_bierbaum_color_bg;
@@ -187,6 +179,12 @@ $theme_bierbaum_color_border: #FFF;
 		height: 570px;
 		margin-left: -193px;
 	}
+
+	@media screen and (min-width: 640px) {
+		width: 275px;
+		height: 405px;
+		margin-left: -137px;
+	}
 }
 
 .st0{fill:none;stroke:$theme_bierbaum_color_bg;stroke-width:5.1561;stroke-miterlimit:10;}
@@ -217,6 +215,12 @@ $theme_bierbaum_color_border: #FFF;
 		width: 53px;
 		height: 53px;
 		margin: -1px 0 0 -26px;
+	}
+
+	@media screen and (min-width: 640px) {
+		width: 38px;
+		height: 38px;
+		margin: -1px 0 0 -19px;
 	}
 }
 

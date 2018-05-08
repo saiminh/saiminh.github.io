@@ -23,6 +23,7 @@ layout: default
 		    	{% endif %}
 		    "
 	>
+	{% unless page.hidetitles %}
 	    <h1 class="page-title sr sr-bottom-short">	    	
 	    	{% if page.headline %}	
 	    		{{ page.headline }}
@@ -33,8 +34,8 @@ layout: default
 	    {% if page.subtitle %} 
 	    	<h2 class="page-subtitle sr sr-top-short">{{ page.subtitle }}</h2>
 	   	{% endif %}
+	{% endunless %}
 	</div>
-	<a class="anchorlink" href="#this_page_content">{% include arrow_straight_down_white.svg %}</a>
   </header>
 
 	<div id="this_page_content" class="page-content">
