@@ -1,36 +1,7 @@
-$theme_home_color: $text-color;
-$theme_home_color_bg: $background-color;
-$theme_home_color_highlight: $brand-color;
-
 .theme-home {
-
-	&,
-	& a,
-	& a.site-title,
-	& a:visited.site-title,
-	& a.page-link,
-	& a:visited.page-link {
-		color: $theme_home_color;
-	}
-
-	& #floter_signature_svg {
-		fill: $theme_home_color;
-	}
 
 	& .page-header.has_hero_img .wrapper {
 		padding: 0 20px;
-	}
-
-	& .page-content {
-		margin-bottom: 0;
-
-		@media screen and (min-width: 768px) {
-			font-size: 28px;
-		}
-	}	
-
-	& .page-content .drop_cap:after {
-		background-color: $theme_home_color;
 	}
 
 	& .or {
@@ -40,21 +11,12 @@ $theme_home_color_highlight: $brand-color;
 		}
 	}
 
-	& hr {
-		border-width:0;
-		border-top: 2px solid $theme_home_color_highlight;
-	}
-
 	& .cta {
 		text-align: center;
 	}
 
 	& .button {
-		 color: $theme_home_color_bg;
-		 display: inline-block;
-
-		 &:hover {
-		 }
+		display: inline-block;
 		
 		@media screen and (max-width: 460px) {
 			width: 100%;
@@ -64,72 +26,18 @@ $theme_home_color_highlight: $brand-color;
 		}
 	}
 
-	& .index-header {	
-		min-height: 0;
-		padding-top: 0;
-	}
-
-	& .index_arrow_to_work {
-		width: 60px;
-		height: 60px;
-		margin-bottom: -30px;
-	}
-
-	& .page-header .wrapper {
-		padding-top: 0;
-	}
-
-	& .page-title {
-		font-size: 10vh;
-		height: 13vh;
-		margin: 0;
-		margin-top: 40vh;
-		margin-bottom: 50vh;
-		text-align: center;
-		position: relative;
-		width: 100%;
-		overflow: hidden;
-
-		@media screen and (orientation: portrait) {
-			font-size: 10vw;
-			height: 26vw;
-			margin-top: 43vh;
-		}		
-	}
-
 	.site-footer {
 		border: none;
 		padding-top: 0;
 	}	
-}
 
-.myface {
-
-	& .simon_illu {
-		width: 200px;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-
-		@media screen and (min-width: 460px) {
-			width: 350px;
-		}
-	}
-
-	& .skull_illu {
-		@extend .simon_illu;
-		display: none;
+	.illustration_image {
+		width: 100%;
 		position: relative;
-	}
+		left: 0px;
 
-	&:hover {
-	
-		& .simon_illu {
-			display: none;
-		}
-
-		& .skull_illu {
-			display: block;
+		@include media-query($on-palm) {
+			left: 0;
 		}
 	}
 }
@@ -137,184 +45,3 @@ $theme_home_color_highlight: $brand-color;
 #this_page_content {
 	box-sizing: border-box;
 }
-
-@include media-query($on-laptop) {
-	
-	.theme-home {
-
-		& {
-			font-size: 22px;
-		}
-
-		& .index-header {
-			font-size: 1em;			
-		}
-	}
-}
-@media screen and (orientation: portrait) and (min-width:640px) {
-	.theme-home {
-
-		& .index-header {
-			background-size: 50vw auto;
-			background-position: 100% 50%;
-		}
-	}
-}
-
-@include media-query($on-palm) {
-	
-	.theme-home {
-
-		& {
-			font-size: 20px;
-		}
-
-		& .index-header {
-			font-size: 1em;
-			background-size: auto 55vh;
-			background-position: 45% 20px;
-			background-attachment: initial;
-		}
-
-		& .post-content .wrapper {
-			padding-top: 50vh!important;
-		}
-	}
-}
-
-@include media-query($on-smallphone) {
-	
-	.theme-home {
-
-		& {
-			font-size: 16px;
-		}
-
-		& .index-header {
-			font-size: 1em;
-		}
-
-	}
-}
-
-#blood {
-	overflow: hidden;
-	position: absolute;
-	height: 100%;
-	width: calc(100% - 20px);
-	display: none;
-	cursor: pointer;
-
-	@include media-query($on-palm) {
-		width: calc(100% - 10px);
-	}
-
-	&.bst_active {
-		display: block;
-	}
-}
-
-#blood {
-	background-color: #253458;
-}
-
-.home_illu_blood {
-
-	position: absolute;
-	left: 33.3%;
-	transform: translate(-22.2%, -50%);
-	top: 50vh;
-
-	@media screen and (orientation: portrait) {
-		left: 0;
-		transform: translate(0, -50%);
-	}
-
-	& img {
-		position: absolute;	
-		top:0;
-		left: 0;
-		transition: all .3s ease-out;
-
-		max-height: 100vh;
-	}
-
-	& img:first-child {
-		position: relative;
-	}
-
-	
-}
-
-#introduce {
-	overflow: scroll;
-	margin: 20px auto 60px auto;
-
-	@media screen and (max-width: 768px) {
-		box-sizing: border-box;
-	   // border-top: 70px solid $theme_home_color_bg;
-	}
-
-	
-	& .row {
-		overflow: hidden;
-	}
-
-	.aboutme {
-		h1 {
-			text-align: center;
-		}
-	}
-
-	& .home-title-part-illustration-pencil {
-	// home pencil (hidden)
-		width: 140px;
-	    height: 140px;
-	    margin: 0 auto;
-	    display: block;
-
-	    @media screen and (max-width: 640px) {
-	    	width: 110px;
-	    	height: 110px;
-	    }
-
-       @media screen and (orientation: portrait) and (max-width: 640px){
-	    	margin-top: 0px;
-       }
-
-	    & path {
-	    	stroke-dasharray: 805;
-	    	stroke-dashoffset: 805;
-
-	    } 
-	}
-}
-
-.sr-revealed.home-title-part-illustration-pencil {
-	//home pencil (drawn)
-	& path {
-		-webkit-animation: dash 2s linear forwards;
-		animation: dash 2s linear forwards;
-	}
-}
-
-
-
-.bst_active {
-	
-	& .blood_woman {
-		-webkit-animation: from-bottom 1s cubic-bezier(.68,.18,.27,.95);
-		animation: from-bottom 1s cubic-bezier(.68,.18,.27,.95);
-	}
-
-	& .blood_type {
-		-webkit-animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
-		animation: fadein 1.5s cubic-bezier(.68,.18,.27,.95) .5s backwards;
-	}
-
-	& .aboutme {
-		-webkit-animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
-		animation: from-bottom .6s cubic-bezier(.68,.18,.27,.95) 0.3s backwards;
-	}
-}
-

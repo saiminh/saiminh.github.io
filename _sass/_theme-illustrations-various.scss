@@ -4,13 +4,6 @@ $highlight-color_illustrations: $brand-color;
 
 .theme-illustrations-various {
 
-	background-color: $bg-color_illustrations;
-	border-color: $text-color_illustrations;
-
-	& #floter_signature_svg {
-		fill: $text-color_illustrations;
-	}
-
 	& .has_hero_img {
 		background-position: center 11vh;
 		background-size: auto 50vh;
@@ -20,43 +13,13 @@ $highlight-color_illustrations: $brand-color;
 		}
 	}
 
+	& .arrow_down_polygon {
+		fill: $text-color;
+	}
+
 	& .col-4 {
 		overflow: visible;
 		// Otherwise the whole fluid maximisation won't work
-	}
-
-	& .page-content {
-		font-size: 17px;
-
-		@include media-query($on-palm) {
-			margin-top: 0;
-		}
-	}
-
-	& .page-title {
-		font-size: 7vh;
-	}
-
-	& a.site-title,
-	& a:visited.site-title,
-	& a.page-link,
-	& a:visited.page-link {
-		//color: $highlight-color_illustrations;
-	}
-
-	& .page-subtitle, 
-	& a, 
-	& a:visited {
-		color: $highlight-color_illustrations;
-	}
-
-	& .post-content .drop_cap:after {
-		background-color: $text-color_illustrations;
-	}
-
-	& hr {
-		border-width:0;
-		border-top: 2px solid $highlight-color_illustrations;
 	}
 
 	& .index-header {
@@ -66,12 +29,6 @@ $highlight-color_illustrations: $brand-color;
 		min-height: 75vh;
 		padding-top: 25vh;
 		background-position: 50% 50%;
-	}
-
-	& .index_arrow_to_work {
-		width: 60px;
-		height: 60px;
-		margin-bottom: -30px;
 	}
 
 	& .illustration_text {
@@ -124,10 +81,6 @@ $highlight-color_illustrations: $brand-color;
 		background-color: $bg-color_illustrations;
 	}
 
-	& .work_list_tile_Illustrations {
-		display: none;
-	}
-
 }
 
 @include media-query($on-laptop) {
@@ -170,7 +123,6 @@ $highlight-color_illustrations: $brand-color;
 @include media-query($on-smallphone) {
 	
 	.theme-illustrations-various {
-
 		& {
 			font-size: 16px;
 		}
@@ -178,12 +130,5 @@ $highlight-color_illustrations: $brand-color;
 		& .index-header {
 			font-size: 1em;
 		}
-
 	}
-}
-
-.work_list_tile_Illustrations .work_list_tile_thumb{
-	//background-image: url(../img/work_illustrations-various/CangrejoLaLeche.jpg)!important;
-	background-size: 90%;
-	background-color: #9ca5b1;
 }

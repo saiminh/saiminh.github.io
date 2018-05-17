@@ -1,4 +1,4 @@
-<header class="site-header sr sr-fade">
+<header class="site-header">
 
   <div class="wrapper">
 
@@ -19,7 +19,9 @@
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
-          <a class="page-link anchorlink" href="#work_examples">Show Work</a>
+          <a class="page-link anchorlink" href="#work_examples">Work</a>
+          <span class="page-link-divider">|</span>
+          <a class="page-link anchorlink" href="#contact">Contact</a>
       </div>
     </nav>
 

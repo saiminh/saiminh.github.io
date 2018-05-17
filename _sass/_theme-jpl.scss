@@ -1,22 +1,4 @@
-$theme_jpl_color_blue: #0E3862;
-$theme_jpl_color_beige: #F9A870;
-$theme_jpl_color_header: rgba(255,255,255,0.5);
-$theme_jpl_color_bg:#e1e1e4;
-$theme_jpl_color_border: #FFF;
-
 .theme-jpl {
-    border-color: $theme_jpl_color_border;
-    background-color: $theme_jpl_color_bg;
-    color: $theme_jpl_color_blue;
-
-    &:after,
-    &:before {
-    	background-color: $theme_jpl_color_border;
-    }
-
-    & #floter_signature_svg {
-    	fill: $theme_jpl_color_header;
-    }
 
 	& .page-header.has_hero_img {	    
 	    background-size: cover;
@@ -35,6 +17,7 @@ $theme_jpl_color_border: #FFF;
 	    right: 0;
 	    height: 18vh;
 	    text-align: center;
+	    display: none;
 
 	    & img {
 	    	height: 100%;
@@ -46,71 +29,21 @@ $theme_jpl_color_border: #FFF;
     	  }
 	    }
 	}
-	
-	& a.page-link,
-	& a:visited.page-link {
-		color: $theme_jpl_color_header;
-	}
-
-	& a.site-title,
-	& a:visited.site-title {
-		color: $theme_jpl_color_blue;
-	}
-
-	& .page-title {
-		display: none;
-	    font-size: 64px;
-	    margin-bottom: .33em;
-
-	    @include media-query($on-palm) {
-			font-size: 32px;
-			line-height: 1.3;
-			letter-spacing: 0;
-		}
-
-		@include media-query($on-smallphone) {
-			font-size: 24px;
-		}
-	}
-
-	& .page-subtitle {
-		font-size: 1.5em;
-		color: $theme_jpl_color_header;
-	}
 
 	& .jpl_logo_content {
-		max-width: 320px;
-	}
+		max-width: 85%;
 
-	& .row {
-		padding: 5vh 0;
+		@include media-query($on-palm) {
+			max-width: 100%;
+		}
 	}
-
-	& p a, & p a:visited {
-		color: $theme_jpl_color_beige;
-		text-decoration: underline;
-	}
-
-	& .page-content .drop_cap:after {
-		background-color: $theme_jpl_color_blue;
-	}
-
-	& hr {
-		border-width:0;
-		border-top: 4px solid $theme_jpl_color_blue;
-	}
-
 
 	& .work_list_tile_JustPeaceLabs{
 		display: none;
 	}
 
-	& .arrow_down polygon{
-		fill: #FFF;
-	}
-
-	& .illustration {
-		text-align: center;
+	& .arrow_down_polygon{
+		fill: $text-color;
 	}
 
 	& #jpl_symbol {
@@ -130,9 +63,4 @@ $theme_jpl_color_border: #FFF;
 			}
 		}
 	}
-}
-
-
-.work_list_tile_JustPeaceLabs .work_list_tile_thumb {
-    background-position: 0 0;
 }

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="page">
+
+{% unless page.header_bg_image or page.has_fullpage_bg %}
+<div class="wrapper">
+{% endunless %}	
+
+	<div id="this_page_content" class="page-content">
+		{{ content }}
+	</div>
+{% unless page.header_bg_image %}
+</div>
+{% endunless %}	
+
+</article>

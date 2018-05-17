@@ -1,24 +1,19 @@
 <div id="work_list" class="wrapper">
 	<div class="row work_list">
-		<h3 id="work_examples" class="work_list_title">Work</h3>
-
-				<a href="/work/illustration.html">
-					<div class="work_list_tile work_list_tile_Illustrations">
-						<h4 class="work_list_tile_title">Illustrations</h4>	
-						<div class="work_list_tile_thumb" style="background-image: url(/img/hero-bg/cangrejo_bg.png)">	       					
-				      	</div>			     
-				    </div>
-			    </a>
-		{% for work in site.work %}
-			{% unless work.title == "Work" or work.title == "Illustrations" %}
+		<h3 id="work_examples" class="work_list_title">Recent Work</h3>
+		{% assign sorted_work = site.work | sort:"order" | reverse %}
+		{% for work in sorted_work %}
+			{% if work.type == "portfolio" %}
+			{% unless page.id == work.id %}
 				<a href="{{ work.permalink }}">
 				<div class="work_list_tile work_list_tile_{{ work.title | remove: " " | remove: "." }}">
-					<h4 class="work_list_tile_title">{{ work.title }}</h4>	
 					<div class="work_list_tile_thumb" style="background-image: url({{ work.header_bg_image }})">	       					
-			      	</div>			     
+			      	</div>
+			      	<h4 class="work_list_tile_title">{{ work.title }}</h4>
 			    </div>
 			    </a>
 			{% endunless %}
+			{% endif %}
 
 	    {% endfor %}
 	</div>

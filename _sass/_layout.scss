@@ -25,32 +25,31 @@ body {
     &:before {
         bottom: auto;
         top: 0;
+        transition: height .3s ease-out;
     }
 }
+
 
 /**
  * Site header
  */
 .site-header {
     min-height: 56px;
-
+    transition: all .2s ease-out;
     // Positioning context for the mobile navigation icon
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    top: $spacing-unit;
+    top: 0;
+    padding-top: $spacing-unit/1.5;
     z-index: 100;
 
-    @include media-query($on-laptop) {
-        top: $spacing-unit / 1.5;    
-    }
-
     @include media-query($on-palm) {
-        top: $spacing-unit / 3;
+        padding-top: $spacing-unit/3;
     }
 
     & .wrapper {
-        max-width: 100%;
+       // max-width: 100%;
     }
 }
 
@@ -72,7 +71,8 @@ body {
 #floter_signature_svg {
     width: 200px;
     height: 118px;
-    fill: #000;
+    fill: $text-color;
+    transition: all .2s ease-out;
 
     @include media-query($on-palm) {
         width: 100px;
@@ -80,54 +80,114 @@ body {
     }
 }
 
-.dark_bg #floter_signature_svg {
-    fill: #fff;
- }
-
-.dark_bg .site-title {
-
-    &,
-    &:visited {
-        color: #FFF;
-    }
-}
-
 .site-nav {
-    float: right;
+    float: left;
     line-height: 56px;
+    position: relative;
+    left: 25px;
+
+    @include media-query($on-palm) {
+        line-height: 1;
+        left: 15px;
+        top: 5px;
+    }
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: inherit;
+        color: $text-color;
+        font-family: $heading-font-family;
         line-height: 1;
+        display: inline;
+        -webkit-font-smoothing: antialiased;
         
         @include media-query($on-palm) {
             font-size: .9em;
         }
+    }
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-
-        .dark_bg & {
-            color: #FFF;
-        }
+    .page-link-divider {
+        padding: 0 5px;
     }
 }
 
+.site-header--scrolled .site-header{
+    min-height: 0;
+    transition: all .2s ease-out;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    left: 10px;
+    right: 10px;
+    top:10px;
+    background-color: $background-color;
+    border-bottom: 1px solid #DDD;
+    z-index: 1009;
+
+    @include media-query($on-palm) {
+        left: 5px;
+        right: 5px;
+        top: 5px;
+    }
+
+    & #floter_signature_svg {
+        transition: all .2s ease-out;
+        width: 81px;
+        height: 47px;
+        //  fill: $background-color;
+        position: relative;
+        top: 3px;
+
+        @include media-query($on-palm) {
+            width: 50px;
+            height: 29px;
+        }
+    }   
+
+    & .site-title {
+        line-height: 1;
+    }
+
+    & .site-nav {        
+        padding-top: 10px;
+        line-height: 1;
+        top: 0;
+
+        @include media-query($on-palm) {
+            padding-top: 5px;
+            line-height: 0;
+            top: 2px;
+        }
+
+        & .page-link {
+            font-size: .8em;
+          //  color: $background-color;
+
+            @include media-query($on-palm) {
+                font-size: .75em;
+            }
+        }
+
+        & .page-link-divider {
+          //  color: $background-color;
+        }
+    }
+}
 
 
 /**
  * Site footer
  */
 .site-footer {
-    padding: $spacing-unit 0;
+    padding: 0;
     color: $text-color;
-    border-top: 10px solid $text-color;
+}
+
+.footer-heading {
+    border-top: 5px solid $text-color;
+    padding-top: 20px;
+    font-size: 2em;
 }
 
 .contact-list,
@@ -136,11 +196,12 @@ body {
     margin-left: 0;
 
     & a{
-        color: $brand-color!important;
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+        font-size: 1em;
 
         &:hover {
-            color: #FFF!important;
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
 }
@@ -211,10 +272,16 @@ body {
 
 .work_list_title {
     margin-left: $spacing-unit / 2;
+    border-top: 5px solid $text-color;
+    padding-top: 20px;
+    font-size: 2em;
+
+    @include media-query($on-laptop) {
+        margin-left: $spacing-unit / 3;
+    }  
 }
 
 .work_list_tile {
-    min-height: 245px;
     float: left;
     box-sizing: border-box;
     position: relative;
@@ -222,21 +289,13 @@ body {
     width:         calc(25% - (#{$spacing-unit} / 2));
     margin-left: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
-    transition: -webkit-transform 0.2s;
-    transition:     -ms-transform 0.2s;
-    transition:         transform 0.2s;
 
-    -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
-    -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-       -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-         -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */ 
-
-
-    &:hover {
-        -webkit-transform: rotate(-2deg) scale(1.1);
-            -ms-transform: rotate(-2deg) scale(1.1);
-                transform: rotate(-2deg) scale(1.1);
+    @include media-query($on-laptop) {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 3));
+        width:         calc(50% - (#{$spacing-unit} / 3));
+        margin-left: $spacing-unit / 3;
+        //margin-right: $spacing-unit / 6;
+        margin-bottom: $spacing-unit / 4;
     }
 }
 
@@ -245,56 +304,35 @@ body {
     width: 100%;
     display: block;
     background-position: 50% 50%;
-    background-size: cover;
-    background-color: #DDD;
+    background-size: 90% auto;
+    background-color: transparent;
     background-repeat: no-repeat;
 }
 
 .work_list_tile_title{
-  //  text-align: center;
-  //  font-family: $base-font-family;
     font-size: 18px;
-    padding: 13px 20px;
- //   background-color: #000;
-    color: #FFF;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
+    padding: 5px 0 0 0;
+    color: $text-color;
+    margin: 0;
+    border-top: 2px solid #000;
+
+    @include media-query($on-palm) {
+        font-size: 14px;
+    }
 }
 
 @include media-query($on-laptop) {
-    .work_list_tile {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 3));
-        width:         calc(50% - (#{$spacing-unit} / 3));
-        margin-left: $spacing-unit / 6;
-        margin-right: $spacing-unit / 6;
-        margin-bottom: $spacing-unit / 3;
+
+    .work_list_tile_thumb {
+        height: 40vw;
     }
+
     .row.work_list {
-        margin-left: -$spacing-unit / 6;
-    }
-    .work_list_title {
-        margin-left: $spacing-unit / 6;
+        margin-left: -$spacing-unit / 3;
     }
 }
 
-@include media-query($on-palm) {
-    .work_list_tile {
-        width: 100%;
-        margin: 0 0 10px 0;
-    }
-    .work_list_title {
-        margin: 0 0 1em 0;
-    }
-    .row.work_list {
-        margin:  0;
-    }
-    .footer-heading {
-        margin-top: $spacing-unit /2;
-    }
-}
+ 
 
 /**
  * Index content
@@ -310,6 +348,11 @@ body {
  * Page content
  */
 .page-content {
+    margin-top: $spacing-unit * 2;
+
+    @include media-query($on-palm) {
+        margin-top: $spacing-unit;
+    }
 }
 
 .page-heading {
@@ -364,35 +407,17 @@ body {
 }
 
 .page-title {
-    font-size: 52px;
     line-height: 1.3;
     margin-bottom: 0;
     padding: 0;
-
-    @include media-query($on-laptop) {
-        font-size: 46px;
-    }
-
-    @include media-query($on-palm) {
-        font-size: 28px;
-        margin-bottom: .33em;
-    }
 }
 
 .page-subtitle {
     font-family: $base-font-family;
     font-weight: 400;
-    font-size: 52px;
+    font-style: italic;
     line-height: 1.2;
-    padding: 0 20px;
-
-    @include media-query($on-laptop) {
-        font-size: 46px;
-    }
-
-    @include media-query($on-palm) {
-        font-size: 28px;
-    }
+    padding: 0;
 }
 
 .arrow_down {
@@ -464,8 +489,13 @@ body {
  .row {
     clear: both;
     margin-left: -$spacing-unit / 2;
-    margin-top: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
     overflow: auto;
+
+    &.row--nested {
+        margin-bottom: 0;
+        overflow: visible;
+    }
  }
 
  .raster img{
@@ -480,7 +510,7 @@ body {
  .col-12, .col-8, .col-6, .col-4 {
     float: left;
     padding-left: $spacing-unit / 2;
-    overflow: hidden;
+   // overflow: hidden;
     padding-top: 10px;
  }
 
@@ -538,6 +568,7 @@ body {
     .row {
         margin-bottom: 0;
         margin-left: 0;
+        margin-top: $spacing-unit / 4;
     }
 
     .raster img{
@@ -547,7 +578,8 @@ body {
     .col-8, .col-6, .col-4 {
         float: none;
         width: 100%;
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit / 4;
+        padding-bottom: 0;
         box-sizing: border-box;
     }
     .offset-3, .offset-2, .offset-4 {
@@ -565,6 +597,10 @@ body {
     cursor: zoom-in;
     cursor: -webkit-zoom-in; 
     cursor: -moz-zoom-in;
+}
+
+.portfolio .fluidbox__overlay {
+    background-color: #FFF;
 }
 
 /* Stuff that needs to be hidden on certain devices */

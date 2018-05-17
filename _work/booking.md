@@ -1,23 +1,28 @@
 ---
-layout: page
+layout: page_noheader
 type: portfolio
-title: UX Design at Booking.com
+title: Booking.com
 subtitle: The world's largest online travel agent 
 permalink: /work/booking.html
 mainnav: hide
-header_bg_image: /img/hero-bg/booking.png
+header_bg_image: /img/work_booking/booking_iphone6.png
 extra_classes: portfolio theme-booking
 title_offset_y: 45vh
-title_align: center
+title_align: left
+order: 4
 ---
 
 <div class="wrapper">
 	
 	<div class="row row-overlap">		
-	
+		<div class="col-4">
+	        <img src="{{ site.baseurl }}/img/work_booking/booking_iphone6.png" alt="image" class="work_booking_img_iphone" />
+	    </div>	
 		<div class="col-8">
-			<p class="pullquote">Booking.com is one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
-			<h3>My role at Booking.com</h3>
+			<h1 class="page-title">Booking.com</h1>
+			<h2 class="page-subtitle">UX Designer & Teamlead</h2>
+			<p class="pullquote">From 2013 until 2015 I worked at one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
+			<h3>My role included:</h3>
 			<ul class="quick_info_box_list">
 				<li>Projects cover all platforms (desktop, mobile, native apps)</li>
 				<li>Facilitate Ideation, sketching/wireframing and create mockups</li> 
@@ -27,10 +32,7 @@ title_align: center
 				<li>Coach and develop team members</li>
 			</ul>
 					
-		</div>		
-    	<div class="col-4">
-	        <img src="{{ site.baseurl }}/img/work_booking/booking_iphone6.png" alt="image" class="work_booking_img_iphone" />
-	    </div>			
+		</div>				
 	</div>
 
 	<div class="row">
@@ -46,13 +48,4 @@ title_align: center
 		</div>
 	</div>
 
-	<div class="row row-overlap">		
-
-		<div class="col-6">
-			<p><span class="drop_cap">M</span>any companies claim that they have a <em>metrics-driven approach...</em> But holy shit, unlike most of these places, Booking.com takes this statement really serious. The development teams measure the business impact of every component of their products carefully.</p>
-		</div>		
-		<div class="col-6">
-			<p><span class="drop_cap">T</span>he teams I worked on at Booking enabled me to work on a range of the company's huge product portfolio. In the gallery above, the work displayed is not reflective of the actual sites at this point, due to the dynamic, fast-learning approach at Booking.</p>
-		</div>
-	</div>
 </div>

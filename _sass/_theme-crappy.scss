@@ -1,77 +1,7 @@
-$theme_crappy_color: #584659;
-$theme_crappy_color_bg: #F6DAD8;
-$theme_crappy_color_border: #FFF;
+$theme_crappy_color: $text-color;
+$theme_crappy_color_bg: $background-color;
 
 .theme-crappy {
-    border-color: $theme_crappy_color_border;
-    background-color: $theme_crappy_color_bg;
-
-    &:after,
-    &:before {
-    	background-color: $theme_crappy_color_border;
-    }
-
-    & #floter_signature_svg {
-    	fill: $theme_crappy_color;
-    }
-
-	& .page-header.has_hero_img {	    
-	    background-size: 42vh;
-	    background-position: center 14vh;
-	}
-
-	&,	
-	& a.page-link,
-	& a:visited.page-link {
-		color: $theme_crappy_color;
-	}
-
-	& a.site-title,
-	& a:visited.site-title {
-		color: $theme_crappy_color;
-	}
-
-	& .page-title {
-	    font-size: 64px;
-	    margin-bottom: .33em;
-
-	    @include media-query($on-palm) {
-			font-size: 32px;
-			line-height: 1.3;
-			letter-spacing: 0;
-		}
-
-		@include media-query($on-smallphone) {
-			font-size: 24px;
-		}
-	}
-
-	& p a, & p a:visited {
-		color: $theme_crappy_color;
-		text-decoration: underline;
-	}
-
-	& .page-content .drop_cap:after {
-		background-color: $theme_crappy_color;
-	}
-
-	& hr {
-		border-width:0;
-		border-top: 4px solid $theme_crappy_color;
-	}
-
-	& p .button {
-		text-decoration: none;
-		color: $theme_crappy_color;
-		border-color: $theme_crappy_color;
-		display: inline-block;
-
-		&:hover,
-		&:active {
-			color: #FFF;
-			background-color: $theme_crappy_color;
-		}
-	}
 
 	& .work_list_tile_CrappyTurd{
 		display: none;
@@ -109,8 +39,15 @@ $theme_crappy_color_border: #FFF;
 		margin: -10px auto 20px auto;;
 	}
 
+	&.turd_flapping {
+		background-position: left top;
+		animation: play-turd_flapping 1s steps(7) infinite;
+		margin: -10px auto 20px auto;;
+	}
+
 	@keyframes play-turd_flapping {
-	   100% { background-position: -3328px top; }
+		0%	 { background-position: -768px top }
+	   	100% { background-position: -1664px top; }
 	}
 
 	@keyframes play-turd_flaming {
@@ -118,11 +55,10 @@ $theme_crappy_color_border: #FFF;
 	}
 }
 
-.screenrec_iphone {
-	display: block;
-	margin: 0 auto;
-	max-width: 305px;
+.work_list_tile_CrappyTurd .work_list_tile_thumb{
+	background-position: 50% top;
 }
+
 
 @include media-query($on-palm){
 	.theme-crappy {
@@ -134,11 +70,3 @@ $theme_crappy_color_border: #FFF;
 	}
 }
 
-.work_list_tile_CrappyTurd .work_list_tile_thumb {
-    background-size: 66.6%;
-    background-color: $theme_crappy_color_bg;
-}
-
-.work_list_tile_CrappyTurd .work_list_tile_title {
-	color: $theme_crappy_color;
-}

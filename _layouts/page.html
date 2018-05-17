@@ -8,7 +8,7 @@ layout: default
 {% endunless %}	
 
 
-  <header 	class="page-header{% if page.header_bg_image %} has_hero_img sr sr-fade{% endif %}" 	
+  <header 	class="page-header{% if page.header_bg_image %} has_hero_img{% endif %}" 	
 			style="
 				{% if page.header_bg_image %} 
 					background-image: url( {{ page.header_bg_image }} );
@@ -24,7 +24,7 @@ layout: default
 		    "
 	>
 	{% unless page.hidetitles %}
-	    <h1 class="page-title sr sr-bottom-short">	    	
+	    <h1 class="page-title">	    	
 	    	{% if page.headline %}	
 	    		{{ page.headline }}
 	    	{% else %}
@@ -32,10 +32,11 @@ layout: default
 	    	{% endif %}
 	    </h1>
 	    {% if page.subtitle %} 
-	    	<h2 class="page-subtitle sr sr-top-short">{{ page.subtitle }}</h2>
+	    	<h2 class="page-subtitle">{{ page.subtitle }}</h2>
 	   	{% endif %}
 	{% endunless %}
 	</div>
+	<a class="anchorlink" href="#this_page_content">{% include arrow_straight_down_white.svg %}</a>
   </header>
 
 	<div id="this_page_content" class="page-content">

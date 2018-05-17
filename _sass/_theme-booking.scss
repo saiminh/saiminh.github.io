@@ -1,37 +1,8 @@
-$theme_booking_color: #fff;
-$theme_booking_color_bg: #003385;
-$theme_booking_color_highlight: #1695FE;
+$theme_booking_color: $text-color;
+$theme_booking_color_bg: $background-color;
+$theme_booking_color_highlight: $brand-color;
 
 .theme-booking {
-
-	background-color: $theme_booking_color_bg;
-	color: $theme_booking_color;
-	border-color: $theme_booking_color;
-
-	& #floter_signature_svg {
-		fill: $theme_booking_color;
-	}
-
-	& .page-header {
-		background-color: $theme_booking_color_bg;
-		background-size: 50%;
-		background-position: right top;
-		height: 100vh;
-	}
-
-	& a.page-link,
-	& a:visited.page-link {
-		color: $theme_booking_color;
-	}
-
-	& .page-subtitle {
-		margin-top:0px;
-		color: $theme_booking_color_highlight;
-	}
-
-	& a, & a:visited {
-		color: $theme_booking_color_highlight;
-	}
 
 	& .col-hero-overlap {
 		position: relative;
@@ -43,44 +14,8 @@ $theme_booking_color_highlight: #1695FE;
 		display: block;
 		margin: 0 auto;
 	}
-
-	& .slick-arrow {
-		left: auto;
-		right: 100%;
-	}
-
-	& .slick-arrow.slick-next {
-		left: 100%;
-		right: auto;
-	}
-
-	& .slick-arrow.slick-next:after,
-	& .slick-arrow:after {
-		background-color: $theme_booking_color_bg;
-		background-image: url(../img/UI/chevron_left--white.svg);
-	}
-
-	& .slick-arrow.slick-next:after {
-		background-image: url(../img/UI/chevron_right--white.svg);
-	}
-
-	& .page-content .drop_cap:after {
-		background-color: $theme_booking_color;
-	}
-
-	& .pullquote {
-	    color: $theme_booking_color_highlight;
-	    font-style: italic;
-	    font-size: 1.3em;
-	}
-
-	& .work_list_tile_UXDesignatBookingcom{
-		display: none;
-	}
 }
 
-.work_list_tile_UXDesignatBookingcom .work_list_tile_thumb{
-	background-size: auto 100%;
-	background-color: $theme_booking_color_bg;
-	background-position: right top;
+.work_list_tile_Bookingcom .work_list_tile_thumb{
+	background-position: 50% top;
 }
