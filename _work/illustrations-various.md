@@ -5,7 +5,7 @@ title: Free Illustrations
 subtitle: Homemade artisan craft filth
 permalink: /work/illustration.html
 mainnav: hide
-header_bg_image: /img/hero-bg/cangrejo_bg.png
+header_bg_image: /img/work_illustrations-various/machineguncupid.png
 extra_classes: portfolio theme-illustrations-various
 title_offset_y: 65vh
 title_align: center
