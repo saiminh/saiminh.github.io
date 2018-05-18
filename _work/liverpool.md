@@ -38,9 +38,7 @@ order: 1
 		{% for image in site.static_files %}
 		    {% if image.path contains 'img/work_liverpool/housestyle' %}
 		    	<div class="col-6">
-		    		<a href="{{ site.baseurl }}{{ image.path }}" class="fluidbox-link">
-				        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
-			        </a>
+			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
 			    </div>
 		    {% endif %}
 		{% endfor %}

@@ -13,9 +13,7 @@ order: 10
 
 	<div class="row">
 		<div class="col-6">			
-			<a href="{{ "/darkmonger" | prepend: site.baseurl }}" target="_blank">
-				<img class="illustration_image" src="{{ "/img/work_darkmonger/darkmonger.png" | prepend: site.baseurl }}">
-			</a>
+				<img class="illustration_image" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">
 		</div>
 		<div class="col-6">
 			<h1 class="page-title">Darkmonger</h1>

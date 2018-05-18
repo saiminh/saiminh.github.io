@@ -28,27 +28,19 @@ title_align: center
 		</div>
 		<div class="col-8">
 			<div class="row row--nested">
-				<div class="col-6">
-					<a href="{{ "/img/work_illustrations-various/Penguin_May.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-						<img class="illustration_image" src="{{ "/img/work_illustrations-various/Penguin_May.jpg" | prepend: site.baseurl }}">
-					</a>
+				<div class="col-6">					
+					<img class="illustration_image" src="{{ '/img/work_illustrations-various/Penguin_May.jpg' | prepend: site.baseurl }}">					
 				</div>
-				<div class="col-6">
-					<a href="{{ "/img/work_illustrations-various/Erdogan_Wario.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-						<img class="illustration_image" src="{{ "/img/work_illustrations-various/Erdogan_Wario.jpg" | prepend: site.baseurl }}">
-					</a>
+				<div class="col-6">					
+					<img class="illustration_image" src="{{ '/img/work_illustrations-various/Erdogan_Wario.jpg' | prepend: site.baseurl }}">
 				</div>
 			</div>
 			<div class="row row--nested">
-				<div class="col-6">
-					<a href="{{ "/img/work_illustrations-various/putin_drevil.png" | prepend: site.baseurl }}" class="fluidbox-link">
-						<img class="illustration_image" src="{{ "/img/work_illustrations-various/putin_drevil.png" | prepend: site.baseurl }}">
-					</a>
+				<div class="col-6">					
+					<img class="illustration_image" src="{{ '/img/work_illustrations-various/putin_drevil.png' | prepend: site.baseurl }}">
 				</div>
-				<div class="col-6">
-					<a href="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}" class="fluidbox-link">
-						<img class="illustration_image" src="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}">
-					</a>
+				<div class="col-6">					
+					<img class="illustration_image" src="{{ '/img/work_illustrations-various/Trump_Joker.png' | prepend: site.baseurl }}">
 				</div>
 			</div>
 		</div>
@@ -63,10 +55,8 @@ title_align: center
 			<h3>Machinegun Cupid</h3>
 			<p><span class="drop_cap">W</span>hat if cupid had an automatic weapon instead of just a bow and arrow? This could be <a href="https://tinder.com/">tinder's</a> mascot maybe.</p>
 		</div>
-		<div class="col-8">
-			<a href="{{ "/img/work_illustrations-various/machineguncupid.png" | prepend: site.baseurl }}" class="fluidbox-link">
-					<img class="illustration_image" src="{{ "/img/work_illustrations-various/machineguncupid.png" | prepend: site.baseurl }}">
-				</a>
+		<div class="col-8">			
+			<img class="illustration_image" src="{{ '/img/work_illustrations-various/machineguncupid.png' | prepend: site.baseurl }}">				
 		</div>
 
 		
