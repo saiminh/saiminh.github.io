@@ -440,7 +440,7 @@ body {
     margin-top: $spacing-unit * 2;
 
     @include media-query($on-palm) {
-        margin-top: $spacing-unit;
+        margin-top: $spacing-unit * 1.3;
     }
 
     .drop_cap { 
@@ -581,15 +581,12 @@ body {
         float: none;
         width: 100%;
         margin-bottom: $spacing-unit / 4;
-        padding-bottom: 0;
+        padding: 0;
         box-sizing: border-box;
     }
     .offset-3, .offset-2, .offset-4 {
         padding-left: $spacing-unit / 3;
         width: 100%;
-    }
-    .col-12, .col-8, .col-6, .col-4 {
-        padding-left: 0;
     }
 }
 

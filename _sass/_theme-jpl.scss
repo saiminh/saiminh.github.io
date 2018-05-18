@@ -1,51 +1,5 @@
 .theme-jpl {
 
-	& .page-header.has_hero_img {	    
-	    background-size: cover;
-	    background-position: center top;
-	    margin-bottom: 2em;
-
-	    @media screen and (max-width: 480px) {
-	    	background-position: 30% top;
-	    }
-	}
-
-	& .project_logo_herocenter {
-		position: absolute;
-	    top: 36vh;
-	    left: 0;
-	    right: 0;
-	    height: 18vh;
-	    text-align: center;
-	    display: none;
-
-	    & img {
-	    	height: 100%;
-	    	width: auto;	    	
-
-    	  @media screen and (max-width: 480px) {
-    	  	width: 75%;
-    	  	height: auto;
-    	  }
-	    }
-	}
-
-	& .jpl_logo_content {
-		max-width: 85%;
-
-		@include media-query($on-palm) {
-			max-width: 100%;
-		}
-	}
-
-	& .work_list_tile_JustPeaceLabs{
-		display: none;
-	}
-
-	& .arrow_down_polygon{
-		fill: $text-color;
-	}
-
 	& #jpl_symbol {
 		height: 250px;
 		width: 250px;

@@ -11,10 +11,6 @@ title_offset_y: 60vh
 title_align: center
 order: 6
 ---
-
-<div class="project_logo_herocenter sr sr-bottom">
-	<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_white.svg">
-</div>
 <div class="index-header wrapper">
 	
 	<div class="row">
@@ -27,9 +23,7 @@ order: 6
 	<div class="row">
 
 		<div class="col-6">
-			<div class="illustration">
-				<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_color.svg" alt="justpeacelabs logo" class="jpl_logo_content">
-			</div>
+			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_color.svg" alt="justpeacelabs logo">		
 		</div>		
 		<div class="col-6">
 			<p><span class="drop_cap">T</span>he startup from Barcelona and San Francisco has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyed their goals and products.</p>	

@@ -17,7 +17,7 @@ order: 9
 			<h2 class="page-subtitle">Magazine for museum professionals</h2>
 		</div>
 		<div class="col-6">			
-			<img class="illustration_image" src="{{ "/img/work_museumvisie/MuseumVisie_02.png" | prepend: site.baseurl }}">			
+			<img class="illustration_image" src="{{ '/img/work_museumvisie/MuseumVisie_02.png' | prepend: site.baseurl }}">			
 		</div>
 
 
@@ -31,7 +31,7 @@ order: 9
 	<div class="row">				
 
 		<div class="col-6">			
-			<img class="illustration_image" src="{{ "/img/work_museumvisie/MuseumVisie_01.png" | prepend: site.baseurl }}">	
+			<img class="illustration_image" src="{{ '/img/work_museumvisie/MuseumVisie_01.png' | prepend: site.baseurl }}">	
 		</div>
 
 
