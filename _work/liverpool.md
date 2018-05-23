@@ -18,7 +18,7 @@ order: 1
 		<div class="col-6">
 			<h1 class="page-title">University of Liverpool</h1>
 			<h2 class="page-subtitle">Online Degrees</h2>
-			<p><span class="drop_cap">D</span>uring my time as Senior Designer at Laureate Online Education my team and I developed all design collateral for the subbrand of this UK Institution.</p>
+			<p><span class="drop_cap">D</span>uring my time as Senior Designer at Laureate Online Education my team and I developed a housestyle and all design collateral for the subbrand of this prestigious UK Institution.</p>
 		</div>
 	</div>
 

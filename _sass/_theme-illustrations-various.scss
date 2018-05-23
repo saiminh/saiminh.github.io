@@ -4,17 +4,24 @@ $highlight-color_illustrations: $brand-color;
 
 .theme-illustrations-various {
 
-	& .has_hero_img {
-		background-position: center 11vh;
-		background-size: auto 50vh;
+	& .page-content {
+		margin-top: 80px;
 
-		@include media-query($on-palm) {
-			background-position: center 10vh;
+		@media screen and (max-width: 768px) {
+		    margin-top: 84px;
 		}
 	}
 
-	& .arrow_down_polygon {
-		fill: $text-color;
+	& #psychpig {
+		width: auto;
+		height: 72vh;
+		margin: 0 auto;
+		display: block;
+
+		@media screen and (max-width: 768px) {
+			//display: initial;
+			height: auto;
+		}
 	}
 
 	& .col-4 {

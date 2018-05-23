@@ -12,9 +12,11 @@ title_align: center
 ---
 
 <div class="wrapper">
-
 	<div class="row">
-		<div class="col-12">
+		<div class="col-6 offset-3">
+			{% include psychpig.min.svg %}
+		</div>
+		<div class="col-12" style="text-align: center;">
 			<h1 class="page-title">Free Illustrations</h1>
 			<h2 class="page-subtitle">I made these without anyone asking me to.</h2>
 		</div>
