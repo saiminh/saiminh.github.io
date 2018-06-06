@@ -7,7 +7,6 @@ html, body, * {
 }
 
 body {
-	height: 100vh !important;
 	border: 0vh solid #FFF;
 	background: #000;
 	font-family: 'Tillana', serif;
