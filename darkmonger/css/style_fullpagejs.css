@@ -81,6 +81,10 @@ body {
 	position: absolute;
 }
 
+.scene_header_theend {
+	font-size: 1.2rem;	
+}
+
 .dropcap {
 	float: left;
 	font-size: 3.2em;
@@ -387,4 +391,10 @@ div.animation_stage_scene_seven{
 .madeby a,
 .madeby a:visited {
 	color: #981f1f;
+}
+
+@media screen and (max-width: 400px) {
+	.madeby {
+		font-size: 1rem;
+	}
 }
