@@ -27,7 +27,7 @@ order: 5
 			<p><span class="drop_cap">I</span> had always been interested in creating games, but I thought I was lacking the necessary skills and motivation. <a href="http://phaser.io/">Phaser</a>, a framework for creating games using Javascript and HTML5, enabled me to use my existing skills to try it out.</p>
 			<p>This first attempt started off as a clone of the popular <em>Flappy Bird</em> but over time I added quite a few additional gameplay elements.</p>
 			<p><a href="{{ site.baseurl }}/crappyturd" target="_blank" class="button">Launch game</a></p> 
-			<p><em>(The game will open in a new browser window, unfortunately in iOS 10+ it doesn't work properly anymore)</em></p>	
+			<p><em>(The game will open in a new browser window)</em></p>	
 		</div>			
 			
 	</div>

@@ -160,15 +160,13 @@ Menu.prototype = {
       this.title.height = scaledTitleHeight;
       this.title.anchor.setTo(0.5, 0);
 
-      this.turd = new Turd(this.game, 50,this.game.height/2);
+      this.turd = new Turd(this.game, 50, this.game.height/2);
       this.game.add.existing(this.turd);
       this.turd.body.gravity.y = 0;
 
       // Move the turd up and down a little
       this.game.add.tween(this.turd)
-        .to({ y: this.game.height/2 - 10 }, 500, Phaser.Easing.Linear.None, true) 
-        .to({ y: this.game.height/2 }, 500, Phaser.Easing.Linear.None) 
-        .loop();
+        .to({ y: this.game.height/2 - 10 }, 500, Phaser.Easing.Linear.None, true, 0, -1, true) 
 
       //check for localstorage support and for existing highscore 
       if (this.game.device.localStorage) {             
@@ -200,9 +198,7 @@ Menu.prototype = {
       startButton.height = 64; 
 
        this.game.add.tween(startButton)
-        .to({ y: this.turd.y + 90 }, 500, Phaser.Easing.Linear.None, true) 
-        .to({ y: this.turd.y + 100 }, 500, Phaser.Easing.Linear.None) 
-        .loop();
+        .to({ y: this.turd.y + 90 }, 500, Phaser.Easing.Linear.None, true, 0, -1, true) 
 
   },
 
@@ -965,7 +961,7 @@ Preload.prototype = {
     this.load.setPreloadSprite(this.asset);    
 
     this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    this.game.scale.setScreenSize(true);
+    this.game.scale.updateLayout(true);
     this.game.stage.backgroundColor = '#8d798f';              
     this.game.load.image('ground', 'assets/background-poo-floor.png');
     this.game.load.image('background', 'assets/bg-image-1280x480.png');

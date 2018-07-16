@@ -6,10 +6,9 @@ html, body, canvas, *, #crappy-turd *{
     }
     #crappy-turd {
       font-family: 'Amatic SC', cursive;
-      pointer: cursor;
     }
     #crappy-turd canvas{       
-      margin: 0 auto;      
+      margin: 0 auto;  
     }
     h1{
     	position: absolute;
