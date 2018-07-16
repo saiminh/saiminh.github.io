@@ -3,10 +3,15 @@
 <head>
 	<title>The bloated King</title>
 	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		} 
+
 		.wrapper {
 			max-width: 96vh;
 			margin: 2vh auto;
-			border: 1vh solid #000;
+			border: 1vh solid #752b88;
 			box-sizing: border-box;
 			overflow: hidden;
 			position: relative;
@@ -14,6 +19,16 @@
 			height: 96vh;
 			background-color: #67d0ff;
 		}
+
+		@media screen and (orientation: portrait) {
+			.wrapper {
+				max-width: 96vw;
+				margin: 2vw;
+				width: 96vw;
+				height: 96vw;
+			}
+		}
+
 		#eyes_blink_group,
 		#gas_group,
 		#arm_right_fist_group,
@@ -38,7 +53,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="assets/TweenMax.min.js"></script>
 
 </head>
 <body>
@@ -127,8 +142,8 @@
 <script>
 	var theWidth = 240;
 	var t_walkin = 3;
-	
-	var mainTl = new TimelineMax( {paused: true} )
+	var over = false;
+	var tl = new TimelineMax( {paused: true, onComplete: function(){over = true;} } )
 	.set("#head_group", {
 		transformOrigin: "50% 50%",
 		x: 0
@@ -357,6 +372,10 @@
 	// ------------------------
 	.add("landing", t_walkin + 6)
 
+		.to(".wrapper", .5, {
+			y: 0
+		}, "landing")
+
 		// Eye blinkage
 		.fromTo("#eyes_blink_group", .5, {
 			autoAlpha: 1
@@ -461,8 +480,22 @@
 		}, "walkout+=3")
 	;
 
+	$('body').on('click', function(){
+		if ( over ) {
+			tl.play(0);
+			over = false;
+		}
+		else if (tl.paused()){
+			tl.play();	
+		} else {
+			tl.pause();
+		}
+		
+	});
+
 	$(document).ready(function(){
-		mainTl.play(0);
+		tl.play(0);
+		
 	});
 </script>
 
