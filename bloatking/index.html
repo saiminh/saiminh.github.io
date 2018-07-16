@@ -18,6 +18,13 @@
 			width:96vh;
 			height: 96vh;
 			background-color: #67d0ff;
+			cursor: pointer;
+		}
+
+		.wrapper:hover,
+		.wrapper:focus,
+		.wrapper:active {
+			outline: none;
 		}
 
 		@media screen and (orientation: portrait) {
@@ -480,7 +487,9 @@
 		}, "walkout+=3")
 	;
 
-	$('body').on('click', function(){
+	//$('.wrapper').css('cursor','pointer');
+
+	$('.wrapper').on('click', function(){
 		if ( over ) {
 			tl.play(0);
 			over = false;
