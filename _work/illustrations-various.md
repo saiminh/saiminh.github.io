@@ -1,11 +1,11 @@
 ---
 layout: page_noheader
 type: portfolio
-title: Free Illustrations
+title: Various Illustrations
 subtitle: Homemade artisan craft filth
 permalink: /work/illustration.html
 mainnav: hide
-header_bg_image: /img/work_illustrations-various/machineguncupid.png
+header_bg_image: /img/hero-bg/psychpig.png
 extra_classes: portfolio theme-illustrations-various
 title_offset_y: 65vh
 title_align: center
@@ -16,14 +16,11 @@ title_align: center
 		<div class="col-6 offset-3">
 			{% include psychpig.min.svg %}
 		</div>
-		<div class="col-12" style="text-align: center;">
-			<h1 class="page-title">Free Illustrations</h1>
-			<h2 class="page-subtitle">I made these without anyone asking me to.</h2>
-		</div>
+		
 	</div>
 
 	<div class="row">
-		<div class="col-4">
+		{% comment %}<div class="col-4">
 			<h3>Supervillains</h3>
 			<p><span class="drop_cap">T</span>his seemed like a good idea at the time as a series... It actually <strong>still</strong> does if I think about it. There's definitely a bunch more prospects.</p> 
 			<p>In case it's not obvious: We've got May as Penguin, Erdogan as Wario, Putin as Dr. Evil and Trump as the Joker.</p>
@@ -45,14 +42,27 @@ title_align: center
 					<img class="illustration_image" src="{{ '/img/work_illustrations-various/Trump_Joker.png' | prepend: site.baseurl }}">
 				</div>
 			</div>
+		</div>{% endcomment %}
+
+		<div class="col-4">
+			<h1 class="page-title">Various Illustrations</h1>
+			
+			<p><span class="drop_cap">T</span>his is but a small selection of some my most precious little creations. <a href="https://www.instagram.com/skyfloter/">Follow me on instagram</a> to see them all!</p>
 		</div>
-		
+
+		{% for image in site.static_files %}
+		    {% if image.path contains 'img/work_illustrations-various' %}
+		    	<div class="col-4">
+			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
+			    </div>
+		    {% endif %}
+		{% endfor %}
 		
 	</div>
 
 	
 
-	<div class="row">
+	{% comment %}<div class="row">
 		<div class="col-4">
 			<h3>Machinegun Cupid</h3>
 			<p><span class="drop_cap">W</span>hat if cupid had an automatic weapon instead of just a bow and arrow? This could be <a href="https://tinder.com/">tinder's</a> mascot maybe.</p>
@@ -62,220 +72,6 @@ title_align: center
 		</div>
 
 		
-	</div>
-
-	{% comment %}<div class="row row-overlap">				
-
-		<div class="col-4">
-
-			
-			<a href="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Trump_Joker.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Supervillains</h3>
-				<p class="illustration_client">The Joker</p>
-				<p class="illustration_description">Series of carricatures</p>
-			</div>	
-			<a href="{{ "/img/work_illustrations-various/Penguin_May.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Penguin_May.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Supervillains</h3>
-				<p class="illustration_client">The Penguin</p>
-				<p class="illustration_description">Series of carricatures</p>
-			</div>	
-			<a href="{{ "/img/work_illustrations-various/Erdogan_Wario.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Erdogan_Wario.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Supervillains</h3>
-				<p class="illustration_client">Wario</p>
-				<p class="illustration_description">Series of carricatures</p>
-			</div>	
-
-			<a href="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/zyxel-ad-remoteaccess.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">ZyXEL Advertising Campaigns</h3>
-				<p class="illustration_client">ZyXEL Communications BV</p>
-				<p class="illustration_description">One reason why remote network support is good for businesses: the support people have bad breath in the morning...</p>
-			</div>	
-
-			<a href="{{ "/img/work_illustrations-various/Blood_instagram.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Blood_instagram.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Blood</h3>
-				<p class="illustration_client">Blood Sweat and Tears</p>
-				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/Sweat_instagram.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Sweat_instagram.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Sweat</h3>
-				<p class="illustration_client">Blood Sweat and Tears</p>
-				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/Tears_instagram.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Tears_instagram.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Tears</h3>
-				<p class="illustration_client">Blood Sweat and Tears</p>
-				<p class="illustration_description">Achieved with 'Blood Sweat and Tears' doesn't have to mean 'hard work' necessarily...</p>
-			</div>			
-			<a href="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/foxygen.gif" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Foxygen Concert review</h3>
-				<p class="illustration_client">Twitter post to the band</p>
-				<p class="illustration_description">I was very impressed with Foxygens performance, so I made a little gif and send it to them on twitter.</p>
-			</div>
-		</div>
-
-
-		<div class="col-4">
-
-			<a href="{{ "/img/work_illustrations-various/Freelancing_Goodday.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Freelancing_Goodday.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Freelancing</h3>
-				<p class="illustration_client">Free work</p>
-				<p class="illustration_description">Life as a freelancer on a good day...</p>
-			</div>	
-			<a href="{{ "/img/work_illustrations-various/Freelancing_Badday.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Freelancing_Badday.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Freelancing</h3>
-				<p class="illustration_client">Free work</p>
-				<p class="illustration_description">Life as a freelancer on a bad day...</p>
-			</div>	
-			<a href="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/ConservativeNightmare_A4.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">A Conservative Nightmare</h3>
-				<p class="illustration_client">Instagram post</p>
-				<p class="illustration_description">The world is run by a vegetarian, academic, mixed-race, lesbian, muslim, pro-choice, stoner couple.</p>
-			</div>		
-
-			<a href="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Easter.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Easter Illustration</h3>
-				<p class="illustration_description">The idea was for viewers to invent the dialogue for this image and submit it before easter to win a prize.</p>
-			</div>		
-
-			<a href="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/christianRunsToWork.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">A poster for a good cause</h3>
-				<p class="illustration_client">Laureate Charity Fund</p>
-				<p class="illustration_description">Poster for a charity event.</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/JesusPunch.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/JesusPunch.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Happy Ending for the Passion of Christ</h3>
-				<p class="illustration_description">In catholic southern Germany the passion of Christ is depicted in 12 wayside panels on many popular hiking routes. As a child I got so angry about what happened to Jesus that at home I drew a 13th one with a happy ending. I didn't keep any so I tried to recreate my drawings from back then.</p>
-			</div>	
-
-			<a href="{{ "/img/work_illustrations-various/propellerboy.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/propellerboy.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Noodle Soup Package</h3>
-				<p class="illustration_client">Laureate Online Education</p>
-				<p class="illustration_description">Recipe Illustration for a cookbook</p>
-			</div>	
-
-			<a href="{{ "/img/work_illustrations-various/illus-ca.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/illus-ca.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Storage Master Challenge</h3>
-				<p class="illustration_client">Agency: Woelke von der Brüggen, Munich</p>
-				<p class="illustration_description">Campaign Illustrations, Illustrates a misinterpretation of storage.</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/illus-dgb.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/illus-dgb.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Young Union Flyer</h3>
-				<p class="illustration_client">DGB Munich</p>
-				<p class="illustration_description">"You are not alone" initiative of the young workers union germany.</p>
-			</div>				
-		</div>
-		
-		
-		<div class="col-4">			
-
-			<a href="{{ "/img/work_illustrations-various/illus-dogs.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/illus-dogs.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">The Dog Date Diaries</h3>
-				<p class="illustration_client">Clash Magazine</p>
-				<p class="illustration_description">Editorial illustration for an article about the dating habits of dogs.</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/Mirrormirror.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Mirrormirror.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Mirror Mirror Promotion</h3>
-				<p class="illustration_client">Instagram ad</p>
-				<p class="illustration_description">Mirror Mirror is a phone app that gives you crowdsourced style advice.</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/Pants-down.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/Pants-down.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Self Portrait, caught pants down</h3>
-				<p class="illustration_client">Self-promotional social media post</p>
-				<p class="illustration_description">Most self portraits look staged, I wanted to do a more surprising take on the topic.</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/schlusselheld.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Der Schlüsselheld</h3>
-				<p class="illustration_client">Schlüsselheld</p>
-				<p class="illustration_description">Mascot for a german locksmith service</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/infographics-uol-02.jpg" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/infographics-uol-02.jpg" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Student Demographics</h3>
-				<p class="illustration_client">University of Liverpool</p>
-				<p class="illustration_description">Infographics for social media and other marketing efforts.</p>
-			</div>
-
-			<a href="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}" class="fluidbox-link">
-				<img class="illustration_image" src="{{ "/img/work_illustrations-various/sawman.png" | prepend: site.baseurl }}">
-			</a>
-			<div class="illustration_text">
-				<h3 class="illustration_title">Sawman</h3>
-				<p class="illustration_client">Dutch Folklore</p>
-				<p class="illustration_description">Wednesdays Meneer Saagman (Mister Sawman) comes to saw the week in half...</p>
-			</div>
-		</div>
 	</div>{% endcomment %}
+
 </div>

@@ -207,6 +207,12 @@ a {
     &:visited {
         color: $background-color;
     }
+
+    &.button_home-cta {
+        padding: 14px 60px;
+        background-color: #ecbcd1;
+        color: #000;
+    }
 }
 
 

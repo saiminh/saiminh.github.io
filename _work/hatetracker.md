@@ -9,7 +9,7 @@ subtitle: A webapp to track hate crimes
 extra_classes: portfolio theme-hatetracker
 title_offset_y: 60vh
 title_align: center
-order: 7
+order: 5
 ---
 
 <div class="index-header wrapper">

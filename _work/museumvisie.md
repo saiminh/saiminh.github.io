@@ -17,6 +17,19 @@ order: 9
 			<h2 class="page-subtitle">Magazine for museum professionals</h2>
 		</div>
 		<div class="col-6">			
+			<img class="illustration_image" src="{{ '/img/work_museumvisie/MuseumVisie_03.png' | prepend: site.baseurl }}">			
+		</div>
+
+
+		<div class="col-6">			
+			<h3>Issue 03/2018</h3>
+			<p><span class="drop_cap">T</span>his article and my illustration for it is about the Verwonderpaspoort, an initiative to get kids interested in the world of nature, science, technology and sustainability. At the center of the initiative is a website on which the kids have to discover islands and gain knowledge to solve puzzles.</p>
+		</div>
+		
+	</div>
+
+	<div class="row">
+		<div class="col-6">			
 			<img class="illustration_image" src="{{ '/img/work_museumvisie/MuseumVisie_02.png' | prepend: site.baseurl }}">			
 		</div>
 
@@ -25,7 +38,6 @@ order: 9
 			<h3>Issue 02/2018</h3>
 			<p><span class="drop_cap">I</span>n this issue the topic for my editorial illustration was an article about a new initiative in the public sector. This initiative had workers from the municipalities swicth places with employees from museums in order to learn about each others' challenges.</p>
 		</div>
-		
 	</div>
 
 	<div class="row">				

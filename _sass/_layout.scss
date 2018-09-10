@@ -273,8 +273,8 @@ body {
 .work_list_title {
     margin-left: $spacing-unit / 2;
     border-top: 5px solid $text-color;
-    padding-top: 20px;
-    font-size: 2em;
+    padding-top: 10px;
+    font-size: 1.5em;
 
     @include media-query($on-laptop) {
         margin-left: $spacing-unit / 3;
@@ -406,7 +406,7 @@ body {
 
 .page-title {
     line-height: 1.3;
-    margin-bottom: 0;
+   // margin-bottom: 0;
     padding: 0;
 }
 
@@ -416,6 +416,15 @@ body {
     font-style: italic;
     line-height: 1.2;
     padding: 0;
+    margin-top: -40px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: -20px;
+    }
+
+    .theme-illustrations-various & {
+        font-style: normal;
+    } 
 }
 
 .arrow_down {
@@ -583,6 +592,24 @@ body {
     }
     .offset-3, .offset-2, .offset-4 {
         width: 100%;
+    }
+}
+
+/* iframe stuff */
+
+.animation-iframe {
+    border: none; 
+    width: 100%; 
+    min-height: 580px;
+
+    @include media-query($on-laptop) {
+        height: calc(100vw - 40px);
+        min-height: calc(100vw - 40px);
+    }
+
+    @include media-query($on-palm) {
+        height: calc(100vw - 26.6666666667px);
+        min-height: calc(100vw - 26.6666666667px);
     }
 }
 

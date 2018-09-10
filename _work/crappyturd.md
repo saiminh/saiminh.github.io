@@ -9,7 +9,7 @@ subtitle: A shitty HTML game
 extra_classes: portfolio theme-crappy
 title_offset_y: 60vh
 title_align: center
-order: 5
+order: 7
 ---
 
 <div class="wrapper">	

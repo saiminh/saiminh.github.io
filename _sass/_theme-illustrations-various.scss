@@ -4,6 +4,10 @@ $highlight-color_illustrations: $brand-color;
 
 .theme-illustrations-various {
 
+	& .col-4 {
+		padding-bottom: 30px;
+	}
+
 	& .page-content {
 		margin-top: 80px;
 
@@ -14,7 +18,7 @@ $highlight-color_illustrations: $brand-color;
 
 	& #psychpig {
 		width: auto;
-		height: 72vh;
+		height: 65vh;
 		margin: 0 auto;
 		display: block;
 
