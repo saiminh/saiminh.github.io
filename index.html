@@ -10,9 +10,10 @@ extra_classes: home theme-home
 
 
 <div id="introduce" class="wrapper">
-	<div class="row">   
+	<div class="row row-overlap">   
 		<div class="col-6">
-			<img class="illustration_image" src="{{ "/img/hero-bg/schweinedog.png" | prepend: site.baseurl }}">
+			{% comment %}<img class="illustration_image" src="{{ "/img/hero-bg/schweinedog.png" | prepend: site.baseurl }}">{% endcomment %}
+			{% include handcreature.svg %}
 		</div>
 	    <div class="col-6 col-text aboutme">                   
 	        <h1 class="page-title">I draw things. And move them around.</h1>	        
