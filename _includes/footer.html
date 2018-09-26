@@ -374,8 +374,11 @@ Homepage Greensock Code for handcreature animation
       })
     });
 
+    var buttonColor;
+
     $("#handcreature_canvas").on("click", function(){     
       handcreature_master.pause();
+      buttonColor = "rgb(" + (Math.floor(Math.random() * 155) + 100) + "," + (Math.floor(Math.random() * 155) + 100) + "," + (Math.floor(Math.random() * 155) + 100) + ")";
       TweenMax.set("#eye--open, #eye--semi", {
         autoAlpha: 0
       });
@@ -400,15 +403,15 @@ Homepage Greensock Code for handcreature animation
         backgroundColor: "#FFFFFF"
       }) 
       TweenMax.to(".button_home-cta", .5, {
-        backgroundColor: "#" + Math.random().toString(16).slice(2, 8),
+        backgroundColor: buttonColor,
         delay: .75
       })      
       TweenMax.to(".handcreature_st2", .25, {
-        fill: "#" + Math.random().toString(16).slice(2, 8),
+        fill: buttonColor,
         delay: .75
       });
       TweenMax.to(".handcreature_st5", .25, {
-        fill: "#" + Math.random().toString(16).slice(2, 8),
+        fill: "rgb(" + (Math.floor(Math.random() * 155) + 100) + "," + (Math.floor(Math.random() * 155) + 100) + "," + (Math.floor(Math.random() * 155) + 100) + ")",
         delay: .75,
         onComplete: function(){handcreature_master.play();}
       });         
