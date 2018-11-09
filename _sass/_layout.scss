@@ -47,10 +47,6 @@ body {
     @include media-query($on-palm) {
         padding-top: $spacing-unit/3;
     }
-
-    & .wrapper {
-       // max-width: 100%;
-    }
 }
 
 .site-title {
@@ -419,7 +415,8 @@ body {
     margin-top: -40px;
 
     @media screen and (max-width: 768px) {
-        margin-top: -20px;
+        margin-top: -$spacing-unit / 6;
+        margin-bottom: $spacing-unit / 2;
     }
 
     .theme-illustrations-various & {
