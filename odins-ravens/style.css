@@ -9,8 +9,8 @@ Darkblue: #4c5561;
 */
 
 html, body, * {
-	font-size: 16px;
-	font-size: 4vw;
+	font-size: 18px;
+	font-size: 5vw;
 	line-height: 1.4;
 	font-family: 'Alegreya', serif;
 	color: #4b3d3a;
@@ -35,7 +35,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2.6rem;
+	font-size: 2rem;
 	margin: 2rem 1.5rem .75rem 1.5rem;
 	text-align: center;
 }
@@ -54,7 +54,7 @@ p {
 	font-family: 'Alegreya', serif;
 	font-weight: normal;
 	font-style: italic;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
@@ -76,6 +76,7 @@ p {
 
 .wrapper {
 	margin-top: 10vh;
+	margin-bottom: 10vh;
 	padding: 0;
 	width: 100%;
 	position: relative;
@@ -179,6 +180,15 @@ p {
 
 	html, body, * {
 		font-size: 1.66vw;
+	}
+
+	h1 {
+		font-size: 2.6rem;
+	}
+
+	.page-subheader {
+		font-size: 1.5rem;
+		max-width: 29rem;
 	}
 
 	h1, h2, h3, p, .refs {
