@@ -75,7 +75,7 @@ p {
 }
 
 .wrapper {
-	margin: 0;
+	margin-top: 10vh;
 	padding: 0;
 	width: 100%;
 	position: relative;
@@ -188,7 +188,8 @@ p {
 	}
 
 	.wrapper {
-		margin: 1rem auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	[class^="img_"] {
