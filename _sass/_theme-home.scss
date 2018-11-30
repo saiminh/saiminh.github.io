@@ -34,10 +34,10 @@
 	.illustration_image {
 		width: 100%;
 		position: relative;
-		left: 0px;
+		top: -40px;
 
-		@include media-query($on-palm) {
-			left: 0;
+		@include media-query($on-laptop) {
+			top: 0;
 		}
 	}
 }

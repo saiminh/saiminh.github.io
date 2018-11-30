@@ -5,14 +5,18 @@ $highlight-color_illustrations: $brand-color;
 .theme-illustrations-various {
 
 	& .col-4 {
-		padding-bottom: 30px;
+		padding-bottom: 0;
+
+		@media screen and (min-width: 768px) {
+			padding-bottom: 30px;
+		}
 	}
 
 	& .page-content {
-		margin-top: 80px;
+		margin-top: 0px;
 
-		@media screen and (max-width: 768px) {
-		    margin-top: 84px;
+		@media screen and (min-width: 768px) {
+		    margin-top: 80px;
 		}
 	}
 

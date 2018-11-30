@@ -2,10 +2,10 @@
 layout: page_noheader
 type: portfolio
 title: Booking.com
-subtitle: The world's largest online travel agent 
+category: UX and Web Design
 permalink: /work/booking.html
 mainnav: hide
-header_bg_image: /img/work_booking/booking_iphone6.png
+header_bg_image: /img/thumbnails/booking.png
 extra_classes: portfolio theme-booking
 title_offset_y: 45vh
 title_align: left
@@ -19,8 +19,8 @@ order: 4
 	        <img src="{{ site.baseurl }}/img/work_booking/booking_iphone6.png" alt="image" class="work_booking_img_iphone" />
 	    </div>	
 		<div class="col-8">
-			<h1 class="page-title">Booking.com</h1>
 			<h2 class="page-subtitle">UX Designer & Teamlead</h2>
+			<h1 class="page-title">Booking.com</h1>
 			<p class="pullquote">From 2013 until 2015 I worked at one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
 			<h3>My role included:</h3>
 			<ul class="quick_info_box_list">

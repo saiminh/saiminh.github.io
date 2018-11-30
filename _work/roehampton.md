@@ -2,10 +2,11 @@
 layout: page_noheader
 type: portfolio
 title: University of Roehampton
+category: Housestyle
 subtitle: Designing a fully online study experience
 permalink: /work/roehampton.html
 mainnav: hide
-header_bg_image: /img/hero-bg/uor-brand-logo.png
+header_bg_image: /img/thumbnails/roehampton.jpg
 extra_classes: portfolio theme-roehampton
 ---
 
@@ -13,8 +14,8 @@ extra_classes: portfolio theme-roehampton
 	
 	<div class="row">		
 		<div class="col-12">
-			<h1 class="page-title">University of Roehampton</h1>
-			<h2 class="page-subtitle">Designing a fully online study experience</h2>
+			<h2 class="page-subtitle">Designing a fully online study experience</h2>	
+			<h1 class="page-title">University of Roehampton</h1>			
 		</div>
 	</div>
 

@@ -2,9 +2,10 @@
 layout: page_noheader
 type: portfolio
 title: Crappy Turd
+category: Videogame
 permalink: /work/crappy_turd.html
 mainnav: hide
-header_bg_image: /img/work_crappy/iphone_bg.png
+header_bg_image: /img/thumbnails/crappy.jpg
 subtitle: A shitty HTML game 
 extra_classes: portfolio theme-crappy
 title_offset_y: 60vh

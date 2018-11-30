@@ -2,9 +2,11 @@
 layout: page_noheader
 type: portfolio
 title: Darkmonger
+category: HTML Storybook
 permalink: /work/darkmonger.html
 mainnav: hide
-header_bg_image: /img/work_darkmonger/darkmonger.png
+header_bg_image: /img/work_darkmonger/darkmonger_thumb.png
+worktile_theme: dark
 extra_classes: portfolio
 order: 10
 ---
@@ -16,8 +18,8 @@ order: 10
 				<img class="illustration_image" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">
 		</div>
 		<div class="col-6">
-			<h1 class="page-title">Darkmonger</h1>
 			<h2 class="page-subtitle">Storytelling in HTML</h2>
+			<h1 class="page-title">Darkmonger</h1>
 			<p><span class="drop_cap">W</span>ith this self-initiated project I am experimenting with HTML and Javascript and try to bring storytelling to the native web. The advantages are:
 			<ul>
 				<li>Fast and easy publishing, good accessibility</li>				

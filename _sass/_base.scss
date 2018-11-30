@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
+html, body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -27,7 +27,7 @@ body {
 }
 
 @include media-query($on-smallphone) {
-    body { 
+    html, body { 
         font-size: 18px;
     }
 }
@@ -45,11 +45,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-
-    @include media-query($on-palm) {
-        margin-bottom: $spacing-unit / 4;
-    }
+    margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -297,22 +293,6 @@ pre {
         padding-left: $spacing-unit / 3;
     }
 }
-
-
-.site-header .wrapper {
-    max-width: 100%;
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit / 2;
-
-     @include media-query($on-palm) {
-        padding-left: $spacing-unit / 3;
-        padding-right: $spacing-unit / 3;
-     }
-}
-
-
-
-
 
 /**
  * Clearfix

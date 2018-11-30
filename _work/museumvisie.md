@@ -2,9 +2,11 @@
 layout: page_noheader
 type: portfolio
 title: Museumvisie
+category: Illustration
 permalink: /work/museumvisie.html
 mainnav: hide
-header_bg_image: /img/work_museumvisie/MuseumVisie_02.png
+header_bg_image: /img/thumbnails/museumvisie.png
+worktile_color: "#F4DFD0"
 extra_classes: portfolio museumvisie illustration editorial
 order: 9
 ---
@@ -13,8 +15,8 @@ order: 9
 
 	<div class="row">				
 		<div class="col-12">
-			<h1 class="page-title">Museumvisie</h1>
 			<h2 class="page-subtitle">Magazine for museum professionals</h2>
+			<h1 class="page-title">Museumvisie</h1>			
 		</div>
 		<div class="col-6">			
 			<img class="illustration_image" src="{{ '/img/work_museumvisie/MuseumVisie_03.png' | prepend: site.baseurl }}">			

@@ -2,9 +2,10 @@
 layout: page_noheader
 type: portfolio
 title: JustPeace Labs
+category: Housestyle
 permalink: /work/justpeacelabs.html
 mainnav: hide
-header_bg_image: /img/work_jpl/jpl_logo_color.svg
+header_bg_image: /img/thumbnails/jpl.png
 subtitle: Housestyle for the peace technology startup 
 extra_classes: portfolio theme-jpl
 title_offset_y: 60vh
@@ -14,18 +15,18 @@ order: 6
 <div class="index-header wrapper">
 	
 	<div class="row">
-		<div class="col-12">
-			<h1 class="page-title">JustPeace Labs</h1>
-			<h2 class="page-subtitle">Housestyle for the peace technology startup </h2>
+		<div class="col-6">
+			<h2 class="page-subtitle">Housestyle for the peace-tech startup </h2>
+			<h1 class="page-title">JustPeace Labs</h1>			
 		</div>
 	</div>
 
 	<div class="row">
 
-		<div class="col-6">
+		<div class="col-4">
 			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_color.svg" alt="justpeacelabs logo">		
 		</div>		
-		<div class="col-6">
+		<div class="col-6 offset-2">
 			<p><span class="drop_cap">T</span>he startup from Barcelona and San Francisco has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyed their goals and products.</p>	
 		</div>
 			
@@ -34,7 +35,7 @@ order: 6
 
 	<div class="row">
 		
-		<div class="col-6">
+		<div class="col-4">
 			<div class="illustration">
 				<svg id="jpl_symbol" width="100%" height="100%" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
 					<g id="ring">
@@ -46,7 +47,7 @@ order: 6
 			</div>
 		</div>			
 
-		<div class="col-6">
+		<div class="col-6 offset-2">
 			<h3>Symbolism</h3>
 			<p><span class="drop_cap">S</span>ince 1958, the Symbol for the British nuclear disarmament movement by Gerald Holtom is used as an international symbol for peace.</p>
 			<p>Clients of JustPeace Labs will be in situations where peace is broken. They are offered a framework of technology for rebuilding it. This is illustrated by the symbol in the logo, which is a 'broken' peace sign with only the frame intact.</p>	

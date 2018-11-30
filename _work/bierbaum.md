@@ -2,9 +2,11 @@
 layout: page_noheader
 type: portfolio
 title: Bierbaum
+category: Store identity
 permalink: /work/bierbaum.html
 mainnav: hide
-header_bg_image: /img/hero-bg/bierbaum.png
+header_bg_image: /img/thumbnails/bierbaum.png
+worktile_theme: light
 extra_classes: portfolio theme-bierbaum
 order: 8
 ---
@@ -238,8 +240,8 @@ order: 8
 			</div>
 		</div>	
 		<div class="col-6">
+			<h2 class="page-subtitle">Store identity</h2>
 			<h1 class="page-title">Bierbaum</h1>
-			<h2 class="page-subtitle">Craft beer store identity</h2>
 			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
 			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
 
