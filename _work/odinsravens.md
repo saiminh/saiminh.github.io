@@ -15,7 +15,7 @@ order: 11
 
 	<div class="row">
 		<div class="col-6">			
-				<img class="illustration_image" src="{{ '/odins-ravens/img/intro_raven.png' | prepend: site.baseurl }}">
+				<img class="illustration_image" src="{{ '/img/work_odinsravens/combo.png' | prepend: site.baseurl }}">				
 		</div>
 		<div class="col-6">
 			<h2 class="page-subtitle">Illustrated Microsite</h2>

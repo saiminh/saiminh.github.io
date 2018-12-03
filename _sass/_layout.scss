@@ -231,7 +231,6 @@
     margin-bottom: 3%;
     background-color: #EEE;
     box-sizing: border-box;
- //   border: 1px solid $background-color;
 
     @media screen and (min-width: 500px) {
         width: 30.33333%;
@@ -287,11 +286,11 @@
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
-    transition: transform .1s linear;
-
+    @extend %hover-transition;
+    
     .work_list_tile:hover &{
-        transform: scale(1.05);
-        transition: transform .3s linear;
+        -webkit-transform: rotate(-1deg) scale(1.05);
+        transform: rotate(-1deg) scale(1.05);
     }
 }
 

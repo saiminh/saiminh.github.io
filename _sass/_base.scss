@@ -182,6 +182,17 @@ a {
     }
 }
 
+%hover-transition {
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+       -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+         -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */ 
+}
+
 .button {
     font-weight: $heading-font-weight;
     font-family: $heading-font-family;
@@ -191,20 +202,15 @@ a {
     padding: 14px 20px;
     font-size: .9em;
     text-decoration: none;
-    transition: transform 0.2s;
     margin-bottom: 1em;
     display: inline-block;
-
-    -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
-    -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-       -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-         -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */ 
+    @extend %hover-transition;
 
     &:hover,
     &:active {
         color: #fff;
         text-decoration: none;
+        -webkit-transform: rotate(-2deg) scale(1.1);
         transform: rotate(-2deg) scale(1.1);
     }
 
