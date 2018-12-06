@@ -3,9 +3,11 @@ layout: page_noheader
 type: portfolio
 title: Cooking with Nothing
 category: Food & Health Website
+excerpt: Design for a health and food website
 permalink: /work/cookingwothnothing
 mainnav: hide
 header_bg_image: /img/thumbnails/cwn.jpg
+ogimageurl: /img/thumbnails/cwn.jpg
 worktile_theme: light
 extra_classes: portfolio
 order: 12

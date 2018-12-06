@@ -8,7 +8,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="og:image" content="{% if page.ogimageurl %}{{ page.ogimageurl | escape }}{% else %}{{ site.url | append: '/img/ogmeta_image_floter_signature.png' }}{% endif %}" />
+  <meta property="og:image" content="{% if page.ogimageurl %}{{ page.ogimageurl | prepend: site.baseurl | prepend: site.url }}{% elsif page.header_bg_image %}{{ 'page.header_bg_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.url | append: '/img/ogmeta_image_floter_signature.png' }}{% endif %}" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

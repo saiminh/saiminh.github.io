@@ -2,6 +2,7 @@
 layout: page_noheader
 type: portfolio
 title: Various Illustrations
+excerpt: A small selection of some my most precious little creations.
 category: Illustration
 permalink: /work/illustration.html
 mainnav: hide
