@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: HateTracker
 category: App design/Identity
-permalink: /work/hatetracker.html
+permalink: /work/hatetracker
 mainnav: hide
 header_bg_image: /img/thumbnails/hatetracker.png
 worktile_theme: dark

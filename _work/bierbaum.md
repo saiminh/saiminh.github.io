@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: Bierbaum
 category: Store identity
-permalink: /work/bierbaum.html
+permalink: /work/bierbaum
 mainnav: hide
 header_bg_image: /img/thumbnails/bierbaum.png
 worktile_theme: light

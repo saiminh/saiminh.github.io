@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: Bloat King
 category: Illustration/Animation
-permalink: /work/bloatking.html
+permalink: /work/bloatking
 mainnav: hide
 header_bg_image: /img/hero-bg/bloating.png
 worktile_color: "#D79659"

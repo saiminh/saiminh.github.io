@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: Booking.com
 category: UX and Web Design
-permalink: /work/booking.html
+permalink: /work/booking
 mainnav: hide
 header_bg_image: /img/thumbnails/booking.png
 extra_classes: portfolio theme-booking

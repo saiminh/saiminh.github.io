@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: Crappy Turd
 category: Videogame
-permalink: /work/crappy_turd.html
+permalink: /work/crappy_turd
 mainnav: hide
 header_bg_image: /img/thumbnails/crappy.jpg
 subtitle: A shitty HTML game 

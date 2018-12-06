@@ -4,7 +4,7 @@ type: portfolio
 title: Various Illustrations
 excerpt: A small selection of some my most precious little creations.
 category: Illustration
-permalink: /work/illustration.html
+permalink: /work/illustration
 mainnav: hide
 header_bg_image: /img/thumbnails/illustration.jpg
 worktile_theme: dark

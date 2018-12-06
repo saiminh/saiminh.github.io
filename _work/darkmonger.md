@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: Darkmonger
 category: HTML Storybook
-permalink: /work/darkmonger.html
+permalink: /work/darkmonger
 mainnav: hide
 header_bg_image: /img/thumbnails/darkmonger.png
 worktile_theme: dark

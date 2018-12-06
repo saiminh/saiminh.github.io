@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: Museumvisie
 category: Illustration
-permalink: /work/museumvisie.html
+permalink: /work/museumvisie
 mainnav: hide
 header_bg_image: /img/thumbnails/museumvisie.png
 worktile_color: "#F4DFD0"

@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: University of Liverpool
 category: Housestyle
-permalink: /work/liverpool.html
+permalink: /work/liverpool
 header_bg_image: /img/thumbnails/liverpool.png
 worktile_theme: dark
 extra_classes: portfolio theme-liverpool

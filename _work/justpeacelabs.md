@@ -3,7 +3,7 @@ layout: page_noheader
 type: portfolio
 title: JustPeace Labs
 category: Housestyle
-permalink: /work/justpeacelabs.html
+permalink: /work/justpeacelabs
 mainnav: hide
 header_bg_image: /img/thumbnails/jpl.png
 subtitle: Housestyle for the peace technology startup 
