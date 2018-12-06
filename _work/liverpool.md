@@ -5,6 +5,7 @@ title: University of Liverpool
 category: Housestyle
 permalink: /work/liverpool.html
 header_bg_image: /img/thumbnails/liverpool.png
+worktile_theme: dark
 extra_classes: portfolio theme-liverpool
 title_offset_y: 60vh
 title_align: center
@@ -12,18 +13,18 @@ order: 1
 ---
 
 <div class="wrapper">
-	<div class="row row-overlap raster">		
+	<div class="row">		
 		<div class="col-6">
 			<img src="{{ site.baseurl }}/img/hero-bg/liverpool.png" alt="image" class="grid_img" />
 		</div>
 		<div class="col-6">
-			<h2 class="page-subtitle">Online Degrees</h2>
-			<h1 class="page-title">University of Liverpool</h1>			
+			<h2 class="page-subtitle">Housestyle</h2>
+			<h1 class="page-title">University of Liverpool Online Degrees</h1>			
 			<p><span class="drop_cap">D</span>uring my time as Senior Designer at Laureate Online Education my team and I developed a housestyle and all design collateral for the subbrand of this prestigious UK Institution.</p>
 		</div>
 	</div>
 
-	<div class="row row-overlap raster">		
+	<div class="row">		
 	
 		<div class="col-6">
 			<h3>Housestyle</h3>

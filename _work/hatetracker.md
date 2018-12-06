@@ -6,6 +6,7 @@ category: App design/Identity
 permalink: /work/hatetracker.html
 mainnav: hide
 header_bg_image: /img/thumbnails/hatetracker.png
+worktile_theme: dark
 subtitle: A webapp to track hate crimes 
 extra_classes: portfolio theme-hatetracker
 title_offset_y: 60vh
@@ -16,10 +17,14 @@ order: 5
 <div class="index-header wrapper">
 
 	<div class="row">
-
-		<div class="col-6">
+		<div class="col-12">
 			<h2 class="page-subtitle">A webapp to track hate crimes</h2>
-			<h1 class="page-title">Hate Tracker</h1>					
+			<h1 class="page-title">Hate Tracker</h1>			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">								
 			<h3>The concept</h3>
 			<p><span class="drop_cap">T</span>his app allows anyone with an internet browser to file a report, using geo location and image/video uploads to help verify the incident. I designed the look and feel and the frontend in collaboration with the peace technology startup "JustPeace Labs".</p> 	
 			<p>The app can be used and downloaded at <a href="https://app.hatetracker.org/">https://app.hatetracker.org/</a></p>

@@ -8,7 +8,7 @@ mainnav: hide
 header_bg_image: /img/thumbnails/bierbaum.png
 worktile_theme: light
 extra_classes: portfolio theme-bierbaum
-order: 8
+order: 9
 ---
 
 <div class="wrapper">

@@ -1,4 +1,4 @@
-$text-color_illustrations: $text-color;
+/* $text-color_illustrations: $text-color;
 $bg-color_illustrations: $background-color;
 $highlight-color_illustrations: $brand-color;
 
@@ -18,53 +18,6 @@ $highlight-color_illustrations: $brand-color;
 		@media screen and (min-width: 768px) {
 		    margin-top: 80px;
 		}
-	}
-
-	& #psychpig {
-		width: auto;
-		height: 65vh;
-		margin: 0 auto;
-		display: block;
-
-		@media screen and (max-width: 768px) {
-			//display: initial;
-			height: auto;
-		}
-	}
-
-	& .col-4 {
-		overflow: visible;
-		// Otherwise the whole fluid maximisation won't work
-	}
-
-	& .index-header {
-		font-size:1.3em;
-		background-image: url(../img/hero-bg/illustrations-various_simon.jpg);
-		background-attachment: fixed;
-		min-height: 75vh;
-		padding-top: 25vh;
-		background-position: 50% 50%;
-	}
-
-	& .illustration_text {
-	    background: #FFF;
-	    padding: 20px 20px 0 20px;
-	    margin: -1em 0 1em 0;
-	    box-sizing: border-box;
-	    overflow: auto;
-	}
-
-	& .fluidbox-link + .illustration_text {
-	    display: none;
-	}
-
-	& .fluidbox-link.fluidbox--opened + .illustration_text {
-	    display: block;
-	    z-index: 999999;
-	    position: fixed;
-	    bottom: -1rem;
-	    right: 0;
-	    max-width: 25rem;
 	}
 
 	& .illustration_image,
@@ -146,4 +99,4 @@ $highlight-color_illustrations: $brand-color;
 			font-size: 1em;
 		}
 	}
-}
+} */

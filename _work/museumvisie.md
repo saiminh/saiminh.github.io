@@ -8,7 +8,7 @@ mainnav: hide
 header_bg_image: /img/thumbnails/museumvisie.png
 worktile_color: "#F4DFD0"
 extra_classes: portfolio museumvisie illustration editorial
-order: 9
+order: 8
 ---
 
 <div class="wrapper">

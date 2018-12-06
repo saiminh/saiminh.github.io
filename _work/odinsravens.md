@@ -3,10 +3,10 @@ layout: page_noheader
 type: portfolio
 title: Of ravens and racism
 category: Illustrated Microsite
-permalink: /work/odinsravens.html
+permalink: /work/odins-ravens
 mainnav: hide
 header_bg_image: /img/thumbnails/odinsravens.png
-worktile_theme: light
+worktile_theme: dark
 extra_classes: portfolio
 order: 11
 ---

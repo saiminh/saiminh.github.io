@@ -499,10 +499,6 @@
     }
  }
 
- .raster img{
-    margin-bottom: $spacing-unit / 2;
- }
-
 .col-text {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -511,8 +507,7 @@
  .col-12, .col-8, .col-6, .col-4 {
     float: left;
     padding-left: $spacing-unit / 2;
-   // overflow: hidden;
-    padding-top: 10px;
+    padding-top: $spacing-unit / 2;
  }
 
 .col-12 {
