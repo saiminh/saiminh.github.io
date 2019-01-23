@@ -47,7 +47,7 @@
 <script src="{{ site.baseurl }}/js/TweenMax.min.js"></script>
 
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(window).on('load', (function(){
 
     //smooth scrolling
     var smoothScrollInit =  function() {
@@ -286,7 +286,7 @@
         };
         var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
       };
-  });  
+  }));  
 </script>
 
 {% if page.title == 'Bloat King' %}
