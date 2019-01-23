@@ -28,7 +28,7 @@ html, body {
 
 @include media-query($on-smallphone) {
     html, body { 
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -49,39 +49,19 @@ ul, ol, dl, figure,
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.3;
-
-    @include media-query($on-palm) {
-        font-size: 1.7em;
-    }
-
-     @include media-query($on-smallphone) {
-        font-size: 1.5rem;
-    }
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
     line-height: 1.3;
-
-    @include media-query($on-palm) {
-        font-size: 1.7em;
-    }
-
-    @include media-query($on-smallphone) {
-        font-size: 1.5rem;
-    }
 }
 
 h3 {
-    font-size: 1.5rem;
-
-    @include media-query($on-palm) {
-        font-size: 1.3rem;
-    }
+    font-size: 1rem;
 }
 
 h4 {
