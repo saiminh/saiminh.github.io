@@ -107,11 +107,16 @@
          * this.oldContainer is the HTMLElement of the old Container
          */
         var oldEl = $(this.oldContainer);
-
+        var deferred = Barba.Utils.deferred();
+        
         TweenMax.to(oldEl, .4, {
-          autoAlpha: 0
+          autoAlpha: 0,
+          onComplete: function () {
+           deferred.resolve();
+          } 
         });
-        return $(this.oldContainer).promise();        
+        
+        return deferred.promise;        
       },
 
       fadeIn: function() {
@@ -176,7 +181,7 @@
                   }, 1);
                 };
                 var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
-              };
+              };              
           };
 
         TweenMax.set(".col-4, .col-6, .col-12, .col-8", {          
@@ -215,6 +220,7 @@
 
     //initialize Barba.js
     Barba.Pjax.start();
+    Barba.Prefetch.init();
 
 
 
