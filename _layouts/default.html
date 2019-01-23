@@ -4,15 +4,16 @@
   {% include head.html %}
 
   <body class="{% if page.extra_classes %}{{ page.extra_classes }}{% elsif page.date %}blogpost{% else %}default	{% endif %}">
-
+<div id="barba-wrapper">
+ 	<div class="barba-container">
     {% include header.html %}
 
-    <div id="content" class="page-content">
-      
-        {{ content }}
-      
-    </div>
-    {% include footer.html %}
+    	<div id="content" class="page-content">      
+        	{{ content }}      
+	    </div>
+	    {% include footer.html %}
+	</div>
+</div>
   </body>
 
 </html>

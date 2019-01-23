@@ -491,7 +491,7 @@
     clear: both;
     margin-left: -$spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
-    overflow: auto;
+    overflow: visible;
 
     &.row--nested {
         margin-bottom: 0;

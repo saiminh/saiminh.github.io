@@ -40,23 +40,184 @@
 
 </footer>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/barba.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.easing.1.3.js"></script>
-{% if page.layout == 'index' %}
-{% comment %}
---------------------------------------------
-Greensock Code is only needed on homepage
---------------------------------------------
-{% endcomment %}
-  <script src="js/TweenMax.min.js"></script>
-{% endif %}
+
+<script src="{{ site.baseurl }}/js/TweenMax.min.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){
 
-    //initiate galleries
-    $('.gallery-xscroll').slick({
+    //smooth scrolling
+    var smoothScrollInit =  function() {
+                          $('a.anchorlink').bind('click',function(event){
+                            var $anchor = $(this);
+
+                            $('html, body').stop().animate({
+                              scrollTop: $($anchor.attr('href')).offset().top - 50
+                            }, 1000,'easeInOutExpo');
+                           
+                            event.preventDefault();
+                          });
+                        };
+    smoothScrollInit();
+
+    //Initial Scrolling Galleries init
+    $('.gallery-xscroll').slick();
+
+    // Header shrinking
+      var initScrollTop = $(window).scrollTop();
+      if (initScrollTop >= 10) {
+          $('body').addClass('site-header--scrolled');
+        } else if (initScrollTop < 10) {
+          $('body').removeClass('site-header--scrolled');
+        } ;
+
+      var scrollTop = 0;
+      $(window).scroll(function(){
+        scrollTop = $(window).scrollTop();
+        // $('.counter').html(scrollTop);
+        
+        if (scrollTop >= 10) {
+          $('body').addClass('site-header--scrolled');
+        } else if (scrollTop < 10) {
+          $('body').removeClass('site-header--scrolled');
+        } 
+        
+      }); 
+
+    //Barba transition
+    var FadeTransition = Barba.BaseTransition.extend({
+      start: function() {
+        /**
+         * This function is automatically called as soon the Transition starts
+         * this.newContainerLoading is a Promise for the loading of the new container
+         * (Barba.js also comes with an handy Promise polyfill!)
+         */
+
+        // As soon the loading is finished and the old page is faded out, let's fade the new page
+        Promise
+          .all([this.newContainerLoading, this.fadeOut()])
+          .then(this.fadeIn.bind(this));
+      },
+
+      fadeOut: function() {
+        /**
+         * this.oldContainer is the HTMLElement of the old Container
+         */
+        var oldEl = $(this.oldContainer);
+
+        TweenMax.to(oldEl, .4, {
+          autoAlpha: 0
+        });
+        return $(this.oldContainer).promise();        
+      },
+
+      fadeIn: function() {
+        /**
+         * this.newContainer is the HTMLElement of the new Container
+         * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+         * Please note, newContainer is available just after newContainerLoading is resolved!
+         */
+        
+        var _this = this;
+        var $el = $(this.newContainer);
+        var completeHandler = function(){
+            _this.done();
+            //initiate galleries
+            $('.gallery-xscroll').slick();
+            smoothScrollInit();
+            TweenMax.staggerTo(".col-4, .col-6, .col-12, .col-8", .5, {              
+              autoAlpha: 1,
+              y: 0,
+              ease: Back.easeOut.config( 1.7)
+            }, .05)
+            //Bierbaum Tree
+            // If you use this code, please link to this pen (cdpn.io/rkcjt).
+            if($('body').hasClass('theme-bierbaum')){
+              var DrawEye = function(eyecontainer, pupil){
+
+                  // Initialise core variables
+                  var eyeposx = $(eyecontainer).offset().left;
+                  var eyeposy = $(eyecontainer).offset().top;
+                  var r = $(pupil).outerWidth()/2;
+                  var center = {
+                    x: $(eyecontainer).outerWidth()/2 - r, 
+                    y: $(eyecontainer).outerHeight()/2 - r
+                  };
+                  var distanceThreshold = $(eyecontainer).width()/2 - r;
+                  var mouseX = center.x, mouseY = center.y;
+                  
+                  // Listen for mouse movement
+                  $(window).mousemove(function(e){ 
+                    var d = {
+                      x: e.pageX - r - eyeposx - center.x,
+                      y: e.pageY - r - eyeposy - center.y
+                    };
+                    var distance = Math.sqrt(d.x*d.x + d.y*d.y);
+                    if (distance < distanceThreshold) {
+                      mouseX = e.pageX - eyeposx - r;
+                      mouseY = e.pageY - eyeposy - r;
+                    } else {
+                      mouseX = d.x / distance * distanceThreshold + center.x;
+                      mouseY = d.y / distance * distanceThreshold + center.y;
+                    }
+                  });
+                  
+                  // Update pupil location
+                  var pupil = $(pupil);
+                  var xp = center.x, yp = center.y;
+                  var loop = setInterval(function(){
+                    // change 1 to alter damping/momentum - higher is slower
+                    xp += (mouseX - xp) / 50;
+                    yp += (mouseY - yp) / 50;
+                    pupil.css({left:xp, top:yp});    
+                  }, 1);
+                };
+                var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
+              };
+          };
+
+        TweenMax.set(".col-4, .col-6, .col-12, .col-8", {          
+          autoAlpha: 0,
+          y: -30,
+        })
+        $(this.oldContainer).hide();
+
+        $('html, body').stop().animate({
+            scrollTop: 0
+          }, 0,'easeInOutExpo');
+
+        
+
+        TweenMax.from($el, .1, {
+          autoAlpha: 0,
+          onComplete: completeHandler
+        });
+
+        
+      }
     });
+
+    /**
+     * Next step, you have to tell Barba to use the new Transition
+     */
+
+    Barba.Pjax.getTransition = function() {
+      /**
+       * Here you can use your own logic!
+       * For example you can use different Transition based on the current page or link...
+       */
+
+      return FadeTransition;
+    };
+
+    //initialize Barba.js
+    Barba.Pjax.start();
+
+
+
 
     //set has_hero_img height in pxs to avoid mobile resizing
     var windowheight = $(window).height();
@@ -75,101 +236,51 @@ Greensock Code is only needed on homepage
       $('body').addClass('home-title-part-interaction-active');
 
     });
+    //Bierbaum Tree
+    // If you use this code, please link to this pen (cdpn.io/rkcjt).
+    if($('body').hasClass('theme-bierbaum')){
+      var DrawEye = function(eyecontainer, pupil){
 
-  });
-
-  //smooth scrolling
-  $(function() {
-    $('a.anchorlink').bind('click',function(event){
-      var $anchor = $(this);
-
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 50
-      }, 1000,'easeInOutExpo');
-     
-      event.preventDefault();
-    });
-  });
-
-  // Header shrinking
-
-  $(document).ready(function(){
-    var initScrollTop = $(window).scrollTop();
-    if (initScrollTop >= 10) {
-        $('body').addClass('site-header--scrolled');
-      } else if (initScrollTop < 10) {
-        $('body').removeClass('site-header--scrolled');
-      } ;
-
-    var scrollTop = 0;
-    $(window).scroll(function(){
-      scrollTop = $(window).scrollTop();
-      // $('.counter').html(scrollTop);
-      
-      if (scrollTop >= 10) {
-        $('body').addClass('site-header--scrolled');
-      } else if (scrollTop < 10) {
-        $('body').removeClass('site-header--scrolled');
-      } 
-      
-    }); 
-    
-  });
-
-  //Bierbaum Tree
-
-  // If you use this code, please link to this pen (cdpn.io/rkcjt).
-  if($('body').hasClass('theme-bierbaum')){
-    var DrawEye = function(eyecontainer, pupil){
-
-        // Initialise core variables
-        var eyeposx = $(eyecontainer).offset().left;
-        var eyeposy = $(eyecontainer).offset().top;
-        var r = $(pupil).outerWidth()/2;
-        var center = {
-          x: $(eyecontainer).outerWidth()/2 - r, 
-          y: $(eyecontainer).outerHeight()/2 - r
-        };
-        var distanceThreshold = $(eyecontainer).width()/2 - r;
-        var mouseX = center.x, mouseY = center.y;
-        
-        // Listen for mouse movement
-        $(window).mousemove(function(e){ 
-          var d = {
-            x: e.pageX - r - eyeposx - center.x,
-            y: e.pageY - r - eyeposy - center.y
+          // Initialise core variables
+          var eyeposx = $(eyecontainer).offset().left;
+          var eyeposy = $(eyecontainer).offset().top;
+          var r = $(pupil).outerWidth()/2;
+          var center = {
+            x: $(eyecontainer).outerWidth()/2 - r, 
+            y: $(eyecontainer).outerHeight()/2 - r
           };
-          var distance = Math.sqrt(d.x*d.x + d.y*d.y);
-          if (distance < distanceThreshold) {
-            mouseX = e.pageX - eyeposx - r;
-            mouseY = e.pageY - eyeposy - r;
-          } else {
-            mouseX = d.x / distance * distanceThreshold + center.x;
-            mouseY = d.y / distance * distanceThreshold + center.y;
-          }
-        });
-        
-        // Update pupil location
-        var pupil = $(pupil);
-        var xp = center.x, yp = center.y;
-        var loop = setInterval(function(){
-          // change 1 to alter damping/momentum - higher is slower
-          xp += (mouseX - xp) / 50;
-          yp += (mouseY - yp) / 50;
-          pupil.css({left:xp, top:yp});    
-        }, 1);
-    };
-
-    var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
-  };
-// Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-97207931-1', 'auto');
-  ga('send', 'pageview');
+          var distanceThreshold = $(eyecontainer).width()/2 - r;
+          var mouseX = center.x, mouseY = center.y;
+          
+          // Listen for mouse movement
+          $(window).mousemove(function(e){ 
+            var d = {
+              x: e.pageX - r - eyeposx - center.x,
+              y: e.pageY - r - eyeposy - center.y
+            };
+            var distance = Math.sqrt(d.x*d.x + d.y*d.y);
+            if (distance < distanceThreshold) {
+              mouseX = e.pageX - eyeposx - r;
+              mouseY = e.pageY - eyeposy - r;
+            } else {
+              mouseX = d.x / distance * distanceThreshold + center.x;
+              mouseY = d.y / distance * distanceThreshold + center.y;
+            }
+          });
+          
+          // Update pupil location
+          var pupil = $(pupil);
+          var xp = center.x, yp = center.y;
+          var loop = setInterval(function(){
+            // change 1 to alter damping/momentum - higher is slower
+            xp += (mouseX - xp) / 50;
+            yp += (mouseY - yp) / 50;
+            pupil.css({left:xp, top:yp});    
+          }, 1);
+        };
+        var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
+      };
+  });  
 </script>
 
 {% if page.title == 'Bloat King' %}

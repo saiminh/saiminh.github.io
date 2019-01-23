@@ -20,7 +20,7 @@ order: 12
 		<div class="col-4">
 			<h1 class="page-title">Various Illustrations</h1>
 			
-			<p><span class="drop_cap">T</span>his is but a small selection of some my most precious little creations. <a href="https://www.instagram.com/skyfloter/">Follow me on instagram</a> to see them all!</p>
+			<p><span class="drop_cap">T</span>his is but a small selection of some of my most precious little creations. <a href="https://www.instagram.com/skyfloter/">Follow me on instagram</a> to see them all!</p>
 		</div>
 		
 		<div class="col-4">
