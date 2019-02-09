@@ -1,5 +1,30 @@
 .theme-home {
 
+		background-color: #d12d07;
+
+	& .page-content {
+		overflow: hidden;
+	}
+
+	& .site-header {
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+	}
+
+	& .home_hero {
+		width: 100%;
+		padding-top: 125%;
+		position: relative;
+		overflow: visible;
+
+		@media screen and (min-width: 769px) {
+			width: 70%;
+			padding-top: 70%;
+			margin: 0 auto;
+		}
+	}
+
 	& .page-header.has_hero_img .wrapper {
 		padding: 0 20px;
 	}
@@ -15,30 +40,29 @@
 		text-align: center;
 	}
 
-	& .button {
-		display: inline-block;
-		
-		@media screen and (max-width: 460px) {
-			width: 100%;
-			display: block;
-		    box-sizing: border-box;
-		    text-align: center;
-		}
+	& .illustration_image {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
 	}
 
-	.site-footer {
-		border: none;
-		padding-top: 0;
-	}	
+	& .dull_text {
+		text-align: center;
+		font-family: $heading-font-family;
+		color: $text-color;
+		font-size: 1.5rem;
+		bottom: 50%;	
+	}
 
-	.illustration_image {
-		width: 100%;
-		position: relative;
-		top: -40px;
+	& .rays, 
+	& .staedler,
+	& .powered {
+		opacity: 0;
+		visibility: hidden;
+	}
 
-		@include media-query($on-laptop) {
-			top: 0;
-		}
+	& .site-footer {
+		margin-top: 0;
 	}
 }
 

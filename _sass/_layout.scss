@@ -1,4 +1,67 @@
 /**
+ * Preloader
+ */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $background-color;
+    z-index: 101;
+
+    .preloader_logo-container {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
+    }
+
+    & #floter_signature_svg {
+        width: 100%;
+        height: auto;
+
+        & * {
+            fill: #999;
+        }
+
+        & .dash {
+            display: none;
+        }
+    }
+
+    & .newdashcontainer {
+        position: absolute;
+        top:5%;
+        left: 42%;
+        transform: rotate(-20deg);
+    }
+
+    & .newdash {
+        display: block;
+        width: 30px;
+        height: 8px;
+        background-color: #999;
+        animation: spin 1s forwards alternate infinite;
+    }
+}
+
+
+@-webkit-keyframes spin { 
+0% { -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-transform: scaleX(0); transform: scaleX(0); } 
+50% { -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-transform: scaleX(1); transform: scaleX(1); } 
+51% { -webkit-transform-origin: 0 0; transform-origin: 0 0; }
+100% {-webkit-transform-origin: 0 0;transform-origin: 0 0; -webkit-transform: scaleX(0); transform: scaleX(0); } 
+} 
+@keyframes spin { 
+0% { -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-transform: scaleX(0); transform: scaleX(0); } 
+50% { -webkit-transform-origin: 100% 0; transform-origin: 100% 0; -webkit-transform: scaleX(1); transform: scaleX(1); } 
+51% { -webkit-transform-origin: 0 0%; transform-origin: 0 0%; }
+100% {-webkit-transform-origin: 0 0%;transform-origin: 0 0%; -webkit-transform: scaleX(0); transform: scaleX(0); } 
+}
+
+/**
  * Site header
  */
 .site-header {
@@ -75,7 +138,7 @@
     }
 }
 
-/* .site-header--scrolled .site-header{
+ .site-header--scrolled .site-header{
     min-height: 0;
     transition: all .2s ease-out;
     padding-top: 10px;
@@ -124,19 +187,49 @@
             }
         }
    }
-} */
+} 
 
 
 /**
  * Site footer
  */
 .site-footer {
-    padding: 0;
-    color: $text-color;
+    padding: 1rem 0 0 0;
+    color: $background-color;
+    background-color: $text-color;
+    margin-top: 2.25%;
+    position: relative;
+
+    & a {
+        color: $background-color;
+
+        & .work_list_tile_title,
+        & .work_list_tile_subtitle {
+            color: $text-color;
+        }
+    }
+
+    & .icon > svg path {
+        fill: $background-color;
+    }
+
+    & .drop_cap::after {
+        background-color: $background-color;
+    }
+
+    &::before {
+        content: '';
+        height: 20px;
+        width: 100%;
+        background-image: url('/img/UI/ragged_border.png');
+        background-size: auto 20px;
+        position: absolute;
+        top:-20px;
+    }
 }
 
 .footer-heading {
-    border-top: 5px solid $text-color;
+    border-top: 5px solid $background-color;
     padding-top: 20px;
 }
 
@@ -257,26 +350,10 @@
             margin-left: 33.33333%;
         }
     }
-
-    /* Whacky rotations, naaaah
-    
-    .work_list a:nth-of-type(1) &,
-    .work_list a:nth-of-type(5) & {
-        transform: rotate(-1deg);
-    }
-
-    .work_list a:nth-of-type(2) &,
-    .work_list a:nth-of-type(8) &,
-    .work_list a:nth-of-type(9) & {
-        transform: rotate(1deg);
-    } */
 }
 
 .work_list_title {
     font-size: 1.5rem;
-    margin-bottom: .3rem;
-    font-family: $base-font-family;
-    font-weight: normal;
 }
 
 .work_list_tile_thumb {
@@ -288,19 +365,14 @@
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
-    @extend %hover-transition;
-    
-    .work_list_tile:hover &{
-        -webkit-transform: rotate(-1deg) scale(1.05);
-        transform: rotate(-1deg) scale(1.05);
-    }
+    //@extend %hover-transition;
 }
 
 .work_list_tile_header {
     position: absolute;
     top: 0;
     padding: .4rem;
-
+      
     @media screen and (min-width: 700px) {
         padding: .666rem;
     }
@@ -313,29 +385,20 @@
     font-weight: normal;
     line-height: 1;
 
-    @media screen and (min-width: 700px) {
-         font-size: 1rem;
-    }
-
-    .dark & {
+    a .dark & {
         color: $background-color;
     }
 }
 
 .work_list_tile_subtitle{
-    font-size: .6rem;
+    font-size: .7rem;
     font-family: $base-font-family;
     font-weight: normal;
     margin: 0;
     line-height: 1;
     padding-bottom: .2rem;
 
-    @media screen and (min-width: 700px) {
-         font-size: .9rem;
-         padding-bottom: .3rem;
-    }
-
-    .dark & {
+    .site-footer a .dark & {
         color: $background-color;
     }
 }
@@ -458,7 +521,7 @@
         top: -10px;
         left:0;
         right: 4px;
-        background-color: #000;
+        background-color: $text-color;
         height: 5px;
     }
 

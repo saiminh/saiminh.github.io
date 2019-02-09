@@ -24,11 +24,11 @@ order: 12
 		</div>
 		
 		<div class="col-4">
-	        <img src="/img/work_illustrations-various/01-40289819_468371623661165_5828165451911179451_n.png" alt="image" class="grid_img">
+	        <img src="/img/work_illustrations-various/heteronomous_vehicle.png" alt="image" class="grid_img">
 	    </div>
     
     	<div class="col-4">
-	        <img src="/img/work_illustrations-various/02-40540006_351347668741169_1622006711465834556_n.png" alt="image" class="grid_img">
+	        <img src="/img/work_illustrations-various/birthdaycard.png" alt="image" class="grid_img">
 	    </div>
     
     	<div class="col-4">
@@ -44,7 +44,7 @@ order: 12
 	    </div>
     
     	<div class="col-8">
-	        <img src="/img/work_illustrations-various/birthdaycard.png" alt="image" class="grid_img">
+	        <img src="/img/work_illustrations-various/sexdrugwalzer.png" alt="image" class="grid_img">
 	    </div>
 
     	<div class="col-4">

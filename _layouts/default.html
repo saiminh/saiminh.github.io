@@ -4,16 +4,21 @@
   {% include head.html %}
 
   <body class="{% if page.extra_classes %}{{ page.extra_classes }}{% elsif page.date %}blogpost{% else %}default	{% endif %}">
-<div id="barba-wrapper">
- 	<div class="barba-container">
+  	<div class="preloader">
+      <div class="preloader_logo-container">
+    		{% include floter_signature.svg %}
+        <div class="newdashcontainer">
+          <div class="newdash"></div>
+        </div>
+      </div>
+  	</div>
     {% include header.html %}
 
     	<div id="content" class="page-content">      
         	{{ content }}      
 	    </div>
 	    {% include footer.html %}
-	</div>
-</div>
+
   </body>
 
 </html>

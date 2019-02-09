@@ -181,19 +181,22 @@ a {
 .button {
     font-weight: $heading-font-weight;
     font-family: $heading-font-family;
-    background-color: $brand-color;
+    //background-color: $text-color;
     color: $background-color;
-    border-radius: .25em;
     padding: 14px 20px;
     font-size: .9em;
     text-decoration: none;
     margin-bottom: 1em;
     display: inline-block;
     @extend %hover-transition;
+    border: 1px solid black;
+    border-image-source: url(/img/UI/ragged_border-img.png);
+    border-image-slice: 80;
+    border-image-width: 80;
 
     &:hover,
     &:active {
-        color: #fff;
+        color: $background-color;
         text-decoration: none;
         -webkit-transform: rotate(-2deg) scale(1.1);
         transform: rotate(-2deg) scale(1.1);
@@ -204,9 +207,7 @@ a {
     }
 
     &.button_home-cta {
-        padding: 14px 60px;
-        background-color: #F5D0CC;
-        color: #000;
+        padding: 14px 60px;        
     }
 }
 

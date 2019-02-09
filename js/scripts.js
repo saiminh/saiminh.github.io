@@ -8,94 +8,6 @@ var galleryInit = function(){
 };
 
 // ------------------------------------------
-// Barba transition
-// ------------------------------------------
-var FadeTransition = Barba.BaseTransition.extend({
-    start: function() {
-        /**
-         * This function is automatically called as soon the Transition starts
-         * this.newContainerLoading is a Promise for the loading of the new container
-         * (Barba.js also comes with an handy Promise polyfill!)
-         */
-        // As soon the loading is finished and the old page is faded out, let's fade the new page
-        Promise
-        .all([this.newContainerLoading, this.fadeOut()])
-        .then(this.fadeIn.bind(this));
-    },
-
-    fadeOut: function() {
-        /**
-        * this.oldContainer is the HTMLElement of the old Container
-        */
-        var oldEl = $(this.oldContainer);
-        var deferred = Barba.Utils.deferred();
-
-        TweenMax.to(oldEl, .4, {
-            autoAlpha: 0,
-            onComplete: function () {
-                deferred.resolve();
-            } 
-        });
-        return deferred.promise;        
-    },
-
-    fadeIn: function() {
-        /**
-        * this.newContainer is the HTMLElement of the new Container
-        * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-        * Please note, newContainer is available just after newContainerLoading is resolved!
-        */
-
-        var _this = this;
-        var $el = $(this.newContainer);
-        var completeHandler = function(){
-            console.log('completeHandler!');                        
-            smoothScrollInit();
-            //animate page elements
-            TweenMax.staggerTo(".col-4, .col-6, .col-12, .col-8", .5, {              
-                autoAlpha: 1,
-                y: 0,
-                ease: Back.easeOut.config( 1.7)
-            }, .05);
-            bierbaumInit();
-            bloatkingInit();
-            galleryInit();
-            _this.done();
-        }; // End complete Handler function            
-
-
-        TweenMax.set(".col-4, .col-6, .col-12, .col-8", {          
-            autoAlpha: 0,
-            y: -30,
-        });
-
-        $(this.oldContainer).hide();
-
-        $('html, body').stop().animate({
-            scrollTop: 0
-        }, 0,'easeInOutExpo');
-
-        TweenMax.from($el, .1, {
-            autoAlpha: 0,
-            onComplete: completeHandler
-        }); 
-
-    } //End Fade in
-});// End Barba transition
-
-/**
- * Next step, you have to tell Barba to use the new Transition
- */
-
- Barba.Pjax.getTransition = function() {
-    /**
-    * Here you can use your own logic!
-    * For example you can use different Transition based on the current page or link...
-    */
-    return FadeTransition;
-};
-
-// ------------------------------------------
 // Smooth scrolling when clicking on anchor link
 // ------------------------------------------
 var smoothScrollInit =  function() {
@@ -109,6 +21,61 @@ var smoothScrollInit =  function() {
         event.preventDefault();
     });                       
 };
+
+// ------------------------------------------
+// Home Page Animation
+// ------------------------------------------
+var home_ani_tl = new TimelineMax( {paused:true} )
+    .fromTo(".weakened", 2, {
+        transformOrigin: "50% 100%",
+        autoAlpha: 1,
+        y: "100%",
+        rotationZ: -33
+    }, {
+        y: "0%",
+        rotationZ: 0
+    }, 1)
+    .fromTo(".staedler", 1, {
+        transformOrigin: "50% 100%",
+        autoAlpha: 1,
+        y: "100%",
+        rotationZ: -33
+    }, {
+        y: "0%",
+        rotationZ: 0,
+        ease: Expo.easeOut
+    }, 4)
+    .set(".staedler", {
+        autoAlpha: 0
+    }, 7)
+    .set(".weakened", {
+        autoAlpha: 0
+    }, 7)
+    .set(".powered", {
+        autoAlpha: 1,
+        transformOrigin: "50% 100%"
+    }, 7)
+    .fromTo(".powered", 1, {
+        scale: .9
+    }, {
+        scale: 1,
+        ease:  Elastic. easeOut.config( 1.5, 0.3)
+    }, 7)
+    .fromTo(".rays", 1, {
+        autoAlpha: 1,
+        scale: 0
+    }, {
+        scale: 3,
+        ease:  Elastic. easeOut.config( 1.5, 0.3)
+    }, 7)
+    .to(".rays", 8, {
+        transformOrigin: "50% 50%",
+        rotationZ: 360,
+        repeat: -1,
+        ease: Linear.easeNone
+    }, 7)
+    ;
+
 
 // ------------------------------------------
 // Bloat King
@@ -176,12 +143,24 @@ var bierbaumInit = function(){
 // ------------------------------------------
 $(window).on('load', function(){   
     smoothScrollInit();
-    galleryInit();
-
-    //initialize Barba.js
-    Barba.Pjax.start();
-    Barba.Prefetch.init();
-    
+    galleryInit();    
     bloatkingInit();
     bierbaumInit();
+    home_ani_tl.play(0);
+    TweenMax.to(".preloader", .5, {
+        autoAlpha:0,
+        onComplete: function(){$(".preloader").remove()}
+    });
+    TweenMax.staggerFromTo(".col-4, .col-6, .col-12, .col-8", .5, {
+        autoAlpha: 0,
+        y: -60
+    },{              
+        autoAlpha: 1,
+        y: 0,
+        ease: Back.easeOut.config( 1.7)
+    }, .05);
+    $("body").addClass("assets_loaded");
+    $(".home_hero").click(function(){
+         home_ani_tl.play(0);
+     });
 });  
