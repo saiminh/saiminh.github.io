@@ -70,3 +70,18 @@ $theme_crappy_color_bg: $background-color;
 	}
 }
 
+@media screen and (min-width: 769px) {
+	.illustration_darkmonger {
+		position: absolute;
+		left: -13%;
+		top: -10%;
+	}
+}
+
+.astra_logo {
+	position: absolute;
+	bottom: 10px;
+	z-index: 999999999;
+	right: 10px;
+	width: 60px;
+}

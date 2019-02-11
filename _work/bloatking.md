@@ -5,7 +5,7 @@ title: Bloat King
 category: Illustration/Animation
 permalink: /work/bloatking
 mainnav: hide
-header_bg_image: /img/hero-bg/bloating.png
+header_bg_image: /img/thumbnails/bloatking.png
 worktile_color: "#D79659"
 extra_classes: portfolio
 order: 1

@@ -674,13 +674,13 @@
 /* Stuff that needs to be hidden on certain devices */
 
 .hide_on_desktop {
-    display: none;
+    display: none!important;
 }
 @include media-query($on-palm) {
     .hide_on_phone {
-        display: none;
+        display: none!important;
     }
     .hide_on_desktop {
-        display: initial;
+        display: initial!important;
     }
 }

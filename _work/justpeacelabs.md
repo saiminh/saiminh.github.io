@@ -6,6 +6,7 @@ category: Housestyle
 permalink: /work/justpeacelabs
 mainnav: hide
 header_bg_image: /img/thumbnails/jpl.png
+worktile_theme: dark
 subtitle: Housestyle for the peace technology startup 
 extra_classes: portfolio theme-jpl
 title_offset_y: 60vh

@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio
+type: portfolio-norender
 title: University of Roehampton
 category: Housestyle
 subtitle: Designing a fully online study experience
