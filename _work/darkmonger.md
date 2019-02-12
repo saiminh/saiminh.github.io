@@ -15,7 +15,7 @@ order: 10
 
 	<div class="row">
 		<div class="col-6 hide_on_desktop">
-			<img class="illustration_image" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">
+			<img class="illustration_image hide_on_desktop" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">
 		</div>
 		<div class="col-6">
 			<h2 class="page-subtitle">Storytelling in HTML</h2>
@@ -43,7 +43,7 @@ order: 10
 				    <div class="sensor"></div>
 				    <div class="speaker"></div>
 				    <div class="screen">
-				       <iframe src="{{ site.baseurl }}/darkmonger/index.html" style="border: none; width:320px; height:569px;"></iframe>
+				       <iframe src="{{ site.baseurl }}/darkmonger/index.html" width="320" height="569" scrolling="no" style="border: none; width:320px; height:569px;"></iframe>
 				    </div>
 				    <div class="home"></div>
 				    <div class="bottom-bar"></div>

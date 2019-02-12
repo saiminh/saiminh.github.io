@@ -17,11 +17,13 @@ order: 7
 <div class="wrapper">	
 
 	<div class="row row-overlap">
-		<div class="col-6 hide_on_desktop">
-			<img src="{{ site.baseurl }}/img/work_crappy/iphone_bg.png" class="screenrec_iphone" alt="iPhone displaying the start screen of the game">
+		<div class="col-12 hide_on_desktop">
+			<img src="{{ site.baseurl }}/img/work_crappy/iphone_toipap_bg.png" class="screenrec_iphone hide_on_desktop" alt="iPhone displaying the start screen of the game">
 		</div>
+	</div>
+	<div class="row">
 		<div class="col-6">		
-			<h2 class="page-subtitle">Game (in HTML5)</h2>
+			<h2 class="page-subtitle">HTML5 game</h2>
 			<h1 class="page-title">Crappy Turd</h1>
 			<p class="pullquote">Fight the evil toilet paper. Eat red hot chilli peppers. Become Super Flaming Turd!</p>
 			
