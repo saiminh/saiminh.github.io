@@ -28,7 +28,7 @@ order: 6
 			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_color.svg" alt="justpeacelabs logo">		
 		</div>		
 		<div class="col-6 offset-2">
-			<p><span class="drop_cap">T</span>he startup from Barcelona and San Francisco has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyed their goals and products.</p>	
+			<p><span class="drop_cap">T</span>he startup from Barcelona and San Francisco has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyes their goals and products.</p>	
 		</div>
 			
 	</div>
