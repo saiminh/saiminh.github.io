@@ -15,13 +15,14 @@ order: 1
 <div class="wrapper">
 	<div class="row">		
 		<div class="col-6">
-			<img src="{{ site.baseurl }}/img/hero-bg/liverpool.png" alt="image" class="grid_img" />
-		</div>
-		<div class="col-6">
 			<h2 class="page-subtitle">Housestyle</h2>
 			<h1 class="page-title">University of Liverpool Online Degrees</h1>			
 			<p><span class="drop_cap">D</span>uring my time as Senior Designer at Laureate Online Education my team and I developed a housestyle and all design collateral for the subbrand of this prestigious UK Institution.</p>
 		</div>
+		<div class="col-6">
+			<img src="{{ site.baseurl }}/img/hero-bg/liverpool.png" alt="image" class="grid_img" />
+		</div>
+		
 	</div>
 
 	<div class="row">		
@@ -48,15 +49,6 @@ order: 1
 	</div>
 
 	<div class="row">		
-		<div class="col-8">
-			<div class="gallery-xscroll">
-				{% for image in site.static_files %}
-				    {% if image.path contains 'img/work_liverpool/online' %}
-				        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" />
-				    {% endif %}
-				{% endfor %}
-			</div>
-		</div>
 		<div class="col-4 col-text">
 			<h3>Website</h3>
 			<p><span class="drop_cap">T</span>he website of the University Online Degrees doubles as an information portal for prospective as well as active students and as a lead capture platform.</p>
@@ -67,6 +59,16 @@ order: 1
 				<li>Frontend development</li>
 			</ul>
 		</div>
+		<div class="col-8">
+			<div class="gallery-xscroll">
+				{% for image in site.static_files %}
+				    {% if image.path contains 'img/work_liverpool/online' %}
+				        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" />
+				    {% endif %}
+				{% endfor %}
+			</div>
+		</div>
+		
 	</div>
 
 	<div class="row raster">		

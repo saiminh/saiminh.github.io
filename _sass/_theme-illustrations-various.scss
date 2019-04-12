@@ -26,15 +26,15 @@
 			}
 		}
 
-		& .col-4 {
+		& .col-6 {
 			@media screen and (orientation: landscape) {
 				width: 50%;
 				clear: left;
-			}
-		}
 
-		& .col-4 img {
-			border: 10px solid #FFF;
+				&  img {
+					border: 10px solid #FFF;
+				}
+			}
 		}
 
 		& .page-title {

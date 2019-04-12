@@ -14,9 +14,16 @@ order: 9
 <div class="wrapper">
 	
 	<div class="row">
+		
+		<div class="col-6">
+			<h2 class="page-subtitle">Store identity</h2>
+			<h1 class="page-title">Bierbaum</h1>
+			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
+			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
+		</div>	
+
 		<div class="col-6">
 			<div class="bierbaum-logo">
-
 				<svg class="about_tree" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="533.3px" height="784.6px" viewBox="0 0 533.3 784.6" style="enable-background:new 0 0 533.3 784.6;" xml:space="preserve">
 					<g id="Tree">
 						<path d="M533.3,174.8c0-38.4-28.2-71.3-66-77.1c-2.2-18.6-10.9-35.7-24.8-48.4c-14.4-13.2-33.2-20.5-52.7-20.5
@@ -236,43 +243,36 @@ order: 9
 					</div>
 					<div id="Tree_Eye_inner--anim"></div>
 				</div>
-
 			</div>
-		</div>	
-		<div class="col-6">
-			<h2 class="page-subtitle">Store identity</h2>
-			<h1 class="page-title">Bierbaum</h1>
-			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
-			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
-
 		</div>		
 	</div>
 
 	<div class="row">
-		
-		<div class="col-8">
-			<img src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
-			<em class="illustration_caption">First Beerbaum location in Jan Pieter Heijestraat, Amsterdam</em>
-		</div>
 		<div class="col-4">
 			<h3>Concept: Why a tree?</h3>
 			<p><span class="drop_cap">F</span>irstly the tree was mainly supposed to be symbolic for branching out into all areas of the craft beer scene. The store is going to host events, tastings and workshops and sell brewing equipment.</p>
 			<p>But we realized that the biggest part of the shop's appeal comes from the temptation to try all of its huge variety of beers. So of course the biblical tree with the snake and Eve provides a perfect visual metaphor for that.</p>
 			<p>The unusual shape and design of the logo attracts attention of people walking by the store and it feels right at home in the whimsical world of craft beer.</p>
 		</div>
+		<div class="col-8">
+			<img src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
+			<em class="illustration_caption">First Beerbaum location in Jan Pieter Heijestraat, Amsterdam</em>
+		</div>
+		
 	</div>
 
 	<div class="row">
-		<div class="col-8">
-			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" >
-			<em style="margin-top: 1em" class="illustration_caption">SF Bierbaum: Art Deco All Caps Display font.</em>
-		</div>
 		<div class="col-4">
 			<h3>Typeface: SF Bierbaum</h3>
 			<p><span class="drop_cap">O</span>ne style reference we were using a lot was Art Deco, which is very prevalent in Amsterdam. I couldn't find a perfect font for the logo in that style, so I created a custom All-Caps typeface: SF Bierbaum, using FontForge.</p>
 			<p>It's not perfect yet, especially kerning needs a lot of work. But for the logo and short headlines it is a functional font. You can download it and use it for your art deco designing pleasure.</p>
 			<a class="button" href="{{ site.baseurl }}/img/work_bierbaum/SF_Bierbaum.otf" download>Download .otf</a>
 		</div>
+		<div class="col-8">
+			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" >
+			<em style="margin-top: 1em" class="illustration_caption">SF Bierbaum: Art Deco All Caps Display font.</em>
+		</div>
+		
 
 	</div>
 </div>
