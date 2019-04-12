@@ -9,7 +9,7 @@ mainnav: hide
 header_bg_image: /img/thumbnails/cwn.jpg
 ogimageurl: /img/thumbnails/cwn.jpg
 worktile_theme: light
-extra_classes: portfolio
+extra_classes: portfolio theme-cwn
 order: 11
 ---
 
