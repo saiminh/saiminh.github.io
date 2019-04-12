@@ -16,50 +16,56 @@ order: 12
 
 <div class="wrapper">
 
-	<div class="row">
-		<div class="col-4">
+	<div class="row herow">
+		<div class="col-6">
 			<h1 class="page-title">Various Illustrations</h1>
 			
 			<p><span class="drop_cap">T</span>his is but a small selection of some of my most precious little creations. <a href="https://www.instagram.com/skyfloter/">Follow me on instagram</a> to see them all!</p>
 		</div>
+	</div>
+	<div class="row">
 		
-		<div class="col-4">
+		<div class="col-6">
+	        <img src="/img/work_illustrations-various/birthdaycard.png" alt="image" class="grid_img">
+	    </div>
+
+		<div class="col-6">
 	        <img src="/img/work_illustrations-various/heteronomous_vehicle.png" alt="image" class="grid_img">
 	    </div>
     
-    	<div class="col-4">
-	        <img src="/img/work_illustrations-various/birthdaycard.png" alt="image" class="grid_img">
-	    </div>
-    
-    	<div class="col-4">
-	        <img src="/img/work_illustrations-various/03-36847657_201728650518882_3331689582721761280_n.png" alt="image" class="grid_img">
-	    </div>
-    
-    	<div class="col-4">
-	        <img src="/img/work_illustrations-various/04-36592200_701525646846075_881391687878836224_n.png" alt="image" class="grid_img">
-	    </div>
-    
-    	<div class="col-4">
-	        <img src="/img/work_illustrations-various/05-37257336_217411402434510_8801169244055142400_n.png" alt="image" class="grid_img">
-	    </div>
-    
-    	<div class="col-8">
-	        <img src="/img/work_illustrations-various/sexdrugwalzer.png" alt="image" class="grid_img">
+    	<div class="col-6">
+	        <img src="/img/work_illustrations-various/gods_obesiabrown.png" alt="image" class="grid_img">
 	    </div>
 
-    	<div class="col-4">
+	    <div class="col-6">
+	        <img src="/img/work_illustrations-various/gods_stranglepalm.png" alt="image" class="grid_img">
+	    </div>
+
+    	<div class="col-6">
 	        <img src="/img/work_illustrations-various/angrynude.png" alt="image" class="grid_img">
 	    </div>
     
-    	<div class="col-4">
+    	<div class="col-6">
 	        <img src="/img/work_illustrations-various/virtualreality.png" alt="image" class="grid_img">
+	    </div>
+
+    	<div class="col-6">
+	        <img src="/img/work_illustrations-various/03-36847657_201728650518882_3331689582721761280_n.png" alt="image" class="grid_img">
+	    </div>
+    
+    	<div class="col-6">
+	        <img src="/img/work_illustrations-various/04-36592200_701525646846075_881391687878836224_n.png" alt="image" class="grid_img">
+	    </div>
+    
+    	<div class="col-6">
+	        <img src="/img/work_illustrations-various/05-37257336_217411402434510_8801169244055142400_n.png" alt="image" class="grid_img">
 	    </div>
     
 	</div>
 
 		{% comment %}{%  for image in site.static_files %}
 		    {% if image.path contains 'img/work_illustrations-various' %}
-		    	<div class="col-4">
+		    	<div class="col-6">
 			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
 			    </div>
 		    {% endif %}

@@ -1,5 +1,26 @@
 .theme-bierbaum {
 
+	@media screen and (min-width: 1200px) {
+
+		& .page-title {
+				font-size: 2.75rem;
+				margin-bottom: 3rem;
+		}
+		& .page-subtitle {
+				font-size: 2.5rem;
+		}
+
+		& .row:nth-child(1) {
+			height: 80vh;
+			font-size: 30px;
+		}
+
+		& .bierbaum-logo {
+			transform: scale(1.3);
+		}
+
+	}
+
 	& .row {
 		@include media-query($on-palm) {
 			overflow: visible;

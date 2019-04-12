@@ -75,6 +75,10 @@
         padding-top: $spacing-unit/3;
         margin-bottom: 0;
     }
+
+    & .wrapper {
+        max-width: none;
+    }
 }
 
 .site-title {
@@ -200,6 +204,10 @@
     margin-top: 2.25%;
     position: relative;
 
+    & .wrapper {
+        max-width: none;
+    }
+
     & a {
         color: $background-color;
 
@@ -231,6 +239,7 @@
 .footer-heading {
     border-top: 5px solid $background-color;
     padding-top: 20px;
+    margin-top: $spacing-unit;
 }
 
 .contact-list,
@@ -306,7 +315,7 @@
 
 .work_list {
     margin-bottom: $spacing-unit;
-    margin-right: -3%;
+    margin-right: -1%;
 
     &.row {
         overflow: visible;
@@ -322,38 +331,59 @@
     padding-bottom: 47%;
     margin-top:0;
     margin-left: 0;
-    margin-right: 3%;
-    margin-bottom: 3%;
+    margin-right: 1%;
+    margin-bottom: 1%;
     background-color: #EEE;
     box-sizing: border-box;
 
-    @media screen and (min-width: 500px) {
-        width: 30.33333%;
-        padding-bottom: 30.33333%;
+    @media screen and (min-width: 600px) {
+        width: 32.333333%;
+        padding-bottom: 32.333333%;    
+    }
+
+    @media screen and (min-width: 900px) {
+        width: 24%;
+        padding-bottom: 24%;
        
-    
-        .work_list a:nth-of-type(1) &,
-        .work_list a:nth-of-type(8) &{
-            padding-bottom: 63.66667%;
+        .work_list a:nth-of-type(1) & {
+            width: 49%;
+            padding-bottom: 49%;
         }
 
         .work_list a:nth-of-type(6) & {
            clear: left;
         }
+    
+     /*    .work_list a:nth-of-type(1) &,
+        .work_list a:nth-of-type(7) &{
+            padding-bottom: 49%;
+        }
 
+        .work_list a:nth-of-type(26) & {
+           clear: left;
+        }
+
+        .work_list a:nth-of-type(8) &,
         .work_list a:nth-of-type(9) &,
-        .work_list a:nth-of-type(10) &,{
-            margin-top: -33.33333%;
+        .work_list a:nth-of-type(10) &{
+            margin-top: -25%;
         }
 
-        .work_list a:nth-of-type(10) & {
-            margin-left: 33.33333%;
+        .work_list a:nth-of-type(9) & {
+            margin-left: 25%;
         }
+
+        .work_list a:nth-of-type(10) &{
+            margin-left: 50%;
+        } */
     }
+
+    
 }
 
 .work_list_title {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 .work_list_tile_thumb {
@@ -365,6 +395,8 @@
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
+    background-color: black;
+    background-blend-mode: screen;
     //@extend %hover-transition;
 }
 

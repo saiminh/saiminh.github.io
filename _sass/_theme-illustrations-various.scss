@@ -1,3 +1,92 @@
+.theme-illustrations-various {
+
+	@media screen and (min-width: 768px) {
+
+		& {
+			background: url(../img/work_illustrations-various/hero.jpg) no-repeat 100% 0;
+			background-size: cover;
+			background-attachment: fixed;			
+
+			@media screen and (orientation: portrait) {
+				background: none;
+			}
+		}
+
+		& #floter_signature_svg {
+			fill: #FFF;
+		}
+
+		& .site-header {
+			position: absolute;
+			width: 100%;
+			color: #FFF;
+
+			& a {
+				color: #FFF;
+			}
+		}
+
+		& .col-4 {
+			@media screen and (orientation: landscape) {
+				width: 50%;
+				clear: left;
+			}
+		}
+
+		& .col-4 img {
+			border: 10px solid #FFF;
+		}
+
+		& .page-title {
+
+			@media screen and (min-width: 1200px) {
+				font-size: 3rem;
+			}
+		}
+		& .herow {
+			overflow: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			height: 100vh;
+			width: 100vw;
+			margin-left: 0;
+			padding-top: 33vh;
+			padding-left: 40px;
+			box-sizing: border-box;
+			color: #FFF;
+
+			@media screen and (orientation: portrait) {
+				background: url(../img/work_illustrations-various/hero.jpg) no-repeat 100% 0;
+				background-size: auto 100vh;
+			}
+
+			& p {
+				@media screen and (min-width: 1200px) {
+					font-size: 1.25rem;
+				}
+			}
+
+			& a {
+				color: #FFF;
+			}
+
+			.drop_cap::after {
+				background-color: #FFF;
+			}
+
+		}
+
+		& .page-content .wrapper {
+			max-width: none;
+			padding-top: 100vh;
+		}
+
+	}
+
+}
+
 /* $text-color_illustrations: $text-color;
 $bg-color_illustrations: $background-color;
 $highlight-color_illustrations: $brand-color;
