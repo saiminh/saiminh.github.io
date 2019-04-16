@@ -15,7 +15,8 @@ order: 12
 ---
 
 <div class="wrapper">
-
+	<div class="sticky_bg">
+	</div>
 	<div class="row herow">
 		<div class="col-6">
 			<h1 class="page-title">Various Illustrations</h1>

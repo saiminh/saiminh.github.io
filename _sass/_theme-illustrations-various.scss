@@ -1,15 +1,16 @@
 .theme-illustrations-various {
 
-	@media screen and (min-width: 768px) {
+	@media screen and (orientation:landscape) and (min-width: 768px) {
 
-		& {
+		& .sticky_bg {
 			background: url(../img/work_illustrations-various/hero.jpg) no-repeat 100% 0;
 			background-size: cover;
-			background-attachment: fixed;			
-
-			@media screen and (orientation: portrait) {
-				background: none;
-			}
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
 		}
 
 		& #floter_signature_svg {
@@ -83,6 +84,12 @@
 			padding-top: 100vh;
 		}
 
+	} // End: @media screen and (orientation:landscape) and (min-width: 768px)
+
+	@media screen and (orientation: portrait) {
+		& .herow .col-6 {
+			width: 100%;
+		}
 	}
 
 }
