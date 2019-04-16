@@ -1,6 +1,6 @@
 .theme-illustrations-various {
 
-	@media screen and (orientation:landscape) and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 
 		& .sticky_bg {
 			background: url(../img/work_illustrations-various/hero.jpg) no-repeat 100% 0;
@@ -28,13 +28,11 @@
 		}
 
 		& .col-6 {
-			@media screen and (orientation: landscape) {
-				width: 50%;
-				clear: left;
+			width: calc(100% - ($spacing-unit / 2));
+			clear: left;
 
-				&  img {
-					border: 10px solid #FFF;
-				}
+			&  img {
+				border: 10px solid #FFF;
 			}
 		}
 
@@ -57,11 +55,6 @@
 			padding-left: 40px;
 			box-sizing: border-box;
 			color: #FFF;
-
-			@media screen and (orientation: portrait) {
-				background: url(../img/work_illustrations-various/hero.jpg) no-repeat 100% 0;
-				background-size: auto 100vh;
-			}
 
 			& p {
 				@media screen and (min-width: 1200px) {
@@ -88,7 +81,7 @@
 
 	@media screen and (orientation: portrait) {
 		& .herow .col-6 {
-			width: 100%;
+			width: calc(100% - ($spacing-unit / 2));
 		}
 	}
 
