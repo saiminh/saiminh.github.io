@@ -39,7 +39,7 @@ order: 8
 
 		<div class="col-6">			
 			<h3>Issue 02/2018</h3>
-			<p><span class="drop_cap">I</span>n this issue the topic for my editorial illustration was an article about a new initiative in the public sector. This initiative had workers from the municipalities swicth places with employees from museums in order to learn about each others' challenges.</p>
+			<p><span class="drop_cap">I</span>n this issue the topic for my editorial illustration was an article about a new initiative in the public sector. This initiative had workers from the municipalities switch places with employees from museums in order to learn about each others' challenges.</p>
 		</div>
 	</div>
 
