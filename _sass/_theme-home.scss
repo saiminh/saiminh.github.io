@@ -2,6 +2,15 @@
 
 		background-color: #d12d07;
 
+	& #floter_signature_svg {
+		fill: #FFF;
+	}
+
+	& .site-nav .page-link,
+	& .site-nav .page-link-divider {
+		color: #FFF;
+	}
+
 	& .page-content {
 		overflow: hidden;
 	}
