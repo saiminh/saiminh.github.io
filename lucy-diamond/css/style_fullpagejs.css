@@ -1,17 +1,16 @@
-@import 'https://fonts.googleapis.com/css?family=Tillana:400,700';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 
 html, body, * {
 	padding: 0;
 	margin: 0;
-	font-size: 62.5%;
 }
 
 body {
 	height: 100vh !important;
 	border: 0vh solid #FFF;
 	background: #000;
-	font-family: 'Tillana', serif;
-	font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
 }
 
 .js div#preloader { 
@@ -45,7 +44,7 @@ body {
 	position: relative;
 	text-align: center;
 	color: #fff;
-	background: #981f1f;
+	/*background: #981f1f;*/
 }
 
 @media (orientation: landscape) {
@@ -71,7 +70,7 @@ body {
 .scene_header {
 	font-weight: 300;
 	line-height: 1.5;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	text-align: left;
 	width: 100%;
 	margin: 0 auto;
@@ -88,10 +87,10 @@ body {
 	font-size: 3.2em;
 	font-weight: 900;
 	line-height: .5;
-	padding-top: .25em;
-	padding-right: 8px;
+	padding-top: .2em;
+	padding-right: 6px;
 	padding-left: 0;
-	color: #000;
+	/*color: #000;*/
 }
 
 @media (min-width: 321px) {
@@ -128,8 +127,9 @@ body {
 
 strong {
 	font-weight: 700;
-	color: #000;
-	letter-spacing: -.01em;
+	font-size: inherit;
+	/*color: #000;
+	letter-spacing: -.01em;*/
 }
 
 .strong-l {
