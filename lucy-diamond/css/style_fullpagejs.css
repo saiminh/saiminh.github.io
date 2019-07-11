@@ -111,11 +111,9 @@ body {
 }
 
 @media (orientation: landscape) {
-	.scene_header {
-		 
+	.scene_header {		 
 		padding: 0 5rem;
-		font-size: 2rem;
-		max-width: 45rem;
+		font-size: 2vw;
 	}
 }
 
@@ -137,7 +135,7 @@ strong {
 	position: relative;
     top: 6px;
     line-height: 1.2;
-    letter-spacing: -.03em;
+    letter-spacing: -.01em;
 }
 
 
@@ -174,6 +172,7 @@ div[class^="animation_stage_scene_"] img {
 
 	div[class^="animation_stage_scene_"] img {
 		height: 50vw;
+		height: calc(50vw + 1px);
 		width: auto;
 		display: block;
 		margin: 0 auto;
@@ -225,6 +224,8 @@ Intro Scene Lucy
 @media (orientation: landscape) {
 	.scene_header_lucy {
 		margin-left: -20%;
+		font-size: 1.2rem;
+		max-width: 35rem;
 	}
 }
 
@@ -287,7 +288,9 @@ Scene 'lived the Darkmonger'
 	background-position: 0 50%;
 	background-repeat: no-repeat;
 	width: 100%;
+	width: calc(100% + 1px);
 	height: 100%;
+	height: calc(100% + 1px);
 	position: relative;
 	opacity: 0;
 }
@@ -298,7 +301,9 @@ Scene 'lived the Darkmonger'
 	background-position: 0 50%;
 	background-repeat: no-repeat;
 	width: 100%;
+	width: calc(100% + 1px);
 	height: 100%;
+	height: calc(100% + 1px);
 	position: relative;
 }
 
