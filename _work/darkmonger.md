@@ -33,8 +33,7 @@ order: 10
 			<p><a class="button" href="/darkmonger" target="_blank">Read "Darkmonger"</a></p>			 
 		</div>
 		<div class="col-6 hide_on_phone" style="text-align: center;">			
-				<img class="illustration_image illustration_darkmonger" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">				
-				<link rel="stylesheet" href="{{ site.baseurl }}/css/devices.min.css">
+				<img class="illustration_image illustration_darkmonger" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">		
 				<div class="marvel-device iphone5s gold hide_on_phone">
 				    <div class="top-bar"></div>
 				    <div class="sleep"></div>

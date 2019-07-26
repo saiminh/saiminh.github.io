@@ -58,8 +58,9 @@ order: 6
 
 		<div class="col-6">
 		<h3>Website</h3>
-			<p><span class="drop_cap">A</span> simple jekyll powered static site and blog is all Just Peace Labs needed to get their information and mission out and to interact with peers and sponsors.</p>
-			<p> You can check it out on <a href="https://www.justpeacelabs.org"> justpeacelabs.org</a></p>
+			<p><span class="drop_cap">T</span>ogether with the content creators at JustPeaceLabs I designed a custom WordPress site that delivers a good User Experience for both editors and viewers.</p>
+			<p> You can check it out here:</p>
+			<a class="button" href="https://www.justpeacelabs.org"> justpeacelabs.org</a>
 		</div>
 
 		<div class="col-6">

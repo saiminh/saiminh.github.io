@@ -357,3 +357,20 @@ pre {
         }
     }
 }
+
+.marvel-device.iphone5s.gold, 
+.marvel-device.iphone5s.gold .volume, 
+.marvel-device.iphone5s.gold .sleep,
+.marvel-device.iphone5s .speaker, .marvel-device.iphone5c .speaker,
+.marvel-device.iphone5s .sensor, .marvel-device.iphone5c .sensor,
+.marvel-device.iphone5s .camera, .marvel-device.iphone5c .camera {
+    background-color: $brand-color;
+}
+.marvel-device.iphone5s.gold .home {
+    -webkit-box-shadow: inset 0 0 0 4px $brand-color;
+    box-shadow: inset 0 0 0 4px $brand-color;
+}
+.marvel-device .screen {
+    -webkit-box-shadow: 0 0 0 3px $brand-color;
+    box-shadow: 0 0 0 3px $brand-color;
+}

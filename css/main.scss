@@ -52,6 +52,7 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "devices.min.css",
         "layout",
         "scrollreveal",
         "syntax-highlighting",

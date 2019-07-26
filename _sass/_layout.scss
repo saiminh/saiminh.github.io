@@ -396,8 +396,7 @@
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-color: desaturate(darken($brand-color, 5%), 80%);
-    background-blend-mode: soft-light;
+   
     //@extend %hover-transition;
 }
 
