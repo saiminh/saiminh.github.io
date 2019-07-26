@@ -48,24 +48,38 @@ ul, ol, dl, figure,
     margin-bottom: 1.5rem;
 }
 
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+}
+
+.heading_centered {
+    text-align: center;
+}
+
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.3;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
     line-height: 1.3;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: $base-font-weight;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: $base-font-weight;
 }
 
 
@@ -117,20 +131,6 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-family: $heading-font-family;
-    font-weight: $heading-font-weight;
-}
-
-.heading_centered {
-    text-align: center;
-}
-
 em {
     font-style: italic;
 }
@@ -141,19 +141,26 @@ em {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
     font-family: $heading-font-family;
-    font-weight: $heading-font-weight;
-    font-size: .9em;
+
+    p > & {
+        border-bottom: 2px solid;
+        //font-style: italic;
+    }
+
+    p > &:hover {
+        border-color: $brand-color;
+    }
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($text-color, 15%);
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -179,31 +186,62 @@ a {
 }
 
 .button {
-    font-weight: $heading-font-weight;
+    font-weight: $base-font-weight;
     font-family: $heading-font-family;
-    //background-color: $text-color;
-    color: $background-color;
-    padding: 14px 20px;
+    font-style: normal;
     font-size: .9em;
+    background-color: $background-color;
+    color: $text-color;
+    padding: 7px 14px;
+    line-height: 2.5;
     text-decoration: none;
     margin-bottom: 1em;
     display: inline-block;
-    @extend %hover-transition;
-    border: 1px solid black;
-    border-image-source: url(/img/UI/ragged_border-img.png);
-    border-image-slice: 80;
-    border-image-width: 80;
+    border: 2px solid;
+    transition: all .15s;
+
+    @media (max-width: 360px) {
+        padding: 0px 14px 7px;
+    }
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+       // background: transparent url(../img/UI/arrow_right_brandcolor.svg) 0 0 no-repeat;
+
+        background-size: auto;
+        background-size: 30px;
+        position: relative;
+        top: 8px;
+        left: 3px;
+        transform: rotate(-0) translate(0, 0);
+        transition: all .15s;
+        -webkit-mask: url(../img/UI/arrow_right_brandcolor.svg) no-repeat 50% 50%;
+         mask: url(../img/UI/arrow_right_brandcolor.svg) no-repeat 50% 50%;
+         -webkit-mask-size: cover;
+         mask-size: cover;
+        background-color: $brand-color;
+
+        @media (max-width: 360px) {
+            top: 10px;
+        }
+    }
+
+    &:hover:after {
+         transform: rotate(-0) translate(5px, 0);
+    }
 
     &:hover,
     &:active {
-        color: $background-color;
+        color: $text-color;
         text-decoration: none;
-        -webkit-transform: rotate(-2deg) scale(1.1);
-        transform: rotate(-2deg) scale(1.1);
+        border-color: $brand-color;
     }
 
     &:visited {
-        color: $background-color;
+       color: $text-color;
     }
 
     &.button_home-cta {

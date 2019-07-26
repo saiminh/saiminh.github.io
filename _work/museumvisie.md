@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio
+type: portfolio-norender
 title: Museumvisie
 category: Illustration
 permalink: /work/museumvisie

@@ -200,7 +200,7 @@
 .site-footer {
     padding: 1rem 0 0 0;
     color: $background-color;
-    background-color: $text-color;
+    background-color: $brand-color;
     margin-top: 2.25%;
     position: relative;
 
@@ -211,9 +211,11 @@
     & a {
         color: $background-color;
 
-        & .work_list_tile_title,
-        & .work_list_tile_subtitle {
+        & .work_list_tile_title {
             color: $background-color;
+        }
+        & .work_list_tile_subtitle {
+            color: $brand-color;
         }
     }
 
@@ -225,7 +227,7 @@
         background-color: $background-color;
     }
 
-    &::before {
+    /* &::before {
         content: '';
         height: 20px;
         width: 100%;
@@ -233,7 +235,7 @@
         background-size: auto 20px;
         position: absolute;
         top:-20px;
-    }
+    } */
 }
 
 .footer-heading {
@@ -345,14 +347,14 @@
         width: 24%;
         padding-bottom: 24%;
        
-        .work_list a:nth-of-type(1) & {
+        /* .work_list a:nth-of-type(1) & {
             width: 49%;
             padding-bottom: 49%;
         }
 
         .work_list a:nth-of-type(6) & {
            clear: left;
-        }
+        } */
     
      /*    .work_list a:nth-of-type(1) &,
         .work_list a:nth-of-type(7) &{
@@ -382,7 +384,6 @@
 }
 
 .work_list_title {
-    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -395,9 +396,13 @@
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-color: black;
-    background-blend-mode: screen;
+    background-color: desaturate(darken($brand-color, 5%), 80%);
+    background-blend-mode: soft-light;
     //@extend %hover-transition;
+}
+
+.work_list_tile_thumb:hover {
+    background-blend-mode: normal;
 }
 
 .work_list_tile_header {
@@ -411,15 +416,11 @@
 }
 
 .work_list_tile_title {
-    font-size: .7rem;
+    font-size: .9rem;
     margin: 0;
     font-family: $heading-font-family;
     font-weight: normal;
     line-height: 1;
-
-    a .dark & {
-        color: $background-color;
-    }
 }
 
 .work_list_tile_subtitle{
@@ -429,10 +430,6 @@
     margin: 0;
     line-height: 1;
     padding-bottom: .2rem;
-
-    .site-footer a .dark & {
-        color: $background-color;
-    }
 }
 
 /**
@@ -501,18 +498,18 @@
 }
 
 .page-title {
-    line-height: 1.3;
     padding: 0;
-    font-size: 1.5rem;
+    letter-spacing: -0.01em;
 }
 
 .page-subtitle {
     font-family: $base-font-family;
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: $base-font-weight;
+    font-size: 1.1rem;
     line-height: 1.2;
     padding: 0;
     margin-bottom: .3rem;
+    color: $brand-color;
 }
 
 .arrow_down {
@@ -538,12 +535,12 @@
 
 .drop_cap { 
     float: left; 
-    font-size: 3em; 
+    font-size: 3.33em; 
     line-height: 0.833em; 
-    padding-top: .1em;
+    //padding-top: .1em;
     padding-right: .1333em; 
     padding-left: .05em;  
-    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 900;
     position: relative;
 
     &:after {

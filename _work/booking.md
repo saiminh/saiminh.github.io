@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio-norender
+type: portfolio
 title: Booking.com
 category: UX and Web Design
 permalink: /work/booking

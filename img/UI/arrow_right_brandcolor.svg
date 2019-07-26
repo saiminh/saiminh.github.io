@@ -1,0 +1,12 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.arrow-right_brandcolor{fill:#FF00EE;}
+</style>
+<g id="chevron_right">
+</g>
+<g id="chevron_left">
+	<polygon class="arrow-right_brandcolor" points="73.6,159.2 189.4,159.2 133.3,211.6 145.8,225 226.4,150 145.8,75 133.3,88.4 189.4,140.8 73.6,140.8 
+			"/>
+</g>
+</svg>

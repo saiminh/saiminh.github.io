@@ -25,14 +25,56 @@ var smoothScrollInit =  function() {
 // ------------------------------------------
 // Home Page Animation
 // ------------------------------------------
-TweenLite.defaultEase =  Power2.easeInOut;
-
-tlRotate = new TimelineMax({ paused: true })
-.to($(".rotater_two"), 5, {
+var home_ani_tl = new TimelineMax( {paused:true} )
+    .fromTo(".weakened", 2, {
+        transformOrigin: "50% 100%",
+        autoAlpha: 1,
+        y: "100%",
+        rotationZ: -33
+    }, {
+        y: "0%",
+        rotationZ: 0
+    }, 1)
+    .fromTo(".staedler", 1, {
+        transformOrigin: "50% 100%",
+        autoAlpha: 1,
+        y: "100%",
+        rotationZ: -33
+    }, {
+        y: "0%",
         rotationZ: 0,
-        rotationY: 45,
-        //scale: .96
-})
+        ease: Expo.easeOut
+    }, 4)
+    .set(".staedler", {
+        autoAlpha: 0
+    }, 7)
+    .set(".weakened", {
+        autoAlpha: 0
+    }, 7)
+    .set(".powered", {
+        autoAlpha: 1,
+        transformOrigin: "50% 100%"
+    }, 7)
+    .fromTo(".powered", 1, {
+        scale: .9
+    }, {
+        scale: 1,
+        ease:  Elastic. easeOut.config( 1.5, 0.3)
+    }, 7)
+    .fromTo(".rays", 1, {
+        autoAlpha: 1,
+        scale: 0
+    }, {
+        scale: 3,
+        ease:  Elastic. easeOut.config( 1.5, 0.3)
+    }, 7)
+    .to(".rays", 8, {
+        transformOrigin: "50% 50%",
+        rotationZ: 360,
+        repeat: -1,
+        ease: Linear.easeNone
+    }, 7)
+    ;
 
 
 // ------------------------------------------
@@ -104,8 +146,7 @@ $(window).on('load', function(){
     galleryInit();    
     bloatkingInit();
     bierbaumInit();
-    tlRotate.play(0);
-  //  home_ani_tl.play(0);
+    home_ani_tl.play(0);
     TweenMax.to(".preloader", .5, {
         autoAlpha:0,
         onComplete: function(){$(".preloader").remove()}
@@ -120,6 +161,6 @@ $(window).on('load', function(){
     }, .05);
     $("body").addClass("assets_loaded");
     $(".home_hero").click(function(){
-       //  home_ani_tl.play(0);
+         home_ani_tl.play(0);
      });
 });  

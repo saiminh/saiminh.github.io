@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio
+type: portfolio-norender
 title: Various Illustrations
 excerpt: A small selection of some my most precious little creations.
 category: Illustration
