@@ -65,11 +65,11 @@
 
 	.hero_headline {
 		font-size: 4rem;
-		font-weight: 400;
+		//font-weight: 400;
 		letter-spacing: -0.01em;
-		line-height: 1.1; 
-		padding: 0;
+		line-height: 1.1; 		
 		margin: 0 0 1em 0;
+		text-align: center;
 		max-width: 36em;
 		//border: .04em solid;
 		color: $text-color;
@@ -88,7 +88,7 @@
 			display: block;
 			//font-weight: 300;
 			font-style: normal;
-			transform-origin: 0% 100%;
+			transform-origin: 50% 100%;
 			color: $brand-color;
 			/* text-shadow:    0 1px 0 hsl(30,5%,80%),
 			                    0 2px 0 hsl(30,5%,75%),
