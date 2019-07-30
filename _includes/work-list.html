@@ -1,6 +1,6 @@
 <div id="work_list" class="wrapper">
-	<div class="row work_list">
-		<h2 id="work_examples" class="work_list_title">Recent Work</h2>
+	<div id="work_examples" class="row work_list">
+		<h2 class="work_list_title">Recent Work</h2>
 		{% assign sorted_work = site.work | sort:"order" | reverse %}
 		{% for work in sorted_work %}
 			{% if work.type == "portfolio" %}

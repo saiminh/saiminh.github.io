@@ -198,10 +198,10 @@
  * Site footer
  */
 .site-footer {
-    padding: 1rem 0 0 0;
+    padding: 0;
     color: $background-color;
     background-color: $brand-color;
-    margin-top: 2.25%;
+    margin-top: $spacing-unit;
     position: relative;
 
     & .wrapper {
@@ -315,9 +315,18 @@
  * Work List content
  */
 
+#work_list {
+    margin: 0;
+    padding: 0;
+     @media screen and (min-width: 600px) {
+        padding: 5px;
+     }
+}
+
 .work_list {
     margin-bottom: $spacing-unit;
-    margin-right: -1%;
+    margin: 0;
+    padding: 0;
 
     &.row {
         overflow: visible;
@@ -325,62 +334,34 @@
     }
 }
 
+.work_list_title {
+    padding-left: $spacing-unit;
+    display: none;
+}
+
 .work_list_tile { // notice: TILE not TITLE like above
     float: left;
     box-sizing: border-box;
     position: relative;
-    width: 47%;
-    padding-bottom: 47%;
+    width: 50%;
+    padding-bottom: 50%;
     margin-top:0;
     margin-left: 0;
-    margin-right: 1%;
-    margin-bottom: 1%;
+    margin-right: 0%;
+    margin-bottom: 0%;
     background-color: #EEE;
     box-sizing: border-box;
 
     @media screen and (min-width: 600px) {
-        width: 32.333333%;
-        padding-bottom: 32.333333%;    
+        width: calc(33.333333% - 10px);
+        padding-bottom: calc(33.333333% - 10px);    
+        margin: 5px;
     }
 
     @media screen and (min-width: 900px) {
-        width: 24%;
-        padding-bottom: 24%;
-       
-        /* .work_list a:nth-of-type(1) & {
-            width: 49%;
-            padding-bottom: 49%;
-        }
-
-        .work_list a:nth-of-type(6) & {
-           clear: left;
-        } */
-    
-     /*    .work_list a:nth-of-type(1) &,
-        .work_list a:nth-of-type(7) &{
-            padding-bottom: 49%;
-        }
-
-        .work_list a:nth-of-type(26) & {
-           clear: left;
-        }
-
-        .work_list a:nth-of-type(8) &,
-        .work_list a:nth-of-type(9) &,
-        .work_list a:nth-of-type(10) &{
-            margin-top: -25%;
-        }
-
-        .work_list a:nth-of-type(9) & {
-            margin-left: 25%;
-        }
-
-        .work_list a:nth-of-type(10) &{
-            margin-left: 50%;
-        } */
-    }
-
-    
+        width: calc(25% - 10px);
+        padding-bottom: calc(25% - 10px);
+    }    
 }
 
 .work_list_title {
@@ -394,8 +375,9 @@
     display: block;
     background-position: 50% 50%;
     background-size: cover;
-    background-color: transparent;
+    background-color: $text-color;
     background-repeat: no-repeat;
+    background-blend-mode: luminosity;
    
     //@extend %hover-transition;
 }

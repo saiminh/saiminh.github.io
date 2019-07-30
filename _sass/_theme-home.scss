@@ -58,53 +58,69 @@
 
 	.hero {
 		margin-top: 0vh;
-		padding-top: 10vh;
-		transform-origin: 50% 50%;
-	//	mix-blend-mode:overlay;
+		padding-top: 4vh;
+		padding-bottom: 10vh;
+
+		& p {
+			font-size: 1.25rem;
+
+			@media (max-width: 800px) {
+				font-size: 1rem;
+			}
+
+		}
 	}
 
 	.hero_headline {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		//font-weight: 400;
-		letter-spacing: -0.01em;
+		//letter-spacing: -0.02em;
+		//text-transform: uppercase;
 		line-height: 1.1; 		
-		margin: 0 0 1em 0;
-		text-align: center;
+		margin: 0;
+		//text-align: center;
 		max-width: 36em;
 		//border: .04em solid;
 		color: $text-color;
-		perspective: 1000px;
+		position: relative;
+		perspective: 800px;
+		-webkit-transform: translate3d(0,0,0) !important;
+	    transform: translate3d(0,0,0) !important;
+		/* text-shadow:    0 1px 0 hsl(30,5%,80%),
+	                    0 2px 0 hsl(30,5%,75%),
+	                    0 3px 0 hsl(30,5%,70%),
+	                    0 4px 0 hsl(30,5%,66%),
+	                    0 5px 0 hsl(30,5%,64%),
+	                    0 6px 0 hsl(30,5%,62%),
+	                    0 7px 0 hsl(30,5%,61%),
+	                    0 8px 0 hsl(30,5%,60%),
+	    
+	                    0 0 5px rgba(0,0,0,.05),
+	                    0 1px 3px rgba(0,0,0,.2),
+	                    0 3px 5px rgba(0,0,0,.2),
+	                    0 5px 10px rgba(0,0,0,.2),
+	                  	0 10px 10px rgba(0,0,0,.2),
+	                  	0 20px 20px rgba(0,0,0,.3);	 */
+	                  	overflow: hidden;
 
-		@media (max-width: 800px) {
-			font-size: 2.25rem;
+		@media (max-width: 600px) {
+			font-size: 2rem;
+			perspective: 1000px;
 		}
-		
-		& .rotater_one {
-			display: inline-block;
-			transform-origin: 100% 70%;
-		}
+	
 
 		& .rotater_two {
+			font-size: 7rem;
 			display: block;
-			//font-weight: 300;
 			font-style: normal;
-			transform-origin: 50% 100%;
-			color: $brand-color;
-			/* text-shadow:    0 1px 0 hsl(30,5%,80%),
-			                    0 2px 0 hsl(30,5%,75%),
-			                    0 3px 0 hsl(30,5%,70%),
-			                    0 4px 0 hsl(30,5%,66%),
-			                    0 5px 0 hsl(30,5%,64%),
-			                    0 6px 0 hsl(30,5%,62%),
-			                    0 7px 0 hsl(30,5%,61%),
-			                    0 8px 0 hsl(30,5%,60%),
-			    
-			                    0 0 5px rgba(0,0,0,.05),
-			                    0 1px 3px rgba(0,0,0,.2),
-			                    0 3px 5px rgba(0,0,0,.2),
-			                    0 5px 10px rgba(0,0,0,.2),
-			                  	0 10px 10px rgba(0,0,0,.2),
-			                  	0 20px 20px rgba(0,0,0,.3);		 */
+			transform-origin: 0% 0%;
+			color: $text-color;		
+			text-shadow: none;
+			width: 200%;
+			@media (max-width: 600px) {
+			font-size: 4rem;
+			
+		}
 		}
 	}
 }

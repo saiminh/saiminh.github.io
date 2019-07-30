@@ -27,12 +27,17 @@ var smoothScrollInit =  function() {
 // ------------------------------------------
 TweenLite.defaultEase =  Power2.easeInOut;
 
-tlRotate = new TimelineMax({ paused: true })
-.to($(".rotater_two"), 5, {
-        rotationZ: 0,
-        rotationY: 45,
-        //scale: .96
-})
+tlRotate = new TimelineMax({ paused: true });
+tlRotate.fromTo($('.rotater_two'), .75, {
+    rotationY: 0,
+    scale: .5,
+    color: "#000"
+}, {
+    rotationY: 65,
+    scale: .65,
+    ease:  Back.easeOut.config( 1.7),
+    color: "#F86"
+}, 1.5)
 
 
 // ------------------------------------------

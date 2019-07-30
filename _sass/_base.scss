@@ -191,7 +191,7 @@ a {
     font-style: normal;
     font-size: .9em;
     background-color: $background-color;
-    color: $text-color;
+    color: $brand-color;
     padding: 7px 14px;
     line-height: 2.5;
     text-decoration: none;
@@ -235,13 +235,13 @@ a {
 
     &:hover,
     &:active {
-        color: $text-color;
+        color: $brand-color;
         text-decoration: none;
         border-color: $brand-color;
     }
 
     &:visited {
-       color: $text-color;
+       color: $brand-color;
     }
 
     &.button_home-cta {
