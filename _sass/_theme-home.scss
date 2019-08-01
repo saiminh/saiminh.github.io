@@ -1,126 +1,44 @@
-:root {
-	--bodyBG:rgb(255, 255, 255);
-	--orbRB: rgb(172, 189, 216);
-	--orbLB: rgb(251, 178, 146);
-	--orbLT: rgb(172, 189, 216);
-}
-
 .theme-home {
-	background-color: transparent;
-
-	.bg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		z-index: -1;
-		background-color: var(--bodyBG);
-	}
-	.orb {	
-		width:1px;
-		height: 1px;
-		background-color: var(--orbLT);
-		border: none;
-		border-radius: 50%;
-		position: absolute;
-		box-shadow: 0 0 33vw 33vw;
-		color: var(--orbLT);
-		left: 0;
-		top: 0;
-		transition: background-color 1s linear;
-	}
-	.rb {
-		color: var(--orbRB);
-		background-color: var(--orbRB);
-		left: auto;
-		right: 0;
-		top: auto;
-		bottom: 0;
-		opacity: 1;
-	}
-	.lb {
-		color: var(--orbLB);
-		background-color: var(--orbLB);
-		top: auto;
-		bottom: 0;
-		left: 0;
-		opacity: 1;
-	}
-	.lt {
-		color: var(--orbLT);
-		left: 0;
-		top: 0;
-		opacity: 1;
-	}
-
-
+	@include theme-colors(#F66, #FFF);
 
 	.hero {
 		margin-top: 0vh;
 		padding-top: 4vh;
 		padding-bottom: 10vh;
-
-		& p {
-			font-size: 1.25rem;
-
-			@media (max-width: 800px) {
-				font-size: 1rem;
-			}
-
-		}
+		//background-image: url(/img/UI/home_bg.jpg);
 	}
 
 	.hero_headline {
-		font-size: 3.5rem;
-		//font-weight: 400;
-		//letter-spacing: -0.02em;
+		font-size: 8vw;
+		font-family: $special-font-family;
+		font-weight: $special-font-weight;
 		//text-transform: uppercase;
-		line-height: 1.1; 		
-		margin: 0;
-		//text-align: center;
-		max-width: 36em;
-		//border: .04em solid;
-		color: $text-color;
+		letter-spacing: -0.02em;
+		//line-height: 1.1; 		
+		//margin: 0;
+		//max-width: 36em;
 		position: relative;
-		perspective: 800px;
-		-webkit-transform: translate3d(0,0,0) !important;
-	    transform: translate3d(0,0,0) !important;
-		/* text-shadow:    0 1px 0 hsl(30,5%,80%),
-	                    0 2px 0 hsl(30,5%,75%),
-	                    0 3px 0 hsl(30,5%,70%),
-	                    0 4px 0 hsl(30,5%,66%),
-	                    0 5px 0 hsl(30,5%,64%),
-	                    0 6px 0 hsl(30,5%,62%),
-	                    0 7px 0 hsl(30,5%,61%),
-	                    0 8px 0 hsl(30,5%,60%),
-	    
-	                    0 0 5px rgba(0,0,0,.05),
-	                    0 1px 3px rgba(0,0,0,.2),
-	                    0 3px 5px rgba(0,0,0,.2),
-	                    0 5px 10px rgba(0,0,0,.2),
-	                  	0 10px 10px rgba(0,0,0,.2),
-	                  	0 20px 20px rgba(0,0,0,.3);	 */
-	                  	overflow: hidden;
+		perspective: 1000px;
+	    transform-origin: 0% 50%;
 
 		@media (max-width: 600px) {
-			font-size: 2rem;
-			perspective: 1000px;
+			font-size: 10vw;
+			perspective: 600px;
 		}
 	
 
-		& .rotater_two {
-			font-size: 7rem;
-			display: block;
+		& .rotater_two,
+		& .rotater_one {
+			display: inline-block;
+			margin:0;
 			font-style: normal;
-			transform-origin: 0% 0%;
-			color: $text-color;		
-			text-shadow: none;
-			width: 200%;
+			transform-origin: 0% 90%;	
+
 			@media (max-width: 600px) {
-			font-size: 4rem;
-			
+			}
 		}
+		& .rotater_two {
+			transform-origin: 0% 0%;
 		}
 	}
 }

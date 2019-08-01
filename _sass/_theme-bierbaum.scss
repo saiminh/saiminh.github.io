@@ -1,16 +1,20 @@
 .theme-bierbaum {
 
+	@include theme-colors(#f0c160, #000);
+
+	.st5 {
+		fill: #f0c160;
+	}
+
+	.st3, .st0, .st4 {
+		stroke: #f0c160;
+	}
+
 	& .row {
 		@include media-query($on-palm) {
 			overflow: visible;
 			margin-bottom: 1em;
 		}
-	}
-
-	& .page-header.has_hero_img {	    
-	    background-size: 42vh;
-	    background-position: center 14vh;
-	    background-image: none!important;
 	}
 
 	& .the_crap_container {

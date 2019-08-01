@@ -34,8 +34,7 @@ order: 7
 			<p class="hide_on_desktop"><em>(The game will open in a new browser window)</em></p>	
 		</div>			
 		<div class="col-6 hide_on_phone" style="text-align: center;">					
-			<link rel="stylesheet" href="{{ site.baseurl }}/css/devices.min.css">
-			<div class="marvel-device iphone5s silver hide_on_phone" style="margin-top: -4rem;">
+			<div class="marvel-device iphone5s gold hide_on_phone" style="margin-top: -4rem;">
 			    <div class="top-bar"></div>
 			    <div class="sleep"></div>
 			    <div class="volume"></div>

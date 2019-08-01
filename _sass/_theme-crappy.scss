@@ -1,15 +1,4 @@
-$theme_crappy_color: $text-color;
-$theme_crappy_color_bg: $background-color;
-
 .theme-crappy {
-
-	& .work_list_tile_CrappyTurd{
-		display: none;
-	}
-
-	& .arrow_down polygon{
-		fill: $theme_crappy_color;
-	}
 }
 
 .toiletroll {
@@ -67,14 +56,6 @@ $theme_crappy_color_bg: $background-color;
 			top: 0;
 		}
 
-	}
-}
-
-@media screen and (min-width: 769px) {
-	.illustration_darkmonger {
-		position: absolute;
-		left: -13%;
-		top: -10%;
 	}
 }
 

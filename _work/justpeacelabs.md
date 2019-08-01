@@ -1,11 +1,11 @@
 ---
-layout: page_noheader
+layout: page
 type: portfolio
 title: JustPeace Labs
 category: Housestyle
 permalink: /work/justpeacelabs
 mainnav: hide
-header_bg_image: /img/thumbnails/jpl.png
+header_bg_image: /img/work_jpl/jpl_hero.jpg
 worktile_theme: dark
 subtitle: Housestyle for the peace technology startup 
 extra_classes: portfolio theme-jpl
@@ -14,32 +14,22 @@ title_align: center
 order: 6
 ---
 <div class="index-header wrapper">
-	
-	<div class="row">
-		<div class="col-6">
-			<h2 class="page-subtitle">Housestyle for the peace-tech startup </h2>
-			<h1 class="page-title">JustPeace Labs</h1>			
-		</div>
-	</div>
 
-	<div class="row">
-
-		<div class="col-6">
-			<p><span class="drop_cap">T</span>he startup from Barcelona and San Francisco has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyes their goals and products.</p>	
-		</div>
-		<div class="col-4">
-			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_color.svg" alt="justpeacelabs logo">		
-		</div>		
-	</div>
-
-
-	<div class="row">
-		
-		<div class="col-6">
-			<h3>Symbolism</h3>
-			<p><span class="drop_cap">S</span>ince 1958, the Symbol for the British nuclear disarmament movement by Gerald Holtom is used as an international symbol for peace.</p>
-			<p>Clients of JustPeace Labs will be in situations where peace is broken. They are offered a framework of technology for rebuilding it. This is illustrated by the symbol in the logo, which is a 'broken' peace sign with only the frame intact.</p>	
+	<div class="row row--aligncenter">
+		<div class="col-4 offset-4">
+			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_white.svg" alt="justpeacelabs logo">		
 		</div>	
+	</div>
+	<div class="row row--aligncenter">
+		<div class="col-8 offset-4">
+			<h2>JPL's Mission</h2>
+			<p><span class="drop_cap">T</span>he startup has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyes their goals and products.</p>	
+		</div>
+			
+	</div>
+
+
+	<div class="row row--aligncenter">
 		<div class="col-4">
 			<div class="illustration">
 				<svg id="jpl_symbol" width="100%" height="100%" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
@@ -48,22 +38,28 @@ order: 6
 					</g>
 					<path id="center" d="M192.5,2.352c6.457,-0.954 12.967,-1.609 19.493,-1.982c2.64,-0.15 5.283,-0.255 7.927,-0.314c1.451,-0.032 2.902,-0.048 4.353,-0.055c0.485,-0.001 0.969,-0.001 1.454,0c1.451,0.007 2.902,0.023 4.353,0.055c2.644,0.059 5.287,0.164 7.927,0.314c6.526,0.373 13.036,1.028 19.493,1.982l0,209.186l147.857,147.857c-7.42,10.016 -15.687,19.367 -24.665,27.979c-6.714,6.44 -13.826,12.466 -21.301,17.979l-101.891,-101.891l0,144.191c-10.753,1.57 -21.626,2.347 -32.5,2.347c-10.874,0 -21.747,-0.777 -32.5,-2.347l0,-144.191l-101.891,101.891c-7.475,-5.513 -14.587,-11.539 -21.301,-17.979c-8.978,-8.612 -17.245,-17.963 -24.665,-27.979l147.857,-147.857l0,-209.186Z" style="fill:#f9a870;"/>
 				</svg>
-				<em class="illustration_caption">JustPeace Labs like the symbolism and feel the visual in itself conveyes modern technology and use of big data.</em>
+				
 			</div>
 		</div>
+		<div class="col-8">
+			<h3>The "broken peace" logo</h3>
+			<p><span class="drop_cap">S</span>ince 1958, the Symbol for the British nuclear disarmament movement by Gerald Holtom is used as an international symbol for peace.</p>
+			<p>Clients of JustPeace Labs are peace builders. The logo is a 'broken' peace sign with only the frame intact. It stands for the technological and ethical frameworks that JPL aims to provide that can be used to achieve long lasting, just peace.</p>	
+		</div>	
+		
 			
 	</div>
 
 	<div class="row">
 
-		<div class="col-6">
-		<h3>Website</h3>
-			<p><span class="drop_cap">T</span>ogether with the content creators at JustPeaceLabs I designed a custom WordPress site that delivers a good User Experience for both editors and viewers.</p>
+		<div class="col-4">
+		<h3>A website that empowers content creators</h3>
+			<p><span class="drop_cap">U</span>tilizing the newly developed housestyle, I designed a custom website that looks and works great for visitors. The ultimate goal however was to also design a workflow that empowers the creators at JPL to easily update and make beautiful new content.</p>
 			<p> You can check it out here:</p>
 			<a class="button" href="https://www.justpeacelabs.org"> justpeacelabs.org</a>
 		</div>
 
-		<div class="col-6">
+		<div class="col-8">
 		<img src="{{ site.baseurl }}/img/work_jpl/website_01.png"  />
 		</div>
 

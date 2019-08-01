@@ -7,16 +7,13 @@ permalink: /work/darkmonger
 mainnav: hide
 header_bg_image: /img/thumbnails/darkmonger.png
 worktile_theme: dark
-extra_classes: portfolio
+extra_classes: portfolio theme-darkmonger
 order: 10
 ---
 
 <div class="wrapper">
 
 	<div class="row">
-		<div class="col-6 hide_on_desktop">
-			<img class="illustration_image hide_on_desktop" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">
-		</div>
 		<div class="col-6">
 			<h2 class="page-subtitle">Storytelling in HTML</h2>
 			<h1 class="page-title">Darkmonger</h1>
@@ -32,7 +29,11 @@ order: 10
 			<p class="hide_on_desktop">Try it out (opens in new browser window):</p>
 			<p><a class="button" href="/darkmonger" target="_blank">Read "Darkmonger"</a></p>			 
 		</div>
-		<div class="col-6 hide_on_phone" style="text-align: center;">			
+		<div class="col-6" style="text-align: center; position: relative;">	
+			<div class="hide_on_desktop">
+				<img class="illustration_image hide_on_desktop" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">
+			</div>		
+			<div class="hide_on_phone">
 				<img class="illustration_image illustration_darkmonger" src="{{ '/img/work_darkmonger/darkmonger.png' | prepend: site.baseurl }}">		
 				<div class="marvel-device iphone5s gold hide_on_phone">
 				    <div class="top-bar"></div>
@@ -47,6 +48,7 @@ order: 10
 				    <div class="home"></div>
 				    <div class="bottom-bar"></div>
 				</div>
+			</div>
 		</div>
 				
 	</div>

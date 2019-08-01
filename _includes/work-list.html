@@ -1,6 +1,6 @@
-<div id="work_list" class="wrapper">
-	<div id="work_examples" class="row work_list">
-		<h2 class="work_list_title">Recent Work</h2>
+<div id="work_list_wrapper" class="wrapper">
+	<h2 class="work_list_title">Recent Work</h2>
+	<div id="work_examples" class="work_list">
 		{% assign sorted_work = site.work | sort:"order" | reverse %}
 		{% for work in sorted_work %}
 			{% if work.type == "portfolio" %}
@@ -10,8 +10,8 @@
 					<div class="work_list_tile_thumb" style="background-image: url({{ work.header_bg_image }})">	       					
 			      	</div>
 			      	<header class="work_list_tile_header">
-				      	<h5 class="work_list_tile_subtitle">{{ work.category }}</h5>
-				      	<h4 class="work_list_tile_title">{{ work.title }}</h4>
+		      			<h4 class="work_list_tile_title">{{ work.title }}</h4>
+				      	<h5 class="work_list_tile_subtitle">{{ work.category }}</h5>				      
 				    </header>
 			    </div>
 			    </a>

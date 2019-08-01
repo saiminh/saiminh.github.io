@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,900);
 // Our variables
 $base-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   22px;
+$base-font-size:   20px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -14,11 +14,14 @@ $base-line-height: 1.5;
 $heading-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $heading-font-weight: 900;
 
+$special-font-family: $heading-font-family;
+$special-font-weight: 900;
+
 $spacing-unit:     80px;
 
 $text-color:       #000;
 $background-color: #FFF;
-$brand-color:      #F86;
+$brand-color:      green;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -29,7 +32,7 @@ $content-width:    1400px;
 
 $on-smallphone:    360px;
 $on-palm:          768px;
-$on-laptop:        800px;
+$on-laptop:        1000px;
 
 
 
@@ -46,6 +49,41 @@ $on-laptop:        800px;
     }
 }
 
+@mixin theme-colors($themecolor_bg, $themecolor_text) {
+    background-color: $themecolor_bg;
+    color: $themecolor_text;
+
+    a, 
+    .site-footer a,
+    .site-nav .page-link,
+    .button {
+        color: $themecolor_text;
+    }
+
+    .drop_cap::after,
+    .button::after,
+    .page-subtitle::after,
+    .work_list_title::after {
+        background-color: $themecolor_text;
+    }
+
+    #floter_signature_svg,
+    .site-footer .icon > svg path {
+        fill: $themecolor_text;
+    }
+
+    p > a:hover,
+    .footer-heading,
+    .button:hover, 
+    .button:active {
+        border-color: $themecolor_text;
+    }
+
+    .page-header_bg:after {
+        background: $themecolor_bg;
+        background: linear-gradient(0deg, $themecolor_bg 3%, transparentize($themecolor_bg, 1) 100%);
+    }
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -62,6 +100,11 @@ $on-laptop:        800px;
         "theme-cwn",
         "theme-illustrations-various",
         "theme-bierbaum",
+        "theme-liverpool",
+        "theme-darkmonger",
+        "theme-roehampton",
+        "theme-odinsravens",
+        "theme-booking",
         "theme-jpl",
         "theme-hatetracker",
         "theme-404"

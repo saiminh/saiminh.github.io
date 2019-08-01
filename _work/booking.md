@@ -19,9 +19,9 @@ order: 4
 	        <img src="{{ site.baseurl }}/img/work_booking/booking_iphone6.png" alt="image" class="work_booking_img_iphone" />
 	    </div>	
 		<div class="col-8">
-			<h2 class="page-subtitle">UX Designer & Teamlead</h2>
+			<h2 class="page-subtitle">UX Design & Teamlead</h2>
 			<h1 class="page-title">Booking.com</h1>
-			<p class="pullquote">From 2013 until 2015 I worked at one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
+			<p class="pullquote">I worked with one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
 			<h3>My role included:</h3>
 			<ul class="quick_info_box_list">
 				<li>Projects cover all platforms (desktop, mobile, native apps)</li>
@@ -36,7 +36,7 @@ order: 4
 	</div>
 
 	<div class="row">
-		<div class="col-8 col-overlap offset-2">
+		<div class="col-8 overflow offset-2">
 			<h3 class="heading_centered">Some projects I worked on</h3>
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}

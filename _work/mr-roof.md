@@ -17,7 +17,7 @@ order: 2
 
 	<div class="row row-overlap">
 		<div class="col-6 hide_on_desktop">
-			<img src="{{ site.baseurl }}/img/work_mrroof/mrroofmontage.png" class="screenrec_iphone hide_on_desktop" alt="iPhone displaying the start screen of the game">
+			<img style="max-width: 300px; margin: 0 auto; display: block;" src="{{ site.baseurl }}/img/work_mrroof/mrroofmontage.png" class="screenrec_iphone" alt="iPhone displaying the start screen of the game">
 		</div>
 		<div class="col-6">		
 			<h2 class="page-subtitle">Webcomic</h2>

@@ -1,7 +1,3 @@
-/* .theme-liverpool {
-
-	& .work_list_tile_UniversityofLiverpool {
-		display: none;
-	}
+ .theme-liverpool {
+ 	@include theme-colors(#032a60, #FFF);
 }
- */

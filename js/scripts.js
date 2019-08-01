@@ -30,14 +30,22 @@ TweenLite.defaultEase =  Power2.easeInOut;
 tlRotate = new TimelineMax({ paused: true });
 tlRotate.fromTo($('.rotater_two'), .75, {
     rotationY: 0,
-    scale: .5,
-    color: "#000"
+    y: 0
 }, {
-    rotationY: 65,
-    scale: .65,
+    rotationY: 40,
     ease:  Back.easeOut.config( 1.7),
-    color: "#F86"
+    color: "#000",
+    y: 0,
+    scale: 1.2
 }, 1.5)
+/*tlRotate.fromTo($('.rotater_one'), .75, {
+    rotationY: 0,
+    y: 0
+}, {
+    rotationY: -40,
+    ease:  Back.easeOut.config( 1.7),
+    y: 0
+}, 1.5)*/
 
 
 // ------------------------------------------
@@ -115,16 +123,39 @@ $(window).on('load', function(){
         autoAlpha:0,
         onComplete: function(){$(".preloader").remove()}
     });
-    TweenMax.staggerFromTo(".col-4, .col-6, .col-12, .col-8", .5, {
+    /*TweenMax.staggerFromTo(".col-4, .col-6, .col-12, .col-8", .5, {
         autoAlpha: 0,
         y: -60
     },{              
         autoAlpha: 1,
         y: 0,
         ease: Back.easeOut.config( 1.7)
-    }, .05);
+    }, .05);*/
     $("body").addClass("assets_loaded");
     $(".home_hero").click(function(){
        //  home_ani_tl.play(0);
      });
 });  
+
+var tl = new TimelineLite( {paused: true} )
+    .fromTo(".page-header_bg", .5, {
+        autoAlpha: 1,
+        yPercent: 0
+    }, {
+        autoAlpha: 0,
+        yPercent: -30,
+        ease: Power4.easeOut
+    }, 0)
+    .to(".page-header-wrapper", .5, {
+        yPercent: 60,
+        ease: Power4.easeOut
+    },0);  
+
+$(window).scroll( function(){
+  var st = $(this).scrollTop();
+  var ht = $( '.page-header_bg' ).height()*1.5;
+   if( st < ht && st >= 0 ){
+        windowScroll = st/ht;
+        tl.progress( windowScroll );
+    }
+});

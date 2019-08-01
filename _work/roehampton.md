@@ -21,7 +21,7 @@ extra_classes: portfolio theme-roehampton
 
 	<div class="row">	
 		<div class="col-8">
-			<img alt="alternative text" src="{{ "/img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg" | prepend: site.baseurl }}" class="grid_img" />
+			<img alt="alternative text" src="{{ "/img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg" | prepend: site.baseurl }}" class="img--framed" />
 		</div>
 		<div class="col-4 col-text">
 			<h3>Housestyle</h3>
@@ -31,9 +31,9 @@ extra_classes: portfolio theme-roehampton
 
 	</div>
 
-	<div class="row">				
+	<div class="row row--aligncenter">				
 
-		<div class="col-8">
+		<div class="col-8 overflow">
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_roehampton/online' %}
@@ -50,9 +50,9 @@ extra_classes: portfolio theme-roehampton
 
 	</div>
 
-	<div class="row">		
+	<div class="row row--aligncenter">		
 
-		<div class="col-8">
+		<div class="col-8 overflow">
 			<div class="gallery-xscroll h360 gallery-print">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_roehampton/print' %}

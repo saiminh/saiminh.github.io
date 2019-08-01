@@ -90,6 +90,11 @@ img {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
+
+    &.img--framed {
+        border: .33rem solid ;
+        box-sizing: border-box;
+    }
 }
 
 em.illustration_caption {
@@ -146,12 +151,12 @@ a {
     font-family: $heading-font-family;
 
     p > & {
-        border-bottom: 2px solid;
+        border-bottom: 2px dotted;
         //font-style: italic;
     }
 
     p > &:hover {
-        border-color: $brand-color;
+        border-bottom-style: solid;
     }
 
     &:visited {
@@ -190,14 +195,14 @@ a {
     font-family: $heading-font-family;
     font-style: normal;
     font-size: .9em;
-    background-color: $background-color;
-    color: $brand-color;
+    background-color: transparent;
+    color: $text-color;
     padding: 7px 14px;
     line-height: 2.5;
     text-decoration: none;
     margin-bottom: 1em;
     display: inline-block;
-    border: 2px solid;
+    border: 2px dotted;
     transition: all .15s;
 
     @media (max-width: 360px) {
@@ -222,7 +227,7 @@ a {
          mask: url(../img/UI/arrow_right_brandcolor.svg) no-repeat 50% 50%;
          -webkit-mask-size: cover;
          mask-size: cover;
-        background-color: $brand-color;
+        background-color: $text-color;
 
         @media (max-width: 360px) {
             top: 10px;
@@ -235,13 +240,14 @@ a {
 
     &:hover,
     &:active {
-        color: $brand-color;
+        color: $text-color;
         text-decoration: none;
-        border-color: $brand-color;
+        border-color: $text-color;
+        border-style: solid;
     }
 
     &:visited {
-       color: $brand-color;
+       color: $text-color;
     }
 
     &.button_home-cta {
@@ -353,7 +359,7 @@ pre {
         margin-right: 5px;
 
         path {
-            fill: $brand-color;
+            fill: $text-color;
         }
     }
 }
@@ -364,13 +370,13 @@ pre {
 .marvel-device.iphone5s .speaker, .marvel-device.iphone5c .speaker,
 .marvel-device.iphone5s .sensor, .marvel-device.iphone5c .sensor,
 .marvel-device.iphone5s .camera, .marvel-device.iphone5c .camera {
-    background-color: $brand-color;
+    background-color: $text-color;
 }
 .marvel-device.iphone5s.gold .home {
-    -webkit-box-shadow: inset 0 0 0 4px $brand-color;
-    box-shadow: inset 0 0 0 4px $brand-color;
+    -webkit-box-shadow: inset 0 0 0 4px $text-color;
+    box-shadow: inset 0 0 0 4px $text-color;
 }
 .marvel-device .screen {
-    -webkit-box-shadow: 0 0 0 3px $brand-color;
-    box-shadow: 0 0 0 3px $brand-color;
+    -webkit-box-shadow: 0 0 0 3px $text-color;
+    box-shadow: 0 0 0 3px $text-color;
 }

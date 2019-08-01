@@ -1,11 +1,11 @@
 ---
-layout: page_noheader
+layout: page
 type: portfolio
 title: Bierbaum
 category: Store identity
 permalink: /work/bierbaum
 mainnav: hide
-header_bg_image: /img/thumbnails/bierbaum.png
+header_bg_image: /img/work_bierbaum/bierbaum_hero.jpg
 worktile_theme: light
 extra_classes: portfolio theme-bierbaum
 order: 9
@@ -16,8 +16,9 @@ order: 9
 	<div class="row">
 		
 		<div class="col-6">
-			<h2 class="page-subtitle">Store identity</h2>
-			<h1 class="page-title">Bierbaum</h1>
+			{% comment %}<h2 class="page-subtitle">Store identity</h2>
+			<h1 class="page-title">Bierbaum</h1>{% endcomment %}
+			<h2>The beer tree</h2>
 			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
 			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
 		</div>	
@@ -247,21 +248,21 @@ order: 9
 		</div>		
 	</div>
 
-	<div class="row">
-		<div class="col-4">
+	<div class="row row--aligncenter">
+		<div class="col-6">
 			<h3>Concept: Why a tree?</h3>
 			<p><span class="drop_cap">F</span>irstly the tree was mainly supposed to be symbolic for branching out into all areas of the craft beer scene. The store is going to host events, tastings and workshops and sell brewing equipment.</p>
 			<p>But we realized that the biggest part of the shop's appeal comes from the temptation to try all of its huge variety of beers. So of course the biblical tree with the snake and Eve provides a perfect visual metaphor for that.</p>
 			<p>The unusual shape and design of the logo attracts attention of people walking by the store and it feels right at home in the whimsical world of craft beer.</p>
 		</div>
-		<div class="col-8">
-			<img src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
-			<em class="illustration_caption">First Beerbaum location in Jan Pieter Heijestraat, Amsterdam</em>
+		<div class="col-6">
+			<img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
+			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
 		
 	</div>
 
-	<div class="row">
+	<div class="row row--aligncenter">
 		<div class="col-4">
 			<h3>Typeface: SF Bierbaum</h3>
 			<p><span class="drop_cap">O</span>ne style reference we were using a lot was Art Deco, which is very prevalent in Amsterdam. I couldn't find a perfect font for the logo in that style, so I created a custom All-Caps typeface: SF Bierbaum, using FontForge.</p>

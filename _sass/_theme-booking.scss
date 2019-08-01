@@ -1,21 +1,3 @@
-/* $theme_booking_color: $text-color;
-$theme_booking_color_bg: $background-color;
-$theme_booking_color_highlight: $brand-color;
-
 .theme-booking {
-
-	& .col-hero-overlap {
-		position: relative;
-		top: -160px;
-		margin-bottom: -100px;
-	}
-
-	& .work_booking_img_iphone {
-		display: block;
-		margin: 0 auto;
-	}
+	@include theme-colors(#2293ff, #FFF);
 }
-
-.work_list_tile_Bookingcom .work_list_tile_thumb{
-	background-position: 50% top;
-} */

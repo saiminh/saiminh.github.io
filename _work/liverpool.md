@@ -1,10 +1,10 @@
 ---
-layout: page_noheader
+layout: page
 type: portfolio
 title: University of Liverpool
 category: Housestyle
 permalink: /work/liverpool
-header_bg_image: /img/thumbnails/liverpool.png
+header_bg_image: /img/work_liverpool/uol_hero.jpg
 worktile_theme: dark
 extra_classes: portfolio theme-liverpool
 title_offset_y: 60vh
@@ -13,10 +13,9 @@ order: 1
 ---
 
 <div class="wrapper">
-	<div class="row">		
+	<div class="row row--aligncenter">		
 		<div class="col-6">
-			<h2 class="page-subtitle">Housestyle</h2>
-			<h1 class="page-title">University of Liverpool Online Degrees</h1>			
+			
 			<p><span class="drop_cap">D</span>uring my time as Senior Designer at Laureate Online Education my team and I developed a housestyle and all design collateral for the subbrand of this prestigious UK Institution.</p>
 		</div>
 		<div class="col-6">
@@ -59,7 +58,7 @@ order: 1
 				<li>Frontend development</li>
 			</ul>
 		</div>
-		<div class="col-8">
+		<div class="col-8 overflow">
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_liverpool/online' %}

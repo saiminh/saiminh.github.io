@@ -1,0 +1,13 @@
+.theme-darkmonger {
+
+	@include theme-colors(#000, #FFF);
+
+}
+
+@media screen and (min-width: 769px) {
+	.illustration_darkmonger {
+		position: absolute;
+		left: -25%;
+		top: -18%;
+	}
+}

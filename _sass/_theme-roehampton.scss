@@ -1,23 +1,4 @@
 .theme-roehampton {
+	@include theme-colors(#00a7e1, #FFF);
 
-	& .page-header.has_hero_img {
-		height: 100vh;
-		background-position: right bottom;
-		background-size: 100%;
-	}
-
-	& .gallery-print {
-		position: relative;
-		top: -20px;
-		margin-bottom: -20px;
-
-		@include media-query($on-palm) {
-			top: 0;
-			margin-bottom: 0;
-		}
-	}
 }
-
-.work_list_tile_UniversityofRoehamptonLondon .work_list_tile_thumb {
-		background-size: 130% auto;
-	}
