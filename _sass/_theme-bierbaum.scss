@@ -17,25 +17,7 @@
 		}
 	}
 
-	& .the_crap_container {
-		max-width: 320px;
-		background-color: #8D798E;
-		padding: 0;
-		margin: 0 auto;
-		border-radius: 15px;
-		border-width: 50px 8px;
-		border-color: $brand-color;
-		border-style: solid;
-		position: relative;
-		top:-15vh;
-	}
-
-	& .crappyturd_iframe {
-		width: 100%;
-		max-width: 320px;
-		min-height: 480px;
-		border: none;
-	}
+	
 
 	& .work_list_tile_BierbaumLogo{
 		display: none;
@@ -48,16 +30,6 @@
 		.the_crap_container {
 			top: 0;
 		}
-
-		.page-header.has_hero_img .wrapper {
-			padding-top: calc(10vh + 420px)!important;
-		}
-	}
-}
-
-@media screen and (max-height: 624px) {
-	.arrow_down {
-	//display: none;	
 	}
 }
 
@@ -74,7 +46,6 @@
 }
 
 .about_tree {
-
 	width: 280px;
 	margin-left: -140px;
 	height: 412px;

@@ -13,16 +13,7 @@ order: 9
 
 <div class="wrapper">
 	
-	<div class="row">
-		
-		<div class="col-6">
-			{% comment %}<h2 class="page-subtitle">Store identity</h2>
-			<h1 class="page-title">Bierbaum</h1>{% endcomment %}
-			<h2>The beer tree</h2>
-			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
-			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
-		</div>	
-
+	<div class="row row--aligncenter">
 		<div class="col-6">
 			<div class="bierbaum-logo">
 				<svg class="about_tree" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="533.3px" height="784.6px" viewBox="0 0 533.3 784.6" style="enable-background:new 0 0 533.3 784.6;" xml:space="preserve">
@@ -245,19 +236,26 @@ order: 9
 					<div id="Tree_Eye_inner--anim"></div>
 				</div>
 			</div>
+		</div>	
+		<div class="col-6">
+			{% comment %}<h2 class="page-subtitle">Store identity</h2>
+			<h1 class="page-title">Bierbaum</h1>{% endcomment %}
+			<h2>The beer tree</h2>
+			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
+			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
 		</div>		
 	</div>
 
-	<div class="row row--aligncenter">
+	<div class="row row--aligncenter row--reverse">		
+		<div class="col-6">
+			<img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
+			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
+		</div>
 		<div class="col-6">
 			<h3>Concept: Why a tree?</h3>
 			<p><span class="drop_cap">F</span>irstly the tree was mainly supposed to be symbolic for branching out into all areas of the craft beer scene. The store is going to host events, tastings and workshops and sell brewing equipment.</p>
 			<p>But we realized that the biggest part of the shop's appeal comes from the temptation to try all of its huge variety of beers. So of course the biblical tree with the snake and Eve provides a perfect visual metaphor for that.</p>
 			<p>The unusual shape and design of the logo attracts attention of people walking by the store and it feels right at home in the whimsical world of craft beer.</p>
-		</div>
-		<div class="col-6">
-			<img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
-			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
 		
 	</div>

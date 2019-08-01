@@ -575,7 +575,6 @@
  .row {
     clear: both;
     margin-bottom: $spacing-unit / 2;
-    margin-top: $spacing-unit / 2;
     overflow: visible;
 
     @media (min-width: 768px) {
@@ -585,9 +584,15 @@
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: start;
+        margin-bottom: $spacing-unit;
+        margin-top: $spacing-unit;
 
         &.row--aligncenter {
             align-items: center;
+        }
+
+        &.row--reverse {
+            flex-direction: row-reverse;
         }
 
         .col-12, .col-8, .col-6, .col-4, .col-2 {
