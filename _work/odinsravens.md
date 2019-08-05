@@ -8,20 +8,36 @@ mainnav: hide
 header_bg_image: /img/work_odinsravens/hero.jpg
 worktile_theme: dark
 extra_classes: portfolio theme-odinsravens
-order: 11
+order: 1
 ---
 
 <div class="wrapper">
-
 	<div class="row row--aligncenter">
-		<div class="col-6">			
+		<div class="col-4">
+			<div class="infobox">				
+				<h3>Client:</h3>
+				<p>Personal Project</p>
+			
+				<h3>What I did:</h3>
+				<ul>
+					<li>Idea, concept & research</li>
+					<li>Visual Design</li>
+					<li>Illustration</li>
+					<li>Frontend Development (HTML, JS, CSS)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 offset-1">			
 				<img class="illustration_image" src="{{ '/img/work_odinsravens/combo.png' | prepend: site.baseurl }}">				
 		</div>
-		<div class="col-6">
+	</div>
+	<div class="row row--aligncenter">
+		
+		<div class="col-8 offset-2">
 			<h2>Trying to change an old story</h2>
 			<p><span class="drop_cap">W</span>hen you live in the Netherlands, you can't escape the annual heated discussion around <a href="https://en.wikipedia.org/wiki/Zwarte_Piet">'Zwarte Piet'</a>. I tried approach the issue from a different angle.</p>
 			<p>After researching the roots of the tradition and of the story behind it, I found that this story is older than most people know and has probably been subject to massive changes over centuries.</p>
-			<p>So I created a microsite with bespoke illustrations and animation and I try to raise the question: Could the story be changed again to fit into today's time?<br />
+			<p>I created a one-page website with bespoke illustrations and animation to try to create a dialogue and raise the question: Could the story be changed again to fit into today's time?<br />
 			Try it out (opens in new browser window):</p>
 			<p><a class="button" href="/odins-ravens" target="_blank">Read "Of ravens and racism"</a></p>			 
 		</div>

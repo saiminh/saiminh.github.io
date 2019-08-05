@@ -14,7 +14,7 @@ order: 9
 <div class="wrapper">
 	
 	<div class="row row--aligncenter">
-		<div class="col-6">
+		<div class="col-4">
 			<div class="bierbaum-logo">
 				<svg class="about_tree" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="533.3px" height="784.6px" viewBox="0 0 533.3 784.6" style="enable-background:new 0 0 533.3 784.6;" xml:space="preserve">
 					<g id="Tree">
@@ -237,7 +237,7 @@ order: 9
 				</div>
 			</div>
 		</div>	
-		<div class="col-6">
+		<div class="col-7 offset-1">
 			{% comment %}<h2 class="page-subtitle">Store identity</h2>
 			<h1 class="page-title">Bierbaum</h1>{% endcomment %}
 			<h2>The beer tree</h2>
@@ -247,11 +247,11 @@ order: 9
 	</div>
 
 	<div class="row row--aligncenter row--reverse">		
-		<div class="col-6">
+		<div class="col-7 offset-1">
 			<img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
 			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
-		<div class="col-6">
+		<div class="col-4">
 			<h3>Concept: Why a tree?</h3>
 			<p><span class="drop_cap">F</span>irstly the tree was mainly supposed to be symbolic for branching out into all areas of the craft beer scene. The store is going to host events, tastings and workshops and sell brewing equipment.</p>
 			<p>But we realized that the biggest part of the shop's appeal comes from the temptation to try all of its huge variety of beers. So of course the biblical tree with the snake and Eve provides a perfect visual metaphor for that.</p>
@@ -267,7 +267,7 @@ order: 9
 			<p>It's not perfect yet, especially kerning needs a lot of work. But for the logo and short headlines it is a functional font. You can download it and use it for your art deco designing pleasure.</p>
 			<a class="button" href="{{ site.baseurl }}/img/work_bierbaum/SF_Bierbaum.otf" download>Download .otf</a>
 		</div>
-		<div class="col-8">
+		<div class="col-7 offset-1">
 			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" >
 			<em style="margin-top: 1em" class="illustration_caption">SF Bierbaum: Art Deco All Caps Display font.</em>
 		</div>

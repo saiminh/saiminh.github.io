@@ -3,19 +3,22 @@
 ---
 @charset "utf-8";
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,900);
+//@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,900,900italic);
+@import url("https://use.typekit.net/rqe1sku.css");
 // Our variables
-$base-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   20px;
+$base-font-family:  soleil, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   21px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$heading-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$heading-font-weight: 900;
+$heading-font-family:  soleil, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-weight: 400;
 
 $special-font-family: $heading-font-family;
-$special-font-weight: 900;
+$special-font-weight: 800;
+$special-font-style: normal;
+$special-font-spacing: -0.01em;
 
 $spacing-unit:     80px;
 
@@ -63,7 +66,9 @@ $on-laptop:        1000px;
     .drop_cap::after,
     .button::after,
     .page-subtitle::after,
-    .work_list_title::after {
+    .work_list_title::after,
+    .slick-arrow.slick-next::after,
+    .slick-arrow::after {
         background-color: $themecolor_text;
     }
 
@@ -79,9 +84,14 @@ $on-laptop:        1000px;
         border-color: $themecolor_text;
     }
 
-    .page-header_bg:after {
+    .page-header_bg:after,
+    .wrapper_outer:after {
         background: $themecolor_bg;
-        background: linear-gradient(0deg, $themecolor_bg 3%, transparentize($themecolor_bg, 1) 100%);
+        background: linear-gradient(0deg, $themecolor_bg 0%, transparentize($themecolor_bg, 1) 100%);
+    }
+    .wrapper_outer:before {
+        background: $themecolor_bg;
+        background: linear-gradient(0deg, transparentize($themecolor_bg, 1) 0%, $themecolor_bg 100%);
     }
 }
 
@@ -90,6 +100,7 @@ $on-laptop:        1000px;
 @import
         "base",
         "devices.min.css",
+        "devices",
         "layout",
         "scrollreveal",
         "syntax-highlighting",
@@ -100,10 +111,12 @@ $on-laptop:        1000px;
         "theme-cwn",
         "theme-illustrations-various",
         "theme-bierbaum",
+        "theme-mrroof",
         "theme-liverpool",
         "theme-darkmonger",
         "theme-roehampton",
         "theme-odinsravens",
+        "theme-letshost",
         "theme-booking",
         "theme-jpl",
         "theme-hatetracker",

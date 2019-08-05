@@ -191,10 +191,6 @@
 .site-footer {
     padding: 0;
     position: relative;
-
-    & .wrapper {
-        max-width: none;
-    }
 }
 
 .footer-heading {
@@ -275,7 +271,6 @@
  */
 
 #work_list_wrapper {
-    margin: 0;
     @media (max-width: 599px) {
         padding: 0;
     }
@@ -320,7 +315,7 @@
 .work_list_title {
     position: relative;
     @media (max-width: 599px) {
-        padding: 0 1rem; 
+        margin-left: 1rem; 
     }
 
     &:after {
@@ -367,8 +362,8 @@
 .work_list_tile_title {
     font-size: 1.2rem;
     margin: 0 0 .2rem 0;
-    font-family: $heading-font-family;
-    font-weight: $heading-font-weight;
+    font-family: $special-font-family;
+    font-weight: $special-font-weight;
     line-height: 1.2;
     color: $background-color;
 }
@@ -429,6 +424,7 @@
 
     &.has_hero_img {      
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         margin-bottom: 120px;
     }
 }
@@ -441,28 +437,36 @@
     left: 0;
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 
     &:after {
         content: '';
         width: 100%;
         position: absolute;
         bottom:0;
-        height: 50vh;
+        height: 33vh;
+        height: calc(var(--vh, 1vh) * 33);
         background: $background-color;
         background: linear-gradient(0deg, $background-color 3%, transparentize($background-color, 1) 100%);
     }
 }
 .page-header-wrapper {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 100vh;
+    top: calc(var(--vh, 1vh) * 100);
+    transform: translateY(-110%);
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    //max-width: 100%;
+   // box-sizing: border-box;
 }
 
 .page-title {
     font-family: $special-font-family;
     font-weight: $special-font-weight;
+    font-style: $special-font-style;
+    letter-spacing: $special-font-spacing;
+    font-feature-settings: normal;
+    font-kerning: none;
     //text-transform: uppercase;
     //letter-spacing: -0.01em;
     font-size: 2.5rem;
@@ -476,8 +480,8 @@
 }
 
 .page-subtitle {
-    font-family: $base-font-family;
-    font-weight: $base-font-weight;
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
     font-size: 1.5rem;
     line-height: 1.2;
     padding: 0;
@@ -530,11 +534,10 @@
 
 .drop_cap { 
     float: left; 
-    font-size: 3.33em; 
+    font-size: 3.25em; 
     line-height: 0.833em; 
-    //padding-top: .1em;
     padding-right: .1333em; 
-    padding-left: .05em;  
+    padding-left: 0;  
     font-weight: 900;
     position: relative;
 
@@ -595,7 +598,7 @@
             flex-direction: row-reverse;
         }
 
-        .col-12, .col-8, .col-6, .col-4, .col-2 {
+        .col-12, .col-8, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
             flex-shrink: 0;            
             padding: 10px;
             box-sizing: border-box;
@@ -610,14 +613,26 @@
         .col-8 {
             flex-basis: 66.6666%;
         }
+        .col-7 {
+            flex-basis: 58.333333333%;
+        }
         .col-6 {
             flex-basis: 50%;
+        }
+        .col-5 {
+            flex-basis: 41.666666667%;
         }
         .col-4 {
             flex-basis: 33.3333%;
         }
+        .col-3 {
+            flex-basis: 25%;
+        }
         .col-2 {
             flex-basis: 16.666666667%;
+        }
+        .offset-1 {
+            margin-left: 8.333333333%;   
         }
         .offset-2 {
             margin-left: 16.6%;   
@@ -627,6 +642,9 @@
         }
         .offset-4 {
             margin-left: 33.3%;   
+        }
+        .offset-5 {
+            margin-left: 41.666666667%;   
         }
         .offset-6 {
             margin-left: 50%;   
@@ -645,15 +663,30 @@
         margin-bottom: 0;
     }
 
-    .col-12, .col-8, .col-6, .col-4 {
+    .col-12, .col-8, .col-7, .col-6, .col-5, .col-4 {
         float: none;
         width: 100%;
         margin-bottom: $spacing-unit / 2;
         padding: 0;
         box-sizing: border-box;
     }
-    .offset-3, .offset-2, .offset-4 {
+    .offset-4, .offset-3, .offset-2, .offset-1  {
         width: 100%;
+    }
+}
+
+.infobox {
+    border: 2px solid;
+    padding: 1rem;
+    box-shadow: 6px 6px 0;
+    box-sizing: border-box;
+
+    & h2, & h3, & h4 {
+        margin-bottom: .2em;
+    }
+
+    & ul {
+        list-style-type: '+ ';
     }
 }
 
@@ -675,28 +708,28 @@
     }
 }
 
-/* fluidbox */
-
-.fluidbox-link {
-    cursor: zoom-in;
-    cursor: -webkit-zoom-in; 
-    cursor: -moz-zoom-in;
-}
-
-.portfolio .fluidbox__overlay {
-    background-color: #FFF;
-}
-
 /* Stuff that needs to be hidden on certain devices */
 
-.hide_on_desktop {
+.hide_on_phone {
     display: none!important;
 }
-@include media-query($on-palm) {
-    .hide_on_phone {
+.hide_on_desktop {
+    display: initial!important;
+}
+p.hide_on_desktop,
+div.hide_on_desktop {
+    display: block!important;
+}
+@media (min-width: 768px) {
+    .hide_on_desktop {
         display: none!important;
     }
-    .hide_on_desktop {
+    .hide_on_phone {
         display: initial!important;
     }
+    p.hide_on_phone,
+    div.hide_on_phone {
+        display: block!important;
+    }
+    
 }

@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio
+type: portfolio-norender
 title: Crappy Turd
 category: Videogame
 permalink: /work/crappy_turd

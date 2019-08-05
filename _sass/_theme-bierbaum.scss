@@ -10,6 +10,10 @@
 		stroke: #f0c160;
 	}
 
+	#Tree_Eye_BG--anim {
+		background-color: #f0c160;
+	}
+
 	& .row {
 		@include media-query($on-palm) {
 			overflow: visible;

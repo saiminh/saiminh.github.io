@@ -2,23 +2,23 @@
 }
 
 .toiletroll {
-	width: 256px;
-	height: 256px;
+	width: 128px;
+	height: 128px;
 	background: url('/img/work_crappy/toiletroll-spritesheet.png') left top;
-	background-size: 2560px 256px;
+	background-size: 1280px 128px;
 	animation: play-toiletroll 1s steps(10) infinite;
 	display: inline-block;
 
 	@keyframes play-toiletroll {
-	   100% { background-position: -2560px; }
+	   100% { background-position: -1280px; }
 	}
 }
 
 .turd {
-	width: 128px;
-	height: 128px;
+	width: 64px;
+	height: 64px;
 	background: url('/img/work_crappy/turd-spritesheet.png') left top;
-	background-size: 3840px 256px;
+	background-size: 1920px 128px;
 	animation: play-turd_flapping 2s steps(26) infinite;
 	display: inline-block;
 
@@ -35,12 +35,12 @@
 	}
 
 	@keyframes play-turd_flapping {
-		0%	 { background-position: -768px top }
-	   	100% { background-position: -1664px top; }
+		0%	 { background-position: -384px top }
+	   	100% { background-position: -832px top; }
 	}
 
 	@keyframes play-turd_flaming {
-	   100% { background-position: -1408px bottom; }
+	   100% { background-position: -704px bottom; }
 	}
 }
 
@@ -57,12 +57,4 @@
 		}
 
 	}
-}
-
-.astra_logo {
-	position: absolute;
-	bottom: 10px;
-	z-index: 999999999;
-	right: 10px;
-	width: 60px;
 }

@@ -1,0 +1,12 @@
+.theme-mrroof {
+	@include theme-colors(#ffe05e, #0935b8);
+}
+
+.astra_logo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 60px;
+	z-index: 999999999;
+}
+

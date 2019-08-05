@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio
+type: portfolio-norender
 title: Bloat King
 category: Illustration/Animation
 permalink: /work/bloatking

@@ -11,7 +11,7 @@ subtitle: Housestyle for the peace technology startup
 extra_classes: portfolio theme-jpl
 title_offset_y: 60vh
 title_align: center
-order: 6
+order: 11
 ---
 <div class="index-header wrapper">
 

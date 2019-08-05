@@ -1,29 +1,22 @@
 .theme-home {
 	@include theme-colors(#F66, #FFF);
 
-	.hero {
-		margin-top: 0vh;
-		padding-top: 4vh;
-		padding-bottom: 10vh;
-		//background-image: url(/img/UI/home_bg.jpg);
-	}
-
 	.hero_headline {
 		font-size: 8vw;
 		font-family: $special-font-family;
 		font-weight: $special-font-weight;
-		//text-transform: uppercase;
-		letter-spacing: -0.02em;
-		//line-height: 1.1; 		
-		//margin: 0;
-		//max-width: 36em;
-		position: relative;
-		perspective: 1000px;
-	    transform-origin: 0% 50%;
+		font-style: $special-font-style;
+		line-height: 1.1;
+		letter-spacing: $special-font-spacing;
+		font-kerning: none;
+		font-feature-settings: normal;		
+		perspective: 800px;
+		margin-bottom: 1em;
 
 		@media (max-width: 600px) {
 			font-size: 10vw;
 			perspective: 600px;
+			margin: 3em 0;
 		}
 	
 
@@ -31,7 +24,7 @@
 		& .rotater_one {
 			display: inline-block;
 			margin:0;
-			font-style: normal;
+			//font-style: normal;
 			transform-origin: 0% 90%;	
 
 			@media (max-width: 600px) {

@@ -1,6 +1,6 @@
 ---
 layout: page_noheader
-type: portfolio
+type: portfolio-norender
 title: Darkmonger
 category: HTML Storybook
 permalink: /work/darkmonger
@@ -8,7 +8,7 @@ mainnav: hide
 header_bg_image: /img/thumbnails/darkmonger.png
 worktile_theme: dark
 extra_classes: portfolio theme-darkmonger
-order: 10
+order: 2
 ---
 
 <div class="wrapper">
@@ -27,7 +27,7 @@ order: 10
 			</ul>
 			<p class="hide_on_phone">Try it out on the right or click the button below to read it in a new full browser window</p>
 			<p class="hide_on_desktop">Try it out (opens in new browser window):</p>
-			<p><a class="button" href="/darkmonger" target="_blank">Read "Darkmonger"</a></p>			 
+			<p><a class="button" href="/darkmonger" target="_blank">Open (new window)</a></p>			 
 		</div>
 		<div class="col-6" style="text-align: center; position: relative;">	
 			<div class="hide_on_desktop">

@@ -1,11 +1,11 @@
 ---
-layout: page_noheader
+layout: page
 type: portfolio
 title: Booking.com
 category: UX and Web Design
 permalink: /work/booking
 mainnav: hide
-header_bg_image: /img/thumbnails/booking.png
+header_bg_image: /img/work_booking/booking_hero.jpg
 extra_classes: portfolio theme-booking
 title_offset_y: 45vh
 title_align: left
@@ -14,30 +14,30 @@ order: 4
 
 <div class="wrapper">
 	
-	<div class="row row-overlap">		
-		<div class="col-4">
-	        <img src="{{ site.baseurl }}/img/work_booking/booking_iphone6.png" alt="image" class="work_booking_img_iphone" />
-	    </div>	
-		<div class="col-8">
-			<h2 class="page-subtitle">UX Design & Teamlead</h2>
-			<h1 class="page-title">Booking.com</h1>
-			<p class="pullquote">I worked with one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
-			<h3>My role included:</h3>
-			<ul class="quick_info_box_list">
-				<li>Projects cover all platforms (desktop, mobile, native apps)</li>
-				<li>Facilitate Ideation, sketching/wireframing and create mockups</li> 
-				<li>Write HTML, CSS, JS and some Perl code</li>
-				<li>Maintain and deploy code using git</li>
-				<li>Analyze experiment data and propose next iteration steps</li>
-				<li>Coach and develop team members</li>
-			</ul>
+	<div class="row row--aligncenter">		
+		<div class="col-5">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="www.booking.com">Booking.com</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Teamlead of the "Growth-hacking" team</li>
+					<li>Product Design</li>
+					<li>Prototyping</li>
+					<li>Frontend development (HTML, CSS, JS, Perl)</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="col-5 offset-1">
+			<p><span class="drop_cap">B</span>ooking.com is one of the biggest accommodation reservation services in the world. Each day, <em>over a million</em> room nights are reserved through its websites and apps.</p>
+			<p>I worked on a multitude of projects, touching many of the company's products (websites, native apps, PWAs). Working at Booking requires basing all design decisions on collected user data.</p>
 					
 		</div>				
 	</div>
 
 	<div class="row">
 		<div class="col-8 overflow offset-2">
-			<h3 class="heading_centered">Some projects I worked on</h3>
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_booking/screens' %}

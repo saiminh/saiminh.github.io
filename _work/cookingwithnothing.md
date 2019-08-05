@@ -10,7 +10,7 @@ header_bg_image: /img/work_cwn/cwn_hero.jpg
 ogimageurl: /img/thumbnails/cwn.jpg
 worktile_theme: light
 extra_classes: portfolio theme-cwn
-order: 11
+order: 10
 ---
 
 <div class="wrapper">

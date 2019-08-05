@@ -1,11 +1,11 @@
 ---
-layout: page_noheader
+layout: page
 type: portfolio
 title: HateTracker
 category: App design/Identity
 permalink: /work/hatetracker
 mainnav: hide
-header_bg_image: /img/thumbnails/hatetracker.png
+header_bg_image: /img/work_hatetracker/hatetracker_hero.jpg
 worktile_theme: dark
 subtitle: A webapp to track hate crimes 
 extra_classes: portfolio theme-hatetracker
@@ -14,15 +14,7 @@ title_align: center
 order: 5
 ---
 
-<div class="index-header wrapper">
-
-	<div class="row">
-		<div class="col-12">
-			<h2 class="page-subtitle">A webapp to track hate crimes</h2>
-			<h1 class="page-title">Hate Tracker</h1>			
-		</div>
-	</div>
-
+<div class="wrapper">
 	<div class="row">
 		<div class="col-6">								
 			<h3>The concept</h3>
