@@ -710,14 +710,14 @@
 
 /* Stuff that needs to be hidden on certain devices */
 
-.hide_on_phone {
+.hide_on_desktop {
     display: none!important;
 }
-.hide_on_desktop {
+.hide_on_phone {
     display: initial!important;
 }
-p.hide_on_desktop,
-div.hide_on_desktop {
+p.hide_on_phone,
+div.hide_on_phone {
     display: block!important;
 }
 @media (min-width: 768px) {

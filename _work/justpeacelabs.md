@@ -16,19 +16,30 @@ order: 11
 <div class="index-header wrapper">
 
 	<div class="row row--aligncenter">
-		<div class="col-4 offset-4">
-			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_white.svg" alt="justpeacelabs logo">		
-		</div>	
-	</div>
-	<div class="row row--aligncenter">
-		<div class="col-8 offset-4">
+		<div class="col-4">
+			<div class="infobox">				
+				<h3>Client:</h3>
+				<p><a href="www.justpeacelabs.org">JustPeace Labs</a></p>
+			
+				<h3>What I did:</h3>
+				<ul>
+					<li>Housestyle (Logo, Assets & Usage Guidelines)</li>
+					<li>Website: Visual & Product Design</li>
+					<li>Website: Frontend Development (HTML, PHP, JS, CSS/SASS)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 offset-2">
 			<h2>JPL's Mission</h2>
 			<p><span class="drop_cap">T</span>he startup has declared their mission "to empower local communities to be active participants in creating lasting just peace through the use of technology". I created a logo and housestyle for them that conveyes their goals and products.</p>	
-		</div>
-			
+		</div>	
 	</div>
 
-
+	<div class="row">
+		<div class="col-6 offset-3">
+			<img src="{{ site.baseurl }}/img/work_jpl/jpl_logo_white.svg" alt="justpeacelabs logo">		
+		</div>
+	</div>
 	<div class="row row--aligncenter">
 		<div class="col-4">
 			<div class="illustration">

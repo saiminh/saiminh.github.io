@@ -15,6 +15,32 @@ order: 9
 	
 	<div class="row row--aligncenter">
 		<div class="col-4">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="http://www.bier-baum.nl">The Bierbaum store</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Housestyle</li>
+					<li>Signage</li>
+					<li>Website (Static HTML, CSS)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-7 offset-1">			
+			<h2>The beer tree</h2>
+			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
+			<p>I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="col-4 offset-1">
+			<p style="text-align: center;"><strong>The Logo,</strong> used for stamps, invoices and letterheads: </p>
+			<p><img src="/img/work_bierbaum/bierbaum_logo_type.svg" alt="Bierbaum" /></p>
+			<p><img src="/img/work_bierbaum/bierbaum_logo_type_negative.svg" alt="Bierbaum" /></p>
+		</div>
+
+		<div class="col-4 offset-1">
+			<p style="text-align: center;"><strong>Extended Logo illustration,</strong> used for shop window, bottle labels, T-shirts:</p>
 			<div class="bierbaum-logo">
 				<svg class="about_tree" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="533.3px" height="784.6px" viewBox="0 0 533.3 784.6" style="enable-background:new 0 0 533.3 784.6;" xml:space="preserve">
 					<g id="Tree">
@@ -236,14 +262,7 @@ order: 9
 					<div id="Tree_Eye_inner--anim"></div>
 				</div>
 			</div>
-		</div>	
-		<div class="col-7 offset-1">
-			{% comment %}<h2 class="page-subtitle">Store identity</h2>
-			<h1 class="page-title">Bierbaum</h1>{% endcomment %}
-			<h2>The beer tree</h2>
-			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
-			<p>In close collaboration with the store manager I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
-		</div>		
+		</div>
 	</div>
 
 	<div class="row row--aligncenter row--reverse">		
@@ -252,9 +271,8 @@ order: 9
 			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
 		<div class="col-4">
-			<h3>Concept: Why a tree?</h3>
-			<p><span class="drop_cap">F</span>irstly the tree was mainly supposed to be symbolic for branching out into all areas of the craft beer scene. The store is going to host events, tastings and workshops and sell brewing equipment.</p>
-			<p>But we realized that the biggest part of the shop's appeal comes from the temptation to try all of its huge variety of beers. So of course the biblical tree with the snake and Eve provides a perfect visual metaphor for that.</p>
+			<h3>Concept: The tree</h3>
+			<p><span class="drop_cap">T</span>he shop's identity is all about temptation. The logo is supposed to lure you in and sample its huge variety of beers. The biblical tree with the snake and Eve provides a perfect visual metaphor for that.</p>
 			<p>The unusual shape and design of the logo attracts attention of people walking by the store and it feels right at home in the whimsical world of craft beer.</p>
 		</div>
 		
@@ -271,7 +289,11 @@ order: 9
 			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" >
 			<em style="margin-top: 1em" class="illustration_caption">SF Bierbaum: Art Deco All Caps Display font.</em>
 		</div>
-		
-
+	</div>
+	<div class="row">
+		<div class="col-8 offset-2">
+			{% include devices_combined.html screenshot-desktop="/img/work_bierbaum/bierbaum_website_desktop.png" screenshot-mobile="/img/work_bierbaum/bierbaum_website_mobile.png" %}
+			<p>The Website offers general information about the store, a list of beers on the shelves with reviews powered by Untappd and a listing of all events held at the store or in the neighbourhood that are related to craft beer.</p> 
+		</div>
 	</div>
 </div>

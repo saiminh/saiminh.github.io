@@ -15,13 +15,29 @@ order: 10
 
 <div class="wrapper">
 
-	<div class="row">
-		
-		<div class="col-6 offset-3">			
+	<div class="row row--aligncenter">
+		<div class="col-4">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="https://cookingwithnothing.com">Cooking with Nothing</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Housestyle</li>
+					<li>Website Design</li>
+					<li>Website Development (WordPress HTML/PHP, CSS, Javascript)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 offset-1">			
 			<p><span class="drop_cap">T</span>his food and health-focused website is the outlet of Tracey Ingram, a gifted writer and editor-at-large of Frame Magazine. She <em>"grew up with a tonne of tummy problems"</em> and has ever since been writing about her experiences, treatments and recipes to help others with similar problems.</p>		
-			<h3>Identity</h3>
-			<p>The logo is a visual representation of the idea that there is value in the absence of things. The negative space 'no' is still perfectly legible.</p>	 
+				 
 		</div>						
+	</div>
+	<div class="row">
+		<div class="col-6 offset-3">
+			<h3>Identity</h3>
+			<p>The logo is a visual representation of the idea that there is value in the absence of things. The negative space 'no' is still perfectly legible.</p>
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-6 offset-3">
