@@ -2,7 +2,7 @@
 layout: page
 type: portfolio
 title: HateTracker
-category: App design/Identity
+category: App design & Identity
 permalink: /work/hatetracker
 mainnav: hide
 header_bg_image: /img/work_hatetracker/hatetracker_hero.jpg
@@ -16,20 +16,43 @@ order: 5
 
 <div class="wrapper">
 	<div class="row">
-		<div class="col-6">								
+		<div class="col-4 ">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="https://justpeacelabs.org">JustPeace Labs</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Logo design</li>
+					<li>Product design (UX, UI, Visual)</li>
+					<li>Frontend Development</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="col-6 offset-1">								
 			<h3>The concept</h3>
 			<p><span class="drop_cap">T</span>his app allows anyone with an internet browser to file a report, using geo location and image/video uploads to help verify the incident. I designed the look and feel and the frontend in collaboration with the peace technology startup "JustPeace Labs".</p> 	
 			<p>The app can be used and downloaded at <a href="https://app.hatetracker.org/">https://app.hatetracker.org/</a></p>
 		</div>
-
-		<div class="col-4 ">
-			<div class="illustration">
-				<img src="{{ site.baseurl }}/img/work_hatetracker/Step1.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
-			</div>
-		</div>	
 			
 	</div>
 
+	<div class="row">
+		<div class="col-4 ">
+			<div class="illustration">
+				<img src="{{ site.baseurl }}/img/work_hatetracker/HateTracker_screenshot_01.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
+			</div>
+		</div>	
+		<div class="col-4 ">
+			<div class="illustration">
+				<img src="{{ site.baseurl }}/img/work_hatetracker/HateTracker_screenshot_02.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
+			</div>
+		</div>	
+		<div class="col-4 ">
+			<div class="illustration">
+				<img src="{{ site.baseurl }}/img/work_hatetracker/HateTracker_screenshot_03.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
+			</div>
+		</div>	
+	</div>
 
 	<div class="row">
 

@@ -33,14 +33,14 @@ order: 9
 		</div>		
 	</div>
 	<div class="row">
-		<div class="col-4 offset-1">
-			<p style="text-align: center;"><strong>The Logo,</strong> used for stamps, invoices and letterheads: </p>
+		<div class="col-4">
+			<p style=""><strong>The Logo,</strong> used for stamps, invoices and letterheads: </p>
 			<p><img src="/img/work_bierbaum/bierbaum_logo_type.svg" alt="Bierbaum" /></p>
 			<p><img src="/img/work_bierbaum/bierbaum_logo_type_negative.svg" alt="Bierbaum" /></p>
 		</div>
 
 		<div class="col-4 offset-1">
-			<p style="text-align: center;"><strong>Extended Logo illustration,</strong> used for shop window, bottle labels, T-shirts:</p>
+			<p style=""><strong>Extended Logo illustration,</strong> used for shop window, bottle labels, T-shirts:</p>
 			<div class="bierbaum-logo">
 				<svg class="about_tree" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="533.3px" height="784.6px" viewBox="0 0 533.3 784.6" style="enable-background:new 0 0 533.3 784.6;" xml:space="preserve">
 					<g id="Tree">
@@ -293,7 +293,7 @@ order: 9
 	<div class="row">
 		<div class="col-8 offset-2">
 			{% include devices_combined.html screenshot-desktop="/img/work_bierbaum/bierbaum_website_desktop.png" screenshot-mobile="/img/work_bierbaum/bierbaum_website_mobile.png" %}
-			<p>The Website offers general information about the store, a list of beers on the shelves with reviews powered by Untappd and a listing of all events held at the store or in the neighbourhood that are related to craft beer.</p> 
+			<p><a href="http://www.bier-baum.nl">The Website</a> offers general information about the store, a list of beers on the shelves with reviews powered by Untappd and a listing of all events held at the store or in the neighbourhood that are related to craft beer.</p> 
 		</div>
 	</div>
 </div>

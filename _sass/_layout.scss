@@ -649,6 +649,9 @@
         .offset-6 {
             margin-left: 50%;   
         }
+        .inset-1 {
+            margin-right: 8.333333333%;   
+        }
     } 
  }
 
@@ -711,14 +714,14 @@
 /* Stuff that needs to be hidden on certain devices */
 
 .hide_on_desktop {
-    display: none!important;
-}
-.hide_on_phone {
     display: initial!important;
 }
-p.hide_on_phone,
-div.hide_on_phone {
-    display: block!important;
+.hide_on_phone {
+    display: none;
+}
+p.hide_on_desktop,
+div.hide_on_desktop {
+    display:block!important;
 }
 @media (min-width: 768px) {
     .hide_on_desktop {

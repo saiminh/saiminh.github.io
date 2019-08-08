@@ -14,27 +14,34 @@ order: 1
 
 <div class="wrapper">
 	<div class="row row--aligncenter">		
-		<div class="col-6">
+		<div class="col-4">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="https://www.liverpool.ac.uk/online-programmes/">University of Liverpool</a>/<a href="https://laureate.net">Laureate Online Education</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Housestyle</li>
+					<li>Brochures</li>
+					<li>Website Design</li>
+					<li>Website Frontend Development</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="col-6 offset-1">
 			
-			<p><span class="drop_cap">D</span>uring my time as Senior Designer at Laureate Online Education my team and I developed a housestyle and all design collateral for the subbrand of this prestigious UK Institution.</p>
+			<p><span class="drop_cap">W</span>hen the prestigious UK Institution introduced their own brand of E-Learning together with their Partner Laureate, I developed a housestyle and website that spoke specifically to an international and mature audience of potential online students.</p>
 		</div>
-		<div class="col-6">
-			<img src="{{ site.baseurl }}/img/hero-bg/liverpool.png" alt="image" class="grid_img" />
-		</div>
+		
 		
 	</div>
 
 	<div class="row">		
 	
-		<div class="col-6">
+		<div class="col-5 inset-1">
 			<h3>Housestyle</h3>
-			<p><span class="drop_cap">T</span>he Online degrees of the renowned University of Liverpool needed their own housestyle to appeal to their global target audience.</p>
-				<ul class="quick_info_box_list">
-					<li>Development of the housestyle</li>
-					<li>Design of an icon family</li> 
-					<li>Production of a styleguide</li>
-
-				</ul>
+			<p><span class="drop_cap">T</span>he visual communications of the online degrees needed to differentiate itself from the physical institution's to adress the specific target audience.</p>
+			<p> Prestige and maturity were key points, as online students tend to be older and already on a career path they want to advance on by pursuing a degree.</p>
 		</div>
 
 		{% for image in site.static_files %}
@@ -47,13 +54,29 @@ order: 1
 			
 	</div>
 
+	<div class="row raster">				
+		<div class="col-5 inset-1">
+			<h3>Printed marketing material</h3>
+			<p><span class="drop_cap">F</span>or the many infosessions the University of Liverpool organizes all over the world, I designed a line of brochures and promotional material that were using the assets created in the guidelines.</p>
+		</div>
+
+		{% for image in site.static_files %}
+		    {% if image.path contains 'img/work_liverpool/print' %}
+		    	<div class="col-6">
+			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
+			    </div>
+		    {% endif %}
+		{% endfor %}
+
+	</div>
+
 	<div class="row">		
 		<div class="col-4 col-text">
 			<h3>Website</h3>
-			<p><span class="drop_cap">T</span>he website of the University Online Degrees doubles as an information portal for prospective as well as active students and as a lead capture platform.</p>
+			<p><span class="drop_cap">T</span>he website of the University Online Degrees is an information portal for students and a lead capture platform for new prospects.</p>
 			<ul class="quick_info_box_list">
 				<li>Wireframing</li>
-				<li>Development of prototype</li>
+				<li>Prototype development</li>
 				<li>Visual Design</li>
 				<li>Frontend development</li>
 			</ul>
@@ -70,21 +93,6 @@ order: 1
 		
 	</div>
 
-	<div class="row raster">		
-		
-		<div class="col-6 col-text">
-			<h3>Offline marketing material</h3>
-			<p><span class="drop_cap">U</span>sing our own guidelines, we produced some example brochures and promotional material to be used in the many infosessions the University organizes across the world.</p>
-		</div>
-
-		{% for image in site.static_files %}
-		    {% if image.path contains 'img/work_liverpool/print' %}
-		    	<div class="col-6">
-			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
-			    </div>
-		    {% endif %}
-		{% endfor %}
-
-	</div>
+	
 
 </div>
