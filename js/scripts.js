@@ -158,24 +158,3 @@ $(window).scroll( function(){
     }
 });
 
-// ------------------------------------------
-//  On Click Link stuff
-// ------------------------------------------
-
-$('a').click(function(event) {
-    // Remember the link href
-    var href = this.href;
-
-    // Don't follow the link
-    event.preventDefault();
-
-    // Do the async thing
-        TweenMax.to( $(".page-content, .site-footer"), 1, {
-            autoAlpha: 0,
-            onComplete: function(){window.location = href;}
-        });
-        TweenMax.to( $('body'), 1, {
-            backgroundColor: "#FFF"
-        });
-        // go to the link   
-});
