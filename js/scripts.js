@@ -16,7 +16,7 @@ var smoothScrollInit =  function() {
 
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 50
-        }, 1000,'easeInOutExpo');
+        }, 1000);
 
         event.preventDefault();
     });                       
@@ -49,7 +49,7 @@ tlRotate.fromTo($('.rotater_two'), 1, {
 ;
 
 
-// ------------------------------------------
+/*// ------------------------------------------
 // Bloat King
 // ------------------------------------------
 var bloatkingInit = function(){
@@ -60,7 +60,7 @@ var bloatkingInit = function(){
         iframe.src = iframe.src;    
         })
     };
-};
+};*/
 
 // ------------------------------------------
 // Bierbaum Tree
@@ -116,10 +116,8 @@ var bierbaumInit = function(){
 $(window).on('load', function(){   
     smoothScrollInit();
     galleryInit();    
-    bloatkingInit();
     bierbaumInit();
     tlRotate.play(0);
-  //  home_ani_tl.play(0);
     TweenMax.to(".preloader", .5, {
         autoAlpha:0,
         onComplete: function(){$(".preloader").remove()}
