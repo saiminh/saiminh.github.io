@@ -3,10 +3,12 @@
 	@include theme-colors(#0b3861, #FFF);
 
 	& #jpl_symbol {
-		height: 250px;
-		width: 250px;
+		height: 50px;
+		width: 50px;
 		display: block;
-		margin: 0 auto;
+		margin: 0 1em 0 0;
+		float: left;
+		padding-top: .3333em;
 
 		#center {
 			animation: fadeout 2s infinite alternate;

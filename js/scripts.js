@@ -118,9 +118,11 @@ $(window).on('load', function(){
     galleryInit();    
     bierbaumInit();
     tlRotate.play(0);
+  //  home_ani_tl.play(0);
     TweenMax.to(".preloader", .5, {
-        autoAlpha:0,
-        onComplete: function(){$(".preloader").remove()}
+       // autoAlpha:0,
+        yPercent: -100,
+        onComplete: function(){$(".preloader").addClass('loading-complete')}
     });
     $("body").addClass("assets_loaded");
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -154,5 +156,33 @@ $(window).scroll( function(){
         windowScroll = st/ht;
         tl.progress( windowScroll );
     }
+});
+
+// ------------------------------------------
+//  On Click Link stuff
+// ------------------------------------------
+
+$('.work_list a, a.site-title').click(function(event) {
+    // Remember the link href
+    var href = this.href;
+
+    // Don't follow the link
+    event.preventDefault();
+
+    // Do the async thing
+        TweenMax.from( $(".preloader .preloader_logo-container"), 1, {
+            y: -10000,
+            ease: Expo.easeInOut
+        });
+        TweenMax.to( $(".preloader"), 1, {
+            yPercent: 0,
+            ease: Expo.easeInOut,
+            onComplete: function(){window.location = href;}
+        });
+        TweenMax.to( $('body'), 1, {
+            backgroundColor: "#FFF",
+            ease: Expo.easeInOut
+        });
+        // go to the link   
 });
 
