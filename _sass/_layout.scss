@@ -26,7 +26,7 @@
         max-width: none;
 
         & * {
-            fill: #999;
+            fill: #000;
         }
 
         & .dash {
@@ -45,7 +45,7 @@
         display: block;
         width: 30px;
         height: 8px;
-        background-color: #999;
+        background-color: #000;
         animation: spin 1s forwards alternate infinite;
     }
 }
