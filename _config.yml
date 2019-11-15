@@ -42,9 +42,8 @@ responsive_image:
   # a `width` value.
   sizes:
     - width: 300
-    - width: 510
-    - width: 620  # [Required] How wide the resized image will be.
-    # quality: 80 # [Optional] Overrides default_quality for this size.
+    - width: 560
+    - width: 640  
     - width: 1200
     - width: 1600
     #  quality: 90
