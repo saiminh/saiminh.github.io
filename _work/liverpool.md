@@ -4,7 +4,7 @@ type: portfolio
 title: University of Liverpool
 category: Housestyle
 permalink: /work/liverpool
-header_bg_image: /img/work_liverpool/uol_hero.jpg
+header_bg_image: ./img/work_liverpool/uol_hero.jpg
 worktile_theme: dark
 extra_classes: portfolio theme-liverpool
 title_offset_y: 60vh
@@ -46,8 +46,11 @@ order: 1
 
 		{% for image in site.static_files %}
 		    {% if image.path contains 'img/work_liverpool/housestyle' %}
-		    	<div class="col-6">
-			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
+		    	<div class="col-6">			        
+                    {% responsive_image_block %}
+                    path:  ./{{ image.path }}
+                    class: "grid_img"
+                    {% endresponsive_image_block %}
 			    </div>
 		    {% endif %}
 		{% endfor %}
@@ -62,8 +65,11 @@ order: 1
 
 		{% for image in site.static_files %}
 		    {% if image.path contains 'img/work_liverpool/print' %}
-		    	<div class="col-6">
-			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="grid_img" />
+		    	<div class="col-6">			        
+					{% responsive_image_block %}
+                    path:  ./{{ image.path }}
+                    class: "grid_img"
+                    {% endresponsive_image_block %}
 			    </div>
 		    {% endif %}
 		{% endfor %}
@@ -85,7 +91,11 @@ order: 1
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_liverpool/online' %}
-				        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" />
+				        
+						{% responsive_image_block %}
+                        path:  ./{{ image.path }}
+                        class: "gallery-xscroll_img"
+                        {% endresponsive_image_block %}
 				    {% endif %}
 				{% endfor %}
 			</div>

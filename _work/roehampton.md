@@ -6,7 +6,7 @@ category: Designing a fully online study experience
 subtitle: Designing a fully online study experience
 permalink: /work/roehampton
 mainnav: hide
-header_bg_image: /img/work_roehampton/uor_hero.png
+header_bg_image: ./img/work_roehampton/uor_hero.png
 extra_classes: portfolio theme-roehampton
 ---
 
@@ -29,8 +29,8 @@ extra_classes: portfolio theme-roehampton
 		</div>
 	</div>
 	<div class="row">	
-		<div class="col-6">
-			<img alt="alternative text" src="{{ "/img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg" | prepend: site.baseurl }}" class="img--framed" />
+		<div class="col-6">			
+			{% responsive_image path: img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg class: "img--framed" alt: "The Tower bridge in London is resolved into small blue squares" %}
 		</div>
 		<div class="col-4 offset-1">
 			<h3>Housestyle</h3>
@@ -50,6 +50,7 @@ extra_classes: portfolio theme-roehampton
 		</div>
 		<div class="col-7 offset-1">
 			<img alt="alternative text" src="{{ '/img/work_roehampton/online/03-uor-website-home.png' | prepend: site.baseurl }}"  />
+			{% responsive_image path: img/work_roehampton/online/03-uor-website-home.png alt: "Screenshot of the Roehampton Homepage" %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">
@@ -57,8 +58,9 @@ extra_classes: portfolio theme-roehampton
 			<h4>Onboarding app</h4>
 			<p><span class="drop_cap">F</span>or new and aspiring Roehampton students we produced a progressive web app that helped them with the sometimes complicated application and onboarding process.</p>
 		</div>
-		<div class="col-7 offset-1">
-			<img alt="alternative text" src="{{ '/img/work_roehampton/online/00-uor-website-mobile03.png' | prepend: site.baseurl }}"  />
+		<div class="col-7 offset-1">			
+			{% responsive_image path: img/work_roehampton/online/00-uor-website-mobile03.png alt: "Screenshot of the Roehampton HomepageOnboarding app on an iPhone" %}
+			
 		</div>
 	</div>
 	<div class="row row--aligncenter">
@@ -66,8 +68,8 @@ extra_classes: portfolio theme-roehampton
 			<h4>Inspirenet, a social network for the online students</h4>
 			<p><span class="drop_cap">O</span>nce they are signed up, students are encouraged to join inspirenet, a social network where they can interact with each other, create groups and find peers to share their study experience with.</p> 
 		</div>
-		<div class="col-7 offset-1">
-			<img alt="alternative text" src="{{ '/img/work_roehampton/online/02-uor-inspirenet-01.jpg' | prepend: site.baseurl }}"  />
+		<div class="col-7 offset-1">			
+			{% responsive_image path: img/work_roehampton/online/02-uor-inspirenet-01.jpg alt: "Screenshot of the Inspirenet application on a desktop monitor" %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">
@@ -75,29 +77,9 @@ extra_classes: portfolio theme-roehampton
 			<h4>The online classroom</h4>
 			<p><span class="drop_cap">O</span>nce they are signed up, students are encouraged to join inspirenet, a social network where they can interact with each other, create groups and find peers to share their study experience with.</p> 
 		</div>
-		<div class="col-7 offset-1">
-			<img alt="alternative text" src="{{ '/img/work_roehampton/online/uor-classroom-01.jpg' | prepend: site.baseurl }}"  />
+		<div class="col-7 offset-1">		
+			{% responsive_image path: img/work_roehampton/online/uor-classroom-01.jpg alt: "Screenshot of the Roehampton online classroom application on a desktop monitor" %}
+			
 		</div>
 	</div>
-
-	{% comment %}<div class="row row--aligncenter">		
-
-		<div class="col-8 overflow">
-			<div class="gallery-xscroll h360 gallery-print">
-				{% for image in site.static_files %}
-				    {% if image.path contains 'img/work_roehampton/print' %}
-				        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" />
-				    {% endif %}
-				{% endfor %}
-			</div>
-			<em class="illustration_caption">All material is produced in a square shape to fit with the theme.</em>
-		</div>
-
-		<div class="col-4 col-text">
-			<h3>Promotional brochures</h3>
-			<p><span class="drop_cap">W</span>e produced some example brochures and promotional material to be given out at events like the campus graduation or alumni meetings.</p>
-		</div>
-
-		
-	</div>{% endcomment %}
 </div>

@@ -5,7 +5,7 @@ title: HateTracker
 category: App design & Identity
 permalink: /work/hatetracker
 mainnav: hide
-header_bg_image: /img/work_hatetracker/hatetracker_hero.jpg
+header_bg_image: ./img/work_hatetracker/hatetracker_hero.jpg
 worktile_theme: dark
 subtitle: A webapp to track hate crimes 
 extra_classes: portfolio theme-hatetracker
@@ -38,18 +38,18 @@ order: 5
 
 	<div class="row">
 		<div class="col-4 ">
-			<div class="illustration">
-				<img src="{{ site.baseurl }}/img/work_hatetracker/HateTracker_screenshot_01.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
+			<div class="illustration">				
+				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_01.png class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
 			</div>
 		</div>	
 		<div class="col-4 ">
 			<div class="illustration">
-				<img src="{{ site.baseurl }}/img/work_hatetracker/HateTracker_screenshot_02.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
+				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_02.png class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
 			</div>
 		</div>	
 		<div class="col-4 ">
 			<div class="illustration">
-				<img src="{{ site.baseurl }}/img/work_hatetracker/HateTracker_screenshot_03.png" alt="hate tracker screenshot" class="mobile_screenshot" style="max-width: 320px;">
+				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_03.png class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
 			</div>
 		</div>	
 	</div>
@@ -78,7 +78,7 @@ order: 5
 		</div>
 
 		<div class="col-6">
-		<img src="{{ site.baseurl }}/img/work_hatetracker/website.png"  />
+		{% responsive_image path: img/work_hatetracker/website.png alt: "Screenshot of HateTracker Website" %}
 		</div>
 
 	</div>

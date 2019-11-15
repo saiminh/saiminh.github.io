@@ -5,7 +5,7 @@ title: LetsHost.ie
 category: Product & Visual Design
 permalink: /work/letshost
 mainnav: hide
-header_bg_image: /img/work_letshost/letshost_hero.jpg
+header_bg_image: ./img/work_letshost/letshost_hero.jpg
 worktile_theme: dark
 subtitle: A webapp to track hate crimes 
 extra_classes: portfolio theme-letshost

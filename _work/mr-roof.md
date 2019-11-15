@@ -5,7 +5,7 @@ title: Mister Roof
 category: A responsive animated webcomic
 permalink: /work/mr-roof
 mainnav: hide
-header_bg_image: /img/work_mrroof/mrroof_hero.jpg
+header_bg_image: ./img/work_mrroof/mrroof_hero.jpg
 worktile_theme: dark
 extra_classes: portfolio theme-mrroof
 title_offset_y: 60vh

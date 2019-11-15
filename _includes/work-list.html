@@ -7,7 +7,10 @@
 			{% unless page.id == work.id %}
 				<a href="{{ work.permalink }}">
 				<div class="work_list_tile work_list_tile_{{ work.title | remove: " " | remove: "." }} {{ work.worktile_theme }}">
-					<div class="work_list_tile_thumb" style="background-image: url({{ work.header_bg_image }})">	       					
+					<div class="work_list_tile_thumb">	       	
+                    {% responsive_image_block %}
+                    path: ./{{ work.header_bg_image }} 
+                    {% endresponsive_image_block %}				
 			      	</div>
 			      	<header class="work_list_tile_header">
 		      			<h4 class="work_list_tile_title">{{ work.title }}</h4>

@@ -5,7 +5,7 @@ title: Bierbaum
 category: Store identity
 permalink: /work/bierbaum
 mainnav: hide
-header_bg_image: /img/work_bierbaum/bierbaum_hero.jpg
+header_bg_image: ./img/work_bierbaum/bierbaum_hero.jpg
 worktile_theme: light
 extra_classes: portfolio theme-bierbaum
 order: 9
@@ -267,7 +267,8 @@ order: 9
 
 	<div class="row row--aligncenter row--reverse">		
 		<div class="col-7 offset-1">
-			<img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg">
+		{% responsive_image path: img/work_bierbaum/jph_shop_photo.jpg alt: "Photograph of Bierbaum store window" class: "img--framed" %}
+			{% comment %} <img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg"> {% endcomment %}
 			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
 		<div class="col-4">
@@ -286,7 +287,8 @@ order: 9
 			<a class="button" href="{{ site.baseurl }}/img/work_bierbaum/SF_Bierbaum.otf" download>Download .otf</a>
 		</div>
 		<div class="col-7 offset-1">
-			<img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" >
+			{% comment %} <img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" > {% endcomment %}
+			{% responsive_image path: img/work_bierbaum/sf_bierbaum_sample.png alt: "Sample of the Bierbaum typeface" %}
 			<em style="margin-top: 1em" class="illustration_caption">SF Bierbaum: Art Deco All Caps Display font.</em>
 		</div>
 	</div>

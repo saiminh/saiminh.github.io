@@ -5,7 +5,7 @@ title: Cheesy movies
 category: Illustration
 permalink: /work/cheesymovies
 mainnav: hide
-header_bg_image: /img/thumbnails/cheesymovies.png
+header_bg_image: ./img/thumbnails/cheesymovies.png
 worktile_color: "#F4DFD0"
 worktile_theme: dark
 extra_classes: portfolio museumvisie illustration editorial

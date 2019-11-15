@@ -5,7 +5,7 @@ title: Darkmonger
 category: HTML Storybook
 permalink: /work/darkmonger
 mainnav: hide
-header_bg_image: /img/thumbnails/darkmonger.png
+header_bg_image: ./img/thumbnails/darkmonger.png
 worktile_theme: dark
 extra_classes: portfolio theme-darkmonger
 order: 2

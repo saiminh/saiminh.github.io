@@ -6,7 +6,7 @@ category: Food & Health Website
 excerpt: Design for a health and food website
 permalink: /work/cookingwothnothing
 mainnav: hide
-header_bg_image: /img/work_cwn/cwn_hero.jpg
+header_bg_image: ./img/work_cwn/cwn_hero.jpg
 ogimageurl: /img/thumbnails/cwn.jpg
 worktile_theme: light
 extra_classes: portfolio theme-cwn
@@ -41,12 +41,12 @@ order: 10
 	</div>
 	<div class="row">
 		<div class="col-6 offset-3">
-			<img class="illustration_image" src="{{ '/img/work_cwn/CWN_logo_white.svg' | prepend: site.baseurl }}" alt="Cooking with Nothing Website" style="margin-bottom: 3rem;">
+			<img class="illustration_image" src="{{ '/img/work_cwn/CWN_logo_white.svg' | prepend: site.baseurl }}" alt="Cooking with Nothing Website" style="margin-bottom: 3rem;">			
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-6">			
-				<img class="illustration_image" src="{{ '/img/work_cwn/cwn-website.png' | prepend: site.baseurl }}" alt="Cooking with Nothing Website">				
+		<div class="col-6">									
+				{% responsive_image path: img/work_cwn/cwn-website.png alt: "Cooking with Nothing Website" %}	
 		</div>
 		<div class="col-6">					
 				<h3>Custom WordPress website</h3>

@@ -5,7 +5,7 @@ title: Booking.com
 category: UX and Web Design
 permalink: /work/booking
 mainnav: hide
-header_bg_image: /img/work_booking/booking_hero.jpg
+header_bg_image: ./img/work_booking/booking_hero.jpg
 extra_classes: portfolio theme-booking
 title_offset_y: 45vh
 title_align: left
@@ -41,7 +41,11 @@ order: 4
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_booking/screens' %}
-				        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" />
+				        {% comment %} <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" /> {% endcomment %}
+                        {% responsive_image_block %}
+                        path: .{{ image.path }}
+                        class: "gallery-xscroll_img"
+{% endresponsive_image_block %}
 				    {% endif %}
 				{% endfor %}
 			</div>

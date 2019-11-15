@@ -5,7 +5,7 @@ title: Crappy Turd
 category: Videogame
 permalink: /work/crappy_turd
 mainnav: hide
-header_bg_image: /img/thumbnails/crappy.png
+header_bg_image: ./img/thumbnails/crappy.png
 subtitle: A shitty HTML game 
 worktile_theme: dark
 extra_classes: portfolio theme-crappy

@@ -5,7 +5,7 @@ title: Of Ravens And Racism
 category: Illustrated Microsite
 permalink: /work/odins-ravens
 mainnav: hide
-header_bg_image: /img/work_odinsravens/hero.jpg
+header_bg_image: ./img/work_odinsravens/hero.jpg
 worktile_theme: dark
 extra_classes: portfolio theme-odinsravens
 order: 1
@@ -27,8 +27,8 @@ order: 1
 				</ul>
 			</div>
 		</div>
-		<div class="col-6 offset-1">			
-				<img class="illustration_image" src="{{ '/img/work_odinsravens/combo.png' | prepend: site.baseurl }}">				
+		<div class="col-6 offset-1">										
+				{% responsive_image path: img/work_odinsravens/combo.png class: "illustration_image" alt: "Illustration of Odin and his Ravens"  %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">

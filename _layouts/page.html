@@ -3,11 +3,12 @@ layout: default
 ---
 <article class="page">
   <header class="page-header{% if page.header_bg_image %} has_hero_img{% endif %}">
-	<div class="page-header_bg" 
-		 style="
-		 		{% if page.header_bg_image %} 
-		 			background-image: url( {{ page.header_bg_image }} );
-		 		{% endif %}">
+	<div class="page-header_bg">
+			{% if page.header_bg_image %}
+{% responsive_image_block %}
+path: {{ page.header_bg_image }}
+{% endresponsive_image_block %}
+			{% endif %}
 	</div>
   	<div class="wrapper page-header-wrapper">
 		{% if page.category %} 

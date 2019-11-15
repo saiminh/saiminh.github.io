@@ -6,7 +6,7 @@ excerpt: A small selection of some my most precious little creations.
 category: Illustration
 permalink: /work/illustration
 mainnav: hide
-header_bg_image: /img/thumbnails/illustration.jpg
+header_bg_image: ./img/thumbnails/illustration.jpg
 worktile_theme: dark
 extra_classes: portfolio theme-illustrations-various
 title_offset_y: 65vh

@@ -293,7 +293,7 @@
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    padding-bottom: 100%;
+    // padding-bottom: 100%;
     margin-top:0;
     margin-left: 0;
     margin-right: 0%;
@@ -303,7 +303,7 @@
 
     @media screen and (min-width: 600px) {
         width: 50%;
-        padding-bottom: 40%;    
+        // padding-bottom: 40%;    
 
         .work_list a:nth-child(odd) &  {
             position: relative;
@@ -332,17 +332,20 @@
 }
 
 .work_list_tile_thumb {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: block;
-    background-position: 50% 50%;
-    background-size: cover;
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // display: block;
+    // background-position: 50% 50%;
+    // background-size: cover;
     background-color: $text-color;
-    background-repeat: no-repeat;
-   // background-blend-mode: luminosity;
-   
-    //@extend %hover-transition;
+    // background-repeat: no-repeat;
+}
+
+.work_list_tile_thumb > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 .work_list_tile_thumb:hover {
@@ -448,6 +451,13 @@
         height: calc(var(--vh, 1vh) * 33);
         background: $background-color;
         background: linear-gradient(0deg, $background-color 3%, transparentize($background-color, 1) 100%);
+    }
+
+    & > img {
+        object-fit: cover;
+        width: inherit;
+        height: inherit;
+        position: absolute;
     }
 }
 .page-header-wrapper {

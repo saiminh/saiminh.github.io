@@ -5,7 +5,7 @@ title: JustPeace Labs
 category: Housestyle
 permalink: /work/justpeacelabs
 mainnav: hide
-header_bg_image: /img/work_jpl/jpl_hero.jpg
+header_bg_image: ./img/work_jpl/jpl_hero.jpg
 worktile_theme: dark
 subtitle: Housestyle for the peace technology startup 
 extra_classes: portfolio theme-jpl
@@ -55,7 +55,7 @@ order: 11
 
 	<div class="row">
 		<div class="col-5">
-		<img src="{{ site.baseurl }}/img/work_jpl/website_01.png"  />
+		{% responsive_image path: img/work_jpl/website_01.png alt: "Screenshot of JustPeace Labs Website" %}
 		</div>
 		<div class="col-6 offset-1">
 		<h3>A website that empowers content creators</h3>
