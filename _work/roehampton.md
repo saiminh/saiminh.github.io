@@ -49,7 +49,6 @@ extra_classes: portfolio theme-roehampton
 			<p><span class="drop_cap">O</span>ne of the first touchpoints of the student's journey is the <a href="http://online.roehampton.ac.uk/">official website</a>. Here prospective students learn more about the requirements and offers of the e-learning platform.</p> 
 		</div>
 		<div class="col-7 offset-1">
-			<img alt="alternative text" src="{{ '/img/work_roehampton/online/03-uor-website-home.png' | prepend: site.baseurl }}"  />
 			{% responsive_image path: img/work_roehampton/online/03-uor-website-home.png alt: "Screenshot of the Roehampton Homepage" %}
 		</div>
 	</div>

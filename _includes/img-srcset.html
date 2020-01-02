@@ -15,4 +15,4 @@ Usage:
 {% endfor %}
 {% endcapture %}
 
-<img src="/{{ largest.path }}" class="{{ class }}" style="{{ style }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w">
+<img class="{{ class }} lazyload" style="{{ style }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" data-src="/{{ largest.path }}" data-srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w">
