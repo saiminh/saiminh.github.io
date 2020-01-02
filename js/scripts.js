@@ -119,7 +119,7 @@ $(window).on('load', function(){
     bierbaumInit();
     tlRotate.play(0);
   //  home_ani_tl.play(0);
-    TweenMax.to(".preloader", .5, {
+    TweenMax.to(".preloader", .33, {
        // autoAlpha:0,
         yPercent: -100,
         onComplete: function(){$(".preloader").addClass('loading-complete')}
@@ -170,16 +170,16 @@ $('.work_list a, a.site-title').click(function(event) {
     event.preventDefault();
 
     // Do the async thing
-        TweenMax.from( $(".preloader .preloader_logo-container"), 1, {
+        TweenMax.from( $(".preloader .preloader_logo-container"), .33, {
             y: -10000,
             ease: Expo.easeInOut
         });
-        TweenMax.to( $(".preloader"), 1, {
+        TweenMax.to( $(".preloader"), .33, {
             yPercent: 0,
             ease: Expo.easeInOut,
             onComplete: function(){window.location = href;}
         });
-        TweenMax.to( $('body'), 1, {
+        TweenMax.to( $('body'), .33, {
             backgroundColor: "#FFF",
             ease: Expo.easeInOut
         });
