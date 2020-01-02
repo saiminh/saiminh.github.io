@@ -68,7 +68,7 @@ extra_classes: portfolio theme-roehampton
 			<p><span class="drop_cap">O</span>nce they are signed up, students are encouraged to join inspirenet, a social network where they can interact with each other, create groups and find peers to share their study experience with.</p> 
 		</div>
 		<div class="col-7 offset-1">			
-			{% responsive_image path: img/work_roehampton/online/02-uor-inspirenet-01.jpg alt: "Screenshot of the Inspirenet application on a desktop monitor" %}
+			{% responsive_image path: img/work_roehampton/online/02-uor-inspirenet-01.png alt: "Screenshot of the Inspirenet application on a desktop monitor" %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">

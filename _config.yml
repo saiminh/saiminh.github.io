@@ -45,6 +45,7 @@ responsive_image:
     - width: 300
     - width: 560
     - width: 640  
+    - width: 800
     - width: 1200
     - width: 1600
     #  quality: 90
@@ -97,7 +98,7 @@ responsive_image:
   #   - assets/avatars/*.{jpeg,jpg}
 
 lazy_load_image:
-  src_attr_name: data-src # [required] You need to specify the attributes to be saved for lazy loading
+  src_attr_name: data-srcset # [required] You need to specify the attributes to be saved for lazy loading
 # preload_image: /path/to/image # [optional] you can add a data uri or loading image as fallback src
   class_attr_values: # [optional] if you want to add custom class value, please add values
     - lazyload
