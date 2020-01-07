@@ -46,7 +46,7 @@ order: 10
 	</div>
 	<div class="row">
 		<div class="col-6">									
-				{% responsive_image path: img/work_cwn/cwn-website.png alt: "Cooking with Nothing Website" %}	
+				{% responsive_image path: img/work_cwn/cwn-website.png alt: "Cooking with Nothing Website" sizes: "(min-width:1200px) 620px, (min-width:768px) 50vw, 100vw" %}	
 		</div>
 		<div class="col-6">					
 				<h3>Custom WordPress website</h3>

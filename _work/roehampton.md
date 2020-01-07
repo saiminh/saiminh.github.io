@@ -30,7 +30,7 @@ extra_classes: portfolio theme-roehampton
 	</div>
 	<div class="row">	
 		<div class="col-6">			
-			{% responsive_image path: img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg class: "img--framed" alt: "The Tower bridge in London is resolved into small blue squares" %}
+			{% responsive_image path: img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" class: "img--framed" alt: "The Tower bridge in London is resolved into small blue squares" %}
 		</div>
 		<div class="col-4 offset-1">
 			<h3>Housestyle</h3>
@@ -49,7 +49,7 @@ extra_classes: portfolio theme-roehampton
 			<p><span class="drop_cap">O</span>ne of the first touchpoints of the student's journey is the <a href="http://online.roehampton.ac.uk/">official website</a>. Here prospective students learn more about the requirements and offers of the e-learning platform.</p> 
 		</div>
 		<div class="col-7 offset-1">
-			{% responsive_image path: img/work_roehampton/online/03-uor-website-home.png alt: "Screenshot of the Roehampton Homepage" %}
+			{% responsive_image path: img/work_roehampton/online/03-uor-website-home.png sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" alt: "Screenshot of the Roehampton Homepage" %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">
@@ -58,7 +58,7 @@ extra_classes: portfolio theme-roehampton
 			<p><span class="drop_cap">F</span>or new and aspiring Roehampton students we produced a progressive web app that helped them with the sometimes complicated application and onboarding process.</p>
 		</div>
 		<div class="col-7 offset-1">			
-			{% responsive_image path: img/work_roehampton/online/00-uor-website-mobile03.png alt: "Screenshot of the Roehampton HomepageOnboarding app on an iPhone" %}
+			{% responsive_image path: img/work_roehampton/online/00-uor-website-mobile03.png sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" alt: "Screenshot of the Roehampton HomepageOnboarding app on an iPhone" %}
 			
 		</div>
 	</div>
@@ -68,7 +68,7 @@ extra_classes: portfolio theme-roehampton
 			<p><span class="drop_cap">O</span>nce they are signed up, students are encouraged to join inspirenet, a social network where they can interact with each other, create groups and find peers to share their study experience with.</p> 
 		</div>
 		<div class="col-7 offset-1">			
-			{% responsive_image path: img/work_roehampton/online/02-uor-inspirenet-01.png alt: "Screenshot of the Inspirenet application on a desktop monitor" %}
+			{% responsive_image path: img/work_roehampton/online/02-uor-inspirenet-01.png sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" alt: "Screenshot of the Inspirenet application on a desktop monitor" %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">
@@ -77,7 +77,7 @@ extra_classes: portfolio theme-roehampton
 			<p><span class="drop_cap">O</span>nce they are signed up, students are encouraged to join inspirenet, a social network where they can interact with each other, create groups and find peers to share their study experience with.</p> 
 		</div>
 		<div class="col-7 offset-1">		
-			{% responsive_image path: img/work_roehampton/online/uor-classroom-01.jpg alt: "Screenshot of the Roehampton online classroom application on a desktop monitor" %}
+			{% responsive_image path: img/work_roehampton/online/uor-classroom-01.jpg sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" alt: "Screenshot of the Roehampton online classroom application on a desktop monitor" %}
 			
 		</div>
 	</div>

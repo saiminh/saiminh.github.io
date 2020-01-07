@@ -39,17 +39,17 @@ order: 5
 	<div class="row">
 		<div class="col-4 ">
 			<div class="illustration">				
-				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_01.png class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
+				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_01.png sizes: "(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
 			</div>
 		</div>	
 		<div class="col-4 ">
 			<div class="illustration">
-				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_02.png class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
+				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_02.png sizes: "(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
 			</div>
 		</div>	
 		<div class="col-4 ">
 			<div class="illustration">
-				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_03.png class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
+				{% responsive_image path: img/work_hatetracker/HateTracker_screenshot_03.png sizes: "(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" class: "mobile_screenshot" style: "max-width: 320px;" alt: "Screenshot of HateTracker" %}
 			</div>
 		</div>	
 	</div>
@@ -78,7 +78,7 @@ order: 5
 		</div>
 
 		<div class="col-6">
-		{% responsive_image path: img/work_hatetracker/website.png alt: "Screenshot of HateTracker Website" %}
+		{% responsive_image path: img/work_hatetracker/website.png alt: "Screenshot of HateTracker Website" sizes: "(min-width:1200px) 610px, (min-width:768px) 50vw, 100vw" %}
 		</div>
 
 	</div>

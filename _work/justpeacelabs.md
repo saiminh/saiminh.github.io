@@ -55,7 +55,7 @@ order: 11
 
 	<div class="row">
 		<div class="col-5">
-		{% responsive_image path: img/work_jpl/website_01.png alt: "Screenshot of JustPeace Labs Website" %}
+		{% responsive_image path: img/work_jpl/website_01.png alt: "Screenshot of JustPeace Labs Website" sizes: "(min-width:1200px) 620px, (min-width:768px) 50vw, 100vw" %}
 		</div>
 		<div class="col-6 offset-1">
 		<h3>A website that empowers content creators</h3>

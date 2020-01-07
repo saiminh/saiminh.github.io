@@ -47,10 +47,11 @@ order: 1
 		{% for image in site.static_files %}
 		    {% if image.path contains 'img/work_liverpool/housestyle' %}
 		    	<div class="col-6">			        
-                    {% responsive_image_block %}
-                    path:  ./{{ image.path }}
-                    class: "grid_img"
-                    {% endresponsive_image_block %}
+{% responsive_image_block %}
+sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw"
+path:  ./{{ image.path }}
+class: "grid_img"
+{% endresponsive_image_block %}
 			    </div>
 		    {% endif %}
 		{% endfor %}
@@ -66,10 +67,11 @@ order: 1
 		{% for image in site.static_files %}
 		    {% if image.path contains 'img/work_liverpool/print' %}
 		    	<div class="col-6">			        
-					{% responsive_image_block %}
-                    path:  ./{{ image.path }}
-                    class: "grid_img"
-                    {% endresponsive_image_block %}
+{% responsive_image_block %}
+sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw"
+path:  ./{{ image.path }}
+class: "grid_img"
+{% endresponsive_image_block %}
 			    </div>
 		    {% endif %}
 		{% endfor %}
@@ -90,12 +92,12 @@ order: 1
 		<div class="col-8 overflow">
 			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
-				    {% if image.path contains 'img/work_liverpool/online' %}
-				        
-						{% responsive_image_block %}
-                        path:  ./{{ image.path }}
-                        class: "gallery-xscroll_img"
-                        {% endresponsive_image_block %}
+				    {% if image.path contains 'img/work_liverpool/online' %}				        
+{% responsive_image_block %}
+sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw"
+path:  ./{{ image.path }}
+class: "gallery-xscroll_img"
+{% endresponsive_image_block %}
 				    {% endif %}
 				{% endfor %}
 			</div>

@@ -28,7 +28,7 @@ order: 1
 			</div>
 		</div>
 		<div class="col-6 offset-1">										
-				{% responsive_image path: img/work_odinsravens/combo.png class: "illustration_image" alt: "Illustration of Odin and his Ravens"  %}
+				{% responsive_image path: img/work_odinsravens/combo.png sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" class: "illustration_image" alt: "Illustration of Odin and his Ravens"  %}
 		</div>
 	</div>
 	<div class="row row--aligncenter">

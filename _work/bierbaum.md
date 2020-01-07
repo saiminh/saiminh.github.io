@@ -267,7 +267,7 @@ order: 9
 
 	<div class="row row--aligncenter row--reverse">		
 		<div class="col-7 offset-1">
-		{% responsive_image path: img/work_bierbaum/jph_shop_photo.jpg alt: "Photograph of Bierbaum store window" class: "img--framed" %}
+		{% responsive_image path: img/work_bierbaum/jph_shop_photo.jpg sizes: "(min-width:1200px) 765px, (min-width:768px) 66vw, 100vw" alt: "Photograph of Bierbaum store window" class: "img--framed" %}
 			{% comment %} <img class="img--framed" src="{{ site.baseurl }}/img/work_bierbaum/jph_shop_photo.jpg"> {% endcomment %}
 			<em class="illustration_caption">Original Bierbaum location at Jan Pieter Heijestraat, Amsterdam</em>
 		</div>
@@ -288,7 +288,7 @@ order: 9
 		</div>
 		<div class="col-7 offset-1">
 			{% comment %} <img src="{{ site.baseurl }}/img/work_bierbaum/sf_bierbaum_sample.png" > {% endcomment %}
-			{% responsive_image path: img/work_bierbaum/sf_bierbaum_sample.png alt: "Sample of the Bierbaum typeface" %}
+			{% responsive_image path: img/work_bierbaum/sf_bierbaum_sample.png sizes: "(min-width:1200px) 765px, (min-width:768px) 66vw, 100vw" alt: "Sample of the Bierbaum typeface" %}
 			<em style="margin-top: 1em" class="illustration_caption">SF Bierbaum: Art Deco All Caps Display font.</em>
 		</div>
 	</div>

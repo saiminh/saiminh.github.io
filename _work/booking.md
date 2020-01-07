@@ -42,9 +42,10 @@ order: 4
 				{% for image in site.static_files %}
 				    {% if image.path contains 'img/work_booking/screens' %}
 				        {% comment %} <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" /> {% endcomment %}
-                        {% responsive_image_block %}
-                        path: .{{ image.path }}
-                        class: "gallery-xscroll_img"
+{% responsive_image_block %}
+path: .{{ image.path }}
+sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw"
+class: "gallery-xscroll_img"
 {% endresponsive_image_block %}
 				    {% endif %}
 				{% endfor %}
