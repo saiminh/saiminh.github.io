@@ -8,13 +8,44 @@ mainnav: hide
 extra_classes: home theme-home
 ---
 
-		
+<div class="page-header_bg"></div>
 <div class="wrapper">
 	<div class="row">
-		<h1 class="hero_headline"><span class="rotater_one">Practical design,</span><br><span class="rotater_two">with a unique angle</span></h1>
-		<div class="col-6 offset-3">
+		<div class="col-12">
+			<h1 class="hero_headline">I'm a multi-disciplinary Designer working in graphic design, UX/UI and frontend development. I like to create products that help good companies reach their audiences. </h1>
+		</div>
+		<!-- <div class="col-8 offset-0">
 			<p><span class="drop_cap">S</span>imon Flöter is a multi-disciplinary Designer. He works in graphic and identity design, as well as in UX/UI and frontend development. He likes to create work that helps good companies reach their audiences. Work that influences culture, helps good causes and builds business value.</p>
 			<p>He is also an <a href="https://floter.ink">illustrator</a>.</p>
-		</div>
+		</div> -->
 	</div>
 </div>
+
+<script>
+
+window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+			var hometl = new TimelineLite( {paused: true}), 
+			mySplitText = new SplitText(".hero_headline", {type:"lines"}), 
+			lines = mySplitText.lines; //an array of all the divs that wrap each character
+			hometl.set(".hero_headline", {
+				position: "relative",
+				overflow: "hidden"
+			})
+			.staggerTo(lines, 2.5, {
+				xPercent: 100,
+				autoAlpha: 0
+			}, 0.3);
+
+			$(window).scroll( function(){
+				var st = $(this).scrollTop();
+				var homeht = $('.hero_headline').height() + $('.hero_headline').offset().top;
+				if( st < homeht && st >= 0 ){
+					windowScroll = st/homeht;
+					hometl.progress( windowScroll );
+				}
+			});
+        })(jQuery);
+    });
+
+</script>

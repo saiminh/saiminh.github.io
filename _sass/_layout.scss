@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $background-color;
+    background-color: $text-color;
     z-index: 101;
 
     .preloader_logo-container {
@@ -26,7 +26,7 @@
         max-width: none;
 
         & * {
-            fill: #000;
+            fill: #FFF;
         }
 
         & .dash {
@@ -45,7 +45,7 @@
         display: block;
         width: 30px;
         height: 8px;
-        background-color: #000;
+        background-color: #FFF;
         animation: spin 1s forwards alternate infinite;
     }
 }

@@ -6,7 +6,6 @@ var galleryInit = function(){
         $('.gallery-xscroll').not('.slick-initialized').slick();
     }
 };
-
 // ------------------------------------------
 // Smooth scrolling when clicking on anchor link
 // ------------------------------------------
@@ -21,51 +20,9 @@ var smoothScrollInit =  function() {
         event.preventDefault();
     });                       
 };
-
-// ------------------------------------------
-// Home Page Animation
-// ------------------------------------------
-TweenLite.defaultEase =  Power2.easeInOut;
-
-tlRotate = new TimelineMax({ paused: true });
-tlRotate.fromTo($('.rotater_two'), 1, {
-    rotationY: 0,
-    y: 0
-}, {
-    rotationY: 40,
-    ease:  Back.easeOut.config( 1.7),
-    color: "#000",
-    y: 0,
-    scale: 1.2
-}, 1)
-.staggerFromTo("#Layer_1 line", 1, {
-    strokeWidth: 0
-},{
-    strokeWidth: 80,
-    ease: Power0.easeNone,
-    repeat: 1,
-    yoyo: true
-}, .02, 0)
-;
-
-
-/*// ------------------------------------------
-// Bloat King
-// ------------------------------------------
-var bloatkingInit = function(){
-    if( $('.animation-frame').length ){
-        console.log('animation-frame');
-        var iframe = $('.animation-iframe');
-        $('.button_bloatking-replay').on('click', function(){
-        iframe.src = iframe.src;    
-        })
-    };
-};*/
-
 // ------------------------------------------
 // Bierbaum Tree
 // ------------------------------------------
-// If you use this code, please link to this pen (cdpn.io/rkcjt).
 var bierbaumInit = function(){
     if( $('.bierbaum-logo').length ){
         console.log('bierbaum');
@@ -117,7 +74,6 @@ $(window).on('load', function(){
     smoothScrollInit();
     galleryInit();    
     bierbaumInit();
-    tlRotate.play(0);
   //  home_ani_tl.play(0);
     TweenMax.to(".preloader", .33, {
        // autoAlpha:0,
@@ -131,7 +87,6 @@ $(window).on('load', function(){
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });  
 
-
 // ------------------------------------------
 //  On Scroll stuff
 // ------------------------------------------
@@ -139,7 +94,7 @@ var tl = new TimelineLite( {paused: true} )
     .fromTo(".page-header_bg", .5, {
         autoAlpha: 1,
         //yPercent: 0
-    }, {
+        }, {
         autoAlpha: 0,
         //yPercent: -10,
         ease: Power0.easeNone
@@ -147,11 +102,22 @@ var tl = new TimelineLite( {paused: true} )
     .to(".page-header-wrapper", .5, {
         yPercent: 60,
         ease: Power0.easeNone
-    },0);  
+    },0)
+    .fromTo("#this_page_content", .5, {
+        scale: .5,
+    }, {
+        scale: 1
+    }, 0)
+    // .fromTo(".hero_headline", .5, {
+    //     xPercent: 0
+    // }, {
+    //     xPercent: 100,
+    //     ease: Power0.easeNone
+    // }, 0);
 
 $(window).scroll( function(){
-  var st = $(this).scrollTop();
-  var ht = $( '.page-header_bg' ).height()*1;
+   var st = $(this).scrollTop();
+   var ht = $( '.page-header_bg' ).height()*1;
    if( st < ht && st >= 0 ){
         windowScroll = st/ht;
         tl.progress( windowScroll );
