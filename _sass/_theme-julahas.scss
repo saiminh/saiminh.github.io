@@ -1,0 +1,13 @@
+.theme-julahas {
+
+    @include theme-colors(#BF824B, #FFF);
+    
+    .wrapper_outer {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .devices-container {
+        
+    }
+
+}

@@ -491,7 +491,7 @@
 
 .page-subtitle {
     font-family: $heading-font-family;
-    font-weight: $heading-font-weight;
+    font-weight: $base-font-weight;
     font-size: 1.5rem;
     line-height: 1.2;
     padding: 0;
@@ -640,6 +640,9 @@
         }
         .col-2 {
             flex-basis: 16.666666667%;
+        }
+        .col-1 {
+            flex-basis: 8.333333333%;
         }
         .offset-1 {
             margin-left: 8.333333333%;   

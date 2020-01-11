@@ -1,7 +1,7 @@
 .theme-home {
 	@include theme-colors(#FFF, #000);
 
-	.hero_headline {
+	.hero_headline h1{
 		font-size: 6vw;
 		font-family: $special-font-family;
 		font-weight: $special-font-weight;
@@ -20,18 +20,17 @@
 		}
 	
 
-		& .rotater_two,
-		& .rotater_one {
-			display: inline-block;
-			margin:0;
-			//font-style: normal;
-			transform-origin: 0% 90%;	
-
-			@media (max-width: 600px) {
+		a {
+			position: relative;
+			&:after {
+				content: '';
+				background-color: #000;
+				position: absolute;
+				bottom: 1vw;
+				left: 0;
+				width: 100%;
+				height: .5vw;
 			}
-		}
-		& .rotater_two {
-			transform-origin: 0% 0%;
 		}
 	}
 }

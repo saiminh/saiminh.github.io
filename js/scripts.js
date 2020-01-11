@@ -85,6 +85,10 @@ $(window).on('load', function(){
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    var st = $(this).scrollTop();
+    var ht = $( '.page-header_bg' ).height()*1;
+    windowScroll = st/ht;
+    tl.progress( windowScroll );
 });  
 
 // ------------------------------------------
@@ -108,16 +112,10 @@ var tl = new TimelineLite( {paused: true} )
     }, {
         scale: 1
     }, 0)
-    // .fromTo(".hero_headline", .5, {
-    //     xPercent: 0
-    // }, {
-    //     xPercent: 100,
-    //     ease: Power0.easeNone
-    // }, 0);
 
 $(window).scroll( function(){
-   var st = $(this).scrollTop();
-   var ht = $( '.page-header_bg' ).height()*1;
+    st = $(this).scrollTop();
+    ht = $( '.page-header_bg' ).height()*1;
    if( st < ht && st >= 0 ){
         windowScroll = st/ht;
         tl.progress( windowScroll );

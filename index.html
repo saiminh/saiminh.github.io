@@ -11,8 +11,9 @@ extra_classes: home theme-home
 <div class="page-header_bg"></div>
 <div class="wrapper">
 	<div class="row">
-		<div class="col-12">
-			<h1 class="hero_headline">I'm a multi-disciplinary Designer working in graphic design, UX/UI and frontend development. I like to create products that help good companies reach their audiences. </h1>
+		<div class="col-12 hero_headline">
+			<h1>I'm Simon, this is my Design portfolio. If you need my help just <a class="hollerer" href="mailto:simon@floter.design?subject=Contact%20via%20floter.design&body=Hi%20Simon!%20%0A%0AMy%20name%20is%20_______%20%0A%20%0AI'm%20inquiring%20about%20_______%0A%0AYou%20can%20reach%20me%20at%20_______">holler!</a></h1>
+			<h1>I create products that help good companies reach their audiences. I do that using  graphic design, UX/UI and frontend-development skills. By night I'm an <a href="https://floter.ink">Illustrator</a>.</h1>
 		</div>
 		<!-- <div class="col-8 offset-0">
 			<p><span class="drop_cap">S</span>imon Flöter is a multi-disciplinary Designer. He works in graphic and identity design, as well as in UX/UI and frontend development. He likes to create work that helps good companies reach their audiences. Work that influences culture, helps good causes and builds business value.</p>
@@ -26,15 +27,16 @@ extra_classes: home theme-home
 window.addEventListener('DOMContentLoaded', function() {
         (function($) {
 			var hometl = new TimelineLite( {paused: true}), 
-			mySplitText = new SplitText(".hero_headline", {type:"lines"}), 
+			mySplitText = new SplitText(".hero_headline h1", {type:"lines"}), 
 			lines = mySplitText.lines; //an array of all the divs that wrap each character
-			hometl.set(".hero_headline", {
+			hometl.set(".hero_headline h1", {
 				position: "relative",
 				overflow: "hidden"
 			})
 			.staggerTo(lines, 2.5, {
 				xPercent: 100,
-				autoAlpha: 0
+				autoAlpha: 0,
+				ease: Power2.easeIn
 			}, 0.3);
 
 			$(window).scroll( function(){
@@ -45,6 +47,23 @@ window.addEventListener('DOMContentLoaded', function() {
 					hometl.progress( windowScroll );
 				}
 			});
+
+			var hollertl = new TimelineLite( {paused: true} ),
+			mySplitTextHoller = new SplitText(".hollerer", {type:"chars"}), 
+			hollerchars = mySplitTextHoller.chars;
+			hollertl.staggerTo(hollerchars, .15, {
+				yPercent: -10,
+				repeat: -1,
+				yoyo: true
+			}, .1)
+
+			$('.hollerer').on('mouseenter', function(){
+				hollertl.play();
+			}).on('mouseleave', function(){
+				hollertl.pause(0);
+			})
+
+
         })(jQuery);
     });
 
