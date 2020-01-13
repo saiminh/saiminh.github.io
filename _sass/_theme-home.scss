@@ -1,6 +1,8 @@
 .theme-home {
 	@include theme-colors(#FFF, #000);
 
+	
+
 	.hero_headline h1{
 		font-size: 6vw;
 		font-family: $special-font-family;
@@ -13,10 +15,12 @@
 		perspective: 800px;
 		margin-bottom: 1em;
 
+		@media (min-width: 1400px) {
+			font-size: 5vw;
+		}
+
 		@media (max-width: 600px) {
 			font-size: 7vw;
-			perspective: 600px;
-			margin: 3em 0;
 		}
 	
 

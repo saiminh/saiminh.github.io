@@ -2,7 +2,7 @@
 layout: page
 type: portfolio
 title: JustPeace Labs
-category: Housestyle
+category: Housestyle and Website
 permalink: /work/justpeacelabs
 mainnav: hide
 header_bg_image: ./img/work_jpl/jpl_hero.jpg

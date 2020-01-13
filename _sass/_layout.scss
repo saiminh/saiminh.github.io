@@ -73,6 +73,10 @@
     top: 0;
     width: 100%;
 
+    @media screen and (min-width: 1800px) {
+        position: fixed;
+    }
+
     & .wrapper {
         max-width: none;
         display: flex;
@@ -300,6 +304,8 @@
     margin-bottom: 0%;
     background-color: #EEE;
     box-sizing: border-box;
+    transform-origin: 0 50%;
+    transition: transform .2s ease-out;
 
     @media screen and (min-width: 600px) {
         width: 50%;
@@ -356,6 +362,10 @@
     position: absolute;
     top: 0;
     padding: 1rem;
+   
+    .work_list_tile:hover & {
+        background-color: $text-color;
+    }
       
     @media screen and (min-width: 600px) {
         padding: 1.5rem;
@@ -375,9 +385,28 @@
     font-size: 1rem;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
-    margin: 0;
+    margin: 0 0 .2em 0;
     line-height: 1.2;
     color: $background-color;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -.2em;
+        left: 0;
+        right: 4px;
+        width: 10%;
+        background-color: $background-color;
+        height: 2px;
+        transform-origin: left 50%;
+        transition: transform 5s ease-out;
+    }
+
+    .work_list_tile:hover &:after {
+        transform: scaleX(10);
+    }
 }
 
 /**

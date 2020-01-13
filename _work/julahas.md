@@ -54,6 +54,7 @@ order: 12
             <div class="col-6 offset-3">
                 <h2>Shopify website</h2>
                 <p>The website is running on Shopify with a custom made theme. It was important for the client to be able to tell the story about the process and philosophy of the brand, so custom templates had to be created to realize the original vision with the Shopify CMS.</p>
+                <a class="button" href="https://www.julahas.com">Visit julahas.com</a>
             </div>
         </div>
     </div>
