@@ -360,11 +360,30 @@
 
 .work_list_tile_header {
     position: absolute;
+    overflow: hidden;
     top: 0;
     padding: 1rem;
-   
+    transition: transform .4s ease-out;
+
     .work_list_tile:hover & {
+        transform: translate(-3%, -7%);
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: $text-color;
+        transform: translateX(-100%);
+        transition: transform .2s ease-in-out;
+        z-index: 1;
+    }
+   
+    .work_list_tile:hover &:after {
+        transform: translateX(0);
     }
       
     @media screen and (min-width: 600px) {
@@ -379,6 +398,8 @@
     font-weight: $special-font-weight;
     line-height: 1.2;
     color: $background-color;
+    position: relative;
+    z-index: 2;
 }
 
 .work_list_tile_subtitle{
@@ -389,6 +410,7 @@
     line-height: 1.2;
     color: $background-color;
     position: relative;
+    z-index: 2;
 
     &:after {
         content: '';

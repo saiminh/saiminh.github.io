@@ -29,8 +29,10 @@ order: 12
 			</div>
 		</div>
 		<div class="col-6 offset-1">
+            <h3>Sustainable multi-use capes</h3>
 			<p><span class="drop_cap">J</span>ulahas is an exciting new fashion brand that produces natural, seasonless, free-size Capes.</p>
-            <p>These are co-created by a team of young, global designers and rural artisans and then handcrafted with 100% natural and responsibly sourced wool, made in small batches. The capes can be worn in many different ways (at least 15).</p>				 
+            <p>These are co-created by a team of young, global designers and rural artisans and then handcrafted with 100% natural and responsibly sourced wool, made in small batches. The capes can be worn in many different ways (at least 15).</p>
+            <p>I helped to bring the brands' values to life visually and to create a website and shop that translates these into sales.</p>
 		</div>						
 	</div>
     <div class="row">
