@@ -130,7 +130,7 @@ var tl_blackface = new TimelineLite( {paused: true})
 		ease: Linear.easeNone
 	}, 0);
 
-	var introheight = $( '.intro_stage' ).height()/2.5;
+	var introheight = $( '.intro_stage' ).height()/1.5;
 	var introoffset = $( '.intro_stage' ).offset().top;
 	var startintro = 0;
 	var endintro = introheight + introoffset;
