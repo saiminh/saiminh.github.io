@@ -10,7 +10,11 @@
     background-color: $text-color;
     z-index: 101;
 
-    .preloader_logo-container {
+    &.loading-complete {
+        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    & .preloader_logo-container {
         width: 200px;
         height: 200px;
         position: absolute;
