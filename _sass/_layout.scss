@@ -11,7 +11,8 @@
     z-index: 101;
 
     &.loading-complete {
-        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
+        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0)!important;
+        transition: transform .2s ease-in-out;
     }
 
     & .preloader_logo-container {
