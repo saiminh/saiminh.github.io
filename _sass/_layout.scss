@@ -11,7 +11,7 @@
     z-index: 101;
 
     &.loading-complete {
-        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0)!important;
+        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
         transition: transform .2s ease-in-out;
     }
 
@@ -593,9 +593,6 @@
         padding-top: 140px;        
     }
 
-}
-
-.page-content {   
 }
 
 .drop_cap { 
