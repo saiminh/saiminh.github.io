@@ -10,9 +10,10 @@
     background-color: $text-color;
     z-index: 101;
 
-    &.loading-complete {
-        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
-        transition: transform .2s ease-in-out;
+    .loading-complete & {
+     //   transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
+     //   transition: transform .2s ease-in-out;
+     display: none;
     }
 
     & .preloader_logo-container {

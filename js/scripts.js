@@ -75,10 +75,12 @@ $(window).on('load', function(){
     galleryInit();    
     bierbaumInit();
   //  home_ani_tl.play(0);
-    TweenMax.to(".preloader", .33, {
-       // autoAlpha:0,
-        yPercent: -100,
-        onComplete: function(){$(".preloader").addClass('loading-complete')}
+    TweenMax.to(".preloader", .5, {
+        scaleY: 0,
+        ease: Expo.easeInOut,
+        onComplete: function(){
+            $("body").addClass('loading-complete');
+        }
     });
     $("body").addClass("assets_loaded");
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -132,21 +134,13 @@ $('.work_list a, a.site-title').click(function(event) {
 
     // Don't follow the link
     event.preventDefault();
-
+    $("body").removeClass("loading-complete");
     // Do the async thing
-        TweenMax.from( $(".preloader .preloader_logo-container"), .33, {
-            y: -10000,
-            ease: Expo.easeInOut
-        });
-        TweenMax.to( $(".preloader"), .33, {
-            yPercent: 0,
+        TweenMax.to( $(".preloader"), .5, {
+           // yPercent: 0,
+            scaleY: 1,
             ease: Expo.easeInOut,
             onComplete: function(){window.location = href;}
         });
-        TweenMax.to( $('body'), .33, {
-            backgroundColor: "#FFF",
-            ease: Expo.easeInOut
-        });
-        // go to the link   
 });
 
