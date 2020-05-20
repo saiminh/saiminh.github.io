@@ -1,88 +1,16 @@
 // ------------------------------------------
-// slick.js gallery init
-// ------------------------------------------
-var galleryInit = function(){
-    if( $('.gallery-xscroll').not('.slick-initialized').length ){
-        $('.gallery-xscroll').not('.slick-initialized').slick();
-    }
-};
-// ------------------------------------------
-// Smooth scrolling when clicking on anchor link
-// ------------------------------------------
-var smoothScrollInit =  function() {
-    $('a.anchorlink').bind('click',function(event){
-        var $anchor = $(this);
-
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 50
-        }, 1000);
-
-        event.preventDefault();
-    });                       
-};
-// ------------------------------------------
-// Bierbaum Tree
-// ------------------------------------------
-var bierbaumInit = function(){
-    if( $('.bierbaum-logo').length ){
-        console.log('bierbaum');
-        var DrawEye = function(eyecontainer, pupil){
-            // Initialise core variables
-            var eyeposx = $(eyecontainer).offset().left;
-            var eyeposy = $(eyecontainer).offset().top;
-            var r = $(pupil).outerWidth()/2;
-            var center = {
-            x: $(eyecontainer).outerWidth()/2 - r, 
-            y: $(eyecontainer).outerHeight()/2 - r
-            };
-            var distanceThreshold = $(eyecontainer).width()/2 - r;
-            var mouseX = center.x, mouseY = center.y;
-
-            // Listen for mouse movement
-            $(window).mousemove(function(e){ 
-                var d = {
-                    x: e.pageX - r - eyeposx - center.x,
-                    y: e.pageY - r - eyeposy - center.y
-                };
-                var distance = Math.sqrt(d.x*d.x + d.y*d.y);
-                if (distance < distanceThreshold) {
-                    mouseX = e.pageX - eyeposx - r;
-                    mouseY = e.pageY - eyeposy - r;
-                } else {
-                    mouseX = d.x / distance * distanceThreshold + center.x;
-                    mouseY = d.y / distance * distanceThreshold + center.y;
-                }
-            });       
-            // Update pupil location
-            var pupil = $(pupil);
-            var xp = center.x, yp = center.y;
-            var loop = setInterval(function(){
-                // change 1 to alter damping/momentum - higher is slower
-                xp += (mouseX - xp) / 50;
-                yp += (mouseY - yp) / 50;
-                pupil.css({left:xp, top:yp});    
-            }, 1);
-        };
-        var theEye = new DrawEye("#Tree_Eye_BG--anim", "#Tree_Eye_inner--anim");
-    };
-};
-
-// ------------------------------------------
 //  On Load stuff
 // ------------------------------------------
-$(window).on('load', function(){   
-    smoothScrollInit();
-    galleryInit();    
-    bierbaumInit();
-  //  home_ani_tl.play(0);
-    TweenMax.to(".preloader", .5, {
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.to(".preloader", {
+        duration: .5,
         scaleY: 0,
-        ease: Expo.easeInOut,
+        ease: "expo.inOut",
         onComplete: function(){
-            $("body").addClass('loading-complete');
+            document.querySelector("body").classList.add('loading-complete');
         }
     });
-    $("body").addClass("assets_loaded");
+    document.querySelector("body").classList.add("assets_loaded");
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
@@ -96,28 +24,31 @@ $(window).on('load', function(){
 // ------------------------------------------
 //  On Scroll stuff
 // ------------------------------------------
-var tl = new TimelineLite( {paused: true} )
-    .fromTo(".page-header_bg", .5, {
+var tl = gsap.timeline( {paused: true} )
+    .fromTo(".page-header_bg", {
+        duration: .5,
         autoAlpha: 1,
         //yPercent: 0
         }, {
         autoAlpha: 0,
         //yPercent: -10,
-        ease: Power0.easeNone
+        ease: "none"
     }, 0)
-    .to(".page-header-wrapper", .5, {
+    .to(".page-header-wrapper", {
+        duration: .5,
         yPercent: 60,
-        ease: Power0.easeNone
+        ease: "none"
     },0)
-    .fromTo("#this_page_content", .5, {
+    .fromTo("#this_page_content", {
+        duration: .5,
         scale: .5,
     }, {
         scale: 1
     }, 0)
 
-$(window).scroll( function(){
-    st = $(this).scrollTop();
-    ht = $( '.page-header_bg' ).height()*1;
+    window.addEventListener("scroll", function(e){
+    st = document.querySelector("html").scrollTop;
+    ht = document.querySelector( '.page-header_bg' ).getBoundingClientRect().height*1;
    if( st < ht && st >= 0 ){
         windowScroll = st/ht;
         tl.progress( windowScroll );
@@ -128,19 +59,19 @@ $(window).scroll( function(){
 //  On Click Link stuff
 // ------------------------------------------
 
-$('.work_list a, a.site-title').click(function(event) {
+document.querySelectorAll('.work_list a, a.site-title').forEach(element => element.addEventListener("click", function(event) {
     // Remember the link href
     var href = this.href;
 
     // Don't follow the link
     event.preventDefault();
-    $("body").removeClass("loading-complete");
+    document.querySelector("body").classList.remove("loading-complete");
     // Do the async thing
-        TweenMax.to( $(".preloader"), .5, {
-           // yPercent: 0,
+        gsap.to( ".preloader", {
+            duration: .5,
             scaleY: 1,
-            ease: Expo.easeInOut,
+            ease: "expo.inOut",
             onComplete: function(){window.location = href;}
         });
-});
+}));
 

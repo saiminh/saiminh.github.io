@@ -79,7 +79,7 @@ class: "grid_img"
 	</div>
 
 	<div class="row">		
-		<div class="col-4 col-text">
+		<div class="col-5 inset-1 col-text">
 			<h3>Website</h3>
 			<p><span class="drop_cap">T</span>he website of the University Online Degrees is an information portal for students and a lead capture platform for new prospects.</p>
 			<ul class="quick_info_box_list">
@@ -89,20 +89,17 @@ class: "grid_img"
 				<li>Frontend development</li>
 			</ul>
 		</div>
-		<div class="col-8 overflow">
-			<div class="gallery-xscroll">
 				{% for image in site.static_files %}
-				    {% if image.path contains 'img/work_liverpool/online' %}				        
+				    {% if image.path contains 'img/work_liverpool/online' %}			
+				<div class="col-6">		        
 {% responsive_image_block %}
 sizes: "(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw"
 path:  ./{{ image.path }}
 class: "gallery-xscroll_img"
 {% endresponsive_image_block %}
+				</div>
 				    {% endif %}
-				{% endfor %}
-			</div>
-		</div>
-		
+				{% endfor %}		
 	</div>
 
 	

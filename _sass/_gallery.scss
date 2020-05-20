@@ -1,23 +1,17 @@
 .gallery-xscroll {
 	white-space: nowrap;
 	height: auto;
+	overflow-x: auto;
+	width: 100%;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 	
-	&.slick-initialized {
-		cursor: grab;
-		cursor: -webkit-grab; 
-		cursor: -moz-grab;
-	}
-
-	&.slick-initialized:active {
-		cursor: grabbing;
-		cursor: -webkit-grabbing;
-		cursor: -moz-grabbing;
-	}
 }
 
 .gallery-xscroll_img {
 	display: inline-block;
 	width: 100%;
+	scroll-snap-align: start;
 }
 
 .slick-arrow {
