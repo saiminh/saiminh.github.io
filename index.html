@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function() {
 					windowScroll = st/homeht;
 					hometl.progress( windowScroll );
 				}
-				else {
+				else if ( st > homeht ) {
 					hometl.progress(1);
 				}
 			});
