@@ -25,46 +25,58 @@ extra_classes: home theme-home
 <script>
 
 window.addEventListener('DOMContentLoaded', function() {
-        (function($) {
-			var hometl = new TimelineLite( {paused: true}), 
+        
+			var hometl = gsap.timeline( {paused: true}), 
 			mySplitText = new SplitText(".hero_headline h1", {type:"lines"}), 
 			lines = mySplitText.lines; //an array of all the divs that wrap each character
 			hometl.set(".hero_headline h1", {
 				position: "relative",
 				overflow: "hidden"
 			})
-			.staggerTo(lines, 2.5, {
+			.to(lines, {
+				duration: 5,
 				xPercent: 100,
 				autoAlpha: 0,
-				ease: Power2.easeIn
-			}, 0.3);
+				ease: "power2.in",
+				stagger: 1
+			});
 
-			$(window).scroll( function(){
-				var st = $(this).scrollTop();
-				var homeht = $('.hero_headline').height() + $('.hero_headline').offset().top;
+			window.addEventListener("scroll", function(e){
+				var st = document.querySelector("html").scrollTop;
+				var headlineHeight = document.querySelector('.hero_headline').getBoundingClientRect().height;
+				var headlinePos = document.querySelector('.hero_headline').getBoundingClientRect().top;
+				var homeht =  headlineHeight + headlinePos + window.innerHeight; 
 				if( st < homeht && st >= 0 ){
 					windowScroll = st/homeht;
 					hometl.progress( windowScroll );
 				}
+				else {
+					hometl.progress(1);
+				}
 			});
 
-			var hollertl = new TimelineLite( {paused: true} ),
+			var hollertl = gsap.timeline( {paused: true} ),
 			mySplitTextHoller = new SplitText(".hollerer", {type:"chars"}), 
 			hollerchars = mySplitTextHoller.chars;
-			hollertl.staggerTo(hollerchars, .15, {
-				yPercent: -10,
-				repeat: -1,
-				yoyo: true
-			}, .1)
+			hollertl.to(hollerchars, {
+				duration: 0.15,
+				yPercent: -10,				
+				stagger: {
+						each: .1,
+						repeat: -1,
+						yoyo: true
+				}
+			})
 
-			$('.hollerer').on('mouseenter', function(){
+			document.querySelector('.hollerer').addEventListener('mouseenter', function(){
 				hollertl.play();
-			}).on('mouseleave', function(){
+			})
+
+			document.querySelector('.hollerer').addEventListener('mouseleave', function(){
 				hollertl.pause(0);
 			})
 
 
-        })(jQuery);
     });
 
 </script>

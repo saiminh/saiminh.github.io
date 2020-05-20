@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    var st = $(this).scrollTop();
-    var ht = $( '.page-header_bg' ).height()*1;
+    var st = document.querySelector("body").scrollTop;
+    var ht = document.querySelector( '.page-header_bg' ).getBoundingClientRect().height*1;
     windowScroll = st/ht;
     tl.progress( windowScroll );
 });  
