@@ -1,3 +1,11 @@
 .theme-booking {
 	@include theme-colors(#2293ff, #FFF);
 }
+.theme-adidas {
+	@include theme-colors(#033F97, #FFF);
+	.wrapper_outer {
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 15rem;
+	}
+}

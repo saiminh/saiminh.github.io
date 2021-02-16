@@ -1,8 +1,5 @@
 .theme-home {
 	@include theme-colors(#FFF, #000);
-
-	
-
 	.hero_headline h1{
 		font-size: 6vw;
 		font-family: $special-font-family;
@@ -13,17 +10,13 @@
 		font-kerning: none;
 		font-feature-settings: normal;		
 		perspective: 800px;
-		margin-bottom: 1em;
-
+		padding-bottom: 1em;
 		@media (min-width: 1400px) {
 			font-size: 5vw;
 		}
-
 		@media (max-width: 600px) {
 			font-size: 9vw;
 		}
-	
-
 		a {
 			position: relative;
 			&:after {

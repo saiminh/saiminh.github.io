@@ -11,49 +11,46 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     document.querySelector("body").classList.add("assets_loaded");
+    gsap.registerPlugin(ScrollTrigger);
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    var st = document.querySelector("body").scrollTop;
-    var ht = document.querySelector( '.page-header_bg' ).getBoundingClientRect().height*1;
-    windowScroll = st/ht;
-    tl.progress( windowScroll );
-});  
+    // var st = document.querySelector("body").scrollTop;
+    // var ht = document.querySelector( '.page-header_bg' ).getBoundingClientRect().height*1;
+    // windowScroll = st/ht;
+    // tl.progress( windowScroll );
 
-// ------------------------------------------
-//  On Scroll stuff
-// ------------------------------------------
-var tl = gsap.timeline( {paused: true} )
-    .fromTo(".page-header_bg", {
-        duration: .5,
+var tl = gsap.timeline( {
+    scrollTrigger: {
+        trigger: ".page-header",
+        start: "top top",
+        end: "bottom top",
+        scrub: .5
+    }
+} )
+    .fromTo(".page-header_bg", {        
         autoAlpha: 1,
-        //yPercent: 0
+        yPercent: 0
         }, {
         autoAlpha: 0,
-        //yPercent: -10,
-        ease: "none"
+        yPercent: -10,
+        ease: "power2.out"
     }, 0)
     .to(".page-header-wrapper", {
-        duration: .5,
-        yPercent: 60,
-        ease: "none"
-    },0)
+        yPercent: 80,
+        ease: "power2.out"
+    }, 0)
     .fromTo("#this_page_content", {
-        duration: .5,
-        scale: .5,
-    }, {
-        scale: 1
+        transformOrigin: "50% 0",
+        ease: "power2.out",
+        y: 400,
+    }, { 
+        y: 0
     }, 0)
 
-    window.addEventListener("scroll", function(e){
-    st = document.querySelector("html").scrollTop;
-    ht = document.querySelector( '.page-header_bg' ).getBoundingClientRect().height*1;
-   if( st < ht && st >= 0 ){
-        windowScroll = st/ht;
-        tl.progress( windowScroll );
-    }
-});
+});  
+
 
 // ------------------------------------------
 //  On Click Link stuff

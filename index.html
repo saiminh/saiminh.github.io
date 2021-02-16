@@ -13,47 +13,38 @@ extra_classes: home theme-home
 	<div class="row">
 		<div class="col-12 hero_headline">
 			<h1>I'm Simon, this is my Design portfolio. If you need my help just <a class="hollerer" href="mailto:simon@floter.design?subject=Contact%20via%20floter.design&body=Hi%20Simon!%20%0A%0AMy%20name%20is%20_______%20%0A%20%0AI'm%20inquiring%20about%20_______%0A%0AYou%20can%20reach%20me%20at%20_______">holler!</a></h1>
-			<h1>I create products that help good companies reach their audiences. I do that using  graphic design, UX/UI and frontend-development skills. By night I'm an <a href="https://floter.ink">Illustrator</a>.</h1>
+			<h1>I create products that help good companies reach their audiences. I do that using graphic design, UX/UI and frontend-development skills. By night I'm an <a href="https://floter.ink">Illustrator</a>.</h1>
 		</div>
-		<!-- <div class="col-8 offset-0">
-			<p><span class="drop_cap">S</span>imon Flöter is a multi-disciplinary Designer. He works in graphic and identity design, as well as in UX/UI and frontend development. He likes to create work that helps good companies reach their audiences. Work that influences culture, helps good causes and builds business value.</p>
-			<p>He is also an <a href="https://floter.ink">illustrator</a>.</p>
-		</div> -->
 	</div>
 </div>
 
 <script>
-
 window.addEventListener('DOMContentLoaded', function() {
         
-			var hometl = gsap.timeline( {paused: true}), 
-			mySplitText = new SplitText(".hero_headline h1", {type:"lines"}), 
-			lines = mySplitText.lines; //an array of all the divs that wrap each character
+			let hometl = gsap.timeline( {
+				scrollTrigger: {
+					trigger: ".page-content",
+					start: "-=80 top",
+					end: "bottom top",
+					scrub: .25,
+				},
+			}) 
+			let mySplitText = new SplitText(".hero_headline h1", { type:"lines "})
+			let lines = mySplitText.lines; //an array of all the divs that wrap each character
 			hometl.set(".hero_headline h1", {
 				position: "relative",
 				overflow: "hidden"
 			})
-			.to(lines, {
+			.to( lines, {
+				transformOrigin: "50% 50%",
 				duration: 5,
 				xPercent: 100,
-				autoAlpha: 0,
+				yPercent: 100,
+				rotationX: 270,
 				ease: "power2.in",
-				stagger: 1
+				stagger: .5
 			});
 
-			window.addEventListener("scroll", function(e){
-				var st = document.querySelector("html").scrollTop;
-				var headlineHeight = document.querySelector('.hero_headline').getBoundingClientRect().height;
-				var headlinePos = document.querySelector('.hero_headline').getBoundingClientRect().top;
-				var homeht =  headlineHeight + headlinePos + window.innerHeight; 
-				if( st < homeht && st >= 0 ){
-					windowScroll = st/homeht;
-					hometl.progress( windowScroll );
-				}
-				else if ( st > homeht ) {
-					hometl.progress(1);
-				}
-			});
 
 			var hollertl = gsap.timeline( {paused: true} ),
 			mySplitTextHoller = new SplitText(".hollerer", {type:"chars"}), 

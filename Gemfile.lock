@@ -68,3 +68,6 @@ DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-lazy-load-image
   jekyll-responsive-image
+
+BUNDLED WITH
+   2.0.2
