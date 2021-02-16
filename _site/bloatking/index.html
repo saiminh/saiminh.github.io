@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The bloated King</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		} 
+
+		.wrapper {
+			max-width: 96vh;
+			margin: 2vh auto;
+			border: 1vh solid #752b88;
+			box-sizing: border-box;
+			overflow: hidden;
+			position: relative;
+			width:96vh;
+			height: 96vh;
+			background-color: #67d0ff;
+			cursor: pointer;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+
+		@media screen and (orientation: portrait) {
+			.wrapper {
+				max-width: 96vw;
+				margin: 2vw;
+				width: 96vw;
+				height: 96vw;
+			}
+		}
+
+		#eyes_blink_group,
+		#gas_group,
+		#arm_right_fist_group,
+		#arm_left_fist_group,
+		#head_farting_group,
+		#the_bloated_king_group,
+		#bg_tree_dead_group,
+		#title_group,
+		#fg_flowers_dead_group {
+			opacity: 0;
+			visibility: hidden;
+		}
+		#svg_canvas {
+			position: absolute;
+		}
+
+		.gs-dev-tools{
+			z-index: 10;
+		}
+	</style>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="assets/TweenMax.min.js"></script>
+
+</head>
+<body>
+<div class="wrapper">	
+	
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
+		<g id="bg_tree_alive_group">
+			<image style="overflow:visible;" width="1000" height="1000" id="bg_tree_alive" xlink:href="assets/FFB7E750BFABA405.png"  transform="matrix(0.24 0 0 0.24 0 0)">
+			</image>
+		</g>
+		<g id="bg_tree_dead_group">
+			<image style="overflow:visible;" width="1000" height="1000" id="bg_tree_dead" xlink:href="assets/FFB7E750BFABA40B.png"  transform="matrix(0.24 0 0 0.24 0 0)">
+			</image>
+			<image style="overflow:visible;" width="74" height="134" id="bg_tree_dead_bird" xlink:href="assets/dead_bird.png"  transform="matrix(0.24 0 0 0.24 20 11)">
+				</image>
+		</g>
+		<g id="gas_group">
+			<image style="overflow:visible;" width="960" height="707" id="gas" xlink:href="assets/F5946EABB3CEB505.png"  transform="matrix(0.24 0 0 0.24 6.72 69.36)">
+			</image>
+		</g>
+		<g id="the_bloated_king_group">			
+			<g id="leg_left_group">
+				<image style="overflow:visible;" width="231" height="278" id="leg_left" xlink:href="assets/FFB7E750BFABA40D.png"  transform="matrix(0.24 0 0 0.24 157.92 146.4)">
+				</image>
+			</g>
+			<g id="leg_right_group">
+				<image style="overflow:visible;" width="231" height="279" id="leg_right" xlink:href="assets/FFB7E750BFABA40F.png"  transform="matrix(0.24 0 0 0.24 30.72 146.88)">
+				</image>
+			</g>
+			<g id="torso_group">
+				<image style="overflow:visible;" width="777" height="693" id="torso" xlink:href="assets/FFB7E750BFABA40C.png"  transform="matrix(0.24 0 0 0.24 30 42.96)">
+				</image>
+			</g>
+			<g id="arm_right_group">
+				<g id="arm_right_resting_group">
+					<image style="overflow:visible;" width="173" height="256" id="arm_right_resting" xlink:href="assets/FFB7E750BFABA404.png"  transform="matrix(0.24 0 0 0.24 48 66.24)">
+					</image>
+				</g>
+				<g id="arm_right_fist_group">
+					<image style="overflow:visible;" width="171" height="205" id="arm_right_fist" xlink:href="assets/FFB7E750BFABA406.png"  transform="matrix(0.24 0 0 0.24 48 66.24)">
+					</image>
+				</g>
+			</g>
+			<g id="arm_left_group">
+				<g id="arm_left_resting_group">
+					<image style="overflow:visible;" width="173" height="255" id="arm_left_resting" xlink:href="assets/FFB7E750BFABA402.png"  transform="matrix(0.24 0 0 0.24 160.56 66.48)">
+					</image>
+				</g>
+				<g id="arm_left_fist_group">
+					<image style="overflow:visible;" width="171" height="205" id="arm_left_fist" xlink:href="assets/F5946EABB3CEB504.png"  transform="matrix(0.24 0 0 0.24 161.52 66.24)">
+					</image>
+				</g>
+			</g>
+			<g id="head_group">				
+				<g id="head_resting_group">
+					<image style="overflow:visible;" width="303" height="457" id="head_resting" xlink:href="assets/F5946EABB3CEB503.png"  transform="matrix(0.24 0 0 0.24 89.28 22.8)">
+					</image>
+				</g>
+				<g id="head_farting_group">
+					<image style="overflow:visible;" width="303" height="457" id="head_farting" xlink:href="assets/F5946EABB3CEB51C.png"  transform="matrix(0.24 0 0 0.24 89.28 22.8)">
+					</image>
+				</g>
+				<g id="eyes_blink_group">
+					<image style="overflow:visible;" width="94" height="20" id="eyes_blink" xlink:href="assets/eyes_blink.png"  transform="matrix(0.24 0 0 0.24 113.5533 73.6)">
+					</image>
+				</g>
+			</g>
+		</g>
+		<g id="title_group">
+			<image style="overflow:visible;" width="851" height="331" id="title" xlink:href="assets/F5946EABB3CEB51F.png"  transform="matrix(0.24 0 0 0.24 18.48 136.32)">
+			</image>
+		</g>
+		<g id="fg_flowers_alive_group">
+			<image style="overflow:visible;" width="977" height="362" id="fg_flowers_alive" xlink:href="assets/F5946EABB3CEB51D.png"  transform="matrix(0.24 0 0 0.24 5.04 153.12)">
+			</image>
+		</g>
+		<g id="fg_flowers_dead_group">
+			<image style="overflow:visible;" width="919" height="198" id="fg_flowers_dead" xlink:href="assets/F5946EABB3CEB502.png"  transform="matrix(0.24 0 0 0.24 4.8 192.48)">
+			</image>
+		</g>
+		
+	</svg>
+</div>
+
+<script>
+	var theWidth = 240;
+	var t_walkin = 3;
+	var over = false;
+	var tl = new TimelineMax( {paused: true, onComplete: function(){over = true;} } )
+	.set("#head_group", {
+		transformOrigin: "50% 50%",
+		x: 0
+	})
+	// The walk-in
+	// -------------------------------
+	.add("walkin", 1)
+
+		.fromTo("#eyes_blink_group", .5, {
+			autoAlpha: 1
+		}, {
+			autoAlpha: 0,
+			repeat: 3,
+			repeatDelay: 1
+		}, "walkin")
+
+		.set("#the_bloated_king_group", {
+			autoAlpha:1
+		}, "walkin+=.1")
+
+		.fromTo("#the_bloated_king_group", t_walkin, {
+			x: -theWidth
+		}, {
+			x: "0",
+			ease: Linear.easeNone
+		}, "walkin")
+
+		.fromTo("#leg_left_group", .1, {
+			rotationZ: 5
+		}, {
+			rotationZ: -5,
+			repeat: t_walkin*10,
+			yoyo: true,
+			transformOrigin: "50% 15%"
+		}, "walkin")
+		
+		.fromTo("#leg_right_group", .1, {
+			rotationZ: 5
+		}, {
+			rotationZ: -5,
+			repeat: t_walkin*10,
+			yoyo: true,
+			transformOrigin: "50% 15%"
+		}, "walkin")
+
+		.to("#head_group", .25, {
+			x: 0,
+			y: theWidth * .01,
+			scale: .99, 
+			repeat: t_walkin*4,
+			yoyo: true,
+			transformOrigin: "50% 50%",
+			id: "headbop"
+		}, "walkin")
+
+		.fromTo("#torso_group, #arm_left_group, #arm_right_group", 1, {
+			y: theWidth * -.01
+		}, {
+			y: theWidth * .01,
+			repeat: t_walkin*4, 
+			yoyo: true,
+			transformOrigin: "50% 50%"
+		}, "walkin")
+
+		.fromTo("#arm_left_group", .5, {
+			rotationZ: 5
+		}, {
+			rotationZ: -5,
+			repeat: t_walkin*2, 
+			yoyo: true,
+			transformOrigin: "33% 20%"
+		}, "walkin")
+
+		.fromTo("#arm_right_group", .5, {
+			rotationZ: 5
+		}, {
+			rotationZ: -5,
+			repeat: t_walkin*2, 
+			yoyo: true,
+			transformOrigin: "66% 20%"
+		}, "walkin")
+
+		.to("#torso_group", 1, {
+			scale: .97,
+			repeat: t_walkin*3, 
+			yoyo: true
+		}, "walkin")
+
+	// The stop and breathe
+	// -------------------------------
+	.add("stopNbreathe", t_walkin + 1)
+
+		.fromTo("#torso_group", 1, {
+			scale: 1
+		}, {
+			scale: .98,
+			repeat: 2, 
+			yoyo: true
+		}, "stopNbreathe")
+
+		.fromTo("#torso_group, #arm_left_group, #arm_right_group", 1, {
+			y: theWidth * -.005
+		}, {
+			y: theWidth * .005,
+			repeat: 2, 
+			yoyo: true,
+			transformOrigin: "50% 50%"
+		}, "stopNbreathe")
+
+		.fromTo("#head_group", 1, {
+			y: 0,
+			scale: 1
+		},{
+			y: theWidth * -.01,
+			scale: .98, 
+			repeat: 2,
+			yoyo: true,
+			transformOrigin: "50% 50%"
+		}, "stopNbreathe")
+
+		.fromTo("#arm_left_group", 1, {
+			rotationZ: 2
+		}, {
+			rotationZ: -2,
+			repeat: 2, 
+			yoyo: true,
+			transformOrigin: "33% 20%"
+		}, "stopNbreathe")
+
+		.fromTo("#arm_right_group", 1, {
+			rotationZ: -2
+		}, {
+			rotationZ: 2,
+			repeat: 2, 
+			yoyo: true,
+			transformOrigin: "66% 20%"
+		}, "stopNbreathe")
+
+
+	// The fart
+	// ------------------------
+	.add("fart", t_walkin + 3)
+		.set("#arm_left_resting_group, #arm_right_resting_group, #head_resting_group", {
+			autoAlpha: 0
+		}, "fart")
+		
+		.set("#arm_left_fist_group, #arm_right_fist_group, #head_farting_group", {
+			autoAlpha: 1
+		}, "fart")
+
+		.fromTo("#head_group", .05, {
+			x: theWidth * -.01
+		}, {
+			x: theWidth * .01, 
+			repeat: 25,
+			yoyo: true
+		}, "fart")
+
+		.fromTo("#arm_left_group", .05, {
+			rotationZ: 2
+		}, {
+			rotationZ: -2,
+			repeat: 25, 
+			yoyo: true,
+			transformOrigin: "33% 20%"
+		}, "fart")
+
+		.fromTo("#arm_right_group", .05, {
+			rotationZ: -2
+		}, {
+			rotationZ: 2,
+			repeat: 25, 
+			yoyo: true,
+			transformOrigin: "66% 20%"
+		}, "fart")
+
+		.fromTo("#gas_group", .5, {
+			scale: 0,
+			autoAlpha: 1,
+			//y: theWidth * -.25,
+			x: "50%"
+		}, {
+			scale: 1,
+			autoAlpha: 1,
+			//y: theWidth * .15,
+			x: "50%",
+			transformOrigin: "50% 10%"
+		}, "fart+=1")
+
+		.to(".wrapper", .5, {
+			backgroundColor: "#86a0c4"
+		}, "fart+=1.5")
+
+		.to("#gas_group", 3, {
+			autoAlpha: 0,
+			scale: 1.5
+		}, "fart+=1.5")
+
+		.to("#title_group", 1, {
+			autoAlpha: 1
+		}, "fart+=1.5")
+
+		.to("#the_bloated_king_group", .75, {
+			y: theWidth * -.6,
+			repeat: 1, 
+			yoyo: true,
+			ease: Power3.easeOut
+		}, "fart+=1.2")
+
+		.fromTo(".wrapper", .05, {
+			y: "1%"
+		}, {
+			y: "-1%", 
+			repeat: 3,
+			yoyo: true
+		}, "fart+=2.75")
+
+		.to("#bg_tree_dead_group, #fg_flowers_dead_group", 1, {
+			autoAlpha: 1
+		}, "fart+=1.5")
+		.to("#bg_tree_alive_group, #fg_flowers_alive_group", 1, {
+			autoAlpha:0
+		}, "fart+=1.75")
+
+	// After the landing
+	// ------------------------
+	.add("landing", t_walkin + 6)
+
+		.to(".wrapper", .5, {
+			y: 0
+		}, "landing")
+
+		// Eye blinkage
+		.fromTo("#eyes_blink_group", .5, {
+			autoAlpha: 1
+		}, {
+			autoAlpha: 0,
+			repeat: 3,
+			repeatDelay: 1
+		}, "landing")
+
+		.set("#arm_left_resting_group, #arm_right_resting_group, #head_resting_group", {
+			autoAlpha: 1
+		}, "landing-=0.25")
+		
+		.set("#arm_left_fist_group, #arm_right_fist_group, #head_farting_group", {
+			autoAlpha: 0
+		}, "landing-=0.25")
+
+		.set("#head_group", {
+			x: 0
+		}, "landing")
+
+		.fromTo("#head_group", 1, {
+			y: 0,
+			scale: 1
+		},{
+			y: theWidth * -.01,
+			scale: .98, 
+			repeat: 2,
+			yoyo: true,
+			transformOrigin: "50% 50%"
+		}, "landing")
+
+		.fromTo("#arm_left_group", 1, {
+			rotationZ: 2
+		}, {
+			rotationZ: -2,
+			repeat: 2, 
+			yoyo: true,
+			transformOrigin: "33% 20%"
+		}, "landing")
+
+		.fromTo("#arm_right_group", 1, {
+			rotationZ: -2
+		}, {
+			rotationZ: 2,
+			repeat: 2, 
+			yoyo: true,
+			transformOrigin: "66% 20%"
+		}, "landing")
+
+	// The walk-out
+	// ------------------------
+
+	.add("walkout", "landing+=2")
+		.fromTo("#leg_left_group", .1, {
+			rotationZ: 5
+		}, {
+			rotationZ: -5,
+			repeat: t_walkin*10,
+			yoyo: true,
+			transformOrigin: "50% 15%"
+		}, "walkout")
+		
+		.fromTo("#leg_right_group", .1, {
+			rotationZ: 5
+		}, {
+			rotationZ: -5,
+			repeat: t_walkin*10,
+			yoyo: true,
+			transformOrigin: "50% 15%"
+		}, "walkout")
+
+		.to("#head_group", .25, {
+			y: theWidth * .01,
+			scale: .99, 
+			repeat: t_walkin*4,
+			yoyo: true,
+			transformOrigin: "50% 50%"
+		}, "walkout")
+
+		.fromTo("#the_bloated_king_group", t_walkin, {
+			x: 0
+		}, {
+			x: theWidth,
+			ease: Linear.easeNone
+		}, "walkout")
+
+		.to("#title_group", .5, {
+			y: theWidth * -.2
+		}, "walkout")
+		
+		.to("#bg_tree_dead_bird", 1, {
+			y: theWidth,
+			x: theWidth*.1,
+			transformOrigin: "40% 90%",
+			ease: Power4.easeIn
+		}, "walkout+=3")
+
+		.to("#bg_tree_dead_bird", 1, {			
+			rotationZ: 90,
+			ease: Power1.easeIn
+		}, "walkout+=3")
+	;
+
+	//$('.wrapper').css('cursor','pointer');
+
+	$('.wrapper').on('click', function(){
+		if ( over ) {
+			tl.play(0);
+			over = false;
+		}
+		else if (tl.paused()){
+			tl.play();	
+		} else {
+			tl.pause();
+		}
+		
+	});
+
+	$(document).ready(function(){
+		tl.play(0);
+		
+	});
+</script>
+
+<!-- <script type="text/javascript" src="assets/GSDevTools.min.js"></script>
+<script type="text/javascript">GSDevTools.create();</script> -->
+</body>
+</html>
