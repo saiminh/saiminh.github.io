@@ -4,7 +4,7 @@ layout: default
 <article class="page">
   <header class="page-header{% if page.header_bg_image %} has_hero_img{% endif %}">
 	<div class="page-header_bg">
-      {% if page.header_bg_image %}
+{% if page.header_bg_image %}
 {% assign sizes = "100vw" %}
 {% responsive_image_block %}
 path: "{{ page.header_bg_image }}"
