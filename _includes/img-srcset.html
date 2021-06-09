@@ -15,4 +15,7 @@ Usage:
 {% endfor %}
 {% endcapture %}
 
-<img src="/img/placeholder.png" class="{{ class }} lazyload" style="{{ style }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" data-src="/img/placeholder.png" data-srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" sizes="{{ sizes }}">
+<picture>
+  <source srcset="{{ srcset | strip_newlines | replace: 'jpg', 'webp' | replace: 'png', 'webp' }} /{{ path | replace: 'jpg', 'webp' | replace: 'png', 'webp' }} {{ original.width }}w" sizes="{{ sizes }}" type="image/webp">
+  <img src="/img/placeholder.png" class="{{ class }} lazyload" style="{{ style }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" data-src="/img/placeholder.png" data-srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" sizes="{{ sizes }}">
+</picture>

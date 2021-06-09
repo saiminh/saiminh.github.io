@@ -7,5 +7,6 @@ gem "jekyll", '~> 3.8.5'
 
 group :jekyll_plugins do
   gem "jekyll-responsive-image"
+  gem "jekyll-webp"
   gem 'jekyll-lazy-load-image', require: 'jekyll-lazy-load-image/auto-execution'
 end
