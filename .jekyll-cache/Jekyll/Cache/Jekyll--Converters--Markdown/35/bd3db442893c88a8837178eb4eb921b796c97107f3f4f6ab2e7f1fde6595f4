@@ -1,4 +1,4 @@
-I"Ñ<div class="index-header wrapper">
+I"¹<div class="index-header wrapper">
 
 	<div class="row row--aligncenter">
 		<div class="col-4">
@@ -46,8 +46,8 @@
 
 
 <picture>
-  <source srcset="    /assets/resized/website_01-300x225.webp 300w,    /assets/resized/website_01-560x419.webp 560w,    /assets/resized/website_01-640x479.webp 640w,    /assets/resized/website_01-800x599.webp 800w, /img/work_jpl/website_01.webp 801w" sizes="(min-width:1200px) 620px, (min-width:768px) 50vw, 100vw" type="image/webp" />
-  <img src="/img/placeholder.png" class=" lazyload" style="" alt="Screenshot of JustPeace Labs Website" srcset="    /assets/resized/website_01-300x225.png 300w,    /assets/resized/website_01-560x419.png 560w,    /assets/resized/website_01-640x479.png 640w,    /assets/resized/website_01-800x599.png 800w, /img/work_jpl/website_01.png 801w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/website_01-300x225.png 300w,    /assets/resized/website_01-560x419.png 560w,    /assets/resized/website_01-640x479.png 640w,    /assets/resized/website_01-800x599.png 800w, /img/work_jpl/website_01.png 801w" sizes="(min-width:1200px) 620px, (min-width:768px) 50vw, 100vw" />
+  <source srcset="  /assets/resized/website_01-300x225.webp 300w,  /assets/resized/website_01-560x419.webp 560w,  /assets/resized/website_01-640x479.webp 640w,  /assets/resized/website_01-800x599.webp 800w, /img/work_jpl/website_01.webp 801w" sizes="(min-width:1200px) 620px, (min-width:768px) 50vw, 100vw" type="image/webp" />
+  <img src="/img/placeholder.png" class=" lazyload" style="" alt="Screenshot of JustPeace Labs Website" srcset="  /assets/resized/website_01-300x225.png 300w,  /assets/resized/website_01-560x419.png 560w,  /assets/resized/website_01-640x479.png 640w,  /assets/resized/website_01-800x599.png 800w, /img/work_jpl/website_01.png 801w" data-src="/img/placeholder.png" data-srcset="  /assets/resized/website_01-300x225.png 300w,  /assets/resized/website_01-560x419.png 560w,  /assets/resized/website_01-640x479.png 640w,  /assets/resized/website_01-800x599.png 800w, /img/work_jpl/website_01.png 801w" sizes="(min-width:1200px) 620px, (min-width:768px) 50vw, 100vw" />
 </picture>
 
 		</div>

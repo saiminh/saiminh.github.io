@@ -93,6 +93,11 @@ $on-laptop:        1000px;
         background: $themecolor_bg;
         background: linear-gradient(0deg, transparentize($themecolor_bg, 1) 0%, $themecolor_bg 100%);
     }
+    #this_page_content {
+      // background-color: $themecolor_bg;
+      position: relative;
+      z-index: 2;
+    }
 }
 
 

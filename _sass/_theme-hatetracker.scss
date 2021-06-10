@@ -10,8 +10,6 @@ $theme_hatetracker_color_border: #110000;
 	& .page-header.has_hero_img {	    
 	    background-size: cover;
 	    background-position: center bottom;
-	    margin-bottom: 2em;
-
 	    @media screen and (max-width: 480px) {
 	    	background-position: 30% top;
 	    }

@@ -16,17 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    // var st = document.querySelector("body").scrollTop;
-    // var ht = document.querySelector( '.page-header_bg' ).getBoundingClientRect().height*1;
-    // windowScroll = st/ht;
-    // tl.progress( windowScroll );
 
+    let headlineUpHeight = document.querySelector('.page-header_bg').clientHeight;
 var tl = gsap.timeline( {
     scrollTrigger: {
         trigger: ".page-header",
-        start: "top top",
-        end: "bottom top",
-        scrub: .5
+        start: "0% 0%",
+        end: "100% 50%",
+        scrub: true,
+       // pin: ".page-header-wrapper",
+        // markers: true
     }
 } )
     .fromTo(".page-header_bg", {        
@@ -35,22 +34,21 @@ var tl = gsap.timeline( {
         }, {
         autoAlpha: 0,
         yPercent: -10,
-        ease: "power2.out"
+        ease: "none"
     }, 0)
     .to(".page-header-wrapper", {
-        yPercent: 80,
-        ease: "power2.out"
+        yPercent: 50,
+        ease: "none"
     }, 0)
-    .fromTo("#this_page_content", {
-        transformOrigin: "50% 0",
-        ease: "power2.out",
-        y: 400,
-    }, { 
-        y: 0
-    }, 0)
+    // .fromTo("#this_page_content", {
+    //     transformOrigin: "50% 0",
+    //     ease: "none",
+    //     y: 400,
+    // }, { 
+    //     y: 0
+    // }, 0)
 
 });  
-
 
 // ------------------------------------------
 //  On Click Link stuff

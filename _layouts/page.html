@@ -5,10 +5,9 @@ layout: default
   <header class="page-header{% if page.header_bg_image %} has_hero_img{% endif %}">
 	<div class="page-header_bg">
 {% if page.header_bg_image %}
-{% assign sizes = "100vw" %}
 {% responsive_image_block %}
   path: {{ page.header_bg_image }}
-  sizes: {{ sizes }}
+  sizes: "(min-width: 600px) 100vw, 250vw"
 {% endresponsive_image_block %}
 {% endif %}
 	</div>

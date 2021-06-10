@@ -1,4 +1,4 @@
-I"S	<div class="wrapper">
+I";	<div class="wrapper">
 	<div class="row row--aligncenter">
 		<div class="col-4">
 			<div class="infobox">				
@@ -21,8 +21,8 @@
 
 
 <picture>
-  <source srcset="    /assets/resized/combo-300x392.webp 300w,    /assets/resized/combo-560x731.webp 560w,    /assets/resized/combo-640x836.webp 640w,    /assets/resized/combo-800x1045.webp 800w, /img/work_odinsravens/combo.webp 801w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" type="image/webp" />
-  <img src="/img/placeholder.png" class="illustration_image lazyload" style="" alt="Illustration of Odin and his Ravens" srcset="    /assets/resized/combo-300x392.png 300w,    /assets/resized/combo-560x731.png 560w,    /assets/resized/combo-640x836.png 640w,    /assets/resized/combo-800x1045.png 800w, /img/work_odinsravens/combo.png 801w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/combo-300x392.png 300w,    /assets/resized/combo-560x731.png 560w,    /assets/resized/combo-640x836.png 640w,    /assets/resized/combo-800x1045.png 800w, /img/work_odinsravens/combo.png 801w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" />
+  <source srcset="  /assets/resized/combo-300x392.webp 300w,  /assets/resized/combo-560x731.webp 560w,  /assets/resized/combo-640x836.webp 640w,  /assets/resized/combo-800x1045.webp 800w, /img/work_odinsravens/combo.webp 801w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" type="image/webp" />
+  <img src="/img/placeholder.png" class="illustration_image lazyload" style="" alt="Illustration of Odin and his Ravens" srcset="  /assets/resized/combo-300x392.png 300w,  /assets/resized/combo-560x731.png 560w,  /assets/resized/combo-640x836.png 640w,  /assets/resized/combo-800x1045.png 800w, /img/work_odinsravens/combo.png 801w" data-src="/img/placeholder.png" data-srcset="  /assets/resized/combo-300x392.png 300w,  /assets/resized/combo-560x731.png 560w,  /assets/resized/combo-640x836.png 640w,  /assets/resized/combo-800x1045.png 800w, /img/work_odinsravens/combo.png 801w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" />
 </picture>
 
 		</div>
