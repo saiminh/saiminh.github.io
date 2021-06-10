@@ -1,0 +1,109 @@
+I"§<div class="wrapper">
+	<div class="row">
+		<div class="col-4 ">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="https://justpeacelabs.org">JustPeace Labs</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Logo design</li>
+					<li>Product design (UX, UI, Visual)</li>
+					<li>Frontend Development</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="col-6 offset-1">								
+			<h3>The concept</h3>
+			<p><span class="drop_cap">T</span>his app allows anyone with an internet browser to file a report, using geo location and image/video uploads to help verify the incident. I designed the look and feel and the frontend in collaboration with the peace technology startup "JustPeace Labs".</p> 	
+			<p>The app can be used and downloaded at <a href="https://app.hatetracker.org/">https://app.hatetracker.org/</a></p>
+		</div>
+			
+	</div>
+
+	<div class="row">
+		<div class="col-4 ">
+			<div class="illustration">				
+				
+
+
+
+
+<picture>
+  <source srcset="    /assets/resized/HateTracker_screenshot_01-300x534.webp 300w, /img/work_hatetracker/HateTracker_screenshot_01.webp 375w" sizes="(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" type="image/webp" />
+  <img src="/img/placeholder.png" class="mobile_screenshot lazyload" style="max-width: 320px;" alt="Screenshot of HateTracker" srcset="    /assets/resized/HateTracker_screenshot_01-300x534.png 300w, /img/work_hatetracker/HateTracker_screenshot_01.png 375w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/HateTracker_screenshot_01-300x534.png 300w, /img/work_hatetracker/HateTracker_screenshot_01.png 375w" sizes="(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" />
+</picture>
+
+			</div>
+		</div>	
+		<div class="col-4 ">
+			<div class="illustration">
+				
+
+
+
+
+<picture>
+  <source srcset="    /assets/resized/HateTracker_screenshot_02-300x534.webp 300w, /img/work_hatetracker/HateTracker_screenshot_02.webp 375w" sizes="(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" type="image/webp" />
+  <img src="/img/placeholder.png" class="mobile_screenshot lazyload" style="max-width: 320px;" alt="Screenshot of HateTracker" srcset="    /assets/resized/HateTracker_screenshot_02-300x534.png 300w, /img/work_hatetracker/HateTracker_screenshot_02.png 375w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/HateTracker_screenshot_02-300x534.png 300w, /img/work_hatetracker/HateTracker_screenshot_02.png 375w" sizes="(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" />
+</picture>
+
+			</div>
+		</div>	
+		<div class="col-4 ">
+			<div class="illustration">
+				
+
+
+
+
+<picture>
+  <source srcset="    /assets/resized/HateTracker_screenshot_03-300x522.webp 300w, /img/work_hatetracker/HateTracker_screenshot_03.webp 383w" sizes="(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" type="image/webp" />
+  <img src="/img/placeholder.png" class="mobile_screenshot lazyload" style="max-width: 320px;" alt="Screenshot of HateTracker" srcset="    /assets/resized/HateTracker_screenshot_03-300x522.png 300w, /img/work_hatetracker/HateTracker_screenshot_03.png 383w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/HateTracker_screenshot_03-300x522.png 300w, /img/work_hatetracker/HateTracker_screenshot_03.png 383w" sizes="(min-width:1200px) 320px, (min-width:768px) 34vw, 320px" />
+</picture>
+
+			</div>
+		</div>	
+	</div>
+
+	<div class="row">
+
+		<div class="col-6">
+			<h3>Logo</h3>
+			<p><span class="drop_cap">T</span>he evil eye logo is a great way to visualize the concept of the app. The eye witnesses of course, and you can see 'the hate in someones eyes' in the red dot. Also the red dot reminds of the record button on cameras or recording apps, communicating the idea of collecting evidence.</p>	
+		</div>
+
+		<div class="col-4">
+			<div class="illustration">
+				<img src="/img/work_hatetracker/hatereport_logo.svg" style="margin-top: 2rem;" />					
+			</div>
+		</div>				
+			
+	</div>
+
+	<div class="row">
+
+		<div class="col-6">
+		<h3>Website</h3>
+			<p><span class="drop_cap">T</span>o promote the app and collect donations, I designed and implemented a simple static website.</p>
+			<p> You can check it out here: <a href="https://hatetracker.org/">hatetracker.org/</a></p>
+		</div>
+
+		<div class="col-6">
+		
+
+
+
+
+<picture>
+  <source srcset="    /assets/resized/website-300x215.webp 300w,    /assets/resized/website-560x401.webp 560w,    /assets/resized/website-640x458.webp 640w,    /assets/resized/website-800x573.webp 800w, /img/work_hatetracker/website.webp 838w" sizes="(min-width:1200px) 610px, (min-width:768px) 50vw, 100vw" type="image/webp" />
+  <img src="/img/placeholder.png" class=" lazyload" style="" alt="Screenshot of HateTracker Website" srcset="    /assets/resized/website-300x215.png 300w,    /assets/resized/website-560x401.png 560w,    /assets/resized/website-640x458.png 640w,    /assets/resized/website-800x573.png 800w, /img/work_hatetracker/website.png 838w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/website-300x215.png 300w,    /assets/resized/website-560x401.png 560w,    /assets/resized/website-640x458.png 640w,    /assets/resized/website-800x573.png 800w, /img/work_hatetracker/website.png 838w" sizes="(min-width:1200px) 610px, (min-width:768px) 50vw, 100vw" />
+</picture>
+
+		</div>
+
+	</div>
+
+	
+
+</div>
+:ET
