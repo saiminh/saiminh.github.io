@@ -7,10 +7,10 @@ layout: default
 {% if page.header_bg_image %}
 {% assign sizes = "100vw" %}
 {% responsive_image_block %}
-path: {{ page.header_bg_image }}
-sizes: {{ sizes }}
+  path: {{ page.header_bg_image }}
+  sizes: {{ sizes }}
 {% endresponsive_image_block %}
-			{% endif %}
+{% endif %}
 	</div>
   	<div class="wrapper page-header-wrapper">
 		{% if page.category %} 
