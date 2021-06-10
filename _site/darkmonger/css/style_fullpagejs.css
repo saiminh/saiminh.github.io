@@ -1,0 +1,400 @@
+@import 'https://fonts.googleapis.com/css?family=Tillana:400,700';
+
+html, body, * {
+	padding: 0;
+	margin: 0;
+	font-size: 62,5%;
+}
+
+body {
+	border: 0vh solid #FFF;
+	background: #000;
+	font-family: 'Tillana', serif;
+	font-size: 1.2rem;
+}
+
+.js div#preloader { 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #000 url('../images/ajax-loader.gif') no-repeat center center;
+}
+
+
+.wrapper {
+	/*position: relative;	*/
+}
+
+.section {
+	height: 100vh;
+	position: relative;
+	z-index: 1;	
+	overflow: auto;
+}
+
+.scene_text {
+	width: 100vw;
+	height: calc(100vh - 100vw);
+	margin: 100vw 0 0 0;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	background: #000;
+}
+
+@media (orientation: landscape) {
+	.scene_text {
+		width: 50vw;
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: relative;
+		left: 50vw;
+		text-align: center;
+	}
+
+	.scene_two .scene_text,
+	.scene_ten .scene_text,
+	.scene_eleven .scene_text,
+	.scene_elevenahalf .scene_text,
+	.scene_twelve .scene_text,
+	.scene_theEnd .scene_text {
+		left: 0;
+	}
+}
+
+.scene_header {
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: left;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.5rem;
+	box-sizing: border-box;
+	font-size: 1.0rem;
+	bottom: 50%;
+	transform: translate(0, 50%);
+	position: absolute;
+}
+
+.scene_header_theend {
+	font-size: 1.2rem;	
+}
+
+.dropcap {
+	float: left;
+	font-size: 3.2em;
+	font-weight: 900;
+	line-height: .5;
+	padding-top: .25em;
+	padding-right: 8px;
+	padding-left: 0;
+	color: #981f1f;
+}
+
+@media (min-width: 321px) {
+	.scene_header {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 481px) {
+	.scene_header {
+		font-size: 2rem;
+		padding: 0 3rem;
+	}
+
+	.dropcap {
+		padding-right: 10px;
+	}
+}
+
+@media (orientation: landscape) {
+	.scene_header {
+		 
+		padding: 0 5rem;
+		font-size: 2rem;
+		max-width: 45rem;
+	}
+}
+
+.scene_two .scene_text .scene_header,
+.scene_four .scene_text .scene_header,
+.scene_theEnd .scene_text .scene_header{
+	text-align: center;
+}
+
+strong {
+	font-weight: 700;
+	color: #981f1f;
+	letter-spacing: -.01em;
+}
+
+.strong-l {
+	font-size: 2em;
+	position: relative;
+    top: 6px;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+}
+
+
+div[class^="animation_stage_scene_"] {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vw;
+	overflow: hidden;
+}
+
+div[class^="animation_stage_scene_"] img {
+	height: 100vw;
+	width: 100vw;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (orientation: landscape) {
+
+	div[class^="animation_stage_scene_"] {
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 50vw;
+		height: 50vw;
+	}
+
+	div.animation_stage_scene_two,
+	div.animation_stage_scene_ten {
+		margin-left: 50vw;
+	}
+
+	div[class^="animation_stage_scene_"] img {
+		height: 50vw;
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+}
+
+.fixed_stage {
+	position: fixed;
+	top:0;
+	bottom: 0;
+	width: 100vw;
+	z-index: -1;
+	overflow: hidden;
+}
+
+@media (orientation: landscape) {
+	.fixed_stage {
+		top: 50%;
+		height: 50vw;
+		transform: translate(0, -50%);
+	}
+}
+
+.scene_one_space .space {
+	position: absolute;
+	top: 0;
+}
+
+/*div.animation_stage_scene_two {
+	top: 5%;
+	left: -2%;
+}
+
+div.animation_stage_scene_three,
+div.animation_stage_scene_four {
+	top: 5%;
+	left: -2%;
+}*/
+
+.scene_two_ScaryMonsterName_eyes {
+	background-image: url(../images/scene_2_eyes_sprite.png);
+	background-size: 400%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.scene_three_GuyLostInTheDark {
+	background-image: url(../images/scene_3_sweating_sprite.png);
+	background-size: 300%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	opacity: 0;
+}
+
+.scene_four_GuyBeingEaten {
+	background-image: url(../images/scene_4_munch_sprite.png);
+	background-size: 600%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.animation_stage_scene_five {
+	opacity: 1;
+}
+
+.scene_five_planet,
+.scene_five_devil {
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+/*div.animation_stage_scene_six,
+div.animation_stage_scene_seven{
+	top: 5%;
+}*/
+
+.scene_six_couple,
+.scene_six_light,
+.scene_seven_couple {
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.scene_six_light{
+	opacity: 0.7;
+}
+
+.animation_stage_scene_eight img {
+	position: absolute;
+}
+
+.animation_stage_scene_ten img {
+	position: absolute;
+}
+
+.scene_ten_moon,
+.scene_ten_venus,
+.scene_ten_jupiter,
+.scene_ten_bg_again,
+.scene_ten_bg_2 {
+	left: -100%;
+	margin-left: 0;
+}
+.scene_ten_bg {
+	left: 0;
+	margin-left: 0;
+}
+
+.scene_twelve_devil {
+	opacity: 0;
+}
+
+.scene_theEnd .scene_header {
+	font-size: 1.8rem;
+}
+@media screen and (min-width: 321px){
+	.scene_theEnd .scene_header {
+		font-size: 2.2rem;
+	}
+}
+
+.nav-next,
+.nav-prev {
+	position: fixed;
+	top: calc(100vw + 10px);
+	right:.5rem;
+	z-index: 998;
+	height: 40px;
+	width:40px;
+	opacity: .2;
+}
+
+.nav-next:active,
+.nav-prev:active{
+	opacity: .9;
+}
+
+.nav-prev {
+	top: calc(100vw - 50px);
+}
+
+@media (orientation: landscape) {
+
+	.nav {
+		width: 30px;
+		height: 30px;
+		right: 2rem;
+		top: auto;
+	}
+
+	.nav .svg_path {
+		fill: #FFFFFF;
+	}
+
+	.nav-next {
+		bottom: calc(2rem);
+	    
+	}
+
+	.nav-prev {
+		bottom: calc(2rem + 50px);
+	}
+
+	.nav-next:hover,
+	.nav-prev:hover{
+		opacity: .9;
+	}
+}
+
+.last_scene_links,
+.last_scene_links:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.share_links {
+	text-align: center;
+	width: 100%;
+}
+
+.share_links svg {
+	width: 1rem;
+	height: 1rem;
+	fill: #FFF;
+}
+
+.share_links svg path{
+	fill: #FFF;
+}
+
+.last_scene_links_share,
+.last_scene_links_btb  {
+	padding: 1rem;
+	font-size: 1rem;
+}
+.madeby {
+	font-size: 1.2rem;
+	margin-top: .5rem;
+}
+
+.madeby a,
+.madeby a:visited {
+	color: #981f1f;
+}
+
+@media screen and (max-width: 400px) {
+	.madeby {
+		font-size: 1rem;
+	}
+}

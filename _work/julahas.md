@@ -7,14 +7,11 @@ excerpt: Design for a sustainable cape webshop
 permalink: /work/julahas
 mainnav: hide
 header_bg_image: ./img/work_julahas/julahas_hero.jpg
-ogimageurl: /img/thumbnails/cwn.jpg
 worktile_theme: light
 extra_classes: portfolio theme-julahas
 order: 12
 ---
-
 <div class="wrapper">
-
 	<div class="row row--aligncenter">
 		<div class="col-4">
 			<div class="infobox">

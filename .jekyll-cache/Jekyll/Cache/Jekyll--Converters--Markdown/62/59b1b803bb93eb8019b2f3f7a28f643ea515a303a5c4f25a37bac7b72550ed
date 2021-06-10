@@ -1,0 +1,44 @@
+I"S	<div class="wrapper">
+	<div class="row row--aligncenter">
+		<div class="col-4">
+			<div class="infobox">				
+				<h3>Client:</h3>
+				<p>Personal Project</p>
+			
+				<h3>What I did:</h3>
+				<ul>
+					<li>Idea, concept &amp; research</li>
+					<li>Visual Design</li>
+					<li>Illustration</li>
+					<li>Frontend Development (HTML, JS, CSS)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 offset-1">										
+				
+
+
+
+
+<picture>
+  <source srcset="    /assets/resized/combo-300x392.webp 300w,    /assets/resized/combo-560x731.webp 560w,    /assets/resized/combo-640x836.webp 640w,    /assets/resized/combo-800x1045.webp 800w, /img/work_odinsravens/combo.webp 801w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" type="image/webp" />
+  <img src="/img/placeholder.png" class="illustration_image lazyload" style="" alt="Illustration of Odin and his Ravens" srcset="    /assets/resized/combo-300x392.png 300w,    /assets/resized/combo-560x731.png 560w,    /assets/resized/combo-640x836.png 640w,    /assets/resized/combo-800x1045.png 800w, /img/work_odinsravens/combo.png 801w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/combo-300x392.png 300w,    /assets/resized/combo-560x731.png 560w,    /assets/resized/combo-640x836.png 640w,    /assets/resized/combo-800x1045.png 800w, /img/work_odinsravens/combo.png 801w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" />
+</picture>
+
+		</div>
+	</div>
+	<div class="row row--aligncenter">
+		
+		<div class="col-8 offset-2">
+			<h2>Trying to change an old story</h2>
+			<p><span class="drop_cap">W</span>hen you live in the Netherlands, you can't escape the annual heated discussion around <a href="https://en.wikipedia.org/wiki/Zwarte_Piet">'Zwarte Piet'</a>. I tried approach the issue from a different angle.</p>
+			<p>After researching the roots of the tradition and of the story behind it, I found that this story is older than most people know and has probably been subject to massive changes over centuries.</p>
+			<p>I created a one-page website with bespoke illustrations and animation to try to create a dialogue and raise the question: Could the story be changed again to fit into today's time?<br />
+			Try it out (opens in new browser window):</p>
+			<p><a class="button" href="/odins-ravens" target="_blank">Read "Of ravens and racism"</a></p>			 
+		</div>
+		
+				
+	</div>
+</div>
+:ET

@@ -1,0 +1,55 @@
+I"l<div class="wrapper">
+	
+	<div class="row row--aligncenter">		
+		<div class="col-5">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="https://www.adidas-group.com/en/">Adidas</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Visual Design</li>
+					<li>Campaign asset production</li>
+					<li>Illustration</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="col-5 offset-1">
+			<p><span class="drop_cap">A</span>didas, as you might have heard, is an international sports and lifestyle clothing brand. I worked on several digital campaigns as a graphic designer and illustrator.</p>
+		</div>				
+	</div>
+</div>
+<div class="wrapper_outer" style="background-image: url(/img/work_adidas/adidas-illus-bg.jpg);">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-8">
+        <div class="devices-container">
+	
+<div class="macbook">
+  <div class="screen">
+    <div class="viewport" style="background-image:url('/img/work_adidas/adidas-crm.jpg');">
+    </div>
+  </div>
+  <div class="base"></div>
+  <div class="notch"></div>
+</div>
+	<div class="deviceContainer" style="">
+<div class="iphone black portrait">
+    <div class="caseBorder"></div>
+    <div class="case"></div>
+    <div class="reflection"></div>
+    <div class="iphone_screen"></div>
+    <div class="speaker"></div>
+    <div class="homeButtonBorder"></div>
+    <div class="homeButton"></div>
+    <div class="content" style="background-image: url(/img/work_adidas/adidas-crm-mobile.jpg); background-size: 100% auto; background-repeat: no-repeat;">
+    </div>
+</div>                       
+</div>
+            
+</div>      
+      </div>
+    </div>    
+  </div>
+</div>
+:ET

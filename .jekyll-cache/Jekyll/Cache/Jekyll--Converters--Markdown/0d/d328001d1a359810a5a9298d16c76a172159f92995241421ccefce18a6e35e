@@ -1,0 +1,52 @@
+I"<div class="wrapper">
+	<div class="row">
+		<div class="col-4">
+			<div class="infobox">				
+				<h3>Client:</h3>
+				<p><a href="www.letshost.ie">LetsHost.ie</a></p>
+			
+				<h3>What I did:</h3>
+				<ul>
+					<li>Visual Design</li>
+					<li>Product Design (UX/UI)</li>
+					<li>Frontend Development (HTML, PHP, JS, CSS/SASS)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 offset-2">								
+			<h3>Dedicated Irish Webhosting</h3>
+			<p><span class="drop_cap">L</span>etsHost.ie is one of the leading irish webhosting providers. They differenciate themselves from their competition by offering 100% local support and service staff and a lot of special offers for local (for example .ie) domains and hosting services.</p>
+		</div>
+	</div>
+</div>
+<div class="wrapper_outer" style="background-image: url(/img/work_letshost/letshost_bgpattern.png)">
+	<div class="wrapper">
+		<div class="row row--aligncenter">
+			<div class="col-8 offset-2">				
+				<div class="devices-container">
+	
+<div class="macbook">
+  <div class="screen">
+    <div class="viewport" style="background-image:url('/img/work_letshost/letshost_sharedhosting_desktop.png');">
+    </div>
+  </div>
+  <div class="base"></div>
+  <div class="notch"></div>
+</div>
+	<div class="deviceContainer" style="">
+<div class="iphone black portrait">
+    <div class="caseBorder"></div>
+    <div class="case"></div>
+    <div class="reflection"></div>
+    <div class="iphone_screen"></div>
+    <div class="speaker"></div>
+    <div class="homeButtonBorder"></div>
+    <div class="homeButton"></div>
+    <div class="content" style="background-image: url(/img/work_letshost/letshost_domainsearcg_mobile.png); background-size: 100% auto; background-repeat: no-repeat;">
+    </div>
+</div>                       
+</div>
+            
+</div>
+</div></div></div></div>
+:ET

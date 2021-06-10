@@ -1,4 +1,12 @@
 /**
+    body fix
+*/
+body {
+    // position: absolute;
+    // top: 0;
+    // width: 100%;
+}
+/**
  * Preloader
  */
 .preloader {
@@ -10,9 +18,10 @@
     background-color: $text-color;
     z-index: 101;
 
-    &.loading-complete {
-        transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0)!important;
-        transition: transform .2s ease-in-out;
+    .loading-complete & {
+     //   transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
+     //   transition: transform .2s ease-in-out;
+     display: none;
     }
 
     & .preloader_logo-container {
@@ -280,6 +289,7 @@
  */
 
 #work_list_wrapper {
+    overflow: hidden;
     @media (max-width: 599px) {
         padding: 0;
     }
@@ -593,9 +603,6 @@
         padding-top: 140px;        
     }
 
-}
-
-.page-content {   
 }
 
 .drop_cap { 

@@ -1,0 +1,38 @@
+I"É<div class="wrapper">
+	<div class="row row--aligncenter">
+		<div class="col-4">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="#">University of Roehampton London</a>/<a href="https://laureate.net">Laureate Online Education</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Housestyle</li>
+					<li>Website design</li>
+					<li>Progressive Web App design</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 offset-1">
+			<p><span class="drop_cap">F</span>or this UK University's brand of E-Learning programmes, I developed a housestyle, a website, a student onboarding app/social network as well as the online classroom interface.</p>
+		</div>
+	</div>
+	<div class="row">	
+		<div class="col-6">			
+			
+
+
+
+
+<picture>
+  <source srcset="    /assets/resized/00-uor-brand-towerbridge-300x175.webp 300w,    /assets/resized/00-uor-brand-towerbridge-560x327.webp 560w,    /assets/resized/00-uor-brand-towerbridge-640x374.webp 640w, /img/work_roehampton/housestyle/00-uor-brand-towerbridge.webp 770w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" type="image/webp" />
+  <img src="/img/placeholder.png" class="img--framed lazyload" style="" alt="The Tower bridge in London is resolved into small blue squares" srcset="    /assets/resized/00-uor-brand-towerbridge-300x175.jpg 300w,    /assets/resized/00-uor-brand-towerbridge-560x327.jpg 560w,    /assets/resized/00-uor-brand-towerbridge-640x374.jpg 640w, /img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg 770w" data-src="/img/placeholder.png" data-srcset="    /assets/resized/00-uor-brand-towerbridge-300x175.jpg 300w,    /assets/resized/00-uor-brand-towerbridge-560x327.jpg 560w,    /assets/resized/00-uor-brand-towerbridge-640x374.jpg 640w, /img/work_roehampton/housestyle/00-uor-brand-towerbridge.jpg 770w" sizes="(min-width:1200px) 610px, (min-width:641px) 50vw, 100vw" />
+</picture>
+
+		</div>
+		<div class="col-4 offset-1">
+			<h3>Housestyle</h3>
+			<p><span class="drop_cap">T</span>he team developed a distinct visual style under my lead. 
+			We aimed to support the brand message "Inspiring Possibilities" by introducing blue squares as key visual elements that appear in various animations and images throughout the material.</p>			
+		</div>
+</div></div>
+:ET

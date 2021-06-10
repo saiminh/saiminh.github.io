@@ -1,0 +1,29 @@
+I":<div class="wrapper">
+	
+	<div class="row row--aligncenter">
+		<div class="col-4">
+			<div class="infobox">
+				<h3>Client:</h3>
+				<p><a href="http://www.bier-baum.nl">The Bierbaum store</a></p>
+				<h3>What I did:</h3>
+				<ul>
+					<li>Housestyle</li>
+					<li>Signage</li>
+					<li>Website (Static HTML, CSS)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-7 offset-1">			
+			<h2>The beer tree</h2>
+			<p><span class="drop_cap">T</span> his Amsterdam beer specialties store is called "Bierbaum" which means "Beer tree" in german. The franchise is now two stores and one Bar strong and expanding.</p>
+			<p>I developed a housestyle based on the biblical story of temptation that is stylistically rooted in Art Deco/Art Nouveau.</p>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<p style=""><strong>The Logo,</strong> used for stamps, invoices and letterheads: </p>
+			<p><img src="/img/work_bierbaum/bierbaum_logo_type.svg" alt="Bierbaum" /></p>
+			<p><img src="/img/work_bierbaum/bierbaum_logo_type_negative.svg" alt="Bierbaum" /></p>
+		</div>
+</div></div>
+:ET

@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,800&display=swap');
+
+html, body, * {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh !important;
+	border: 0vh solid #FFF;
+	background: #000;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+}
+
+.js div#preloader { 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #000 url('../images/ajax-loader.gif') no-repeat center center;
+}
+
+
+.wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+.section {
+	height: 100vh;
+	position: relative;
+	z-index: 1;	
+	overflow: auto;
+}
+
+.scene_text {
+	width: 100vw;
+	height: calc(100vh - 100vw);
+	margin: 100vw 0 0 0;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	/*background: #981f1f;*/
+}
+
+@media (orientation: landscape) {
+	.scene_text {
+		width: 50vw;
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: relative;
+		left: 50vw;
+		text-align: center;
+	}
+
+	.scene_two .scene_text,
+	.scene_ten .scene_text,
+	.scene_eleven .scene_text,
+	.scene_elevenahalf .scene_text,
+	.scene_twelve .scene_text,
+	.scene_theEnd .scene_text {
+		left: 0;
+	}
+}
+
+.scene_header {
+	font-weight: 300;
+	line-height: 1.5;
+	/*letter-spacing: 1px;*/
+	text-align: left;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.5rem;
+	box-sizing: border-box;
+	font-size: 1.0rem;
+	bottom: 50%;
+	transform: translate(0, 50%);
+	position: absolute;
+}
+
+.dropcap {
+	float: left;
+	font-size: 3.2em;
+	font-weight: 900;
+	line-height: .5;
+	padding-top: .2em;
+	padding-right: 6px;
+	padding-left: 0;
+	/*color: #000;*/
+}
+
+@media (min-width: 321px) {
+	.scene_header {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 481px) {
+	.scene_header {
+		font-size: 1.4rem;
+		padding: 0 3rem;
+	}
+
+	.dropcap {
+		padding-right: 10px;
+	}
+}
+
+@media (orientation: landscape) {
+	.scene_header {		 
+		padding: 0 5rem;
+		font-size: 2vw;
+	}
+}
+
+.scene_two .scene_text .scene_header,
+.scene_four .scene_text .scene_header,
+.scene_theEnd .scene_text .scene_header{
+	text-align: center;
+}
+
+strong {
+	font-weight: 700;
+	font-size: inherit;
+	/*color: #000;
+	letter-spacing: -.01em;*/
+}
+
+.strong-l {
+	font-size: 2em;
+	position: relative;
+    top: 6px;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+}
+
+
+div[class^="animation_stage_scene_"] {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vw;
+	overflow: hidden;
+}
+
+div[class^="animation_stage_scene_"] img {
+	height: 100vw;
+	width: 100vw;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (orientation: landscape) {
+
+	div[class^="animation_stage_scene_"] {
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 50vw;
+		height: 50vw;
+	}
+
+	div.animation_stage_scene_two,
+	div.animation_stage_scene_ten {
+		margin-left: 50vw;
+	}
+
+	div[class^="animation_stage_scene_"] img {
+		height: 50vw;
+		height: calc(50vw + 1px);
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+}
+
+.fixed_stage {
+	position: fixed;
+	top:0;
+	bottom: 0;
+	width: 100vw;
+	z-index: 0;
+	overflow: hidden;
+}
+
+@media (orientation: landscape) {
+	.fixed_stage {
+		top: 50%;
+		height: 50vw;
+		transform: translate(0, -50%);
+	}
+}
+
+.animation_stage_scene_intro .prop {
+	position: absolute;
+}
+
+
+/* 
+----------------- 
+Intro Scene Lucy  
+----------------- 
+*/
+
+.scene_intro .scene_text {
+	background: transparent;
+}
+
+.scene_header_lucy {
+	background: #FFF;
+	color: #000;
+	padding: 1.5rem;
+	font-size: 0.9rem;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+}
+
+@media (orientation: landscape) {
+	.scene_header_lucy {
+		margin-left: -20%;
+		font-size: 1.2rem;
+		max-width: 35rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.scene_header_lucy {
+		padding: 1rem;
+	}
+}
+
+.scene_header_lucy:after {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: 66px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #FFF;
+	border-right-color: #FFF;
+}
+
+@media (orientation: landscape) {
+
+	.scene_header_lucy:after {
+		top: 33px;
+		left: -20px;
+		border-bottom-color: transparent;
+		border-top-color: #FFF;
+	}
+}
+
+/* 
+-----------------
+Scene 'On a planet...' 
+-----------------
+*/
+.scene_one_space .space {
+	position: absolute;
+	top: 0;
+}
+
+/* 
+-----------------
+Scene 'lived the Darkmonger' 
+-----------------
+*/
+.scene_two_ScaryMonsterName_eyes {
+	background-image: url(../images/scene_2_eyes_sprite.png);
+	background-size: 400%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.scene_three_GuyLostInTheDark {
+	background-image: url(../images/scene_3_sweating_sprite.png);
+	background-size: 300%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	width: calc(100% + 1px);
+	height: 100%;
+	height: calc(100% + 1px);
+	position: relative;
+	opacity: 0;
+}
+
+.scene_four_GuyBeingEaten {
+	background-image: url(../images/scene_4_munch_sprite.png);
+	background-size: 600%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	width: calc(100% + 1px);
+	height: 100%;
+	height: calc(100% + 1px);
+	position: relative;
+}
+
+.animation_stage_scene_five {
+	opacity: 1;
+}
+
+.scene_five_planet,
+.scene_five_devil {
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.scene_six_couple,
+.scene_six_light,
+.scene_seven_couple {
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.scene_six_light{
+	opacity: 0.7;
+}
+
+.animation_stage_scene_eight img {
+	position: absolute;
+}
+
+/* 
+---------------- 
+Scene: Drifting 
+---------------- 
+*/
+.animation_stage_scene_ten img {
+	position: absolute;
+}
+
+.scene_ten_moon,
+.scene_ten_venus,
+.scene_ten_jupiter,
+.scene_ten_bg,
+.scene_ten_bg_2 {
+	left: -100%;
+	margin-left: 0;
+}
+
+.scene_twelve_devil {
+	opacity: 0;
+}
+
+/* 
+---------------- 
+Scene: The End 
+---------------- 
+*/
+
+div.animation_stage_scene_theEnd {
+	overflow: visible;
+}
+
+.animation_stage_scene_theEnd .scene_theEnd_lucy {
+	position: absolute;
+	bottom: -50%;
+}
+
+.scene_theEnd .scene_text {
+	background: transparent;
+}
+
+.scene_theEnd .scene_text .scene_header_lucy {
+	margin-left: 1rem;
+	text-align: left;
+}
+
+.scene_theEnd .scene_header_lucy:after {
+	border-right-color: transparent;
+	border-left-color: #FFF;
+	left: 50%;
+}
+
+@media (orientation: landscape) {
+
+	.scene_theEnd .scene_text {
+		left: 20vw;
+	}
+
+	.scene_theEnd .scene_header_lucy {
+		max-width: 25rem;
+	}
+
+	.scene_theEnd .scene_header_lucy:after {
+		top: 33px;
+		left: -20px;
+		border-right-color: #FFF;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: #FFF;
+	}
+
+	.animation_stage_scene_theEnd .scene_theEnd_lucy {
+		bottom: 0;
+	}
+
+}
+
+/* 
+---------------- 
+Scene: Outro 
+---------------- 
+*/
+
+.scene_outro .scene_text {
+	height: 100vh!important;
+	width: 100vw!important;
+	margin-top: 0!important;
+	background: transparent;
+	left: 0;
+	color: #981f1f;
+}
+
+.scene_outro .scene_header_outro {
+	text-align: center;
+	max-width: 100%;
+}
+
+.scene_outro .site-title {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.scene_outro .site-title #floter_signature_svg {
+	width: 100%;
+}
+
+.scene_outro .site-title #floter_signature_svg g {
+	fill: #FFF;
+}
+
+.link_gg {
+	display: block;
+	margin: 1rem auto;
+	max-width: 200px;
+	text-decoration: none;
+	color: #981f1f;
+	font-size: 1rem;
+}
+
+.gary_glotz_logo {
+	width: 100%;
+}
+
+.link_restart {
+	display: block;
+	margin: 1rem auto;
+	max-width: 200px;
+	text-decoration: none;
+	color: #981f1f;
+	font-size: 1rem;
+	padding: 10px 15px;
+	border: 1px solid #981f1f;
+}
+
+/* -------- Navigation (Up/Down Arrows) -------- */
+
+.nav {
+	position: fixed;
+	top: calc(100vw + 10px);
+	right:.5rem;
+	z-index: 998;
+	height: 40px;
+	width:40px;
+	opacity: .2;
+}
+
+.nav .svg_path {
+	fill: #FFFFFF;
+}
+
+.nav-next:active,
+.nav-prev:active{
+	opacity: .9;
+}
+
+
+
+.nav-prev {
+	top: calc(100vw - 50px);
+}
+@media (orientation: landscape) {
+
+	.nav {
+		width: 30px;
+		height: 30px;
+		right: 2rem;
+		top: auto;
+	}
+
+	.nav-next {
+		bottom: calc(2rem);
+	    
+	}
+
+	.nav-prev {
+		bottom: calc(2rem + 50px);
+	}
+
+	.nav-next:hover,
+	.nav-prev:hover{
+		opacity: .9;
+	}
+}
+
+
+/* -------- Fullscreen Button -------- */
+
+.btn_fullscreen {
+	position: fixed;
+	top: .5rem;
+	left:.5rem;
+	z-index: 998;
+	height: 35px;
+	width: 35px;
+	color: #FFF;
+	background: transparent;
+	border: none;
+	opacity: 0.5;
+}
+
+.btn_fullscreen svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.btn_fullscreen .btn_fullscreen_icon_exitfs {
+	display: none;
+}
+
+.btn_fullscreen.exit_fullscreen .btn_fullscreen_icon_exitfs {
+	display: inline-block;
+}
+
+.btn_fullscreen.exit_fullscreen .btn_fullscreen_icon_enterfs {
+	display: none;
+}
+
+.btn_fullscreen path {
+	fill: #FFFFFF;
+}
+
+.btn_fullscreen:active {
+	background: red;
+}
+
+.btn_fullscreen:focus {
+	outline: none;
+}
+
+/* -------- Social media links etc for The End -------- */
+
+.last_scene_links,
+.last_scene_links:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.share_links {
+	position: absolute;
+	bottom: 1rem;
+	text-align: center;
+	width: 100%;
+}
+
+.share_links svg {
+	width: 1rem;
+	height: 1rem;
+	fill: #FFF;
+}
+
+.share_links svg path{
+	fill: #FFF;
+}
+
+.last_scene_links_share,
+.last_scene_links_btb  {
+	padding: 1rem;
+	font-size: 1rem;
+}
+.madeby {
+	font-size: 1rem;
+	margin-bottom: .5rem;
+}
+
+.madeby a,
+.madeby a:visited {
+	color: #000;
+}
