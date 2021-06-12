@@ -6,13 +6,12 @@ category: Identity and Webshop
 excerpt: Design for a sustainable cape webshop
 permalink: /work/julahas
 mainnav: hide
-header_bg_image: ./img/work_julahas/julahas_hero.jpg
-worktile_theme: light
+header_bg_image: ./img/work_julahas/julahas_hero_nologo.jpg
 extra_classes: portfolio theme-julahas
 order: 12
 ---
 <div class="wrapper">
-	<div class="row row--aligncenter">
+	<div class="row">
 		<div class="col-4">
 			<div class="infobox">
 				<h3>Client:</h3>

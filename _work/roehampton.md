@@ -6,7 +6,7 @@ category: Designing a fully online study experience
 subtitle: Designing a fully online study experience
 permalink: /work/roehampton
 mainnav: hide
-header_bg_image: ./img/work_roehampton/uor_hero.png
+header_bg_image: ./img/work_roehampton/uor_hero.jpg
 extra_classes: portfolio theme-roehampton
 ---
 

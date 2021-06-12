@@ -6,13 +6,13 @@
 //@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,900,900italic);
 @import url("https://use.typekit.net/rqe1sku.css");
 // Our variables
-$base-font-family:  soleil, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family:  soleil, Helvetica, Arial, sans-serif;
 $base-font-size:   21px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$heading-font-family:  soleil, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-family:  soleil, Helvetica, Arial, sans-serif;
 $heading-font-weight: 900;
 
 $special-font-family: $heading-font-family;
@@ -56,6 +56,10 @@ $on-laptop:        1000px;
     background-color: $themecolor_bg;
     color: $themecolor_text;
 
+    & #this_page_content {
+      background-color: $themecolor_bg;
+    }
+
     a, 
     .site-footer a,
     .site-nav .page-link,
@@ -72,6 +76,9 @@ $on-laptop:        1000px;
         background-color: $themecolor_text;
     }
 
+    .site-footer {
+      background-color: $themecolor_bg;
+    }
     #floter_signature_svg,
     .site-footer .icon > svg path {
         fill: $themecolor_text;
@@ -83,8 +90,9 @@ $on-laptop:        1000px;
     .button:active {
         border-color: $themecolor_text;
     }
-
-    .page-header_bg:after,
+    .page-header-wrapper {
+      background-color: $themecolor_bg;     
+    }
     .wrapper_outer:after {
         background: $themecolor_bg;
         background: linear-gradient(0deg, $themecolor_bg 0%, transparentize($themecolor_bg, 1) 100%);
@@ -93,10 +101,30 @@ $on-laptop:        1000px;
         background: $themecolor_bg;
         background: linear-gradient(0deg, transparentize($themecolor_bg, 1) 0%, $themecolor_bg 100%);
     }
-    #this_page_content {
-      // background-color: $themecolor_bg;
-      position: relative;
-      z-index: 2;
+    .work_list_tile_header::after {
+      background-color: $themecolor_text;
+    }
+    .work_list_tile:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: desaturate($themecolor_text, 10%);
+      mix-blend-mode: color;
+      opacity: 1;
+      z-index: 0;
+    }
+    .work_list_tile:hover:before {
+      background-color: desaturate($themecolor_bg, 20%);
+    }
+    .work_list_tile:hover .work_list_tile_subtitle,
+    .work_list_tile:hover .work_list_tile_title {
+      color: $themecolor_bg;
+    }
+    .work_list_tile:hover .work_list_tile_subtitle::after {
+      background-color: $themecolor_bg;
     }
 }
 

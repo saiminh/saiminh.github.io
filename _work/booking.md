@@ -35,22 +35,13 @@ order: 4
 					
 		</div>				
 	</div>
-
-	<div class="row">
-		<div class="col-8 overflow offset-2">
-			<div class="gallery-xscroll">
-				{% for image in site.static_files %}
-				    {% if image.path contains 'img/work_booking/screens' %}
-				        {% comment %} <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="gallery-xscroll_img" /> {% endcomment %}
-{% responsive_image_block %}
-path: .{{ image.path }}
-sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw"
-class: "gallery-xscroll_img"
-{% endresponsive_image_block %}
-				    {% endif %}
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-
+</div>
+<div class="wrapper-outer">
+  <div class="gallery-xscroll">
+    {% responsive_image path: "img/work_booking/screens/booking_enterprise_screen01.png" sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw" alt: "Sample of the Bierbaum typeface" class: "gallery-xscroll_img" %}
+    {% responsive_image path: "img/work_booking/screens/booking_enterprise_screen02.png" sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw" alt: "Sample of the Bierbaum typeface" class: "gallery-xscroll_img" %}
+    {% responsive_image path: "img/work_booking/screens/booking_infograph.png" sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw" alt: "Sample of the Bierbaum typeface" class: "gallery-xscroll_img" %}
+    {% responsive_image path: "img/work_booking/screens/booking_join_screen01.png" sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw" alt: "Sample of the Bierbaum typeface" class: "gallery-xscroll_img" %}
+    {% responsive_image path: "img/work_booking/screens/booking_zaffiliate_screen01.png" sizes: "(min-width:1200px) 820px, (min-width:641px) 66vw, 100vw" alt: "Sample of the Bierbaum typeface" class: "gallery-xscroll_img" %}
+  </div>
 </div>

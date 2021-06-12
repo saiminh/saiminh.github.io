@@ -6,37 +6,34 @@ $theme_hatetracker_color_border: #110000;
 
 .theme-hatetracker {
 
+  @include theme-colors(#FFF, #000);
 
-	& .page-header.has_hero_img {	    
-	    background-size: cover;
-	    background-position: center bottom;
-	    @media screen and (max-width: 480px) {
-	    	background-position: 30% top;
-	    }
-	}
+	// & .project_logo_herocenter {
+	// 	position: absolute;
+	//     top: 25vh;
+	//     left: 0;
+	//     right: 0;
+	//     height: 28vh;
+	//     text-align: center;
 
-	& .project_logo_herocenter {
-		position: absolute;
-	    top: 25vh;
-	    left: 0;
-	    right: 0;
-	    height: 28vh;
-	    text-align: center;
+	//     & img {
+	//     	height: 100%;
+	//     	width: auto;	    	
 
-	    & img {
-	    	height: 100%;
-	    	width: auto;	    	
-
-    	  @media screen and (max-width: 480px) {
-    	  	width: 75%;
-    	  	height: auto;
-    	  }
-	    }
-	}
+  //   	  @media screen and (max-width: 480px) {
+  //   	  	width: 75%;
+  //   	  	height: auto;
+  //   	  }
+	//     }
+	// }
 
 	/* & .page-title {
 		display: none;
 	}	 */
+
+  & .work_list_tile:hover:before {
+    background-color: red;
+  }
 
 	& .hatetracker_logo_content {
 		max-width: 320px;

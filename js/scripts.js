@@ -70,3 +70,49 @@ document.querySelectorAll('.work_list a, a.site-title').forEach(element => eleme
         });
 }));
 
+// Home
+window.addEventListener('DOMContentLoaded', function() {
+  if ( document.body.classList.contains( 'home' ) ) {
+    let hometl = gsap.timeline( {
+      scrollTrigger: {
+        trigger: ".page-content",
+        start: "-=80 top",
+        end: "bottom top",
+        scrub: .25
+      },
+    }) 
+    let mySplitText = new SplitText(".hero_headline h1", { type:"lines "})
+    let lines = mySplitText.lines; //an array of all the divs that wrap each character
+    hometl.set(".hero_headline h1", {
+      position: "relative",
+      overflow: "hidden"
+    })
+    .to( lines, {
+      transformOrigin: "50% 50%",
+      duration: 5,
+      xPercent: 100,
+      yPercent: 100,
+      rotationX: 270,
+      ease: "power2.in",
+      stagger: .5
+    });
+    var hollertl = gsap.timeline( {paused: true} ),
+    mySplitTextHoller = new SplitText(".hollerer", {type:"chars"}), 
+    hollerchars = mySplitTextHoller.chars;
+    hollertl.to(hollerchars, {
+      duration: 0.15,
+      yPercent: -10,				
+      stagger: {
+          each: .1,
+          repeat: -1,
+          yoyo: true
+      }
+    })
+    document.querySelector('.hollerer').addEventListener('mouseenter', function(){
+      hollertl.play();
+    })
+    document.querySelector('.hollerer').addEventListener('mouseleave', function(){
+      hollertl.pause(0);
+    })
+  }
+});

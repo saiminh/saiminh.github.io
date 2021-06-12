@@ -1,0 +1,29 @@
+{
+  "name": "saiminh.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec jekyll serve & webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiminh/saiminh.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saiminh/saiminh.github.io/issues"
+  },
+  "homepage": "https://github.com/saiminh/saiminh.github.io#readme",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "gsap": "npm:@gsap/shockingly@^3.6.1",
+    "lazysizes": "^5.3.2"
+  }
+}

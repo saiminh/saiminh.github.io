@@ -1,7 +1,10 @@
 .theme-jpl {
-
-	@include theme-colors(#0b3861, #FFF);
-
+	
+  @include theme-colors(#032546, #f9a870);
+  
+  .page-header_bg img {
+    object-position: center bottom;
+  }
 	& #jpl_symbol {
 		height: 50px;
 		width: 50px;
@@ -9,12 +12,10 @@
 		margin: 0 1em 0 0;
 		float: left;
 		padding-top: .3333em;
-
 		#center {
 			animation: fadeout 2s infinite alternate;
 			transform-origin: 50% 50%;
 		}
-
 		@keyframes fadeout {
 			to {
 				opacity: 0;
