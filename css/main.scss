@@ -51,17 +51,6 @@ $on-laptop:        1000px;
         @content;
     }
 }
-@mixin highligh-color($highlightcolor) {
-  & .page-subtitle {
-    color: $highlightcolor;
-  }
-  & .page-subtitle::after {
-    background-color: $highlightcolor;
-  }
-  & .work_list_tile::before {
-    background-color: desaturate($highlightcolor, 50%);
-  }
-}
 @mixin theme-colors($themecolor_bg, $themecolor_text) {
     background-color: $themecolor_bg;
     color: $themecolor_text;
@@ -125,6 +114,9 @@ $on-laptop:        1000px;
       mix-blend-mode: color;
       opacity: 1;
       z-index: 0;
+      @include media-query($on-palm) {
+        mix-blend-mode: multiply;
+      }
     }
     .work_list_tile:hover:before {
       background-color: desaturate($themecolor_bg, 20%);
