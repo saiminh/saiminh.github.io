@@ -51,7 +51,17 @@ $on-laptop:        1000px;
         @content;
     }
 }
-
+@mixin highligh-color($highlightcolor) {
+  & .page-subtitle {
+    color: $highlightcolor;
+  }
+  & .page-subtitle::after {
+    background-color: $highlightcolor;
+  }
+  & .work_list_tile::before {
+    background-color: desaturate($highlightcolor, 50%);
+  }
+}
 @mixin theme-colors($themecolor_bg, $themecolor_text) {
     background-color: $themecolor_bg;
     color: $themecolor_text;

@@ -31,7 +31,7 @@ html, body {
 }
 @include media-query($on-palm) {
   html, body { 
-    font-size: 16px;
+    font-size: 4.2vw;
   }
 }
 body.dark_bg {

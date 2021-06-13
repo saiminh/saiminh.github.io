@@ -4,6 +4,46 @@ import { SplitText } from "gsap/SplitText";
 import 'lazysizes';
 
 gsap.registerPlugin(ScrollTrigger, SplitText); 
+// ---------------------------------
+// function declarartions
+// ---------------------------------
+function initHero(){
+  // set the padding of the article element for the scroll effect
+  if ( window.matchMedia("(orientation: landscape)").matches ){
+    var scrollEnd = "100% 0%";
+  } else {
+    var scrollEnd = "50% 0%";
+  }
+  let pageTitleHeight = document.querySelector('.page-header-wrapper').clientHeight;
+  let article = document.getElementById('this_page_content');
+  article.style.paddingTop = pageTitleHeight+"px";
+  gsap.to(".page-header_bg", {        
+      yPercent: -10,
+      scale: 1.1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".page-header",
+        start: "0% 0%",
+        end: "100% 0%",
+        scrub: true,
+        // markers: true
+      }
+  });
+  gsap.to(".page-header-wrapper", {
+      y: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".page-header",
+        start: "0% 0%",
+        end: scrollEnd,
+        scrub: true,
+        // markers: true
+      }
+  } );
+}
+
+
+
 // ------------------------------------------
 //  On Load stuff
 // ------------------------------------------
@@ -24,39 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Then we set the value in the --vh custom property to the root of the document
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-  let pageTitleHeight = document.querySelector('.page-header-wrapper').clientHeight;
-  let article = document.getElementById('this_page_content');
   // Hero image animation
   if ( document.querySelector('.page-header.has_hero_img') ) {
-    
-    // set the padding of the article element for the scroll effect
-    article.style.paddingTop = pageTitleHeight+"px";
-
-    gsap.to(".page-header_bg", {        
-        yPercent: -10,
-        scale: 1.1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".page-header",
-          start: "0% 0%",
-          end: "100% 0%",
-          scrub: true,
-          // markers: true
-        }
-    });
-    gsap.to(".page-header-wrapper", {
-        y: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".page-header",
-          start: "0% 0%",
-          end: "100% 0%",
-          scrub: true,
-          // markers: true
-        }
-    });
+    initHero();    
   };
-  
+  window.addEventListener('resize', () => {
+    initHero();
+  })
   //Home 
   if ( document.body.classList.contains( 'home' ) ) {
     let hometl = gsap.timeline( {

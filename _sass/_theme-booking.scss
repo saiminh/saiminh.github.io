@@ -3,6 +3,7 @@
 }
 .theme-adidas {
 	@include theme-colors(#1D4798, #fff);
+  @include highligh-color( #DFA406 );
   .page-header_bg img {
     object-position: center 33%;
   }
